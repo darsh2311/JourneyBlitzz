@@ -9,7 +9,7 @@ import logicalView.SignIn;
 import logicalView.SignUpwithInvalidData;
 import logicalView.VerifyDomain;
 
-public class TC_SignUpwithINValidData extends ApplicationUtility {
+public class TC_SignUpwithVerifyINValidData extends ApplicationUtility {
 	VerifyDomain mVerifyDomain;
 	SignIn mSignIn;
 	SignUpwithInvalidData mSignUpwithInvalidData;
@@ -25,15 +25,14 @@ public class TC_SignUpwithINValidData extends ApplicationUtility {
 	}
 
 	@Test(priority = 1, enabled = true)
+	public void TC_VerifyInviteSignUpInvalidData() {
 
-	public void TC_SignUpwithInvalidData() {
 		mVerifyDomain.VerifyValidDomain();
-		mSignIn.validSignIn();
-		mSignUpwithInvalidData.addUser();
-		mSignUpwithInvalidData.invalidEmailSubmit();
-		mSignUpwithInvalidData.checkBlankEmailSubmit();
-		mSignUpwithInvalidData.invalidUserIDSubmit();
-		mSignUpwithInvalidData.checkBlankUserIdSubmit();
+		mSignUpwithInvalidData.blankVerifyEmailUserid();
+		mSignUpwithInvalidData.invalidVerifyEmail();
+		mSignUpwithInvalidData.notRegisteredVerifyEmail();
+		mSignUpwithInvalidData.invalidVerifyUserId();
+		mSignUpwithInvalidData.notRegisteredVerifyUserId();
 
 	}
 

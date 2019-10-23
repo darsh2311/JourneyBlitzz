@@ -1,5 +1,7 @@
 package commonFunctions;
 
+import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
@@ -8,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -76,8 +80,13 @@ public class ApplicationUtility {
 		}
 	}
 
-	public void refreshPage() {
+	public Wait<WebDriver> waitFluent() {
+		Wait<WebDriver> gWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(100))
+				.pollingEvery(Duration.ofMillis(600)).ignoring(NoSuchElementException.class);
+		return gWait;
+	}
 
+	public void refreshPage() {
 		driver.navigate().refresh();
 	}
 }

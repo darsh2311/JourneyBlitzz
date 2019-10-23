@@ -2,7 +2,11 @@
 
 <suite name="Suite" parallel="false" thread-count="10">
 
-
+  <test name="Need Help">
+     <classes>
+       <class name="testScript.TC_NeedHelp"/>
+     </classes>
+   </test>
    
   <test name="DomainwithINValidData">
      <classes>
@@ -37,14 +41,20 @@
      </classes>
    </test>
    
-        <test name="SignUpwithINValidData">
+
+        <test name="SignUpwithValidData">
+     <classes>
+       <class name="testScript.TC_SignUpwithValidData"/>
+     </classes>
+   </test>
+           <test name="SignUpwithINValidData">
      <classes>
        <class name="testScript.TC_SignUpwithINValidData"/>
      </classes>
    </test>
-        <test name="SignUpwithValidData">
+             <test name="SignUpwithINValidData2">
      <classes>
-       <class name="testScript.TC_SignUpwithValidData"/>
+       <class name="testScript.TC_SignUpwithINValidData2"/>
      </classes>
    </test>
         <test name="SignUpInvitewithValidData">

@@ -1,29 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="0" passed="0" failed="0" skipped="0">
+<testng-results total="18" passed="16" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-21T11:54:08Z" name="Suite" finished-at="2019-10-21T11:54:08Z" duration-ms="96">
+  <suite started-at="2019-10-23T12:19:19Z" name="Suite" finished-at="2019-10-23T12:30:48Z" duration-ms="689127">
     <groups>
     </groups>
-    <test started-at="2019-10-21T11:54:08Z" name="NeedHelp" finished-at="2019-10-21T11:54:08Z" duration-ms="5">
-    </test> <!-- NeedHelp -->
-    <test started-at="2019-10-21T11:54:08Z" name="DomainwithINValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="0">
+    <test started-at="2019-10-23T12:19:19Z" name="Need Help" finished-at="2019-10-23T12:19:56Z" duration-ms="36976">
+      <class name="testScript.TC_NeedHelp">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_NeedHelp@2ea227af]" started-at="2019-10-23T17:49:19Z" name="beforeTest" finished-at="2019-10-23T17:49:30Z" duration-ms="10508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_Need_Help()[pri:0, instance:testScript.TC_NeedHelp@2ea227af]" started-at="2019-10-23T17:49:30Z" name="TC_Need_Help" finished-at="2019-10-23T17:49:56Z" duration-ms="26373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Need_Help -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_NeedHelp@2ea227af]" started-at="2019-10-23T17:49:56Z" name="afterTest" finished-at="2019-10-23T17:49:56Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_NeedHelp -->
+    </test> <!-- Need Help -->
+    <test started-at="2019-10-23T12:19:56Z" name="DomainwithINValidData" finished-at="2019-10-23T12:20:18Z" duration-ms="22264">
+      <class name="testScript.TC_VerifyDomainwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@6e4784bc]" started-at="2019-10-23T17:49:56Z" name="beforeTest" finished-at="2019-10-23T17:50:11Z" duration-ms="14536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_InvalidDomainSubmission()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@6e4784bc]" started-at="2019-10-23T17:50:11Z" name="TC_InvalidDomainSubmission" finished-at="2019-10-23T17:50:18Z" duration-ms="7638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidDomainSubmission -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@6e4784bc]" started-at="2019-10-23T17:50:18Z" name="afterTest" finished-at="2019-10-23T17:50:18Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_VerifyDomainwithINValidData -->
     </test> <!-- DomainwithINValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="DomainwithValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
+    <test started-at="2019-10-23T12:20:18Z" name="DomainwithValidData" finished-at="2019-10-23T12:20:29Z" duration-ms="10533">
+      <class name="testScript.TC_VerifyDomainwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@57c758ac]" started-at="2019-10-23T17:50:18Z" name="beforeTest" finished-at="2019-10-23T17:50:25Z" duration-ms="6992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@57c758ac]" started-at="2019-10-23T17:50:25Z" name="TC_ValidDomainSubmission" finished-at="2019-10-23T17:50:29Z" duration-ms="3417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@57c758ac]" started-at="2019-10-23T17:50:29Z" name="afterTest" finished-at="2019-10-23T17:50:29Z" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_VerifyDomainwithValidData -->
     </test> <!-- DomainwithValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="ForgotPasswordwithINValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
+    <test started-at="2019-10-23T12:20:29Z" name="ForgotPasswordwithINValidData" finished-at="2019-10-23T12:20:51Z" duration-ms="22305">
+      <class name="testScript.TC_ForgotPasswordwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@63355449]" started-at="2019-10-23T17:50:29Z" name="beforeTest" finished-at="2019-10-23T17:50:36Z" duration-ms="6696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@63355449]" started-at="2019-10-23T17:50:36Z" name="TC_ValidDomainSubmission" finished-at="2019-10-23T17:50:39Z" duration-ms="3425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_InvalidForgotPassword()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@63355449]" started-at="2019-10-23T17:50:39Z" name="TC_InvalidForgotPassword" finished-at="2019-10-23T17:50:51Z" depends-on-methods="testScript.TC_ForgotPasswordwithINValidData.TC_ValidDomainSubmission" duration-ms="12107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidForgotPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@63355449]" started-at="2019-10-23T17:50:51Z" name="afterTest" finished-at="2019-10-23T17:50:51Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_ForgotPasswordwithINValidData -->
     </test> <!-- ForgotPasswordwithINValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="ForgotPasswordwithValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="0">
+    <test started-at="2019-10-23T12:20:51Z" name="ForgotPasswordwithValidData" finished-at="2019-10-23T12:21:04Z" duration-ms="12880">
+      <class name="testScript.TC_ForgotPasswordwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@1ddf84b8]" started-at="2019-10-23T17:50:51Z" name="beforeTest" finished-at="2019-10-23T17:50:56Z" duration-ms="4868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@1ddf84b8]" started-at="2019-10-23T17:50:56Z" name="TC_ValidDomainSubmission" finished-at="2019-10-23T17:50:59Z" duration-ms="3411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_ForgotPassword()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@1ddf84b8]" started-at="2019-10-23T17:50:59Z" name="TC_ForgotPassword" finished-at="2019-10-23T17:51:04Z" depends-on-methods="testScript.TC_ForgotPasswordwithValidData.TC_ValidDomainSubmission" duration-ms="4524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ForgotPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@1ddf84b8]" started-at="2019-10-23T17:51:04Z" name="afterTest" finished-at="2019-10-23T17:51:04Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_ForgotPasswordwithValidData -->
     </test> <!-- ForgotPasswordwithValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="LoginwithINValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
+    <test started-at="2019-10-23T12:21:04Z" name="LoginwithINValidData" finished-at="2019-10-23T12:21:47Z" duration-ms="43142">
+      <class name="testScript.TC_LoginwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_LoginwithINValidData@1725dc0f]" started-at="2019-10-23T17:51:04Z" name="beforeTest" finished-at="2019-10-23T17:51:10Z" duration-ms="5495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_LoginwithINValidData@1725dc0f]" started-at="2019-10-23T17:51:10Z" name="TC_ValidDomainSubmission" finished-at="2019-10-23T17:51:13Z" duration-ms="3637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_InvalidSignin()[pri:0, instance:testScript.TC_LoginwithINValidData@1725dc0f]" started-at="2019-10-23T17:51:13Z" name="TC_InvalidSignin" finished-at="2019-10-23T17:51:47Z" depends-on-methods="testScript.TC_LoginwithINValidData.TC_ValidDomainSubmission" duration-ms="33933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidSignin -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_LoginwithINValidData@1725dc0f]" started-at="2019-10-23T17:51:47Z" name="afterTest" finished-at="2019-10-23T17:51:47Z" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_LoginwithINValidData -->
     </test> <!-- LoginwithINValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="LoginwithValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
+    <test started-at="2019-10-23T12:21:47Z" name="LoginwithValidData" finished-at="2019-10-23T12:22:04Z" duration-ms="16991">
+      <class name="testScript.TC_LoginwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_LoginwithValidData@2145b572]" started-at="2019-10-23T17:51:47Z" name="beforeTest" finished-at="2019-10-23T17:51:53Z" duration-ms="6005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_LoginwithValidData@2145b572]" started-at="2019-10-23T17:51:53Z" name="TC_ValidDomainSubmission" finished-at="2019-10-23T17:51:57Z" duration-ms="3404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_LoginwithValidData@2145b572]" started-at="2019-10-23T17:51:57Z" name="TC_SignIn" finished-at="2019-10-23T17:52:02Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_ValidDomainSubmission" duration-ms="5260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignIn -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_LoginwithValidData@2145b572]" started-at="2019-10-23T17:52:02Z" name="TC_SignOut" finished-at="2019-10-23T17:52:04Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_SignIn" duration-ms="2246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_LoginwithValidData@2145b572]" started-at="2019-10-23T17:52:04Z" name="afterTest" finished-at="2019-10-23T17:52:04Z" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_LoginwithValidData -->
     </test> <!-- LoginwithValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="SignUpwithINValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
-    </test> <!-- SignUpwithINValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="SignUpwithValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="0">
+    <test started-at="2019-10-23T12:22:04Z" name="SignUpwithValidData" finished-at="2019-10-23T12:23:45Z" duration-ms="101072">
+      <class name="testScript.TC_SignUpwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithValidData@35ef1869]" started-at="2019-10-23T17:52:04Z" name="beforeTest" finished-at="2019-10-23T17:52:09Z" duration-ms="4780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_SignUpwithEmailandPassword()[pri:0, instance:testScript.TC_SignUpwithValidData@35ef1869]" started-at="2019-10-23T17:52:09Z" name="TC_SignUpwithEmailandPassword" finished-at="2019-10-23T17:52:56Z" duration-ms="47260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPassword -->
+        <test-method signature="TC_SignUpwithUserIdandPassword()[pri:0, instance:testScript.TC_SignUpwithValidData@35ef1869]" started-at="2019-10-23T17:52:56Z" name="TC_SignUpwithUserIdandPassword" finished-at="2019-10-23T17:53:45Z" duration-ms="48895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdandPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithValidData@35ef1869]" started-at="2019-10-23T17:53:45Z" name="afterTest" finished-at="2019-10-23T17:53:45Z" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithValidData -->
     </test> <!-- SignUpwithValidData -->
-    <test started-at="2019-10-21T11:54:08Z" name="SignUpInvitewithValidData" finished-at="2019-10-21T11:54:08Z" duration-ms="1">
+    <test started-at="2019-10-23T12:23:45Z" name="SignUpwithINValidData" finished-at="2019-10-23T12:24:10Z" duration-ms="24486">
+      <class name="testScript.TC_SignUpwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithINValidData@243c4f91]" started-at="2019-10-23T17:53:45Z" name="beforeTest" finished-at="2019-10-23T17:53:50Z" duration-ms="5025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_VerifyInviteSignUpInvalidData()[pri:0, instance:testScript.TC_SignUpwithINValidData@243c4f91]" started-at="2019-10-23T17:53:50Z" name="TC_VerifyInviteSignUpInvalidData" finished-at="2019-10-23T17:54:10Z" duration-ms="19390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInviteSignUpInvalidData -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithINValidData@243c4f91]" started-at="2019-10-23T17:54:10Z" name="afterTest" finished-at="2019-10-23T17:54:10Z" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithINValidData -->
+    </test> <!-- SignUpwithINValidData -->
+    <test started-at="2019-10-23T12:24:10Z" name="SignUpwithINValidData2" finished-at="2019-10-23T12:26:03Z" duration-ms="113203">
+      <class name="testScript.TC_SignUpwithINValidData2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithINValidData2@5119fb47]" started-at="2019-10-23T17:54:10Z" name="beforeTest" finished-at="2019-10-23T17:54:18Z" duration-ms="8210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_SignUpwithInvalidData()[pri:0, instance:testScript.TC_SignUpwithINValidData2@5119fb47]" started-at="2019-10-23T17:54:18Z" name="TC_SignUpwithInvalidData" finished-at="2019-10-23T17:56:03Z" duration-ms="104917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithInvalidData -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithINValidData2@5119fb47]" started-at="2019-10-23T17:56:03Z" name="afterTest" finished-at="2019-10-23T17:56:03Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithINValidData2 -->
+    </test> <!-- SignUpwithINValidData2 -->
+    <test started-at="2019-10-23T12:26:03Z" name="SignUpInvitewithValidData" finished-at="2019-10-23T12:30:48Z" duration-ms="285231">
+      <class name="testScript.TC_SignUpInvitewithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpInvitewithValidData@55b7a4e0]" started-at="2019-10-23T17:56:03Z" name="beforeTest" finished-at="2019-10-23T17:56:08Z" duration-ms="5386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_SignUpwithEmailwithoutPassword()[pri:0, instance:testScript.TC_SignUpInvitewithValidData@55b7a4e0]" started-at="2019-10-23T17:56:08Z" name="TC_SignUpwithEmailwithoutPassword" finished-at="2019-10-23T17:58:55Z" duration-ms="166614" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.Rk2ImL}, goog:chromeOptions: {debuggerAddress: localhost:40155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b6567205d6ec385b2b62fd3fac73e3c
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.Rk2ImL}, goog:chromeOptions: {debuggerAddress: localhost:40155}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b6567205d6ec385b2b62fd3fac73e3c
+*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectSignOut.blitzzDropdown(ObjectSignOut.java:16)
+	at logicalView.Signout.SignOut(Signout.java:14)
+	at testScript.TC_SignUpInvitewithValidData.TC_SignUpwithEmailwithoutPassword(TC_SignUpInvitewithValidData.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailwithoutPassword -->
+        <test-method signature="TC_SignUpwithUserIdwithoutPassword()[pri:0, instance:testScript.TC_SignUpInvitewithValidData@55b7a4e0]" started-at="2019-10-23T17:58:55Z" name="TC_SignUpwithUserIdwithoutPassword" finished-at="2019-10-23T18:00:48Z" duration-ms="113097" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=/html[1]/body[1]/div[3]/div[1]/div[4]/div[1]/div[3]/div[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectSignOut.blitzzDropdown(ObjectSignOut.java:16)
+	at logicalView.Signout.SignOut(Signout.java:14)
+	at testScript.TC_SignUpInvitewithValidData.TC_SignUpwithUserIdwithoutPassword(TC_SignUpInvitewithValidData.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdwithoutPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpInvitewithValidData@55b7a4e0]" started-at="2019-10-23T18:00:48Z" name="afterTest" finished-at="2019-10-23T18:00:48Z" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpInvitewithValidData -->
     </test> <!-- SignUpInvitewithValidData -->
   </suite> <!-- Suite -->
 </testng-results>

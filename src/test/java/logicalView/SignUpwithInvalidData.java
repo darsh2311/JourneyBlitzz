@@ -1,15 +1,16 @@
 package logicalView;
 
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
-import testObjects.ObjectSignUp;
+import testObjects.ObjectSignUpCopy;
 
 public class SignUpwithInvalidData extends ApplicationUtility {
 
-	ObjectSignUp objSignUp = new ObjectSignUp(driver);
+	ObjectSignUpCopy objSignUp = PageFactory.initElements(driver, ObjectSignUpCopy.class);
 
 	public void addUser() {
 
@@ -174,7 +175,6 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
-		refreshPage();
 
 	}
 
@@ -188,7 +188,6 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Enter invalid Email
 		objSignUp.enterEmailID(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidEmailVerify"));
-		waitTime(150);
 
 		// Set Password Toggle ON
 		objSignUp.setPasswordToggle();
@@ -213,8 +212,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Save the User by clicking on AddUser button
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 6);
-			wait.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
+			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			wait1.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
 			logger.error("Add User(submit) button of Email should not be Clickable with Invalid Value: Failed");
 		} catch (Exception e) {
 			logger.info("Add User(submit) button of Email should not be Clickable with Invalid Value: Passed");
@@ -241,8 +240,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Check the button is Clickable or not
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 6);
-			wait.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
+			WebDriverWait wait2 = new WebDriverWait(driver, 6);
+			wait2.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
 			logger.error("Add User(submit) button of UserID should not be Clickable with Blank Values: Failed");
 		} catch (Exception e) {
 			logger.info("Add User(submit) button of UserID should not be Clickable with Blank Values: Passed");
@@ -268,10 +267,14 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 		// Enter invalid UserID
 		waitTime(700);
 		objSignUp.enterEmailID(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidUserId"));
+		waitTime(1700);
+
+		waitTime(2000);
+		ImplicitWait(100);
 
 		// Set Password Toggle ON
 		objSignUp.setPasswordToggle();
-		waitTime(150);
+		waitTime(700);
 
 		// Set the Password
 		objSignUp.enterPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidPassword"));
@@ -292,8 +295,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Save the User by clicking on AddUser button
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 6);
-			wait.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
+			WebDriverWait wait3 = new WebDriverWait(driver, 15);
+			wait3.until(ExpectedConditions.elementToBeClickable(objSignUp.saveAddUser));
 			logger.error("Add User(submit) button of UserID should not be Clickable with Invalid Value: Failed");
 		} catch (Exception e) {
 			logger.info("Add User(submit) button of UserID should not be Clickable with Invalid Value: Passed");
@@ -301,7 +304,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 		waitTime(200);
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
-		refreshPage();
+		waitForPageLoaded();
+		waitTime(3000);
 
 	}
 

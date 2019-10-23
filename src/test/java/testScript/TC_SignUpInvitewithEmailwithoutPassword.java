@@ -11,7 +11,7 @@ import logicalView.SignUp;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
 
-public class TC_SignUpInvitewithValidData extends ApplicationUtility {
+public class TC_SignUpInvitewithEmailwithoutPassword extends ApplicationUtility {
 	SignIn mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
@@ -38,20 +38,6 @@ public class TC_SignUpInvitewithValidData extends ApplicationUtility {
 		mSignUp.emailSignUpwithoutPassword();
 		mSignOut.SignOut();
 		mSignINwithSignUP.VerifySignUpDomainwithEmail(mSignUp.email);
-		mSignINwithSignUP.signUpDetails();
-		mSignOut.SignOut();
-
-	}
-
-	@Test(priority = 2, enabled = true)
-	public void TC_SignUpwithUserIdwithoutPassword() {
-
-		mVerifyDomain.VerifyValidDomain();
-		mSignIn.validSignIn();
-		mSignUp.addUser();
-		mSignUp.userIdSignUpwithoutPassword();
-		mSignOut.SignOut();
-		mSignINwithSignUP.VerifySignUpDomainwithUserId(mSignUp.userId);
 		mSignINwithSignUP.signUpDetails();
 		mSignOut.SignOut();
 
