@@ -8,16 +8,18 @@ import commonFunctions.ApplicationUtility;
 import logicalView.NeedHelp;
 
 public class TC_NeedHelp extends ApplicationUtility {
+	NeedHelp mNeedHelp;
 
 	@BeforeTest
 	public void beforeTest() {
-		ApplicationUtility.openBrowser();
+		openBrowser();
+		mNeedHelp = new NeedHelp();
 	}
 
 	@Test(priority = 1)
 	public void TC_Need_Help() {
 
-		NeedHelp.VerifyNeedHelpPopup();
+		mNeedHelp.VerifyNeedHelpPopup();
 	}
 
 	@AfterTest

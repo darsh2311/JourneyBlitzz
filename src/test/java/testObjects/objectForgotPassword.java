@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import commonFunctions.ApplicationUtility;
-
-public class objectForgotPassword extends ApplicationUtility {
+public class objectForgotPassword {
 
 	// Forgot Password link locator
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[5]/a[1]")
@@ -81,7 +79,6 @@ public class objectForgotPassword extends ApplicationUtility {
 	// Pagefactory constructor
 	public objectForgotPassword(WebDriver driver) {
 
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}

@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import commonFunctions.ApplicationUtility;
-
-public class ObjectSignUp extends ApplicationUtility {
+public class ObjectSignUp {
 
 	// SignUp link of Login page locator
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[5]/a[2]")
@@ -296,7 +294,6 @@ public class ObjectSignUp extends ApplicationUtility {
 	// Pagefactory constructor
 	public ObjectSignUp(WebDriver driver) {
 
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}

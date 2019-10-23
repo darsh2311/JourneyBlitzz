@@ -174,6 +174,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
+		refreshPage();
+
 	}
 
 	public void invalidEmailSubmit() {
@@ -221,6 +223,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
+		refreshPage();
+
 	}
 
 	public void checkBlankUserIdSubmit() {
@@ -247,6 +251,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
+		refreshPage();
+
 	}
 
 	public void invalidUserIDSubmit() {
@@ -295,6 +301,8 @@ public class SignUpwithInvalidData extends ApplicationUtility {
 		waitTime(200);
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
+		refreshPage();
+
 	}
 
 }

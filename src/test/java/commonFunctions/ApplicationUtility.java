@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class ApplicationUtility {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static Logger logger = Logger.getLogger(ApplicationUtility.class);
 
 	public void openBrowser() {
@@ -74,5 +74,10 @@ public class ApplicationUtility {
 		} catch (Throwable error) {
 			Assert.fail("Timeout waiting for Page Load Request to complete.");
 		}
+	}
+
+	public void refreshPage() {
+
+		driver.navigate().refresh();
 	}
 }

@@ -65,6 +65,7 @@ public class SignUp extends ApplicationUtility {
 		objSignUp.saveAddUser();
 		ImplicitWait(100);
 		waitTime(15000);
+		refreshPage();
 
 	}
 
@@ -107,6 +108,7 @@ public class SignUp extends ApplicationUtility {
 		objSignUp.saveAddUser();
 		ImplicitWait(100);
 		waitTime(15000);
+		refreshPage();
 
 	}
 
@@ -137,6 +139,7 @@ public class SignUp extends ApplicationUtility {
 		objSignUp.closeAddUserSidebar();
 		ImplicitWait(100);
 		waitTime(5000);
+		refreshPage();
 
 	}
 
@@ -167,6 +170,7 @@ public class SignUp extends ApplicationUtility {
 		objSignUp.closeAddUserSidebar();
 		ImplicitWait(100);
 		waitTime(5000);
+		refreshPage();
 
 	}
 }

@@ -10,34 +10,41 @@ import logicalView.SignUpwithInvalidData;
 import logicalView.VerifyDomain;
 
 public class TC_SignUpwithINValidData extends ApplicationUtility {
+	VerifyDomain mVerifyDomain;
+	SignIn mSignIn;
+	SignUpwithInvalidData mSignUpwithInvalidData;
 
 	@BeforeTest
 	public void beforeTest() {
 
-		ApplicationUtility.openBrowser();
+		openBrowser();
+		mVerifyDomain = new VerifyDomain();
+		mSignIn = new SignIn();
+		mSignUpwithInvalidData = new SignUpwithInvalidData();
+
 	}
 
 	@Test(priority = 1, enabled = true)
 	public void TC_VerifyInviteSignUpInvalidData() {
 
-		VerifyDomain.VerifyValidDomain();
-		SignUpwithInvalidData.blankVerifyEmailUserid();
-		SignUpwithInvalidData.invalidVerifyEmail();
-		SignUpwithInvalidData.notRegisteredVerifyEmail();
-		SignUpwithInvalidData.invalidVerifyUserId();
-		SignUpwithInvalidData.notRegisteredVerifyUserId();
+		mVerifyDomain.VerifyValidDomain();
+		mSignUpwithInvalidData.blankVerifyEmailUserid();
+		mSignUpwithInvalidData.invalidVerifyEmail();
+		mSignUpwithInvalidData.notRegisteredVerifyEmail();
+		mSignUpwithInvalidData.invalidVerifyUserId();
+		mSignUpwithInvalidData.notRegisteredVerifyUserId();
 
 	}
 
 	@Test(priority = 2, enabled = true)
 	public void TC_SignUpwithInvalidData() {
 
-		SignIn.validSignIn();
-		SignUpwithInvalidData.addUser();
-		SignUpwithInvalidData.checkBlankEmailSubmit();
-		SignUpwithInvalidData.invalidEmailSubmit();
-		SignUpwithInvalidData.checkBlankUserIdSubmit();
-		SignUpwithInvalidData.invalidUserIDSubmit();
+		mSignIn.validSignIn();
+		mSignUpwithInvalidData.addUser();
+		mSignUpwithInvalidData.checkBlankEmailSubmit();
+		mSignUpwithInvalidData.invalidEmailSubmit();
+		mSignUpwithInvalidData.checkBlankUserIdSubmit();
+		mSignUpwithInvalidData.invalidUserIDSubmit();
 	}
 
 	@AfterTest

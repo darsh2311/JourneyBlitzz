@@ -6,9 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import commonFunctions.ApplicationUtility;
-
-public class objectNeedHelp extends ApplicationUtility {
+public class objectNeedHelp {
 
 	// Need Help? link locator
 	@FindBy(how = How.LINK_TEXT, using = "Need help?")
@@ -71,7 +69,6 @@ public class objectNeedHelp extends ApplicationUtility {
 
 	public objectNeedHelp(WebDriver driver) {
 
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}

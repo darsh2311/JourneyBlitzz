@@ -12,61 +12,48 @@ import logicalView.Signout;
 import logicalView.VerifyDomain;
 
 public class TC_SignUpwithValidData extends ApplicationUtility {
+	SignIn mSignIn;
+	VerifyDomain mVerifyDomain;
+	Signout mSignOut;
+	SignUp mSignUp;
+	SignINwithSignUP mSignINwithSignUP;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
+		mSignIn = new SignIn();
+		mVerifyDomain = new VerifyDomain();
+		mSignOut = new Signout();
+		mSignUp = new SignUp();
+		mSignINwithSignUP = new SignINwithSignUP();
+
 	}
 
 	@Test(priority = 1, enabled = true)
 	public void TC_SignUpwithEmailandPassword() {
 
-		VerifyDomain.VerifyValidDomain();
-		SignIn.validSignIn();
-		SignUp.addUser();
-		SignUp.signUpAdminwithEmail();
-		Signout.SignOut();
-		VerifyDomain.VerifyValidDomain();
-		SignINwithSignUP.validSignInwithSignup(SignUp.email);
-		Signout.SignOut();
+		mVerifyDomain.VerifyValidDomain();
+		mSignIn.validSignIn();
+		mSignUp.addUser();
+		mSignUp.signUpAdminwithEmail();
+		mSignOut.SignOut();
+		mVerifyDomain.VerifyValidDomain();
+		mSignINwithSignUP.validSignInwithSignup(mSignUp.email);
+		mSignOut.SignOut();
 	}
 
 	@Test(priority = 2, enabled = true)
 	public void TC_SignUpwithUserIdandPassword() {
 
-		VerifyDomain.VerifyValidDomain();
-		SignIn.validSignIn();
-		SignUp.addUser();
-		SignUp.signUpAdminwithUserId();
-		Signout.SignOut();
-		VerifyDomain.VerifyValidDomain();
-		SignINwithSignUP.validSignInwithSignup(SignUp.userId);
-		Signout.SignOut();
-	}
-
-	@Test(priority = 3, enabled = true)
-	public void TC_SignUpwithEmailwithoutPassword() {
-
-		VerifyDomain.VerifyValidDomain();
-		SignIn.validSignIn();
-		SignUp.addUser();
-		SignUp.emailSignUpwithoutPassword();
-		Signout.SignOut();
-		SignINwithSignUP.VerifySignUpDomainwithEmail(SignUp.email);
-		SignINwithSignUP.signUpDetails();
-	}
-
-	@Test(priority = 4, enabled = true)
-	public void TC_SignUpwithUserIdwithoutPassword() {
-
-		VerifyDomain.VerifyValidDomain();
-		SignIn.validSignIn();
-		SignUp.addUser();
-		SignUp.userIdSignUpwithoutPassword();
-		Signout.SignOut();
-		SignINwithSignUP.VerifySignUpDomainwithUserId(SignUp.userId);
-		SignINwithSignUP.signUpDetails();
+		mVerifyDomain.VerifyValidDomain();
+		mSignIn.validSignIn();
+		mSignUp.addUser();
+		mSignUp.signUpAdminwithUserId();
+		mSignOut.SignOut();
+		mVerifyDomain.VerifyValidDomain();
+		mSignINwithSignUP.validSignInwithSignup(mSignUp.userId);
+		mSignOut.SignOut();
 	}
 
 	@AfterTest

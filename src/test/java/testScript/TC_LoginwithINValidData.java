@@ -9,26 +9,30 @@ import logicalView.SignIn;
 import logicalView.VerifyDomain;
 
 public class TC_LoginwithINValidData extends ApplicationUtility {
+	SignIn mSignIn;
+	VerifyDomain mVerifyDomain;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
+		mSignIn = new SignIn();
+		mVerifyDomain = new VerifyDomain();
 	}
 
 	@Test(priority = 1, enabled = true)
 	public void TC_ValidDomainSubmission() {
 
-		VerifyDomain.VerifyValidDomain();
+		mVerifyDomain.VerifyValidDomain();
 	}
 
 	@Test(priority = 2, enabled = true, dependsOnMethods = "TC_ValidDomainSubmission")
 	public void TC_InvalidSignin() {
 
-		SignIn.inValidSignInwithBlankEmail();
-		SignIn.inValidSignInwithBlankEmailPassword();
-		SignIn.inValidSignInwithBlankPassword();
-		SignIn.signInwithInvalidEmailPassword();
+		mSignIn.inValidSignInwithBlankEmail();
+		mSignIn.inValidSignInwithBlankEmailPassword();
+		mSignIn.inValidSignInwithBlankPassword();
+		mSignIn.signInwithInvalidEmailPassword();
 	}
 
 	@AfterTest

@@ -26,7 +26,7 @@
        <class name="testScript.TC_ForgotPasswordwithValidData"/>
      </classes>
    </test>
-        <!-- <test name="LoginwithINValidData">
+        <test name="LoginwithINValidData">
      <classes>
        <class name="testScript.TC_LoginwithINValidData"/>
      </classes>
@@ -51,7 +51,7 @@
      <classes>
        <class name="testScript.TC_SignUpInvitewithValidData"/>
      </classes>
-   </test> -->
+   </test>
    
      
 </suite> 
