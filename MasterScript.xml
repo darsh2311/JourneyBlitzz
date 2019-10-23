@@ -8,15 +8,21 @@
      </classes>
    </test>
    
+        <test name="DomainwithValidData">
+     <classes>
+       <class name="testScript.TC_VerifyDomainwithValidData"/>
+     </classes>
+   </test>
+   
   <test name="DomainwithINValidData">
      <classes>
        <class name="testScript.TC_VerifyDomainwithINValidData"/>
      </classes>
    </test>
    
-     <test name="DomainwithValidData">
+       <test name="ForgotPasswordwithValidData">
      <classes>
-       <class name="testScript.TC_VerifyDomainwithValidData"/>
+       <class name="testScript.TC_ForgotPasswordwithValidData"/>
      </classes>
    </test>
    
@@ -25,41 +31,47 @@
        <class name="testScript.TC_ForgotPasswordwithINValidData"/>
      </classes>
    </test>
-        <test name="ForgotPasswordwithValidData">
-     <classes>
-       <class name="testScript.TC_ForgotPasswordwithValidData"/>
-     </classes>
-   </test>
-        <test name="LoginwithINValidData">
-     <classes>
-       <class name="testScript.TC_LoginwithINValidData"/>
-     </classes>
-   </test>
-        <test name="LoginwithValidData">
+    
+            <test name="LoginwithValidData">
      <classes>
        <class name="testScript.TC_LoginwithValidData"/>
      </classes>
    </test>
    
-
-        <test name="SignUpwithValidData">
+        <test name="LoginwithINValidData">
      <classes>
-       <class name="testScript.TC_SignUpwithValidData"/>
+       <class name="testScript.TC_LoginwithINValidData"/>
      </classes>
    </test>
-           <test name="SignUpwithINValidData">
+
+        <test name="SignUpwithValidDataEmail">
+     <classes>
+       <class name="testScript.TC_SignUpwithValidEmail"/>
+     </classes>
+   </test>
+           <test name="SignUpwithValidDataUserId">
+     <classes>
+       <class name="testScript.TC_SignUpwithValidUserId"/>
+     </classes>
+   </test>
+              <test name="SignUpwithINValidData">
      <classes>
        <class name="testScript.TC_SignUpwithINValidData"/>
      </classes>
    </test>
-             <test name="SignUpwithINValidData2">
+           <test name="SignUpwithVerifyINValidData">
      <classes>
-       <class name="testScript.TC_SignUpwithINValidData2"/>
+       <class name="testScript.TC_SignUpwithVerifyINValidData"/>
      </classes>
    </test>
-        <test name="SignUpInvitewithValidData">
+        <test name="SignUpInvitewithUserIdwithoutPassword">
      <classes>
-       <class name="testScript.TC_SignUpInvitewithValidData"/>
+       <class name="testScript.TC_SignUpInvitewithUserIdwithoutPassword"/>
+     </classes>
+   </test>
+           <test name="SignUpInvitewithEmailwithoutPassword">
+     <classes>
+       <class name="testScript.TC_SignUpInvitewithEmailwithoutPassword"/>
      </classes>
    </test>
    
