@@ -5,12 +5,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignIn;
+import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
 
 public class TC_LoginwithValidData extends ApplicationUtility {
-	SignIn mSignIn;
+
+	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
 
@@ -18,7 +19,7 @@ public class TC_LoginwithValidData extends ApplicationUtility {
 	public void beforeTest() {
 
 		openBrowser();
-		mSignIn = new SignIn();
+		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
 	}

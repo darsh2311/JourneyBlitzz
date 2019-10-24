@@ -1,76 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="10" name="Failed suite [Suite]">
-  <test name="SignUpInvitewithValidData(failed)">
+  <test name="SignUpInvitewithUserIdwithoutPassword(failed)">
     <classes>
+      <class name="testScript.TC_SignUpwithValidEmail">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpwithValidEmail -->
+      <class name="testScript.TC_SignUpwithValidUserId">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpwithValidUserId -->
+      <class name="testScript.TC_SignUpInvitewithEmailwithoutPassword">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpInvitewithEmailwithoutPassword -->
+      <class name="testScript.TC_SignUpInvitewithUserIdwithoutPassword">
+        <methods>
+          <include name="TC_SignUpwithUserIdwithoutPassword"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpInvitewithUserIdwithoutPassword -->
+      <class name="testScript.TC_SignUpwithVerifyINValidData">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpwithVerifyINValidData -->
       <class name="testScript.TC_SignUpwithINValidData">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- testScript.TC_SignUpwithINValidData -->
-      <class name="testScript.TC_NeedHelp">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- testScript.TC_NeedHelp -->
-      <class name="testScript.TC_LoginwithINValidData">
+    </classes>
+  </test> <!-- SignUpInvitewithUserIdwithoutPassword(failed) -->
+  <test name="SignUpInvitewithEmailwithoutPassword(failed)">
+    <classes>
+      <class name="testScript.TC_SignUpwithValidEmail">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- testScript.TC_LoginwithINValidData -->
-      <class name="testScript.TC_LoginwithValidData">
+      </class> <!-- testScript.TC_SignUpwithValidEmail -->
+      <class name="testScript.TC_SignUpwithValidUserId">
         <methods>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- testScript.TC_LoginwithValidData -->
-      <class name="testScript.TC_VerifyDomainwithINValidData">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- testScript.TC_VerifyDomainwithINValidData -->
-      <class name="testScript.TC_SignUpwithINValidData2">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- testScript.TC_SignUpwithINValidData2 -->
-      <class name="testScript.TC_SignUpInvitewithValidData">
+      </class> <!-- testScript.TC_SignUpwithValidUserId -->
+      <class name="testScript.TC_SignUpInvitewithEmailwithoutPassword">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
           <include name="TC_SignUpwithEmailwithoutPassword"/>
-          <include name="TC_SignUpwithUserIdwithoutPassword"/>
         </methods>
-      </class> <!-- testScript.TC_SignUpInvitewithValidData -->
-      <class name="testScript.TC_ForgotPasswordwithINValidData">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_ForgotPasswordwithINValidData -->
-      <class name="testScript.TC_VerifyDomainwithValidData">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_VerifyDomainwithValidData -->
-      <class name="testScript.TC_ForgotPasswordwithValidData">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_ForgotPasswordwithValidData -->
-      <class name="testScript.TC_SignUpwithValidData">
+      </class> <!-- testScript.TC_SignUpInvitewithEmailwithoutPassword -->
+      <class name="testScript.TC_SignUpInvitewithUserIdwithoutPassword">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- testScript.TC_SignUpwithValidData -->
+      </class> <!-- testScript.TC_SignUpInvitewithUserIdwithoutPassword -->
+      <class name="testScript.TC_SignUpwithVerifyINValidData">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpwithVerifyINValidData -->
+      <class name="testScript.TC_SignUpwithINValidData">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testScript.TC_SignUpwithINValidData -->
     </classes>
-  </test> <!-- SignUpInvitewithValidData(failed) -->
+  </test> <!-- SignUpInvitewithEmailwithoutPassword(failed) -->
 </suite> <!-- Failed suite [Suite] -->

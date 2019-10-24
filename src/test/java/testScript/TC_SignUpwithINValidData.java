@@ -5,36 +5,63 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignIn;
-import logicalView.SignUpwithInvalidData;
+import logicalView.SignInwithValidData;
 import logicalView.VerifyDomain;
+import logicalView.InvalidSignUPScripts.AddUserSignUp;
+import logicalView.InvalidSignUPScripts.SignUpwithBlankEmailIdInvalidData;
+import logicalView.InvalidSignUPScripts.SignUpwithBlankUserIdInvalidData;
+import logicalView.InvalidSignUPScripts.SignUpwithEmailIdInvalidData;
+import logicalView.InvalidSignUPScripts.SignUpwithUserIdInvalidData;
 
 public class TC_SignUpwithINValidData extends ApplicationUtility {
+
 	VerifyDomain mVerifyDomain;
-	SignIn mSignIn;
-	SignUpwithInvalidData mSignUpwithInvalidData;
+	SignUpwithBlankEmailIdInvalidData mSignUpwithBlankEmailIdInvalidData;
+	SignUpwithBlankUserIdInvalidData mSignUpwithBlankUserIdInvalidData;
+	SignUpwithEmailIdInvalidData mSignUpwithEmailIdInvalidData;
+	SignUpwithUserIdInvalidData mSignUpwithUserIdInvalidData;
+	AddUserSignUp maddUserSignUp;
+	SignInwithValidData mSignIn;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
 		mVerifyDomain = new VerifyDomain();
-		mSignIn = new SignIn();
-		mSignUpwithInvalidData = new SignUpwithInvalidData();
-
+		mSignUpwithBlankEmailIdInvalidData = new SignUpwithBlankEmailIdInvalidData();
+		mSignUpwithBlankUserIdInvalidData = new SignUpwithBlankUserIdInvalidData();
+		mSignUpwithEmailIdInvalidData = new SignUpwithEmailIdInvalidData();
+		mSignUpwithUserIdInvalidData = new SignUpwithUserIdInvalidData();
+		maddUserSignUp = new AddUserSignUp();
+		mSignIn = new SignInwithValidData();
 	}
 
 	@Test(priority = 1, enabled = true)
+	public void AddUserSignUp() {
 
-	public void TC_SignUpwithInvalidData() {
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mSignUpwithInvalidData.addUser();
-		mSignUpwithInvalidData.invalidEmailSubmit();
-		mSignUpwithInvalidData.checkBlankEmailSubmit();
-		mSignUpwithInvalidData.invalidUserIDSubmit();
-		mSignUpwithInvalidData.checkBlankUserIdSubmit();
+		maddUserSignUp.addUser();
+	}
 
+	@Test(priority = 2, enabled = true)
+	public void TC_SignUpwithBlankEmailIdInvalidData() {
+		mSignUpwithBlankEmailIdInvalidData.checkBlankEmailSubmit();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void TC_SignUpwithBlankUserIdInvalidData() {
+		mSignUpwithBlankUserIdInvalidData.checkBlankUserIdSubmit();
+	}
+
+	@Test(priority = 4, enabled = false)
+	public void TC_SignUpwithEmailIdInvalidData() {
+		mSignUpwithEmailIdInvalidData.invalidEmailSubmit();
+	}
+
+	@Test(priority = 5, enabled = true)
+	public void TC_SignUpwithUserIdInvalidData() {
+		mSignUpwithUserIdInvalidData.invalidUserIDSubmit();
 	}
 
 	@AfterTest

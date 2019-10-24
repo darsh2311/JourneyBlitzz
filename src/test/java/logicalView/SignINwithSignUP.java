@@ -132,6 +132,5 @@ public class SignINwithSignUP extends ApplicationUtility {
 		// Click on Signup button
 		objSignUp.clickSignUp();
 		waitFluent();
-		refreshPage();
 	}
 }

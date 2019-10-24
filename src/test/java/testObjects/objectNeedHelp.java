@@ -16,11 +16,11 @@ public class objectNeedHelp {
 		linkNeedHelp.click();
 	}
 
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[35]/div[2]/div[1]/div[1]/h4[1]/span[1]")
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[34]/div[2]/div[1]/div[1]/h4[1]/span[1]")
 	public WebElement linkNeedHelpDescription;
 
 	// Need Help popup close button
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[35]/div[2]/div[1]/div[1]/button[1]/span[1]")
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[34]/div[2]/div[1]/div[1]/button[1]/span[1]")
 	public WebElement needHelpPopupClose;
 
 	public void clickNeedHelpPopupClose() {
@@ -28,7 +28,7 @@ public class objectNeedHelp {
 	}
 
 	// Submit a ticket button locator
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[35]/div[2]/div[1]/div[3]/button[1]")
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[34]/div[2]/div[1]/div[3]/button[1]")
 	public WebElement submitTicketButton;
 
 	public void clickSubmitTicket() {
@@ -36,7 +36,7 @@ public class objectNeedHelp {
 	}
 
 	// Network Test button locator
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[35]/div[2]/div[1]/div[3]/button[2]")
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[34]/div[2]/div[1]/div[3]/button[2]")
 	public WebElement networkTestButton;
 
 	public void clicknetworkTestButton() {

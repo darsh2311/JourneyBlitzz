@@ -5,42 +5,50 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignINwithSignUP;
-import logicalView.SignIn;
-import logicalView.SignUp;
+import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.ValidSignUpScripts.SignUpwithUserId;
+import logicalView.ValidSignUpScripts.ValidSignInwithSignUp;
 
 public class TC_SignUpwithValidUserId extends ApplicationUtility {
-	SignIn mSignIn;
+
+	SignUpwithUserId mSignUpwithUserId;
 	VerifyDomain mVerifyDomain;
+	SignInwithValidData mSignIn;
+	ValidSignInwithSignUp mValidSignInwithSignUp;
 	Signout mSignOut;
-	SignUp mSignUp;
-	SignINwithSignUP mSignINwithSignUP;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
-		mSignIn = new SignIn();
+		mSignUpwithUserId = new SignUpwithUserId();
 		mVerifyDomain = new VerifyDomain();
+		mValidSignInwithSignUp = new ValidSignInwithSignUp();
+		mSignIn = new SignInwithValidData();
 		mSignOut = new Signout();
-		mSignUp = new SignUp();
-		mSignINwithSignUP = new SignINwithSignUP();
 
 	}
 
 	@Test(priority = 1, enabled = true)
-	public void TC_SignUpwithUserIdandPassword() {
+	public void SignInforSignUp() {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mSignUp.addUser();
-		mSignUp.signUpAdminwithUserId();
+	}
+
+	@Test(priority = 2, enabled = true)
+	public void TC_SignUpwithEmailandPassword() {
+		mSignUpwithUserId.signUpAdminwithUserId();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void TC_SignInafterRegister() {
+
 		mSignOut.SignOut();
 		mVerifyDomain.VerifyValidDomain();
-		mSignINwithSignUP.validSignInwithSignup(mSignUp.userId);
-		mSignOut.SignOut();
+		mValidSignInwithSignUp.validSignInwithSignup(mSignUpwithUserId.userId);
 	}
 
 	@AfterTest

@@ -7,12 +7,12 @@ import commonFunctions.BaseClass;
 import testObjects.objectNeedHelp;
 
 public class NeedHelp extends ApplicationUtility {
+	objectNeedHelp objNeedHelp = new objectNeedHelp(driver);
 
 	public void VerifyNeedHelpPopup() {
 
 		waitTime(1000);
 		// Initialise the object domain page
-		objectNeedHelp objNeedHelp = new objectNeedHelp(driver);
 
 		// Verify the Need help functionality
 		objNeedHelp.clickNeedHelp();

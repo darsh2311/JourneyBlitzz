@@ -5,20 +5,27 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.ForgotPassword;
 import logicalView.VerifyDomain;
+import logicalView.InvalidForgotPasswordScripts.ForgotPasswordwithBlankEmail;
+import logicalView.InvalidForgotPasswordScripts.ForgotPasswordwithInvalidEmail;
+import logicalView.InvalidForgotPasswordScripts.ForgotPasswordwithNotRegisteredEmail;
 
 public class TC_ForgotPasswordwithINValidData extends ApplicationUtility {
 
 	VerifyDomain mVerifyDomain;
-	ForgotPassword mForgotPassword;
+	ForgotPasswordwithBlankEmail mForgotPasswordwithBlankEmail;
+	ForgotPasswordwithInvalidEmail mForgotPasswordwithInvalidEmail;
+	ForgotPasswordwithNotRegisteredEmail mForgotPasswordwithNotRegisteredEmail;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
 		mVerifyDomain = new VerifyDomain();
-		mForgotPassword = new ForgotPassword();
+		mForgotPasswordwithBlankEmail = new ForgotPasswordwithBlankEmail();
+		mForgotPasswordwithInvalidEmail = new ForgotPasswordwithInvalidEmail();
+		mForgotPasswordwithNotRegisteredEmail = new ForgotPasswordwithNotRegisteredEmail();
+
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -28,11 +35,23 @@ public class TC_ForgotPasswordwithINValidData extends ApplicationUtility {
 	}
 
 	@Test(priority = 2, enabled = true, dependsOnMethods = "TC_ValidDomainSubmission")
-	public void TC_InvalidForgotPassword() {
+	public void TC_InValidForgotPasswordwithBlankEmail() {
 
-		mForgotPassword.inValidForgotPasswordwithBlankEmail();
-		mForgotPassword.inValidForgotPasswordwithInvalidEmail();
-		mForgotPassword.inValidForgotPasswordwithNotRegisteredEmail();
+		mForgotPasswordwithBlankEmail.inValidForgotPasswordwithBlankEmail();
+		mForgotPasswordwithInvalidEmail.inValidForgotPasswordwithInvalidEmail();
+		mForgotPasswordwithNotRegisteredEmail.inValidForgotPasswordwithNotRegisteredEmail();
+	}
+
+	@Test(priority = 3, enabled = true, dependsOnMethods = "TC_InValidForgotPasswordwithBlankEmail")
+	public void TC_InValidForgotPasswordwithInvalidEmail() {
+
+		mForgotPasswordwithInvalidEmail.inValidForgotPasswordwithInvalidEmail();
+	}
+
+	@Test(priority = 4, enabled = true, dependsOnMethods = "TC_InValidForgotPasswordwithInvalidEmail")
+	public void TC_InValidForgotPasswordwithNotRegisteredEmail() {
+
+		mForgotPasswordwithNotRegisteredEmail.inValidForgotPasswordwithNotRegisteredEmail();
 	}
 
 	@AfterTest

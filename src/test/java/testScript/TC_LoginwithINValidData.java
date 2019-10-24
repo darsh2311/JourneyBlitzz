@@ -5,18 +5,28 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignIn;
 import logicalView.VerifyDomain;
+import logicalView.InvalidSignInScripts.SignInwithBlankEmail;
+import logicalView.InvalidSignInScripts.SignInwithBlankEmailPassword;
+import logicalView.InvalidSignInScripts.SignInwithBlankPassword;
+import logicalView.InvalidSignInScripts.SignInwithInvalidEmailPassword;
 
 public class TC_LoginwithINValidData extends ApplicationUtility {
-	SignIn mSignIn;
+
 	VerifyDomain mVerifyDomain;
+	SignInwithBlankEmail mSignInwithBlankEmail;
+	SignInwithBlankEmailPassword mSignInwithBlankEmailPassword;
+	SignInwithBlankPassword mSignInwithBlankPassword;
+	SignInwithInvalidEmailPassword mSignInwithInvalidEmailPassword;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
-		mSignIn = new SignIn();
+		mSignInwithBlankEmail = new SignInwithBlankEmail();
+		mSignInwithBlankEmailPassword = new SignInwithBlankEmailPassword();
+		mSignInwithBlankPassword = new SignInwithBlankPassword();
+		mSignInwithInvalidEmailPassword = new SignInwithInvalidEmailPassword();
 		mVerifyDomain = new VerifyDomain();
 	}
 
@@ -27,12 +37,29 @@ public class TC_LoginwithINValidData extends ApplicationUtility {
 	}
 
 	@Test(priority = 2, enabled = true, dependsOnMethods = "TC_ValidDomainSubmission")
-	public void TC_InvalidSignin() {
+	public void TC_InValidSignInwithBlankEmailPassword() {
 
-		mSignIn.inValidSignInwithBlankEmail();
-		mSignIn.inValidSignInwithBlankEmailPassword();
-		mSignIn.inValidSignInwithBlankPassword();
-		mSignIn.signInwithInvalidEmailPassword();
+		mSignInwithBlankEmailPassword.inValidSignInwithBlankEmailPassword();
+
+	}
+
+	@Test(priority = 3, enabled = true, dependsOnMethods = "TC_InValidSignInwithBlankEmailPassword")
+	public void TC_InValidSignInwithBlankEmail() {
+
+		mSignInwithBlankEmail.inValidSignInwithBlankEmail();
+
+	}
+
+	@Test(priority = 4, enabled = true, dependsOnMethods = "TC_InValidSignInwithBlankEmail")
+	public void TC_InValidSignInwithBlankPassword() {
+
+		mSignInwithBlankPassword.inValidSignInwithBlankPassword();
+	}
+
+	@Test(priority = 5, enabled = true, dependsOnMethods = "TC_InValidSignInwithBlankPassword")
+	public void TC_InvalidsignInwithInvalidEmailPassword() {
+
+		mSignInwithInvalidEmailPassword.signInwithInvalidEmailPassword();
 	}
 
 	@AfterTest

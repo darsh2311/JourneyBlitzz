@@ -5,22 +5,22 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.VerifyDomain;
+import logicalView.VerifyDomainwithInvalidData;
 
 public class TC_VerifyDomainwithINValidData extends ApplicationUtility {
 
-	VerifyDomain mVerifyDomain;
+	VerifyDomainwithInvalidData mVerifyDomainwithInvalidData;
 
 	@BeforeTest
 	public void beforeTest() {
 		openBrowser();
-		mVerifyDomain = new VerifyDomain();
+		mVerifyDomainwithInvalidData = new VerifyDomainwithInvalidData();
 	}
 
 	@Test
 	public void TC_InvalidDomainSubmission() {
 
-		mVerifyDomain.VerifyInValidDomain();
+		mVerifyDomainwithInvalidData.VerifyInValidDomain();
 	}
 
 	@AfterTest

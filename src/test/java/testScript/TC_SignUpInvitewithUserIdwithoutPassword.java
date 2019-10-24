@@ -5,43 +5,56 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignINwithSignUP;
-import logicalView.SignIn;
-import logicalView.SignUp;
+import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.InvalidSignUPScripts.AddUserSignUp;
+import logicalView.ValidSignUpScripts.SignUPVerifyEmail;
+import logicalView.ValidSignUpScripts.SignUpwithUserIdwithOutPassword;
 
 public class TC_SignUpInvitewithUserIdwithoutPassword extends ApplicationUtility {
-	SignIn mSignIn;
+
+	SignUpwithUserIdwithOutPassword mSignUpwithUserIdwithOutPassword;
 	VerifyDomain mVerifyDomain;
+	SignInwithValidData mSignIn;
 	Signout mSignOut;
-	SignUp mSignUp;
-	SignINwithSignUP mSignINwithSignUP;
+	Signout mSignOut1;
+	AddUserSignUp mAddUserSignUp;
+	SignUPVerifyEmail mSignUPVerifyEmail;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
-		mSignIn = new SignIn();
+		mSignUpwithUserIdwithOutPassword = new SignUpwithUserIdwithOutPassword();
 		mVerifyDomain = new VerifyDomain();
+		mSignIn = new SignInwithValidData();
 		mSignOut = new Signout();
-		mSignUp = new SignUp();
-		mSignINwithSignUP = new SignINwithSignUP();
+		mSignOut1 = new Signout();
+		mAddUserSignUp = new AddUserSignUp();
+		mSignUPVerifyEmail = new SignUPVerifyEmail();
+
 	}
 
 	@Test(priority = 1, enabled = true)
-
-	public void TC_SignUpwithUserIdwithoutPassword() {
+	public void SignInforSignUp() {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mSignUp.addUser();
-		mSignUp.userIdSignUpwithoutPassword();
-		mSignOut.SignOut();
-		mSignINwithSignUP.VerifySignUpDomainwithUserId(mSignUp.userId);
-		mSignINwithSignUP.signUpDetails();
-		mSignOut.SignOut();
+		mAddUserSignUp.addUser();
+	}
 
+	@Test(priority = 2, enabled = true)
+	public void TC_SignUpwithEmailwithoutPassword() {
+
+		mSignUpwithUserIdwithOutPassword.userIdSignUpwithoutPassword();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void TC_SignInafterRegister() {
+		mSignOut.SignOut();
+		mVerifyDomain.VerifyValidDomain();
+		mSignUPVerifyEmail.VerifySignUpDomainwithEmail(mSignUpwithUserIdwithOutPassword.userId);
 	}
 
 	@AfterTest

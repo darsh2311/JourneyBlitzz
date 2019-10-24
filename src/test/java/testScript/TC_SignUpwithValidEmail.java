@@ -5,42 +5,50 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.SignINwithSignUP;
-import logicalView.SignIn;
-import logicalView.SignUp;
+import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.ValidSignUpScripts.SignUpwithEmailId;
+import logicalView.ValidSignUpScripts.ValidSignInwithSignUp;
 
 public class TC_SignUpwithValidEmail extends ApplicationUtility {
-	SignIn mSignIn;
+
+	SignUpwithEmailId mSignUpwithEmailId;
 	VerifyDomain mVerifyDomain;
+	SignInwithValidData mSignIn;
+	ValidSignInwithSignUp mValidSignInwithSignUp;
 	Signout mSignOut;
-	SignUp mSignUp;
-	SignINwithSignUP mSignINwithSignUP;
 
 	@BeforeTest
 	public void beforeTest() {
 
 		openBrowser();
-		mSignIn = new SignIn();
+		mSignUpwithEmailId = new SignUpwithEmailId();
 		mVerifyDomain = new VerifyDomain();
+		mSignIn = new SignInwithValidData();
+		mValidSignInwithSignUp = new ValidSignInwithSignUp();
 		mSignOut = new Signout();
-		mSignUp = new SignUp();
-		mSignINwithSignUP = new SignINwithSignUP();
 
 	}
 
 	@Test(priority = 1, enabled = true)
-	public void TC_SignUpwithEmailandPassword() {
+	public void SignInforSignUp() {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mSignUp.addUser();
-		mSignUp.signUpAdminwithEmail();
+	}
+
+	@Test(priority = 2, enabled = true)
+	public void TC_SignUpwithEmailandPassword() {
+		mSignUpwithEmailId.signUpAdminwithEmail();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void TC_SignInafterRegister() {
+
 		mSignOut.SignOut();
 		mVerifyDomain.VerifyValidDomain();
-		mSignINwithSignUP.validSignInwithSignup(mSignUp.email);
-		mSignOut.SignOut();
+		mValidSignInwithSignUp.validSignInwithSignup(mSignUpwithEmailId.email);
 	}
 
 	@AfterTest

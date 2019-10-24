@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_SignUpwithINValidData2">
+      <class name="testScript.TC_NeedHelp">
         <methods>
+          <include name="TC_Need_Help"/>
           <include name="beforeTest"/>
-          <include name="TC_SignUpwithInvalidData"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- testScript.TC_SignUpwithINValidData2 -->
+      </class> <!-- testScript.TC_NeedHelp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
