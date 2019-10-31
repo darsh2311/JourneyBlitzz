@@ -1,5 +1,9 @@
 package logicalView.ValidSignUpScripts;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.JavascriptExecutor;
 
 import commonFunctions.ApplicationUtility;
@@ -23,11 +27,30 @@ public class SignUPVerifyEmail extends ApplicationUtility {
 
 		// Click on Verify button
 		objSignUp.clickverifyEmail();
-		waitTime(100);
+		waitTime(3000);
 
 		// Upload the profile Photo
 		objSignUp.uploadPhoto();
-		waitTime(100);
+		waitTime(1000);
+
+		// Using the Robot class to upload the file
+
+		try {
+			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/Profilephoto.jpg");
+			Robot robot = new Robot();
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			waitTime(1500);
+
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		waitTime(3000);
 
 		// Enter FirstName
 		objSignUp.enterVerifiedFirstname(BaseClass.getValueFromPropertyFile("signUp.properties", "VerifiedFirstname"));

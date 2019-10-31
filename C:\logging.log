@@ -1053,3 +1053,290 @@
 2019-10-24 19:18:53 INFO  ApplicationUtility:29 - SignIn is successful: Passed
 2019-10-24 19:19:20 INFO  ApplicationUtility:23 - SignOut submission: Passed
 2019-10-24 19:19:23 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:27:11 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:27:13 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:27:19 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:27:21 INFO  ApplicationUtility:17 - error
+2019-10-31 12:27:54 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:27:56 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:28:05 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:28:07 INFO  ApplicationUtility:17 - error
+2019-10-31 12:28:39 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:28:42 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:28:47 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:29:21 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:29:24 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:29:31 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:30:42 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:30:44 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:30:50 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:33:48 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:33:51 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:33:57 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:34:01 INFO  ApplicationUtility:18 - d
+2019-10-31 12:43:40 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:43:43 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:43:52 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:43:56 INFO  ApplicationUtility:20 - d
+2019-10-31 12:45:19 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:45:21 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:45:29 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:45:34 INFO  ApplicationUtility:20 - d
+2019-10-31 12:46:18 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:46:21 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:46:32 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:46:36 INFO  ApplicationUtility:20 - Click to select Label
+2019-10-31 12:46:36 INFO  ApplicationUtility:23 - error
+2019-10-31 12:48:17 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:48:21 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:48:27 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 12:49:07 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 12:49:10 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 12:49:15 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:03:18 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:03:21 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 13:03:28 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:03:35 INFO  ApplicationUtility:20 - Click to select Label
+2019-10-31 13:03:35 INFO  ApplicationUtility:23 - error
+2019-10-31 13:04:53 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:04:55 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 13:05:02 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:05:09 INFO  ApplicationUtility:20 - Click to select Label
+2019-10-31 13:05:09 INFO  ApplicationUtility:23 - error
+2019-10-31 13:07:08 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:07:11 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 13:07:16 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:07:23 INFO  ApplicationUtility:20 - Click to select Label
+2019-10-31 13:07:23 INFO  ApplicationUtility:23 - error
+2019-10-31 13:14:07 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:14:10 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 13:14:16 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:14:23 INFO  ApplicationUtility:20 - Click to select Label
+2019-10-31 13:14:23 INFO  ApplicationUtility:23 - error
+2019-10-31 13:14:32 INFO  ApplicationUtility:61 - YOU CREATED "Goat" WITH 1 MEMBER(S)
+2019-10-31 13:14:32 INFO  ApplicationUtility:65 - Successfully created Inquiry: Failed
+2019-10-31 13:15:28 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:15:31 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 13:15:38 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-10-31 13:17:21 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 13:17:23 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 13:17:30 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 13:17:37 INFO  ApplicationUtility:22 - Click to select Label
+2019-10-31 13:17:37 INFO  ApplicationUtility:25 - error
+2019-10-31 13:17:47 INFO  ApplicationUtility:63 - YOU CREATED "Test Inquiry116669" WITH 1 MEMBER(S)
+2019-10-31 13:17:47 INFO  ApplicationUtility:65 - Successfully created Inquiry: Passed
+2019-10-31 15:10:35 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:10:38 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 15:10:46 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:14:09 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:14:12 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 15:14:24 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:14:30 INFO  ApplicationUtility:35 - Click to select Label
+2019-10-31 15:14:30 INFO  ApplicationUtility:37 - There is no Label for the current Account, So skipping the field.
+2019-10-31 15:16:32 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:16:35 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:16:41 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:16:47 INFO  ApplicationUtility:35 - Click to select Label
+2019-10-31 15:16:47 INFO  ApplicationUtility:37 - There is no Label for the current Account, So skipping the field.
+2019-10-31 15:17:24 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:17:26 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:17:32 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:17:38 INFO  ApplicationUtility:35 - Click to select Label
+2019-10-31 15:17:38 INFO  ApplicationUtility:37 - There is no Label for the current Account, So skipping the field.
+2019-10-31 15:17:55 INFO  ApplicationUtility:105 - YOU CREATED "Test Inquiry683" WITH 1 MEMBER(S)
+2019-10-31 15:17:55 INFO  ApplicationUtility:108 - Successfully created Inquiry: Passed
+2019-10-31 15:20:31 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:20:33 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:20:39 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:20:48 INFO  ApplicationUtility:48 - 0
+2019-10-31 15:20:49 INFO  ApplicationUtility:48 - 1
+2019-10-31 15:22:19 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:22:22 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:22:28 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:25:25 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:25:28 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:25:34 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:27:48 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:27:50 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:27:58 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:29:56 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:29:58 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:30:07 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:31:07 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:31:10 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:31:22 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:33:27 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:33:30 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:33:37 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:34:40 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:34:43 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:34:49 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:35:11 INFO  ApplicationUtility:95 - YOU CREATED "Test Inquiry3691" WITH 1 MEMBER(S)
+2019-10-31 15:35:11 INFO  ApplicationUtility:98 - Successfully created Inquiry: Passed
+2019-10-31 15:37:49 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:37:52 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:37:58 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:39:38 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:39:50 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:41:28 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:41:31 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:41:38 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:42:08 INFO  ApplicationUtility:88 - Successfully created Inquiry: Passed
+2019-10-31 15:45:34 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:45:37 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 15:45:42 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:46:58 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 15:47:01 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 15:47:10 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 15:47:32 INFO  ApplicationUtility:85 - Successfully created Inquiry: Passed
+2019-10-31 16:07:16 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:07:19 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:07:27 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:07:49 INFO  ApplicationUtility:85 - Successfully created Inquiry: Passed
+2019-10-31 16:26:18 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:26:20 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:26:29 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:26:33 INFO  ApplicationUtility:39 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 16:26:35 INFO  ApplicationUtility:48 - New Inquiry not created due to No participant to add. Try to add new User before creating Inquiry.
+2019-10-31 16:27:50 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:27:53 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:28:03 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:28:24 INFO  ApplicationUtility:103 - Successfully created Inquiry: Passed
+2019-10-31 16:29:26 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:29:29 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:29:38 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:29:51 INFO  ApplicationUtility:93 - There is no Label for the current Account, So skipping the field.
+2019-10-31 16:29:59 INFO  ApplicationUtility:103 - Successfully created Inquiry: Passed
+2019-10-31 16:39:46 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:39:49 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:39:59 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:40:27 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 16:40:29 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:42:27 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:42:30 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:42:39 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:42:51 INFO  ApplicationUtility:93 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 16:43:37 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:43:40 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:43:48 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:44:14 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 16:44:17 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:50:03 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:50:05 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 16:50:14 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:50:39 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 16:50:42 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 16:52:44 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 16:52:47 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 16:52:55 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 16:53:10 INFO  ApplicationUtility:95 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 16:53:18 INFO  ApplicationUtility:105 - Successfully created Inquiry: Passed
+2019-10-31 17:04:04 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 17:04:07 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:04:16 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:04:45 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 17:04:47 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:05:32 INFO  ApplicationUtility:29 - Browser Driver is now initilized.
+2019-10-31 17:05:34 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:05:42 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:06:09 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 17:06:12 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:12:36 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 17:12:39 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:12:49 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:13:12 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-10-31 17:13:14 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:52:38 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 17:52:40 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:52:49 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:52:53 INFO  ApplicationUtility:38 - 
+2019-10-31 17:54:38 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 17:54:41 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 17:54:51 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:54:56 INFO  ApplicationUtility:38 - 
+2019-10-31 17:56:51 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 17:56:54 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 17:57:10 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 17:57:15 INFO  ApplicationUtility:38 - 
+2019-10-31 18:00:16 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:00:21 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 18:00:31 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:00:36 INFO  ApplicationUtility:39 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:02:37 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:02:39 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:02:48 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:02:53 INFO  ApplicationUtility:39 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:06:55 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:06:58 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:07:07 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:07:12 INFO  ApplicationUtility:39 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:07:14 INFO  ApplicationUtility:52 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:07:16 INFO  ApplicationUtility:61 - New Inquiry not created due to No Contact/Group participant to add. Try to add new User before creating Inquiry.
+2019-10-31 18:09:35 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:09:37 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:09:47 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:09:52 INFO  ApplicationUtility:38 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:10:49 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:10:51 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:10:59 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:11:04 INFO  ApplicationUtility:38 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:17:02 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:17:04 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:17:15 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:17:20 INFO  ApplicationUtility:38 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:19:39 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:19:42 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:19:50 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:19:55 INFO  ApplicationUtility:38 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 18:20:17 INFO  ApplicationUtility:125 - Successfully created Inquiry: Passed
+2019-10-31 18:22:06 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:22:09 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:22:18 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:22:33 INFO  ApplicationUtility:115 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 18:22:40 INFO  ApplicationUtility:125 - Successfully created Inquiry: Passed
+2019-10-31 18:28:31 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:28:34 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 18:28:45 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:29:00 INFO  ApplicationUtility:115 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 18:29:08 INFO  ApplicationUtility:125 - Successfully created Inquiry: Passed
+2019-10-31 18:36:27 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 18:36:30 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 18:36:53 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 18:37:08 INFO  ApplicationUtility:115 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 18:37:17 INFO  ApplicationUtility:125 - Successfully created Inquiry: Passed
+2019-10-31 19:00:29 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:00:31 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:00:41 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:02:32 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:02:35 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:02:44 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:03:31 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:03:34 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:03:43 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:06:21 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:06:24 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 19:06:51 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:07:13 INFO  ApplicationUtility:119 - There is no Label for the current Account, Please add New Labels to add while creating the New Inquiry.
+2019-10-31 19:07:21 INFO  ApplicationUtility:129 - Successfully created Inquiry: Passed
+2019-10-31 19:09:36 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:09:38 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-10-31 19:09:53 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:11:39 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:11:42 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:11:50 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:11:55 INFO  ApplicationUtility:35 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 19:11:57 INFO  ApplicationUtility:44 - New Inquiry not created due to No Contact/Group participant to add. Try to add new User before creating Inquiry.
+2019-10-31 19:13:42 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:13:45 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:13:54 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:13:58 INFO  ApplicationUtility:35 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 19:14:01 INFO  ApplicationUtility:44 - New Inquiry not created due to No Contact/Group participant to add. Try to add new User before creating Inquiry.
+2019-10-31 19:19:04 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:19:09 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:19:17 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:19:25 INFO  ApplicationUtility:61 - There is no Participant to add for Creating new Inquiry.
+2019-10-31 19:19:27 INFO  ApplicationUtility:70 - New Inquiry not created due to Group participant to add. Try to add new User before creating Inquiry.
+2019-10-31 19:20:44 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-10-31 19:20:46 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-10-31 19:20:56 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-10-31 19:21:24 INFO  ApplicationUtility:129 - Successfully created Inquiry: Passed

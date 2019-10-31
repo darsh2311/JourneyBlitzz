@@ -34,12 +34,11 @@ public class ObjectSignUp {
 	}
 
 	// Add Photo for SignUp
-	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/a[1]")
+	@FindBy(how = How.XPATH, using = "//a[@id='upload_link']")
 	public WebElement addPhoto;
-	// html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/a[1]
 
 	public void uploadPhoto() {
-		addPhoto.sendKeys("/home/darshan/eclipse-workspace/Journey/src/test/resources/photo.jpg");
+		addPhoto.click();
 	}
 
 	// Add Firstname for SignUp

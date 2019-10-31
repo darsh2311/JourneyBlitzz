@@ -1,5 +1,7 @@
 package commonFunctions;
 
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
@@ -88,5 +90,11 @@ public class ApplicationUtility {
 
 	public void refreshPage() {
 		driver.navigate().refresh();
+	}
+
+	public static void setClipboardData(String string) {
+		// StringSelection is a class that can be used for copy and paste operations.
+		StringSelection stringSelection = new StringSelection(string);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 	}
 }
