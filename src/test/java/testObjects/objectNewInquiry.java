@@ -29,6 +29,14 @@ public class objectNewInquiry {
 		newInquiryName.sendKeys(strInquiryName);
 	}
 
+	// New Inquiry Name
+	@FindBy(xpath = "//input[@id='title']")
+	public WebElement ClicknewInquiryName;
+
+	public void clickNewInquiryName() {
+		ClicknewInquiryName.click();
+	}
+
 	// New Inquiry Description
 	@FindBy(xpath = "//textarea[@id='style-3']")
 	public WebElement newInquiryDescription;
@@ -67,6 +75,18 @@ public class objectNewInquiry {
 
 	public void selectAddParticipant() {
 		selectParticipant.click();
+	}
+
+	// Select participant locator
+	@FindBy(xpath = "//div[@id='contacts']//div[4]//div[1]//div[1]//div[1]//label[1]//span[1]")
+	public WebElement checkParticipant;
+
+	// Select participant locator
+	@FindBy(xpath = "//div[@id='contacts']//div[4]//div[1]//div[1]//div[1]//label[1]//span[1]")
+	public WebElement selectParticipant2;
+
+	public void selectAddParticipant2() {
+		selectParticipant2.click();
 	}
 
 	// Select Group participant locator
@@ -144,4 +164,17 @@ public class objectNewInquiry {
 	public void clickAddGroupParticipant() {
 		addGroupParticipant.click();
 	}
+
+	// Invalid Photo Message
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[6]")
+	public WebElement invalidPhoto;
+
+	// Invalid Description Message
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/div[3]/span[2]")
+	public WebElement invalidDescription;
+
+	// Invalid Title Message
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[2]/span[2]")
+	public WebElement invalidTitle;
+
 }

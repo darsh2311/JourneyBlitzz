@@ -1,23 +1,23 @@
 package testScript;
 
-import java.awt.AWTException;
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.NewInquiry;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.InvalidNewInquiryScripts.NewInquirywithBlankValues;
+import logicalView.InvalidNewInquiryScripts.NewInquirywithInvalidValues;
 
-public class TC_NewInquiry extends ApplicationUtility {
+public class TC_NewInquirywithInvalidData extends ApplicationUtility {
 
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
-	NewInquiry mNewInquiry;
+	NewInquirywithBlankValues mNewInquirywithInvalidData;
+	NewInquirywithInvalidValues mNewInquirywithInvalidValues;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -26,7 +26,8 @@ public class TC_NewInquiry extends ApplicationUtility {
 		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
-		mNewInquiry = new NewInquiry();
+		mNewInquirywithInvalidData = new NewInquirywithBlankValues();
+		mNewInquirywithInvalidValues = new NewInquirywithInvalidValues();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -42,9 +43,17 @@ public class TC_NewInquiry extends ApplicationUtility {
 	}
 
 	@Test(priority = 3, enabled = true, dependsOnMethods = "TC_SignIn")
-	public void TC_NI() throws InterruptedException, AWTException {
+	public void TC_CreateNewInquirywithBlankValues() {
 
-		mNewInquiry.createNewInquiry();
+		mNewInquirywithInvalidData.createNewInquiry();
+
+	}
+
+	@Test(priority = 4, enabled = true, dependsOnMethods = "TC_SignIn")
+	public void TC_CreateNewInquirywithInvalidValues() {
+
+		mNewInquirywithInvalidValues.createNewInquiry();
+
 	}
 
 	@AfterTest

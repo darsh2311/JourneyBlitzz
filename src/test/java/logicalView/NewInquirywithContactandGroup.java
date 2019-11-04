@@ -4,8 +4,9 @@ import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.objectNewInquiry;
 
-public class NewInquirywithBothContactsGroup extends ApplicationUtility {
-	public String inquiryName = "Test Inquiry" + (int) (Math.random() * 9999);
+public class NewInquirywithContactandGroup extends ApplicationUtility {
+
+	String inquiryName = "Test Inquiry" + (int) (Math.random() * 9999);
 	objectNewInquiry mobjectNewInquiry = new objectNewInquiry(driver);
 	NewInquiry mNewInquiry = new NewInquiry();
 

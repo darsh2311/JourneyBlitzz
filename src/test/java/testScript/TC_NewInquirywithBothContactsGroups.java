@@ -4,7 +4,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.NewInquirywithBothContactsGroup;
+import logicalView.NewInquirywithContactandGroup;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
@@ -14,7 +14,7 @@ public class TC_NewInquirywithBothContactsGroups extends ApplicationUtility {
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
-	NewInquirywithBothContactsGroup mNewInquirywithBothContactsGroup;
+	NewInquirywithContactandGroup mNewInquirywithBothContactsGroup;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -23,7 +23,7 @@ public class TC_NewInquirywithBothContactsGroups extends ApplicationUtility {
 		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
-		mNewInquirywithBothContactsGroup = new NewInquirywithBothContactsGroup();
+		mNewInquirywithBothContactsGroup = new NewInquirywithContactandGroup();
 	}
 
 	@Test(priority = 1, enabled = true)

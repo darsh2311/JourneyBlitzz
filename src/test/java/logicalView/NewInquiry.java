@@ -75,6 +75,11 @@ public class NewInquiry extends ApplicationUtility {
 			mobjectNewInquiry.selectAddParticipant();
 			waitTime(1000);
 
+			/*
+			 * // Select the second Contact Participant
+			 * mobjectNewInquiry.selectAddParticipant(); waitTime(1000);
+			 */
+
 			// Click on Add member after selecting the participantS
 			mobjectNewInquiry.clickAddMember();
 			waitTime(1000);
