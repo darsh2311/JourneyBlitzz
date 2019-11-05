@@ -94,11 +94,11 @@ public class AttachMedia extends ApplicationUtility {
 
 		// Attach media method
 		attachMedia("inquiryDoc1MB.docx");
-		waitTime(1500);
+		waitTime(500);
 
 		// Click on Send to upload the image with drawing
 		mObjectInquiryFunctionalities.uploadSend();
-		waitTime(3000);
+		waitTime(5000);
 
 	}
 

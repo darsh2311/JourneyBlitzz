@@ -25,7 +25,7 @@ public class VerifyDomain extends ApplicationUtility {
 		} else {
 			logger.error("Domain submission: Failed");
 		}
-		waitTime(700);
+		waitTime(1000);
 	}
 
 }

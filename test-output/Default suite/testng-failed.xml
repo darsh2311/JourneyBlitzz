@@ -5,13 +5,9 @@
     <classes>
       <class name="testScript.TC_InquiryInternalFunctionalities">
         <methods>
-          <include name="TC_ValidDomainSubmission"/>
-          <include name="TC_AttachMediaDocument"/>
           <include name="beforeTest"/>
-          <include name="TC_SignIn"/>
-          <include name="TC_AttachMediaVideo"/>
-          <include name="TC_AddParticipantInInquiry"/>
-          <include name="TC_AttachMediaPhoto"/>
+          <include name="afterTest"/>
+          <include name="TC_ArchiveInquiry"/>
         </methods>
       </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
     </classes>

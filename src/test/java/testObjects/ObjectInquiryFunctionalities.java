@@ -132,6 +132,242 @@ public class ObjectInquiryFunctionalities {
 	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]")
 	public WebElement noGroupParticipantMessage;
 
+	// Close Add Participant
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/div[2]/div[2]/span[1]")
+	public WebElement closeAddParticipantSidebar;
+
+	public void closeAddParticipantSidebar() {
+		closeAddParticipantSidebar.click();
+	}
+
+/////////////////////////////////////////  Add
+///////////////////////////////////////// Notes /////////////////////////////////////////////
+
+	// Add Notes Icon
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/li[3]/a[1]")
+	public WebElement addNotesIcon;
+
+	public void clickAddNotes() {
+		addNotesIcon.click();
+	}
+
+	// Enter Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[2]/textarea[1]")
+	public WebElement enterNotes;
+
+	public void enterNote(String strNote) {
+		enterNotes.sendKeys(strNote);
+	}
+
+	// Submit Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[2]/a[1]/li[1]")
+	public WebElement submitNotes;
+
+	public void submitNote() {
+		submitNotes.click();
+	}
+
+	// Refresh Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]")
+	public WebElement refreshNotes;
+
+	public void clickRefreshNote() {
+		refreshNotes.click();
+	}
+
+	// Close Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/div[2]/div[2]/span[1]")
+	public WebElement closeNotes;
+
+	public void clickCloseNote() {
+		closeNotes.click();
+	}
+
+	// Ellipsis Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/i[1]")
+	public WebElement ellipsisNote;
+
+	public void clickEllipsisNote() {
+		ellipsisNote.click();
+	}
+
+	// Edit Notes Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]/div[1]")
+	public WebElement editNote;
+
+	public void clickEditNote() {
+		editNote.click();
+	}
+
+	// Edit Notes Description Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[5]/textarea[1]")
+	public WebElement entereditNote;
+
+	public void enterEditNote(String strEditNote) {
+		entereditNote.clear();
+		entereditNote.sendKeys(strEditNote);
+	}
+
+	// Cancel Notes Description Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[6]/input[1]")
+	public WebElement cancelEditNote;
+
+	public void cancelEditNote() {
+		cancelEditNote.click();
+	}
+
+	// Done Notes Description Textbox
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[6]/input[2]")
+	public WebElement doneEditNote;
+
+	public void doneEditNote() {
+		doneEditNote.click();
+	}
+
+	// Delete Notes
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[2]/div[1]")
+	public WebElement deleteNote;
+
+	public void clickDeleteNote() {
+		deleteNote.click();
+	}
+
+	// Cancel Delete Notes Popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[3]/button[1]")
+	public WebElement cancelDeleteNote;
+
+	public void cancelDeleteNote() {
+		cancelDeleteNote.click();
+	}
+
+	// Close Delete Notes Popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/button[1]")
+	public WebElement closeDeleteNote;
+
+	public void closeDeleteNote() {
+		closeDeleteNote.click();
+	}
+
+	// Delete Confirm button
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[3]/button[2]")
+	public WebElement confirmDeleteNote;
+
+	public void confirmDeleteNote() {
+		confirmDeleteNote.click();
+	}
+
+/////////////////////////////////////////  Remove
+///////////////////////////////////////// Members /////////////////////////////////////////////
+
+	// Click on Ellipsis menu for Inquiry Details
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/li[6]/a[1]")
+	public WebElement ellipsisInquiryDetails;
+
+	public void clickInquiryDetails() {
+		ellipsisInquiryDetails.click();
+	}
+
+	// Click on Members
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/h5[1]")
+	public WebElement addedMemberList;
+
+	public void clickAddedMemberList() {
+		addedMemberList.click();
+	}
+
+	// Click on Remove icon of the first Member
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/i[1]")
+	public WebElement removeIcon;
+
+	public void clickRemoveIcon() {
+		removeIcon.click();
+	}
+
+	// Click on the Cancel button of the remove member popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[5]/div[2]/div[1]/div[3]/button[1]")
+	public WebElement cancelRemovePopup;
+
+	public void clickCancelRemovePopup() {
+		cancelRemovePopup.click();
+	}
+
+	// Click on Yes to confirm delete of the remove member popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[5]/div[2]/div[1]/div[3]/button[2]")
+	public WebElement confirmDelete;
+
+	public void clickConfirmDelete() {
+		confirmDelete.click();
+	}
+
+	// Click on X to close the sidebar
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/div[2]/div[2]/span[1]")
+	public WebElement closeInquiryDetails;
+
+	public void clickCloseInquiryDetails() {
+		closeInquiryDetails.click();
+	}
+
+/////////////////////////////////////////  Archive
+///////////////////////////////////////// Inquiries /////////////////////////////////////////////
+
+	// Archive Inquiry Icon
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/li[5]/a[1]")
+	public WebElement archiveInquiry;
+
+	public void clickArchiveInquiryIcon() {
+		archiveInquiry.click();
+	}
+
+	// Cancel for the Archive Popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[3]/button[1]")
+	public WebElement cancelArchiveButton;
+
+	public void cancelArchiveButton() {
+		cancelArchiveButton.click();
+	}
+
+	// Archive Inquiry Icon
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[3]/button[2]")
+	public WebElement confirmArchiveButton;
+
+	public void confirmArchiveButton() {
+
+		confirmArchiveButton.click();
+	}
+
+	// Unarchive Inquiry Icon
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/a[1]")
+	public WebElement unarchiveInquiry;
+
+	public void clickUnArchiveInquiryIcon() {
+		unarchiveInquiry.click();
+	}
+
+	// Cancel for the UnArchive Popup
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[15]/div[2]/div[1]/div[1]/div[2]/div[2]/button[1]")
+	public WebElement cancelUnArchiveButton;
+
+	public void cancelUnArchiveButton() {
+		cancelUnArchiveButton.click();
+	}
+
+	// Archive Inquiry Icon
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[15]/div[2]/div[1]/div[1]/div[2]/div[2]/button[2]")
+	public WebElement confirmUnArchiveButton;
+
+	public void confirmUnArchiveButton() {
+
+		confirmUnArchiveButton.click();
+	}
+
+	// Inquiry List Dropdown
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/button[1]")
+	public WebElement inquiryListDropdown;
+
+	public void clickInquiryListDropdown() {
+		inquiryListDropdown.click();
+	}
+
 	// Page Factory constructor
 	public ObjectInquiryFunctionalities(WebDriver driver) {
 		PageFactory.initElements(driver, this);
