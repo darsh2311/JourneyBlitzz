@@ -14,13 +14,6 @@ import testObjects.ObjectInquiryFunctionalities;
 public class AttachMedia extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
-	public void openInquiry() {
-
-		// Click on the Inquiry from the list
-		mObjectInquiryFunctionalities.clickInquiry();
-		waitTime(2500);
-	}
-
 	public void attachMedia(String strMedia) {
 
 		// Click on the attachment icon in the chat

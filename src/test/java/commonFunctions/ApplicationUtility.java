@@ -3,6 +3,7 @@ package commonFunctions;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +39,7 @@ public class ApplicationUtility {
 		String browserName = BaseClass.getValueFromPropertyFile("Property.properties", "browserName");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--disable-notifications");
+			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
 			System.setProperty("webdriver.chrome.driver", "/home/darshan/Downloads/chromedriver_linux64/chromedriver");
 			driver = new ChromeDriver(options);
 

@@ -368,6 +368,93 @@ public class ObjectInquiryFunctionalities {
 		inquiryListDropdown.click();
 	}
 
+///////////////////////////////////////// Inquiry
+///////////////////////////////////////// Details /////////////////////////////////////////////
+
+	// Inquiry Image
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/a[1]/div[1]")
+	public WebElement inquiryImage;
+
+	public void clickInquiryImage() {
+		inquiryImage.click();
+	}
+
+	// Close Inquiry Image
+	@FindBy(xpath = "/html[1]/body[1]/div[5]/div[5]")
+	public WebElement closeInquiryImage;
+
+	public void clickCloseInquiryImage() {
+		closeInquiryImage.click();
+	}
+
+	// Edit Inquiry button
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h5[1]/a[2]")
+	public WebElement editInquiryButton;
+
+	public void clickEditInquiryTitleButton() {
+		editInquiryButton.click();
+	}
+
+	// Edit Inquiry Title
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h5[1]/input[1]")
+	public WebElement editInquiryTitle;
+
+	public void enterEditInquiryTitle(String strEditTitle) {
+		editInquiryTitle.clear();
+		editInquiryTitle.sendKeys(strEditTitle);
+	}
+
+	// Edit Inquiry Submit
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h5[1]/a[1]")
+	public WebElement editInquirySubmit;
+
+	public void clickEditInquirySubmit() {
+		editInquirySubmit.click();
+	}
+
+	// Edit Inquiry Cancel
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/h5[1]/a[2]")
+	public WebElement editInquiryCancel;
+
+	public void clickEditInquiryCancel() {
+		editInquiryCancel.click();
+	}
+
+///////////////////////////////////////// Video
+///////////////////////////////////////// Call /////////////////////////////////////////////
+
+	// Video Call icon locator
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/li[1]/a[1]")
+	public WebElement clickVideoCall;
+
+	public void clickVideoCall() {
+		clickVideoCall.click();
+	}
+
+	// start Video Call icon locator
+	@FindBy(xpath = "//*[@id=\"style-3\"]/div[1]/div/div[3]/div/div/div/a/div/div/i")
+	public WebElement clickStartVideoCall;
+
+	public void clickStartVideoCall() {
+		clickStartVideoCall.click();
+	}
+
+	// Close Video Call Side bar locator
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/div[2]/div[2]/span[1]")
+	public WebElement closeVideoCallSidebar;
+
+	public void closeVideoCallSideBar() {
+		closeVideoCallSidebar.click();
+	}
+
+	// Disconnect button for Video call
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[10]/div[2]/div[1]/div[3]/div[1]/button[3]")
+	public WebElement disconnectCallButton;
+
+	public void clickDisconnectCallButton() {
+		disconnectCallButton.click();
+	}
+
 	// Page Factory constructor
 	public ObjectInquiryFunctionalities(WebDriver driver) {
 		PageFactory.initElements(driver, this);

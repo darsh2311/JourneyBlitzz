@@ -1814,3 +1814,202 @@
 2019-11-05 19:52:07 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
 2019-11-05 19:52:10 INFO  ApplicationUtility:24 - Domain submission: Passed
 2019-11-05 19:52:19 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 11:57:14 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 11:57:17 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 11:57:25 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 11:58:29 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 11:58:32 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 11:58:40 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 12:00:17 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 12:00:19 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 12:00:29 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 12:01:30 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 12:01:32 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 12:01:50 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 12:02:59 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 12:03:01 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 12:03:11 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 12:45:47 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 12:46:15 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 12:46:18 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 12:46:27 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 12:46:38 INFO  ApplicationUtility:25 - Inquiry image closed.
+2019-11-06 12:46:47 INFO  ApplicationUtility:50 - Inquiry Title changed Successfully: Passed
+2019-11-06 15:54:14 INFO  ApplicationUtility:31 - Browser Driver is now initilized.
+2019-11-06 15:54:16 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 15:54:26 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 15:54:38 ERROR ApplicationUtility:27 - No participant to start the Video Call
+2019-11-06 15:59:45 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 15:59:47 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 15:59:56 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:00:08 ERROR ApplicationUtility:27 - No participant to start the Video Callorg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="videobtntext">...</div> is not clickable at point (602, 438). Other element would receive the click: <img style="height: 21px;width: 21px;margin-top: -4px;" src="app/assets/images/endcall.png" alt="No inquiry">
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.PjfeiS}, goog:chromeOptions: {debuggerAddress: localhost:37947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da3bc05cf8979ddaf32c33cdb030f020
+2019-11-06 16:01:28 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:01:30 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:01:41 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:01:53 ERROR ApplicationUtility:27 - No participant to start the Video Callorg.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="videobtntext">...</div> is not clickable at point (659, 438). Other element would receive the click: <img style="height: 21px;width: 21px;margin-top: -4px;" src="app/assets/images/endcall.png" alt="No inquiry">
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.l8EvAz}, goog:chromeOptions: {debuggerAddress: localhost:43633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73f6ceb6b459ec835ce05c1d1e7168f4
+2019-11-06 16:03:51 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:03:54 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:04:05 ERROR ApplicationUtility:32 - SignIn is not successful: Failed
+2019-11-06 16:04:36 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:04:39 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:04:50 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:05:17 ERROR ApplicationUtility:27 - No participant to start the Video Callorg.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=77.0.3865.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.0ZrkOS}, goog:chromeOptions: {debuggerAddress: localhost:44819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 976251f3e384cdd4bbba74f32fb934fe
+2019-11-06 16:06:32 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:06:35 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:06:44 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:07:20 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:07:23 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:07:33 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:08:32 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:08:35 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:08:45 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:17:24 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:17:27 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:17:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:19:00 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:19:02 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:19:14 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:20:15 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:20:18 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:20:28 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:22:13 ERROR ApplicationUtility:32 - No participant to start the Video Callorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.ZHabPI}, goog:chromeOptions: {debuggerAddress: localhost:34987}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f8e4c2f46bf622fc8c82aac447a6f257
+*** Element info: {Using=xpath, value=//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i}
+2019-11-06 16:23:24 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:23:27 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:23:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:23:53 ERROR ApplicationUtility:31 - No participant to start the Video Callorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.WA69je}, goog:chromeOptions: {debuggerAddress: localhost:32805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f9e87fe897385c05eac09bca7ff49c80
+*** Element info: {Using=xpath, value=//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i}
+2019-11-06 16:27:53 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:27:56 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:28:11 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:28:27 ERROR ApplicationUtility:31 - No participant to start the Video Callorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.sgWhjF}, goog:chromeOptions: {debuggerAddress: localhost:44015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b989c61a703c80646378eb8bb9a2a9f9
+*** Element info: {Using=xpath, value=//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i}
+2019-11-06 16:29:55 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:29:57 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:30:08 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:30:20 ERROR ApplicationUtility:31 - No participant to start the Video Callorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.TkHMeo}, goog:chromeOptions: {debuggerAddress: localhost:44639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e2ed2a00dca02dfb86686bc51dcf85e4
+*** Element info: {Using=xpath, value=//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i}
+2019-11-06 16:32:52 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:32:55 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:33:08 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:33:46 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:33:48 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:33:58 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:37:47 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:37:49 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 16:38:07 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:38:18 ERROR ApplicationUtility:31 - No participant to start the Video Callorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i"}
+  (Session info: chrome=77.0.3865.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.50', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-66-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.IP8vOF}, goog:chromeOptions: {debuggerAddress: localhost:45259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 661bd3a537d089eb3530fa1293c53011
+*** Element info: {Using=xpath, value=//*[@id="style-3"]/div[1]/div/div[3]/div/div/div/a/div/div/i}
+2019-11-06 16:38:38 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:38:40 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:38:54 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 16:55:59 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 16:56:02 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 16:56:12 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 17:02:50 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:02:53 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 17:03:03 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 17:04:21 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:04:24 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 17:04:34 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 17:07:48 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:07:51 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 17:08:17 ERROR ApplicationUtility:32 - SignIn is not successful: Failed
+2019-11-06 17:08:51 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:08:54 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 17:09:04 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 17:09:52 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:09:54 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 17:10:06 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 17:15:21 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 17:15:24 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 17:15:32 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:06:29 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:06:32 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:06:41 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:07:20 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:07:23 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:07:34 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:18:15 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:18:18 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:18:28 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:19:27 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:19:30 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:19:39 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:20:34 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:20:36 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 18:20:48 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:20:49 INFO  ApplicationUtility:22 - Clicked
+2019-11-06 18:23:13 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:23:15 ERROR ApplicationUtility:26 - Domain submission: Failed
+2019-11-06 18:23:31 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:23:32 INFO  ApplicationUtility:22 - Clicked
+2019-11-06 18:28:40 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:28:43 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:28:52 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:28:53 INFO  ApplicationUtility:23 - Clicked
+2019-11-06 18:29:24 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:29:26 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:29:36 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:29:37 INFO  ApplicationUtility:23 - Clicked
+2019-11-06 18:40:06 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:40:09 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:40:17 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:40:18 INFO  ApplicationUtility:22 - No inquiries
+2019-11-06 18:40:56 INFO  ApplicationUtility:32 - Browser Driver is now initilized.
+2019-11-06 18:40:59 INFO  ApplicationUtility:24 - Domain submission: Passed
+2019-11-06 18:41:09 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-06 18:41:11 INFO  ApplicationUtility:27 - Clicked

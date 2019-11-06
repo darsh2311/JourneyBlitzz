@@ -10,9 +10,12 @@ import logicalView.Signout;
 import logicalView.VerifyDomain;
 import logicalView.InquiryInternalFunctionalityScripts.AddNotes;
 import logicalView.InquiryInternalFunctionalityScripts.AddParticipantInquiry;
-import logicalView.InquiryInternalFunctionalityScripts.ArchiveInquiry;
+import logicalView.InquiryInternalFunctionalityScripts.ArchiveUnarchiveInquiry;
 import logicalView.InquiryInternalFunctionalityScripts.AttachMedia;
+import logicalView.InquiryInternalFunctionalityScripts.InquiryDetails;
+import logicalView.InquiryInternalFunctionalityScripts.InquiryList;
 import logicalView.InquiryInternalFunctionalityScripts.RemoveParticipant;
+import logicalView.InquiryInternalFunctionalityScripts.VideoCall;
 
 public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 
@@ -23,7 +26,10 @@ public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 	AddParticipantInquiry mAddParticipant;
 	AddNotes mAddNotes;
 	RemoveParticipant mRemoveParticipant;
-	ArchiveInquiry mArchiveInquiry;
+	ArchiveUnarchiveInquiry mArchiveInquiry;
+	InquiryDetails mInquiryDetails;
+	VideoCall mVideoCall;
+	InquiryList mInquiryList;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -36,7 +42,10 @@ public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 		mAddParticipant = new AddParticipantInquiry();
 		mAddNotes = new AddNotes();
 		mRemoveParticipant = new RemoveParticipant();
-		mArchiveInquiry = new ArchiveInquiry();
+		mArchiveInquiry = new ArchiveUnarchiveInquiry();
+		mInquiryDetails = new InquiryDetails();
+		mVideoCall = new VideoCall();
+		mInquiryList = new InquiryList();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -49,47 +58,59 @@ public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 	public void TC_SignIn() {
 
 		mSignIn.validSignIn();
-		mAttachMediaPhoto.openInquiry();
+	}
 
+	@Test(priority = 3, enabled = true)
+	public void TC_InquiryList() {
+
+		mInquiryList.getInquiryList();
 	}
 
 	/*
-	 * @Test(priority = 3, enabled = true) public void TC_AttachMediaPhoto() {
+	 * @Test(priority = 4, enabled = true) public void TC_AttachMediaPhoto() {
 	 * 
 	 * mAttachMediaPhoto.imageUpload();
 	 * 
 	 * }
 	 * 
-	 * @Test(priority = 4, enabled = true) public void TC_AttachMediaVideo() {
+	 * @Test(priority = 5, enabled = true) public void TC_AttachMediaVideo() {
 	 * 
 	 * mAttachMediaPhoto.videoUpload(); }
 	 * 
-	 * @Test(priority = 5, enabled = true) public void TC_AttachMediaDocument() {
+	 * @Test(priority = 6, enabled = true) public void TC_AttachMediaDocument() {
 	 * 
 	 * mAttachMediaPhoto.documentUpload(); }
 	 * 
-	 * @Test(priority = 6, enabled = true) public void TC_AddParticipantInInquiry()
+	 * @Test(priority = 7, enabled = true) public void TC_AddParticipantInInquiry()
 	 * {
 	 * 
 	 * mAddParticipant.addParticipantinInquiry(); }
 	 * 
-	 * @Test(priority = 7, enabled = true) public void TC_AddNotes() {
+	 * @Test(priority = 8, enabled = true) public void TC_AddNotes() {
 	 * mAddNotes.addNote(); }
 	 * 
-	 * @Test(priority = 8, enabled = true) public void TC_EditNotes() {
+	 * @Test(priority = 9, enabled = true) public void TC_EditNotes() {
 	 * mAddNotes.editNote(); }
 	 * 
-	 * @Test(priority = 9, enabled = true) public void TC_DeleteNotes() {
+	 * @Test(priority = 10, enabled = true) public void TC_DeleteNotes() {
 	 * mAddNotes.deleteNote(); }
 	 * 
-	 * @Test(priority = 10, enabled = true) public void TC_RemoveParticipant() {
+	 * @Test(priority = 11, enabled = true) public void TC_RemoveParticipant() {
 	 * mRemoveParticipant.removeParticipant(); }
+	 * 
+	 * @Test(priority = 12, enabled = true) public void TC_ArchiveInquiry() {
+	 * mArchiveInquiry.archiveInquiry(); }
+	 * 
+	 * @Test(priority = 13, enabled = true) public void TC_UnArchiveInquiry() {
+	 * mArchiveInquiry.UnarchiveInquiry(); }
+	 * 
+	 * @Test(priority = 14, enabled = true) public void TC_EditInquiryDetails() {
+	 * mInquiryDetails.editInquiryDetails(); }
+	 * 
+	 * @Test(priority = 15, enabled = true) public void TC_VideoCall() {
+	 * 
+	 * mVideoCall.startEndVideoCall(); }
 	 */
-
-	@Test(priority = 11, enabled = true)
-	public void TC_ArchiveInquiry() {
-		mArchiveInquiry.archiveInquiry();
-	}
 
 	@AfterTest
 	public void afterTest() {
