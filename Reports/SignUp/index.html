@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>SignUp.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithINValidData" class="method navigator-link" hash-for-method="AddUserSignUp">AddUserSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidEmail" class="method navigator-link" hash-for-method="SignInforSignUp">SignInforSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidUserId" class="method navigator-link" hash-for-method="SignInforSignUp">SignInforSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithUserIdwithoutPassword" class="method navigator-link" hash-for-method="SignInforSignUp">SignInforSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithEmailwithoutPassword" class="method navigator-link" hash-for-method="SignInforSignUp">SignInforSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidEmail" class="method navigator-link" hash-for-method="TC_SignInafterRegister">TC_SignInafterRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidUserId" class="method navigator-link" hash-for-method="TC_SignInafterRegister">TC_SignInafterRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithUserIdwithoutPassword" class="method navigator-link" hash-for-method="TC_SignInafterRegister">TC_SignInafterRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithEmailwithoutPassword" class="method navigator-link" hash-for-method="TC_SignInafterRegister">TC_SignInafterRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithINValidData" class="method navigator-link" hash-for-method="TC_SignUpwithBlankEmailIdInvalidData">TC_SignUpwithBlankEmailIdInvalidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithINValidData" class="method navigator-link" hash-for-method="TC_SignUpwithBlankUserIdInvalidData">TC_SignUpwithBlankUserIdInvalidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidEmail" class="method navigator-link" hash-for-method="TC_SignUpwithEmailandPassword">TC_SignUpwithEmailandPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithValidUserId" class="method navigator-link" hash-for-method="TC_SignUpwithEmailandPassword">TC_SignUpwithEmailandPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithUserIdwithoutPassword" class="method navigator-link" hash-for-method="TC_SignUpwithEmailwithoutPassword">TC_SignUpwithEmailwithoutPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpInvitewithEmailwithoutPassword" class="method navigator-link" hash-for-method="TC_SignUpwithEmailwithoutPassword">TC_SignUpwithEmailwithoutPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithINValidData" class="method navigator-link" hash-for-method="TC_SignUpwithUserIdInvalidData">TC_SignUpwithUserIdInvalidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithVerifyINValidData" class="method navigator-link" hash-for-method="TC_VerifyBlankVerifyEmailUserid">TC_VerifyBlankVerifyEmailUserid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithVerifyINValidData" class="method navigator-link" hash-for-method="TC_VerifyInvalidVerifyEmail">TC_VerifyInvalidVerifyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithVerifyINValidData" class="method navigator-link" hash-for-method="TC_VerifyInvalidVerifyUserId">TC_VerifyInvalidVerifyUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithVerifyINValidData" class="method navigator-link" hash-for-method="TC_VerifyNotRegisteredVerifyEmail">TC_VerifyNotRegisteredVerifyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testScript.TC_SignUpwithVerifyINValidData" class="method navigator-link" hash-for-method="TC_VerifyNotRegisteredVerifyUserId">TC_VerifyNotRegisteredVerifyUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpwithVerifyINValidData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_VerifyBlankVerifyEmailUserid">
+                  </a> <!-- TC_VerifyBlankVerifyEmailUserid -->
+                  <span class="method-name">TC_VerifyBlankVerifyEmailUserid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_VerifyInvalidVerifyEmail">
+                  </a> <!-- TC_VerifyInvalidVerifyEmail -->
+                  <span class="method-name">TC_VerifyInvalidVerifyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_VerifyInvalidVerifyUserId">
+                  </a> <!-- TC_VerifyInvalidVerifyUserId -->
+                  <span class="method-name">TC_VerifyInvalidVerifyUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_VerifyNotRegisteredVerifyEmail">
+                  </a> <!-- TC_VerifyNotRegisteredVerifyEmail -->
+                  <span class="method-name">TC_VerifyNotRegisteredVerifyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_VerifyNotRegisteredVerifyUserId">
+                  </a> <!-- TC_VerifyNotRegisteredVerifyUserId -->
+                  <span class="method-name">TC_VerifyNotRegisteredVerifyUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpInvitewithUserIdwithoutPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInforSignUp">
+                  </a> <!-- SignInforSignUp -->
+                  <span class="method-name">SignInforSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignInafterRegister">
+                  </a> <!-- TC_SignInafterRegister -->
+                  <span class="method-name">TC_SignInafterRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithEmailwithoutPassword">
+                  </a> <!-- TC_SignUpwithEmailwithoutPassword -->
+                  <span class="method-name">TC_SignUpwithEmailwithoutPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpwithValidEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInforSignUp">
+                  </a> <!-- SignInforSignUp -->
+                  <span class="method-name">SignInforSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignInafterRegister">
+                  </a> <!-- TC_SignInafterRegister -->
+                  <span class="method-name">TC_SignInafterRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithEmailandPassword">
+                  </a> <!-- TC_SignUpwithEmailandPassword -->
+                  <span class="method-name">TC_SignUpwithEmailandPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpwithValidUserId</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInforSignUp">
+                  </a> <!-- SignInforSignUp -->
+                  <span class="method-name">SignInforSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignInafterRegister">
+                  </a> <!-- TC_SignInafterRegister -->
+                  <span class="method-name">TC_SignInafterRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithEmailandPassword">
+                  </a> <!-- TC_SignUpwithEmailandPassword -->
+                  <span class="method-name">TC_SignUpwithEmailandPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpwithINValidData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddUserSignUp">
+                  </a> <!-- AddUserSignUp -->
+                  <span class="method-name">AddUserSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithBlankEmailIdInvalidData">
+                  </a> <!-- TC_SignUpwithBlankEmailIdInvalidData -->
+                  <span class="method-name">TC_SignUpwithBlankEmailIdInvalidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithBlankUserIdInvalidData">
+                  </a> <!-- TC_SignUpwithBlankUserIdInvalidData -->
+                  <span class="method-name">TC_SignUpwithBlankUserIdInvalidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithUserIdInvalidData">
+                  </a> <!-- TC_SignUpwithUserIdInvalidData -->
+                  <span class="method-name">TC_SignUpwithUserIdInvalidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_SignUpInvitewithEmailwithoutPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SignInforSignUp">
+                  </a> <!-- SignInforSignUp -->
+                  <span class="method-name">SignInforSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignInafterRegister">
+                  </a> <!-- TC_SignInafterRegister -->
+                  <span class="method-name">TC_SignInafterRegister</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_SignUpwithEmailwithoutPassword">
+                  </a> <!-- TC_SignUpwithEmailwithoutPassword -->
+                  <span class="method-name">TC_SignUpwithEmailwithoutPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/darshan/Journey2/SignUp.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;SignUpwithValidDataEmail&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpwithValidEmail&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpwithValidDataEmail --&gt;
+  &lt;test name=&quot;SignUpwithValidDataUserId&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpwithValidUserId&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpwithValidDataUserId --&gt;
+  &lt;test name=&quot;SignUpwithINValidData&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpwithINValidData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpwithINValidData --&gt;
+  &lt;test name=&quot;SignUpwithVerifyINValidData&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpwithVerifyINValidData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpwithVerifyINValidData --&gt;
+  &lt;test name=&quot;SignUpInvitewithUserIdwithoutPassword&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpInvitewithUserIdwithoutPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpInvitewithUserIdwithoutPassword --&gt;
+  &lt;test name=&quot;SignUpInvitewithEmailwithoutPassword&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testScript.TC_SignUpInvitewithEmailwithoutPassword&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUpInvitewithEmailwithoutPassword --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SignUpwithValidDataEmail (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUpwithValidDataUserId (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUpwithINValidData (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUpwithVerifyINValidData (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUpInvitewithUserIdwithoutPassword (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignUpInvitewithEmailwithoutPassword (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_SignInafterRegister')
+data.setCell(0, 2, 'testScript.TC_SignUpInvitewithEmailwithoutPassword')
+data.setCell(0, 3, 35689);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_SignInafterRegister')
+data.setCell(1, 2, 'testScript.TC_SignUpInvitewithUserIdwithoutPassword')
+data.setCell(1, 3, 31964);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_SignUpwithUserIdInvalidData')
+data.setCell(2, 2, 'testScript.TC_SignUpwithINValidData')
+data.setCell(2, 3, 28681);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_SignInafterRegister')
+data.setCell(3, 2, 'testScript.TC_SignUpwithValidUserId')
+data.setCell(3, 3, 23464);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_SignUpwithEmailandPassword')
+data.setCell(4, 2, 'testScript.TC_SignUpwithValidEmail')
+data.setCell(4, 3, 20321);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SignInforSignUp')
+data.setCell(5, 2, 'testScript.TC_SignUpInvitewithEmailwithoutPassword')
+data.setCell(5, 3, 19995);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_SignUpwithEmailandPassword')
+data.setCell(6, 2, 'testScript.TC_SignUpwithValidUserId')
+data.setCell(6, 3, 19942);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_SignInafterRegister')
+data.setCell(7, 2, 'testScript.TC_SignUpwithValidEmail')
+data.setCell(7, 3, 19629);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_SignUpwithEmailwithoutPassword')
+data.setCell(8, 2, 'testScript.TC_SignUpInvitewithUserIdwithoutPassword')
+data.setCell(8, 3, 17376);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'AddUserSignUp')
+data.setCell(9, 2, 'testScript.TC_SignUpwithINValidData')
+data.setCell(9, 3, 15564);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_SignUpwithEmailwithoutPassword')
+data.setCell(10, 2, 'testScript.TC_SignUpInvitewithEmailwithoutPassword')
+data.setCell(10, 3, 15362);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SignInforSignUp')
+data.setCell(11, 2, 'testScript.TC_SignUpInvitewithUserIdwithoutPassword')
+data.setCell(11, 3, 15164);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SignInforSignUp')
+data.setCell(12, 2, 'testScript.TC_SignUpwithValidUserId')
+data.setCell(12, 3, 12418);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'SignInforSignUp')
+data.setCell(13, 2, 'testScript.TC_SignUpwithValidEmail')
+data.setCell(13, 3, 12362);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_SignUpwithBlankEmailIdInvalidData')
+data.setCell(14, 2, 'testScript.TC_SignUpwithINValidData')
+data.setCell(14, 3, 8889);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_SignUpwithBlankUserIdInvalidData')
+data.setCell(15, 2, 'testScript.TC_SignUpwithINValidData')
+data.setCell(15, 3, 7999);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_VerifyBlankVerifyEmailUserid')
+data.setCell(16, 2, 'testScript.TC_SignUpwithVerifyINValidData')
+data.setCell(16, 3, 6711);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_VerifyNotRegisteredVerifyUserId')
+data.setCell(17, 2, 'testScript.TC_SignUpwithVerifyINValidData')
+data.setCell(17, 3, 3690);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC_VerifyNotRegisteredVerifyEmail')
+data.setCell(18, 2, 'testScript.TC_SignUpwithVerifyINValidData')
+data.setCell(18, 3, 2681);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC_VerifyInvalidVerifyEmail')
+data.setCell(19, 2, 'testScript.TC_SignUpwithVerifyINValidData')
+data.setCell(19, 3, 2649);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC_VerifyInvalidVerifyUserId')
+data.setCell(20, 2, 'testScript.TC_SignUpwithVerifyINValidData')
+data.setCell(20, 3, 2606);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testScript.TC_SignUpwithINValidData</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TC_SignUpwithEmailIdInvalidData</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpwithValidEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SignInforSignUp</span>
+                <span class="method-start">5469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithEmailandPassword</span>
+                <span class="method-start">17834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignInafterRegister</span>
+                <span class="method-start">38160 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">57793 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpwithValidUserId</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">57949 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SignInforSignUp</span>
+                <span class="method-start">63471 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithEmailandPassword</span>
+                <span class="method-start">75891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignInafterRegister</span>
+                <span class="method-start">95834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">119299 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpwithINValidData</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">119436 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddUserSignUp</span>
+                <span class="method-start">129894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithBlankEmailIdInvalidData</span>
+                <span class="method-start">145459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithBlankUserIdInvalidData</span>
+                <span class="method-start">154349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithUserIdInvalidData</span>
+                <span class="method-start">162349 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">191031 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpwithVerifyINValidData</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">191164 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TC_VerifyBlankVerifyEmailUserid</span>
+                <span class="method-start">197292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_VerifyInvalidVerifyEmail</span>
+                <span class="method-start">204004 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_VerifyNotRegisteredVerifyEmail</span>
+                <span class="method-start">206654 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_VerifyInvalidVerifyUserId</span>
+                <span class="method-start">209336 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_VerifyNotRegisteredVerifyUserId</span>
+                <span class="method-start">211944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">215634 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpInvitewithUserIdwithoutPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">215762 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SignInforSignUp</span>
+                <span class="method-start">222505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithEmailwithoutPassword</span>
+                <span class="method-start">237670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignInafterRegister</span>
+                <span class="method-start">255047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">287012 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testScript.TC_SignUpInvitewithEmailwithoutPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">287149 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SignInforSignUp</span>
+                <span class="method-start">292225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignUpwithEmailwithoutPassword</span>
+                <span class="method-start">312220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_SignInafterRegister</span>
+                <span class="method-start">327583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">363273 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
