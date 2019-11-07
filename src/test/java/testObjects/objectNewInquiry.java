@@ -29,6 +29,14 @@ public class objectNewInquiry {
 		newInquiryName.sendKeys(strInquiryName);
 	}
 
+	@FindBy(xpath = "//input[@id='title']")
+	public WebElement newInquiryName1;
+
+	public void enterNewInquiryName1(String strInquiryName) {
+		newInquiryName1.sendKeys(strInquiryName);
+		newInquiryName1.clear();
+	}
+
 	// New Inquiry Name
 	@FindBy(xpath = "//input[@id='title']")
 	public WebElement ClicknewInquiryName;
@@ -43,6 +51,14 @@ public class objectNewInquiry {
 
 	public void enterInquiryDescription(String strInquiryDescription) {
 		newInquiryDescription.sendKeys(strInquiryDescription);
+	}
+
+	@FindBy(xpath = "//textarea[@id='style-3']")
+	public WebElement newInquiryDescription1;
+
+	public void enterInquiryDescription1(String strInquiryDescription) {
+		newInquiryDescription1.sendKeys(strInquiryDescription);
+		newInquiryDescription1.clear();
 	}
 
 	// No label message locator
@@ -90,11 +106,19 @@ public class objectNewInquiry {
 	}
 
 	// Select Group participant locator
-	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[7]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[7]/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/span[1]")
 	public WebElement selectGroupParticipant;
 
 	public void selectAddGroupParticipant() {
 		selectGroupParticipant.click();
+	}
+
+	// Select Group participant2 locator
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[1]/div[36]/div[1]/div[1]/div[1]/div[1]/form[1]/div[2]/div[7]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]")
+	public WebElement selectGroupParticipant2;
+
+	public void selectAddGroupParticipant2() {
+		selectGroupParticipant2.click();
 	}
 
 	// Add member locator

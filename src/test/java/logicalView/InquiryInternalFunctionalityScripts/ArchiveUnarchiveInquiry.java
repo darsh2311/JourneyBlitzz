@@ -15,6 +15,8 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 
 	public void archiveInquiry() {
 
+		ImplicitWait(20);
+
 		// Click on the Archive Inquiry
 		mObjectInquiryFunctionalities.clickArchiveInquiryIcon();
 		waitTime(1000);
@@ -31,26 +33,24 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 		mObjectInquiryFunctionalities.confirmArchiveButton();
 		waitTime(5000);
 		logger.info(BaseClass.getValueFromPropertyFile("InternalInquiry.properties", "archiveInquiry"));
-
-		refreshPage();
 	}
 
 	public void UnarchiveInquiry() {
 
-		ImplicitWait(100);
-		waitTime(4000);
+		ImplicitWait(20);
 
 		// Click on the Inquiry List Dropdown
 		mObjectInquiryFunctionalities.clickInquiryListDropdown();
 		waitTime(1500);
 
 		// Get the list of the Dropdown values
-		List<WebElement> allElements = driver.findElements(By
-				.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]"));
+		List<WebElement> allElements = driver.findElements(By.xpath(
+				"/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li"));
 
 		for (WebElement element : allElements) {
 			// Click on the Option which equals Archived
-			if (element.getText() == "Archived") {
+			if (element.getText().equalsIgnoreCase("Archived")) {
+				ImplicitWait(5);
 				element.click();
 			}
 		}

@@ -15,6 +15,7 @@ public class AttachMedia extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void attachMedia(String strMedia) {
+		ImplicitWait(10);
 
 		// Click on the attachment icon in the chat
 		mObjectInquiryFunctionalities.clickAttachMedia();
@@ -49,6 +50,7 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void imageUpload() {
+		ImplicitWait(10);
 
 		// Attach media method
 		attachMedia("inquiry.jpg");
@@ -70,7 +72,7 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void videoUpload() {
-		waitTime(1500);
+		ImplicitWait(10);
 
 		// Attach media method
 		attachMedia("inquiryVideo1mb.mp4");
@@ -83,7 +85,7 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void documentUpload() {
-		waitTime(1500);
+		ImplicitWait(10);
 
 		// Attach media method
 		attachMedia("inquiryDoc1MB.docx");

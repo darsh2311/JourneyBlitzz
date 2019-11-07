@@ -66,51 +66,71 @@ public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 		mInquiryList.getInquiryList();
 	}
 
-	/*
-	 * @Test(priority = 4, enabled = true) public void TC_AttachMediaPhoto() {
-	 * 
-	 * mAttachMediaPhoto.imageUpload();
-	 * 
-	 * }
-	 * 
-	 * @Test(priority = 5, enabled = true) public void TC_AttachMediaVideo() {
-	 * 
-	 * mAttachMediaPhoto.videoUpload(); }
-	 * 
-	 * @Test(priority = 6, enabled = true) public void TC_AttachMediaDocument() {
-	 * 
-	 * mAttachMediaPhoto.documentUpload(); }
-	 * 
-	 * @Test(priority = 7, enabled = true) public void TC_AddParticipantInInquiry()
-	 * {
-	 * 
-	 * mAddParticipant.addParticipantinInquiry(); }
-	 * 
-	 * @Test(priority = 8, enabled = true) public void TC_AddNotes() {
-	 * mAddNotes.addNote(); }
-	 * 
-	 * @Test(priority = 9, enabled = true) public void TC_EditNotes() {
-	 * mAddNotes.editNote(); }
-	 * 
-	 * @Test(priority = 10, enabled = true) public void TC_DeleteNotes() {
-	 * mAddNotes.deleteNote(); }
-	 * 
-	 * @Test(priority = 11, enabled = true) public void TC_RemoveParticipant() {
-	 * mRemoveParticipant.removeParticipant(); }
-	 * 
-	 * @Test(priority = 12, enabled = true) public void TC_ArchiveInquiry() {
-	 * mArchiveInquiry.archiveInquiry(); }
-	 * 
-	 * @Test(priority = 13, enabled = true) public void TC_UnArchiveInquiry() {
-	 * mArchiveInquiry.UnarchiveInquiry(); }
-	 * 
-	 * @Test(priority = 14, enabled = true) public void TC_EditInquiryDetails() {
-	 * mInquiryDetails.editInquiryDetails(); }
-	 * 
-	 * @Test(priority = 15, enabled = true) public void TC_VideoCall() {
-	 * 
-	 * mVideoCall.startEndVideoCall(); }
-	 */
+	@Test(priority = 4, enabled = true)
+	public void TC_AttachMediaPhoto() {
+
+		mAttachMediaPhoto.imageUpload();
+
+	}
+
+	@Test(priority = 5, enabled = true)
+	public void TC_AttachMediaVideo() {
+
+		mAttachMediaPhoto.videoUpload();
+	}
+
+	@Test(priority = 6, enabled = true)
+	public void TC_AttachMediaDocument() {
+
+		mAttachMediaPhoto.documentUpload();
+	}
+
+	@Test(priority = 7, enabled = true)
+	public void TC_AddParticipantInInquiry() {
+
+		mAddParticipant.addParticipantinInquiry();
+	}
+
+	@Test(priority = 8, enabled = true)
+	public void TC_AddNotes() {
+		mAddNotes.addNote();
+	}
+
+	@Test(priority = 9, enabled = true)
+	public void TC_EditNotes() {
+		mAddNotes.editNote();
+	}
+
+	@Test(priority = 10, enabled = true)
+	public void TC_DeleteNotes() {
+		mAddNotes.deleteNote();
+	}
+
+	@Test(priority = 11, enabled = true)
+	public void TC_RemoveParticipant() {
+		mRemoveParticipant.removeParticipant();
+	}
+
+	@Test(priority = 12, enabled = true)
+	public void TC_ArchiveInquiry() {
+		mArchiveInquiry.archiveInquiry();
+	}
+
+	@Test(priority = 13, enabled = true)
+	public void TC_UnArchiveInquiry() {
+		mArchiveInquiry.UnarchiveInquiry();
+	}
+
+	@Test(priority = 14, enabled = true)
+	public void TC_VideoCall() {
+
+		mVideoCall.startEndVideoCall();
+	}
+
+	@Test(priority = 15, enabled = true)
+	public void TC_EditInquiryDetails() {
+		mInquiryDetails.editInquiryDetails();
+	}
 
 	@AfterTest
 	public void afterTest() {

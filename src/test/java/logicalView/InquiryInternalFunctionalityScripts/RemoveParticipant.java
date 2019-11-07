@@ -14,6 +14,8 @@ public class RemoveParticipant extends ApplicationUtility {
 
 	public void removeParticipant() {
 
+		ImplicitWait(10);
+
 		// Click on Ellipsis menu for Inquiry Details
 		mObjectInquiryFunctionalities.clickInquiryDetails();
 		waitTime(3000);
@@ -43,7 +45,10 @@ public class RemoveParticipant extends ApplicationUtility {
 
 			// Click on Yes to confirm delete of the remove member popup
 			mObjectInquiryFunctionalities.clickConfirmDelete();
-			waitTime(1000);
+			waitTime(2000);
+
+			// Click on X to close the sidebar
+			mObjectInquiryFunctionalities.clickCloseInquiryDetails();
 
 		}
 

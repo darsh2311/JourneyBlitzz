@@ -16,7 +16,7 @@ public class TC_NewInquirywithInvalidData extends ApplicationUtility {
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
-	NewInquirywithBlankValues mNewInquirywithInvalidData;
+	NewInquirywithBlankValues mNewInquirywithBlankData;
 	NewInquirywithInvalidValues mNewInquirywithInvalidValues;
 
 	@BeforeTest
@@ -26,7 +26,7 @@ public class TC_NewInquirywithInvalidData extends ApplicationUtility {
 		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
-		mNewInquirywithInvalidData = new NewInquirywithBlankValues();
+		mNewInquirywithBlankData = new NewInquirywithBlankValues();
 		mNewInquirywithInvalidValues = new NewInquirywithInvalidValues();
 	}
 
@@ -36,24 +36,30 @@ public class TC_NewInquirywithInvalidData extends ApplicationUtility {
 		mVerifyDomain.VerifyValidDomain();
 	}
 
-	@Test(priority = 2, enabled = true, dependsOnMethods = "TC_ValidDomainSubmission")
+	@Test(priority = 2, enabled = true)
 	public void TC_SignIn() {
 
 		mSignIn.validSignIn();
 	}
 
-	@Test(priority = 3, enabled = true, dependsOnMethods = "TC_SignIn")
-	public void TC_CreateNewInquirywithBlankValues() {
-
-		mNewInquirywithInvalidData.createNewInquiry();
-
-	}
-
-	@Test(priority = 4, enabled = true, dependsOnMethods = "TC_SignIn")
+	@Test(priority = 3, enabled = true)
 	public void TC_CreateNewInquirywithInvalidValues() {
 
 		mNewInquirywithInvalidValues.createNewInquiry();
 
+	}
+
+	@Test(priority = 4, enabled = true)
+	public void TC_CreateNewInquirywithBlankValues() {
+
+		mNewInquirywithBlankData.createNewInquiry();
+
+	}
+
+	@Test(priority = 5, enabled = true)
+	public void TC_SignOut() {
+
+		mSignOut.SignOut();
 	}
 
 	@AfterTest

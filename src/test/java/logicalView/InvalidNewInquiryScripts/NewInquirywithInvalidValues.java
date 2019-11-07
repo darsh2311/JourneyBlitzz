@@ -32,25 +32,10 @@ public class NewInquirywithInvalidValues extends ApplicationUtility {
 
 		// Click on Upload Photo to upload image
 		mobjectNewInquiry.clickUploadImage();
-		waitTime(1500);
 
-		// Using the Robot class to upload the file
-		try {
-			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/invalidPhotoExt.gif");
-			Robot robot = new Robot();
-			robot = new Robot();
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			waitTime(2000);
+		ImplicitWait(10);
 
-		} catch (AWTException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		attachmedia("invalidPhotoExt.gif");
 
 		waitTime(3500);
 
@@ -64,6 +49,29 @@ public class NewInquirywithInvalidValues extends ApplicationUtility {
 		}
 		waitTime(300);
 
+		mobjectNewInquiry.clickCancelCreateInquiry();
+		waitTime(1000);
+	}
+
+	public void attachmedia(String strImage) {
+		// Using the Robot class to upload the file
+		try {
+			waitTime(1000);
+
+			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/" + strImage);
+			Robot robot = new Robot();
+			robot = new Robot();
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+
+  <test name="Create New Inquiry">
+     <classes>
+       <class name="testScript.TC_NewInquiry"/>
+     </classes>
+   </test>
+   
+  <test name="Create New Inquiry with Invalid Data">
+     <classes>
+       <class name="testScript.TC_NewInquirywithInvalidData"/>
+     </classes>
+   </test>
+   
+  <test name="Inquiry Internal Functionalities">
+     <classes>
+       <class name="testScript.TC_InquiryInternalFunctionalities"/>
+     </classes>
+   </test>
+     
+</suite> 

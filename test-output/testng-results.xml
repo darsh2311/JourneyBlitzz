@@ -1,33 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-06T13:10:50Z" name="Default suite" finished-at="2019-11-06T13:11:15Z" duration-ms="24584">
+  <suite started-at="2019-11-07T12:03:15Z" name="Suite" finished-at="2019-11-07T12:09:19Z" duration-ms="363510">
     <groups>
     </groups>
-    <test started-at="2019-11-06T13:10:50Z" name="Default test" finished-at="2019-11-06T13:11:15Z" duration-ms="24584">
-      <class name="testScript.TC_InquiryInternalFunctionalities">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@4690b489]" started-at="2019-11-06T18:40:50Z" name="beforeTest" finished-at="2019-11-06T18:40:56Z" duration-ms="5839" status="PASS">
+    <test started-at="2019-11-07T12:03:15Z" name="SignUpwithValidDataEmail" finished-at="2019-11-07T12:04:13Z" duration-ms="57924">
+      <class name="testScript.TC_SignUpwithValidEmail">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithValidEmail@4690b489]" started-at="2019-11-07T17:33:15Z" name="beforeTest" finished-at="2019-11-07T17:33:21Z" duration-ms="5463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@4690b489]" started-at="2019-11-06T18:40:56Z" name="TC_ValidDomainSubmission" finished-at="2019-11-06T18:41:00Z" duration-ms="3526" status="PASS">
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.TC_SignUpwithValidEmail@4690b489]" started-at="2019-11-07T17:33:21Z" name="SignInforSignUp" finished-at="2019-11-07T17:33:33Z" duration-ms="12362" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@4690b489]" started-at="2019-11-06T18:41:00Z" name="TC_SignIn" finished-at="2019-11-06T18:41:10Z" duration-ms="10660" status="PASS">
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailandPassword()[pri:0, instance:testScript.TC_SignUpwithValidEmail@4690b489]" started-at="2019-11-07T17:33:33Z" name="TC_SignUpwithEmailandPassword" finished-at="2019-11-07T17:33:54Z" duration-ms="20321" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_InquiryList()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@4690b489]" started-at="2019-11-06T18:41:10Z" name="TC_InquiryList" finished-at="2019-11-06T18:41:15Z" duration-ms="4466" status="PASS">
+        </test-method> <!-- TC_SignUpwithEmailandPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.TC_SignUpwithValidEmail@4690b489]" started-at="2019-11-07T17:33:54Z" name="TC_SignInafterRegister" finished-at="2019-11-07T17:34:13Z" duration-ms="19629" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_InquiryList -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@4690b489]" started-at="2019-11-06T18:41:15Z" name="afterTest" finished-at="2019-11-06T18:41:15Z" duration-ms="73" status="PASS">
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithValidEmail@4690b489]" started-at="2019-11-07T17:34:13Z" name="afterTest" finished-at="2019-11-07T17:34:13Z" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testScript.TC_SignUpwithValidEmail -->
+    </test> <!-- SignUpwithValidDataEmail -->
+    <test started-at="2019-11-07T12:04:13Z" name="SignUpwithValidDataUserId" finished-at="2019-11-07T12:05:15Z" duration-ms="61483">
+      <class name="testScript.TC_SignUpwithValidUserId">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithValidUserId@e056f20]" started-at="2019-11-07T17:34:13Z" name="beforeTest" finished-at="2019-11-07T17:34:19Z" duration-ms="5522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.TC_SignUpwithValidUserId@e056f20]" started-at="2019-11-07T17:34:19Z" name="SignInforSignUp" finished-at="2019-11-07T17:34:31Z" duration-ms="12418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailandPassword()[pri:0, instance:testScript.TC_SignUpwithValidUserId@e056f20]" started-at="2019-11-07T17:34:31Z" name="TC_SignUpwithEmailandPassword" finished-at="2019-11-07T17:34:51Z" duration-ms="19942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.TC_SignUpwithValidUserId@e056f20]" started-at="2019-11-07T17:34:51Z" name="TC_SignInafterRegister" finished-at="2019-11-07T17:35:15Z" duration-ms="23464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithValidUserId@e056f20]" started-at="2019-11-07T17:35:15Z" name="afterTest" finished-at="2019-11-07T17:35:15Z" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithValidUserId -->
+    </test> <!-- SignUpwithValidDataUserId -->
+    <test started-at="2019-11-07T12:05:15Z" name="SignUpwithINValidData" finished-at="2019-11-07T12:06:27Z" duration-ms="71720">
+      <class name="testScript.TC_SignUpwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:35:15Z" name="beforeTest" finished-at="2019-11-07T17:35:25Z" duration-ms="10458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="AddUserSignUp()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:35:25Z" name="AddUserSignUp" finished-at="2019-11-07T17:35:41Z" duration-ms="15564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddUserSignUp -->
+        <test-method signature="TC_SignUpwithBlankEmailIdInvalidData()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:35:41Z" name="TC_SignUpwithBlankEmailIdInvalidData" finished-at="2019-11-07T17:35:50Z" duration-ms="8889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankEmailIdInvalidData -->
+        <test-method signature="TC_SignUpwithBlankUserIdInvalidData()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:35:50Z" name="TC_SignUpwithBlankUserIdInvalidData" finished-at="2019-11-07T17:35:58Z" duration-ms="7999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankUserIdInvalidData -->
+        <test-method signature="TC_SignUpwithUserIdInvalidData()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:35:58Z" name="TC_SignUpwithUserIdInvalidData" finished-at="2019-11-07T17:36:26Z" duration-ms="28681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdInvalidData -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithINValidData@7e0b85f9]" started-at="2019-11-07T17:36:26Z" name="afterTest" finished-at="2019-11-07T17:36:27Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithINValidData -->
+    </test> <!-- SignUpwithINValidData -->
+    <test started-at="2019-11-07T12:06:27Z" name="SignUpwithVerifyINValidData" finished-at="2019-11-07T12:06:51Z" duration-ms="24594">
+      <class name="testScript.TC_SignUpwithVerifyINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:27Z" name="beforeTest" finished-at="2019-11-07T17:36:33Z" duration-ms="6127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_VerifyBlankVerifyEmailUserid()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:33Z" name="TC_VerifyBlankVerifyEmailUserid" finished-at="2019-11-07T17:36:39Z" duration-ms="6711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyBlankVerifyEmailUserid -->
+        <test-method signature="TC_VerifyInvalidVerifyEmail()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:39Z" name="TC_VerifyInvalidVerifyEmail" finished-at="2019-11-07T17:36:42Z" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyEmail -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyEmail()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:42Z" name="TC_VerifyNotRegisteredVerifyEmail" finished-at="2019-11-07T17:36:45Z" duration-ms="2681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyEmail -->
+        <test-method signature="TC_VerifyInvalidVerifyUserId()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:45Z" name="TC_VerifyInvalidVerifyUserId" finished-at="2019-11-07T17:36:47Z" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyUserId -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyUserId()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:47Z" name="TC_VerifyNotRegisteredVerifyUserId" finished-at="2019-11-07T17:36:51Z" duration-ms="3690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyUserId -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpwithVerifyINValidData@1139b2f3]" started-at="2019-11-07T17:36:51Z" name="afterTest" finished-at="2019-11-07T17:36:51Z" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpwithVerifyINValidData -->
+    </test> <!-- SignUpwithVerifyINValidData -->
+    <test started-at="2019-11-07T12:06:51Z" name="SignUpInvitewithUserIdwithoutPassword" finished-at="2019-11-07T12:08:03Z" duration-ms="71380">
+      <class name="testScript.TC_SignUpInvitewithUserIdwithoutPassword">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpInvitewithUserIdwithoutPassword@31368b99]" started-at="2019-11-07T17:36:51Z" name="beforeTest" finished-at="2019-11-07T17:36:58Z" duration-ms="6743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.TC_SignUpInvitewithUserIdwithoutPassword@31368b99]" started-at="2019-11-07T17:36:58Z" name="SignInforSignUp" finished-at="2019-11-07T17:37:13Z" duration-ms="15164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailwithoutPassword()[pri:0, instance:testScript.TC_SignUpInvitewithUserIdwithoutPassword@31368b99]" started-at="2019-11-07T17:37:13Z" name="TC_SignUpwithEmailwithoutPassword" finished-at="2019-11-07T17:37:30Z" duration-ms="17376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailwithoutPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.TC_SignUpInvitewithUserIdwithoutPassword@31368b99]" started-at="2019-11-07T17:37:30Z" name="TC_SignInafterRegister" finished-at="2019-11-07T17:38:02Z" duration-ms="31964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpInvitewithUserIdwithoutPassword@31368b99]" started-at="2019-11-07T17:38:02Z" name="afterTest" finished-at="2019-11-07T17:38:03Z" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpInvitewithUserIdwithoutPassword -->
+    </test> <!-- SignUpInvitewithUserIdwithoutPassword -->
+    <test started-at="2019-11-07T12:08:03Z" name="SignUpInvitewithEmailwithoutPassword" finished-at="2019-11-07T12:09:19Z" duration-ms="76359">
+      <class name="testScript.TC_SignUpInvitewithEmailwithoutPassword">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_SignUpInvitewithEmailwithoutPassword@3d74bf60]" started-at="2019-11-07T17:38:03Z" name="beforeTest" finished-at="2019-11-07T17:38:08Z" duration-ms="5076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.TC_SignUpInvitewithEmailwithoutPassword@3d74bf60]" started-at="2019-11-07T17:38:08Z" name="SignInforSignUp" finished-at="2019-11-07T17:38:28Z" duration-ms="19995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailwithoutPassword()[pri:0, instance:testScript.TC_SignUpInvitewithEmailwithoutPassword@3d74bf60]" started-at="2019-11-07T17:38:28Z" name="TC_SignUpwithEmailwithoutPassword" finished-at="2019-11-07T17:38:43Z" duration-ms="15362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailwithoutPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.TC_SignUpInvitewithEmailwithoutPassword@3d74bf60]" started-at="2019-11-07T17:38:43Z" name="TC_SignInafterRegister" finished-at="2019-11-07T17:39:19Z" duration-ms="35689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_SignUpInvitewithEmailwithoutPassword@3d74bf60]" started-at="2019-11-07T17:39:19Z" name="afterTest" finished-at="2019-11-07T17:39:19Z" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_SignUpInvitewithEmailwithoutPassword -->
+    </test> <!-- SignUpInvitewithEmailwithoutPassword -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -10,6 +10,7 @@ public class VideoCall extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void startEndVideoCall() {
+		ImplicitWait(10);
 
 		// click on Video Call Icon
 		mObjectInquiryFunctionalities.clickVideoCall();

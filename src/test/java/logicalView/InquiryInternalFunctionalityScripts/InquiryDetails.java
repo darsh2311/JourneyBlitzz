@@ -8,17 +8,16 @@ public class InquiryDetails extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 	public String editedInquiry = "Edited Inquiry" + (int) (Math.random() * 9999);
 
-	public void editInquiryDetails() {
+	public void viewImage() {
 
-		// Click on Inquiry Details Ellipsis menu
-		mObjectInquiryFunctionalities.clickInquiryDetails();
-		waitTime(1000);
+		ImplicitWait(20);
 
 		// Click on Inquiry Image
 		mObjectInquiryFunctionalities.clickInquiryImage();
 		waitTime(5000);
 
 		try {
+			ImplicitWait(10);
 			// Close the Inquiry Image
 			mObjectInquiryFunctionalities.clickCloseInquiryImage();
 			waitTime(1000);
@@ -26,6 +25,14 @@ public class InquiryDetails extends ApplicationUtility {
 		} catch (Exception e) {
 			logger.error("Inquiry Image returned error: " + e);
 		}
+	}
+
+	public void editInquiryDetails() {
+		ImplicitWait(20);
+
+		// Click on Inquiry Details Ellipsis menu
+		mObjectInquiryFunctionalities.clickInquiryDetails();
+		waitTime(3000);
 
 		// Click on Edit icon for Inquiry Title
 		mObjectInquiryFunctionalities.clickEditInquiryTitleButton();

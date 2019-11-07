@@ -11,7 +11,7 @@ public class AddNotes extends ApplicationUtility {
 
 	public void addNote() {
 
-		waitTime(500);
+		ImplicitWait(10);
 		// Click on Add Note Icon
 		mObjectInquiryFunctionalities.clickAddNotes();
 		waitTime(1500);
@@ -26,6 +26,7 @@ public class AddNotes extends ApplicationUtility {
 	}
 
 	public void editNote() {
+		ImplicitWait(10);
 
 		// Refresh the Note
 		mObjectInquiryFunctionalities.clickRefreshNote();
@@ -60,6 +61,7 @@ public class AddNotes extends ApplicationUtility {
 	}
 
 	public void deleteNote() {
+		ImplicitWait(10);
 
 		// Refresh the Note
 		mObjectInquiryFunctionalities.clickRefreshNote();

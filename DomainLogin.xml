@@ -1,0 +1,49 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+
+  <test name="Need Help">
+     <classes>
+       <class name="testScript.TC_NeedHelp"/>
+     </classes>
+   </test>
+   
+        <test name="DomainwithValidData">
+     <classes>
+       <class name="testScript.TC_VerifyDomainwithValidData"/>
+     </classes>
+   </test>
+   
+  <test name="DomainwithINValidData">
+     <classes>
+       <class name="testScript.TC_VerifyDomainwithINValidData"/>
+     </classes>
+   </test>
+   
+       <test name="ForgotPasswordwithValidData">
+     <classes>
+       <class name="testScript.TC_ForgotPasswordwithValidData"/>
+     </classes>
+   </test>
+   
+        <test name="ForgotPasswordwithINValidData">
+     <classes>
+       <class name="testScript.TC_ForgotPasswordwithINValidData"/>
+     </classes>
+   </test>
+    
+            <test name="LoginwithValidData">
+     <classes>
+       <class name="testScript.TC_LoginwithValidData"/>
+     </classes>
+   </test>
+   
+        <test name="LoginwithINValidData">
+     <classes>
+       <class name="testScript.TC_LoginwithINValidData"/>
+     </classes>
+   </test>
+
+   
+     
+</suite> 
