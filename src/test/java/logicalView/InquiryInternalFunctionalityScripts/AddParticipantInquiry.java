@@ -9,7 +9,7 @@ public class AddParticipantInquiry extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void addParticipantinInquiry() {
-		ImplicitWait(10);
+		waitTime(20500);
 		// Click on Add Participant Icon
 		mObjectInquiryFunctionalities.clickAddParticipantIcon();
 		waitTime(500);

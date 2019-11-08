@@ -45,10 +45,11 @@ public class RemoveParticipant extends ApplicationUtility {
 
 			// Click on Yes to confirm delete of the remove member popup
 			mObjectInquiryFunctionalities.clickConfirmDelete();
-			waitTime(2000);
+			waitTime(3000);
 
 			// Click on X to close the sidebar
 			mObjectInquiryFunctionalities.clickCloseInquiryDetails();
+			waitTime(1000);
 
 		}
 

@@ -12,6 +12,10 @@ public class InquiryDetails extends ApplicationUtility {
 
 		ImplicitWait(20);
 
+		// Click on Inquiry Details Ellipsis menu
+		mObjectInquiryFunctionalities.clickInquiryDetails();
+		waitTime(3000);
+
 		// Click on Inquiry Image
 		mObjectInquiryFunctionalities.clickInquiryImage();
 		waitTime(5000);
@@ -25,6 +29,10 @@ public class InquiryDetails extends ApplicationUtility {
 		} catch (Exception e) {
 			logger.error("Inquiry Image returned error: " + e);
 		}
+
+		// Close the Inquiry Details SideBar
+		mObjectInquiryFunctionalities.clickCloseInquiryDetails();
+		waitTime(1000);
 	}
 
 	public void editInquiryDetails() {

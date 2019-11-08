@@ -12,6 +12,7 @@ public class InquiryList extends ApplicationUtility {
 
 	public void getInquiryList() {
 
+		ImplicitWait(10);
 		List<WebElement> listInquiries = driver.findElements(By.xpath(
 				"/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/ul[1]/li[1]/div[1]/a"));
 

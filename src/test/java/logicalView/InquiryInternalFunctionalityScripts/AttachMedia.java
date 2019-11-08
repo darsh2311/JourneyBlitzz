@@ -68,6 +68,7 @@ public class AttachMedia extends ApplicationUtility {
 
 		// Click on Send to upload the image with drawing
 		mObjectInquiryFunctionalities.sendImageToInquiry();
+		waitTime(1500);
 
 	}
 
@@ -80,7 +81,7 @@ public class AttachMedia extends ApplicationUtility {
 
 		// Click on Send to upload the image with drawing
 		mObjectInquiryFunctionalities.uploadSend();
-		waitTime(500);
+		waitTime(1500);
 
 	}
 
@@ -93,7 +94,7 @@ public class AttachMedia extends ApplicationUtility {
 
 		// Click on Send to upload the image with drawing
 		mObjectInquiryFunctionalities.uploadSend();
-		waitTime(5000);
+		waitTime(1500);
 
 	}
 

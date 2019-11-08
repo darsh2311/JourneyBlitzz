@@ -13,7 +13,7 @@ public class SendChatMessage extends ApplicationUtility {
 		// enter message to Send
 		mObjectInquiryFunctionalities
 				.enterChatMessage(BaseClass.getValueFromPropertyFile("NewInquiry.properties", "chatMessage"));
-		waitTime(1000);
+		waitTime(2500);
 
 		try {
 			mObjectInquiryFunctionalities.sendChatMessage();

@@ -42,7 +42,7 @@ public class TC_NewInquiry extends ApplicationUtility {
 	}
 
 	@Test(priority = 3, enabled = true)
-	public void TC_NI() throws InterruptedException, AWTException {
+	public void TC_CreateNewInquiry() throws InterruptedException, AWTException {
 
 		mNewInquiry.createNewInquiry();
 	}

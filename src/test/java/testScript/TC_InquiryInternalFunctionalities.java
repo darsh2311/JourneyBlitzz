@@ -55,18 +55,20 @@ public class TC_InquiryInternalFunctionalities extends ApplicationUtility {
 	public void TC_ValidDomainSubmission() {
 
 		mVerifyDomain.VerifyValidDomain();
+		mSignIn.validSignIn();
+
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void TC_SignIn() {
-
-		mSignIn.validSignIn();
-	}
-
-	@Test(priority = 3, enabled = true)
 	public void TC_InquiryList() {
 
 		mInquiryList.getInquiryList();
+	}
+
+	@Test(priority = 3, enabled = true)
+	public void TC_ViewImage() {
+
+		mInquiryDetails.viewImage();
 	}
 
 	@Test(priority = 4, enabled = true)
