@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
 import logicalView.VerifyDomain;
+import logicalView.InvalidSignInScripts.InvalidSignInRestriction;
 import logicalView.InvalidSignInScripts.SignInwithBlankEmail;
 import logicalView.InvalidSignInScripts.SignInwithBlankEmailPassword;
 import logicalView.InvalidSignInScripts.SignInwithBlankPassword;
@@ -18,6 +19,7 @@ public class TC_LoginwithINValidData extends ApplicationUtility {
 	SignInwithBlankEmailPassword mSignInwithBlankEmailPassword;
 	SignInwithBlankPassword mSignInwithBlankPassword;
 	SignInwithInvalidEmailPassword mSignInwithInvalidEmailPassword;
+	InvalidSignInRestriction mInvalidSignInRestriction;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -28,6 +30,8 @@ public class TC_LoginwithINValidData extends ApplicationUtility {
 		mSignInwithBlankPassword = new SignInwithBlankPassword();
 		mSignInwithInvalidEmailPassword = new SignInwithInvalidEmailPassword();
 		mVerifyDomain = new VerifyDomain();
+		mInvalidSignInRestriction = new InvalidSignInRestriction();
+
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -60,6 +64,11 @@ public class TC_LoginwithINValidData extends ApplicationUtility {
 	public void TC_InvalidsignInwithInvalidEmailPassword() {
 
 		mSignInwithInvalidEmailPassword.signInwithInvalidEmailPassword();
+	}
+
+	@Test(priority = 6, enabled = false, dependsOnMethods = "TC_InvalidsignInwithInvalidEmailPassword")
+	public void TC_InValidSignInwithRestrictions() {
+		mInvalidSignInRestriction.signInwithInvalidPasswordRestriction();
 	}
 
 	@AfterTest

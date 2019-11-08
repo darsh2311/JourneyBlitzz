@@ -5,9 +5,8 @@
     <classes>
       <class name="testScript.TC_InquiryInternalFunctionalities">
         <methods>
-          <include name="TC_UnArchiveInquiry"/>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="TC_SendMessageToChat"/>
         </methods>
       </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
     </classes>

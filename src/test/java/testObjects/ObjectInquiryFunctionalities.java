@@ -15,6 +15,22 @@ public class ObjectInquiryFunctionalities {
 		selectInquiry.click();
 	}
 
+	// Enter Chat message
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/textarea[1]")
+	public WebElement chatMessage;
+
+	public void enterChatMessage(String strChatMessage) {
+		chatMessage.sendKeys(strChatMessage);
+	}
+
+	// Send Chat message
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/span[1]")
+	public WebElement sendChatMessage;
+
+	public void sendChatMessage() {
+		sendChatMessage.click();
+	}
+
 	// Click on the attachment icon in the chat
 	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/li[4]/a[1]")
 	public WebElement attachMedia;
