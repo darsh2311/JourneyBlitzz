@@ -22,7 +22,7 @@ public class ForgotPasswordwithNotRegisteredEmail extends ApplicationUtility {
 		// Click send button of Forgot Password
 		objForgotPassword.sendForgotPasswordButton();
 		waitTime(1000);
-
+		ImplicitWait(10);
 		String forgotErrorMessageInvalidEmail = objForgotPassword.notRegisteredforgotPassword.getText();
 		if (forgotErrorMessageInvalidEmail.equalsIgnoreCase(
 				BaseClass.getValueFromPropertyFile("Signin.properties", "NotregisteredEmailSubmissionErrorMessage"))) {

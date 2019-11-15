@@ -16,6 +16,7 @@ public class VerifyDomainwithInvalidData extends ApplicationUtility {
 		objDomain.verifyDomainButton();
 		waitTime(2000);
 		String BlankDomainName = objDomain.BlankDomainName.getText();
+
 		if (BlankDomainName.equalsIgnoreCase(
 				BaseClass.getValueFromPropertyFile("Domain.properties", "blankDomainSubmitErrorMessage"))) {
 			logger.info("Blank Domain submission is not allowed: Passed");

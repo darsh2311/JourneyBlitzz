@@ -1,9 +1,5 @@
 package logicalView;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.objectNewInquiry;
@@ -97,23 +93,7 @@ public class NewInquiry2 extends ApplicationUtility {
 		ImplicitWait(20);
 
 		// Using the Robot class to upload the file
-		try {
-			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/inquiry.jpg");
-			Robot robot = new Robot();
-			robot = new Robot();
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			waitTime(2000);
-
-		} catch (AWTException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		attachmedia("inquiry.jpg");
 		waitTime(3500);
 		// Click on Save to Select the Image
 		mobjectNewInquiry.clickSaveUploadImage();

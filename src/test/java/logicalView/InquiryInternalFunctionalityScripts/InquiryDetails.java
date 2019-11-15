@@ -10,7 +10,7 @@ public class InquiryDetails extends ApplicationUtility {
 
 	public void viewImage() {
 
-		ImplicitWait(20);
+		waitTime(15000);
 
 		// Click on Inquiry Details Ellipsis menu
 		mObjectInquiryFunctionalities.clickInquiryDetails();

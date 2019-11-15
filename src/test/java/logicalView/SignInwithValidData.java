@@ -14,7 +14,7 @@ public class SignInwithValidData extends ApplicationUtility {
 
 	public void validSignIn() {
 
-		ImplicitWait(15);
+		ImplicitWait(10);
 		// Enter valid Email id or User Id to Sign in
 		objSignIn.enterEmailId(BaseClass.getValueFromPropertyFile("Signin.properties", "validEmail"));
 

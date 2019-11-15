@@ -1,149 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="26" passed="26" failed="0" skipped="0">
+<testng-results total="50" passed="50" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-08T12:00:25Z" name="Suite" finished-at="2019-11-08T12:05:35Z" duration-ms="310166">
+  <suite started-at="2019-11-15T13:33:08Z" name="Default suite" finished-at="2019-11-15T13:46:03Z" duration-ms="775025">
     <groups>
     </groups>
-    <test started-at="2019-11-08T12:00:25Z" name="Create New Inquiry" finished-at="2019-11-08T12:01:17Z" duration-ms="51518">
-      <class name="testScript.TC_NewInquiry">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:30:25Z" name="beforeTest" finished-at="2019-11-08T17:30:30Z" duration-ms="5061" status="PASS">
+    <test started-at="2019-11-15T13:33:08Z" name="Default test" finished-at="2019-11-15T13:46:03Z" duration-ms="775025">
+      <class name="testScript.testExample$TC_All">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:08Z" name="beforeTest" finished-at="2019-11-15T19:03:14Z" duration-ms="5920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:30:30Z" name="TC_ValidDomainSubmission" finished-at="2019-11-08T17:30:34Z" duration-ms="3641" status="PASS">
+        <test-method signature="TC_Need_Help()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:14Z" name="TC_Need_Help" finished-at="2019-11-15T19:03:37Z" duration-ms="23145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Need_Help -->
+        <test-method signature="TC_InvalidDomainSubmission()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:37Z" name="TC_InvalidDomainSubmission" finished-at="2019-11-15T19:03:44Z" duration-ms="6810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidDomainSubmission -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:44Z" name="TC_ValidDomainSubmission" finished-at="2019-11-15T19:03:51Z" duration-ms="7227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:30:34Z" name="TC_SignIn" finished-at="2019-11-08T17:30:43Z" duration-ms="9090" status="PASS">
+        <test-method signature="TC_InValidForgotPasswordwithBlankEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:51Z" name="TC_InValidForgotPasswordwithBlankEmail" finished-at="2019-11-15T19:03:54Z" depends-on-methods="testScript.testExample$TC_All.TC_ValidDomainSubmission" duration-ms="3304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithBlankEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithInvalidEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:54Z" name="TC_InValidForgotPasswordwithInvalidEmail" finished-at="2019-11-15T19:03:58Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidForgotPasswordwithBlankEmail" duration-ms="4059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithInvalidEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithNotRegisteredEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:03:58Z" name="TC_InValidForgotPasswordwithNotRegisteredEmail" finished-at="2019-11-15T19:04:06Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidForgotPasswordwithInvalidEmail" duration-ms="7533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithNotRegisteredEmail -->
+        <test-method signature="TC_ValidForgotPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:06Z" name="TC_ValidForgotPassword" finished-at="2019-11-15T19:04:10Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidForgotPasswordwithNotRegisteredEmail" duration-ms="3637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidForgotPassword -->
+        <test-method signature="TC_InValidSignInwithBlankEmailPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:10Z" name="TC_InValidSignInwithBlankEmailPassword" finished-at="2019-11-15T19:04:11Z" depends-on-methods="testScript.testExample$TC_All.TC_ValidForgotPassword" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmailPassword -->
+        <test-method signature="TC_InValidSignInwithBlankEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:11Z" name="TC_InValidSignInwithBlankEmail" finished-at="2019-11-15T19:04:15Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidSignInwithBlankEmailPassword" duration-ms="4282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmail -->
+        <test-method signature="TC_InValidSignInwithBlankPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:15Z" name="TC_InValidSignInwithBlankPassword" finished-at="2019-11-15T19:04:24Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidSignInwithBlankEmail" duration-ms="8869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankPassword -->
+        <test-method signature="TC_InvalidsignInwithInvalidEmailPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:24Z" name="TC_InvalidsignInwithInvalidEmailPassword" finished-at="2019-11-15T19:04:40Z" depends-on-methods="testScript.testExample$TC_All.TC_InValidSignInwithBlankPassword" duration-ms="15676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidsignInwithInvalidEmailPassword -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:40Z" name="TC_SignIn" finished-at="2019-11-15T19:04:57Z" depends-on-methods="testScript.testExample$TC_All.TC_InvalidsignInwithInvalidEmailPassword" duration-ms="17293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_CreateNewInquiry()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:30:43Z" name="TC_CreateNewInquiry" finished-at="2019-11-08T17:31:14Z" duration-ms="31295" status="PASS">
+        <test-method signature="TC_SignUpwithBlankEmailIdInvalidData()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:04:57Z" name="TC_SignUpwithBlankEmailIdInvalidData" finished-at="2019-11-15T19:05:07Z" depends-on-methods="testScript.testExample$TC_All.TC_SignIn" duration-ms="9768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankEmailIdInvalidData -->
+        <test-method signature="TC_SignUpwithBlankUserIdInvalidData()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:07Z" name="TC_SignUpwithBlankUserIdInvalidData" finished-at="2019-11-15T19:05:15Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithBlankEmailIdInvalidData" duration-ms="7850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankUserIdInvalidData -->
+        <test-method signature="TC_SignUpwithUserIdInvalidData()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:15Z" name="TC_SignUpwithUserIdInvalidData" finished-at="2019-11-15T19:05:40Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithBlankUserIdInvalidData" duration-ms="25024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdInvalidData -->
+        <test-method signature="TC_VerifyBlankVerifyEmailUserid()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:40Z" name="TC_VerifyBlankVerifyEmailUserid" finished-at="2019-11-15T19:05:50Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithUserIdInvalidData" duration-ms="10473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyBlankVerifyEmailUserid -->
+        <test-method signature="TC_VerifyInvalidVerifyEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:50Z" name="TC_VerifyInvalidVerifyEmail" finished-at="2019-11-15T19:05:53Z" depends-on-methods="testScript.testExample$TC_All.TC_VerifyBlankVerifyEmailUserid" duration-ms="2627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyEmail -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyEmail()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:53Z" name="TC_VerifyNotRegisteredVerifyEmail" finished-at="2019-11-15T19:05:56Z" depends-on-methods="testScript.testExample$TC_All.TC_VerifyInvalidVerifyEmail" duration-ms="3033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyEmail -->
+        <test-method signature="TC_VerifyInvalidVerifyUserId()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:56Z" name="TC_VerifyInvalidVerifyUserId" finished-at="2019-11-15T19:05:59Z" depends-on-methods="testScript.testExample$TC_All.TC_VerifyNotRegisteredVerifyEmail" duration-ms="2602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyUserId -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyUserId()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:05:59Z" name="TC_VerifyNotRegisteredVerifyUserId" finished-at="2019-11-15T19:06:05Z" depends-on-methods="testScript.testExample$TC_All.TC_VerifyInvalidVerifyUserId" duration-ms="5797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyUserId -->
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:06:05Z" name="SignInforSignUp" finished-at="2019-11-15T19:06:14Z" depends-on-methods="testScript.testExample$TC_All.TC_VerifyNotRegisteredVerifyUserId" duration-ms="9526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailandPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:06:14Z" name="TC_SignUpwithEmailandPassword" finished-at="2019-11-15T19:06:36Z" depends-on-methods="testScript.testExample$TC_All.SignInforSignUp" duration-ms="21481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:06:36Z" name="TC_SignInafterRegister" finished-at="2019-11-15T19:07:03Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithEmailandPassword" duration-ms="27271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method signature="SignInforSignUpUserId()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:07:03Z" name="SignInforSignUpUserId" finished-at="2019-11-15T19:07:22Z" depends-on-methods="testScript.testExample$TC_All.TC_SignInafterRegister" duration-ms="18968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpUserId -->
+        <test-method signature="TC_SignUpwithEmailandPasswordUserId()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:07:22Z" name="TC_SignUpwithEmailandPasswordUserId" finished-at="2019-11-15T19:07:45Z" depends-on-methods="testScript.testExample$TC_All.SignInforSignUpUserId" duration-ms="23443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPasswordUserId -->
+        <test-method signature="TC_SignInafterRegisterUserId()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:07:45Z" name="TC_SignInafterRegisterUserId" finished-at="2019-11-15T19:08:10Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithEmailandPasswordUserId" duration-ms="24506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterUserId -->
+        <test-method signature="SignInforSignUpwithOutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:08:10Z" name="SignInforSignUpwithOutPassword" finished-at="2019-11-15T19:08:29Z" depends-on-methods="testScript.testExample$TC_All.TC_SignInafterRegisterUserId" duration-ms="18790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpwithOutPassword -->
+        <test-method signature="TC_SignUpwithEmailwithoutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:08:29Z" name="TC_SignUpwithEmailwithoutPassword" finished-at="2019-11-15T19:08:43Z" depends-on-methods="testScript.testExample$TC_All.SignInforSignUpwithOutPassword" duration-ms="14074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailwithoutPassword -->
+        <test-method signature="TC_SignInafterRegisterEmailwithOutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:08:43Z" name="TC_SignInafterRegisterEmailwithOutPassword" finished-at="2019-11-15T19:09:24Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithEmailwithoutPassword" duration-ms="41595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterEmailwithOutPassword -->
+        <test-method signature="SignInforSignUpUserIdwithoutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:09:24Z" name="SignInforSignUpUserIdwithoutPassword" finished-at="2019-11-15T19:09:45Z" depends-on-methods="testScript.testExample$TC_All.TC_SignInafterRegisterEmailwithOutPassword" duration-ms="20393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpUserIdwithoutPassword -->
+        <test-method signature="TC_SignUpwithUserIdwithoutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:09:45Z" name="TC_SignUpwithUserIdwithoutPassword" finished-at="2019-11-15T19:09:59Z" depends-on-methods="testScript.testExample$TC_All.SignInforSignUpUserIdwithoutPassword" duration-ms="14637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdwithoutPassword -->
+        <test-method signature="TC_SignInafterRegisterUserIdwithOutPassword()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:09:59Z" name="TC_SignInafterRegisterUserIdwithOutPassword" finished-at="2019-11-15T19:10:39Z" depends-on-methods="testScript.testExample$TC_All.TC_SignUpwithUserIdwithoutPassword" duration-ms="39313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterUserIdwithOutPassword -->
+        <test-method signature="TC_CreateNewInquiry()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:10:39Z" name="TC_CreateNewInquiry" finished-at="2019-11-15T19:11:35Z" depends-on-methods="testScript.testExample$TC_All.TC_SignInafterRegisterUserIdwithOutPassword" duration-ms="56751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateNewInquiry -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:31:14Z" name="TC_SignOut" finished-at="2019-11-08T17:31:17Z" duration-ms="2277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_NewInquiry@79b06cab]" started-at="2019-11-08T17:31:17Z" name="afterTest" finished-at="2019-11-08T17:31:17Z" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_NewInquiry -->
-    </test> <!-- Create New Inquiry -->
-    <test started-at="2019-11-08T12:01:17Z" name="Create New Inquiry with Invalid Data" finished-at="2019-11-08T12:02:17Z" duration-ms="60061">
-      <class name="testScript.TC_NewInquirywithInvalidData">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:31:17Z" name="beforeTest" finished-at="2019-11-08T17:31:22Z" duration-ms="5652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:31:22Z" name="TC_ValidDomainSubmission" finished-at="2019-11-08T17:31:26Z" duration-ms="3522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:31:26Z" name="TC_SignIn" finished-at="2019-11-08T17:31:36Z" duration-ms="10227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_CreateNewInquirywithInvalidValues()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:31:36Z" name="TC_CreateNewInquirywithInvalidValues" finished-at="2019-11-08T17:32:05Z" duration-ms="29330" status="PASS">
+        <test-method signature="TC_CreateNewInquirywithInvalidValues()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:11:35Z" name="TC_CreateNewInquirywithInvalidValues" finished-at="2019-11-15T19:12:22Z" depends-on-methods="testScript.testExample$TC_All.TC_CreateNewInquiry" duration-ms="46738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateNewInquirywithInvalidValues -->
-        <test-method signature="TC_CreateNewInquirywithBlankValues()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:32:05Z" name="TC_CreateNewInquirywithBlankValues" finished-at="2019-11-08T17:32:14Z" duration-ms="8944" status="PASS">
+        <test-method signature="TC_CreateNewInquirywithBlankValues()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:12:22Z" name="TC_CreateNewInquirywithBlankValues" finished-at="2019-11-15T19:12:33Z" depends-on-methods="testScript.testExample$TC_All.TC_CreateNewInquirywithInvalidValues" duration-ms="11439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateNewInquirywithBlankValues -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:32:14Z" name="TC_SignOut" finished-at="2019-11-08T17:32:17Z" duration-ms="2194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_NewInquirywithInvalidData@2667f029]" started-at="2019-11-08T17:32:17Z" name="afterTest" finished-at="2019-11-08T17:32:17Z" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_NewInquirywithInvalidData -->
-    </test> <!-- Create New Inquiry with Invalid Data -->
-    <test started-at="2019-11-08T12:02:17Z" name="Inquiry Internal Functionalities" finished-at="2019-11-08T12:05:35Z" duration-ms="198559">
-      <class name="testScript.TC_InquiryInternalFunctionalities">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:17Z" name="beforeTest" finished-at="2019-11-08T17:32:23Z" duration-ms="6590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:23Z" name="TC_ValidDomainSubmission" finished-at="2019-11-08T17:32:36Z" duration-ms="12441" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_InquiryList()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:36Z" name="TC_InquiryList" finished-at="2019-11-08T17:32:40Z" duration-ms="4613" status="PASS">
+        <test-method signature="TC_InquiryList()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:12:33Z" name="TC_InquiryList" finished-at="2019-11-15T19:12:55Z" depends-on-methods="testScript.testExample$TC_All.TC_CreateNewInquirywithBlankValues" duration-ms="21702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_InquiryList -->
-        <test-method signature="TC_ViewImage()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:40Z" name="TC_ViewImage" finished-at="2019-11-08T17:32:51Z" duration-ms="10521" status="PASS">
+        <test-method signature="TC_ViewImage()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:12:55Z" name="TC_ViewImage" finished-at="2019-11-15T19:13:21Z" depends-on-methods="testScript.testExample$TC_All.TC_InquiryList" duration-ms="25476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ViewImage -->
-        <test-method signature="TC_SendMessageToChat()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:51Z" name="TC_SendMessageToChat" finished-at="2019-11-08T17:32:56Z" duration-ms="4879" status="PASS">
+        <test-method signature="TC_SendMessageToChat()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:13:21Z" name="TC_SendMessageToChat" finished-at="2019-11-15T19:13:26Z" depends-on-methods="testScript.testExample$TC_All.TC_ViewImage" duration-ms="4888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SendMessageToChat -->
-        <test-method signature="TC_AttachMediaPhoto()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:32:56Z" name="TC_AttachMediaPhoto" finished-at="2019-11-08T17:33:07Z" duration-ms="11211" status="PASS">
+        <test-method signature="TC_AttachMediaPhoto()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:13:26Z" name="TC_AttachMediaPhoto" finished-at="2019-11-15T19:13:38Z" depends-on-methods="testScript.testExample$TC_All.TC_SendMessageToChat" duration-ms="12536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_AttachMediaPhoto -->
-        <test-method signature="TC_AttachMediaVideo()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:33:07Z" name="TC_AttachMediaVideo" finished-at="2019-11-08T17:33:17Z" duration-ms="9976" status="PASS">
+        <test-method signature="TC_AttachMediaVideo()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:13:38Z" name="TC_AttachMediaVideo" finished-at="2019-11-15T19:13:47Z" depends-on-methods="testScript.testExample$TC_All.TC_AttachMediaPhoto" duration-ms="9066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_AttachMediaVideo -->
-        <test-method signature="TC_AttachMediaDocument()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:33:17Z" name="TC_AttachMediaDocument" finished-at="2019-11-08T17:33:26Z" duration-ms="8950" status="PASS">
+        <test-method signature="TC_AttachMediaDocument()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:13:47Z" name="TC_AttachMediaDocument" finished-at="2019-11-15T19:13:55Z" depends-on-methods="testScript.testExample$TC_All.TC_AttachMediaVideo" duration-ms="8009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_AttachMediaDocument -->
-        <test-method signature="TC_AddParticipantInInquiry()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:33:26Z" name="TC_AddParticipantInInquiry" finished-at="2019-11-08T17:33:58Z" duration-ms="32352" status="PASS">
+        <test-method signature="TC_AddParticipantInInquiry()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:13:55Z" name="TC_AddParticipantInInquiry" finished-at="2019-11-15T19:14:38Z" depends-on-methods="testScript.testExample$TC_All.TC_AttachMediaDocument" duration-ms="42558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_AddParticipantInInquiry -->
-        <test-method signature="TC_AddNotes()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:33:58Z" name="TC_AddNotes" finished-at="2019-11-08T17:34:04Z" duration-ms="5534" status="PASS">
+        <test-method signature="TC_AddNotes()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:14:38Z" name="TC_AddNotes" finished-at="2019-11-15T19:14:43Z" depends-on-methods="testScript.testExample$TC_All.TC_AddParticipantInInquiry" duration-ms="5570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_AddNotes -->
-        <test-method signature="TC_EditNotes()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:34:04Z" name="TC_EditNotes" finished-at="2019-11-08T17:34:11Z" duration-ms="7479" status="PASS">
+        <test-method signature="TC_EditNotes()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:14:43Z" name="TC_EditNotes" finished-at="2019-11-15T19:14:51Z" depends-on-methods="testScript.testExample$TC_All.TC_AddNotes" duration-ms="7472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EditNotes -->
-        <test-method signature="TC_DeleteNotes()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:34:11Z" name="TC_DeleteNotes" finished-at="2019-11-08T17:34:18Z" duration-ms="6227" status="PASS">
+        <test-method signature="TC_DeleteNotes()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:14:51Z" name="TC_DeleteNotes" finished-at="2019-11-15T19:14:57Z" depends-on-methods="testScript.testExample$TC_All.TC_EditNotes" duration-ms="6168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_DeleteNotes -->
-        <test-method signature="TC_RemoveParticipant()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:34:18Z" name="TC_RemoveParticipant" finished-at="2019-11-08T17:34:29Z" duration-ms="11726" status="PASS">
+        <test-method signature="TC_RemoveParticipant()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:14:57Z" name="TC_RemoveParticipant" finished-at="2019-11-15T19:15:09Z" depends-on-methods="testScript.testExample$TC_All.TC_DeleteNotes" duration-ms="11657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_RemoveParticipant -->
-        <test-method signature="TC_ArchiveInquiry()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:34:29Z" name="TC_ArchiveInquiry" finished-at="2019-11-08T17:34:38Z" duration-ms="8390" status="PASS">
+        <test-method signature="TC_ArchiveInquiry()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:15:09Z" name="TC_ArchiveInquiry" finished-at="2019-11-15T19:15:17Z" depends-on-methods="testScript.testExample$TC_All.TC_RemoveParticipant" duration-ms="8378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ArchiveInquiry -->
-        <test-method signature="TC_UnArchiveInquiry()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:34:38Z" name="TC_UnArchiveInquiry" finished-at="2019-11-08T17:35:06Z" duration-ms="27873" status="PASS">
+        <test-method signature="TC_UnArchiveInquiry()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:15:17Z" name="TC_UnArchiveInquiry" finished-at="2019-11-15T19:15:33Z" depends-on-methods="testScript.testExample$TC_All.TC_ArchiveInquiry" duration-ms="16257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_UnArchiveInquiry -->
-        <test-method signature="TC_VideoCall()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:35:06Z" name="TC_VideoCall" finished-at="2019-11-08T17:35:20Z" duration-ms="14164" status="PASS">
+        <test-method signature="TC_VideoCall()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:15:33Z" name="TC_VideoCall" finished-at="2019-11-15T19:15:47Z" depends-on-methods="testScript.testExample$TC_All.TC_UnArchiveInquiry" duration-ms="13400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_VideoCall -->
-        <test-method signature="TC_EditInquiryDetails()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:35:20Z" name="TC_EditInquiryDetails" finished-at="2019-11-08T17:35:33Z" duration-ms="13258" status="PASS">
+        <test-method signature="TC_EditInquiryDetails()[pri:0, instance:testScript.testExample$TC_All@7f552bd3]" started-at="2019-11-15T19:15:47Z" name="TC_EditInquiryDetails" finished-at="2019-11-15T19:16:03Z" depends-on-methods="testScript.testExample$TC_All.TC_VideoCall" duration-ms="16269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EditInquiryDetails -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:35:33Z" name="TC_SignOut" finished-at="2019-11-08T17:35:35Z" duration-ms="2263" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_InquiryInternalFunctionalities@1139b2f3]" started-at="2019-11-08T17:35:35Z" name="afterTest" finished-at="2019-11-08T17:35:35Z" duration-ms="87" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
-    </test> <!-- Inquiry Internal Functionalities -->
-  </suite> <!-- Suite -->
+      </class> <!-- testScript.testExample$TC_All -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

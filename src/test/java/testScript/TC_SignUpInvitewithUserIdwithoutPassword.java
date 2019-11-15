@@ -45,7 +45,7 @@ public class TC_SignUpInvitewithUserIdwithoutPassword extends ApplicationUtility
 	}
 
 	@Test(priority = 2, enabled = true)
-	public void TC_SignUpwithEmailwithoutPassword() {
+	public void TC_SignUpwithUserIdwithoutPassword() {
 
 		mSignUpwithUserIdwithOutPassword.userIdSignUpwithoutPassword();
 	}

@@ -1,11 +1,18 @@
 package commonFunctions;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
+
+import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,6 +24,10 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class ApplicationUtility {
 	public static WebDriver driver;
@@ -40,12 +51,11 @@ public class ApplicationUtility {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
-			System.setProperty("webdriver.chrome.driver", "/home/darshan/Downloads/chromedriver_linux64/chromedriver");
 			driver = new ChromeDriver(options);
-
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "/src/test/resources/chromedriver");
 		}
 		return driver;
-
 	}
 
 	public void ImplicitWait(Integer time) {
@@ -97,5 +107,39 @@ public class ApplicationUtility {
 		// StringSelection is a class that can be used for copy and paste operations.
 		StringSelection stringSelection = new StringSelection(string);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+	}
+
+	public void takeScreenShot(String fileWithPath) {
+
+		Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000))
+				.takeScreenshot(driver);
+
+		try {
+			ImageIO.write(screenshot.getImage(), "jpg", new File(fileWithPath));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void attachmedia(String strImage) {
+		// Using the Robot class to upload the file
+		try {
+			waitTime(1000);
+
+			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/" + strImage);
+			Robot robot = new Robot();
+			robot = new Robot();
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_V);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

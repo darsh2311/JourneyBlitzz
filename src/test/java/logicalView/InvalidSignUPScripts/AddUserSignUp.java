@@ -1,13 +1,11 @@
 package logicalView.InvalidSignUPScripts;
 
-import org.openqa.selenium.support.PageFactory;
-
 import commonFunctions.ApplicationUtility;
 import testObjects.ObjectSignUpCopy;
 
 public class AddUserSignUp extends ApplicationUtility {
 
-	ObjectSignUpCopy objSignUp = PageFactory.initElements(driver, ObjectSignUpCopy.class);
+	ObjectSignUpCopy objSignUp = new ObjectSignUpCopy(driver);
 
 	public void addUser() {
 

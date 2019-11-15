@@ -1,20 +1,12 @@
 package logicalView.InquiryInternalFunctionalityScripts;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-
 import commonFunctions.ApplicationUtility;
 import testObjects.ObjectInquiryFunctionalities;
 
 public class AttachMedia extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
-	public void attachMedia(String strMedia) {
+	public void allAttachMedia(String strMedia) {
 		ImplicitWait(10);
 
 		// Click on the attachment icon in the chat
@@ -29,23 +21,7 @@ public class AttachMedia extends ApplicationUtility {
 		mObjectInquiryFunctionalities.clickFileToUpload();
 		waitTime(1000);
 
-		// Using the Robot class to upload the file
-		try {
-			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/" + strMedia);
-			Robot robot = new Robot();
-			robot = new Robot();
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-			waitTime(2000);
-
-		} catch (AWTException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		attachmedia(strMedia);
 		waitTime(1500);
 	}
 
@@ -53,18 +29,22 @@ public class AttachMedia extends ApplicationUtility {
 		ImplicitWait(10);
 
 		// Attach media method
-		attachMedia("inquiry.jpg");
+		allAttachMedia("inquiry.jpg");
+		waitTime(5000);
 
 		// Using Action class to draw on the uploaded image
-		WebElement wbCanvas = mObjectInquiryFunctionalities.UploadedwbCanvas;
-		System.out.println(wbCanvas.getLocation());
 
-		Actions actionBuilder = new Actions(driver);
-		Action drawOnCanvas = actionBuilder.moveToElement(wbCanvas, 220, 270).clickAndHold(wbCanvas)
-				.moveToElement(wbCanvas, 175, 270).release(wbCanvas).moveToElement(wbCanvas, 175, 270).clickAndHold()
-				.moveToElement(wbCanvas, 180, 155).release(wbCanvas).release(wbCanvas).release().build();
-		drawOnCanvas.perform();
-		waitTime(1500);
+		/*
+		 * WebElement wbCanvas = mObjectInquiryFunctionalities.UploadedwbCanvas;
+		 *
+		 * JavascriptExecutor js = (JavascriptExecutor) driver; Actions actionBuilder =
+		 * new Actions(driver); Action drawOnCanvas =
+		 * actionBuilder.moveToElement(wbCanvas, 220, 270).clickAndHold(wbCanvas)
+		 * .moveToElement(wbCanvas, 175, 270).release(wbCanvas).release().build();
+		 * drawOnCanvas.perform(); waitTime(5000);
+		 * js.executeScript("arguments[0].scrollIntoView();",
+		 * mObjectInquiryFunctionalities.sendImageToInquiry);
+		 */
 
 		// Click on Send to upload the image with drawing
 		mObjectInquiryFunctionalities.sendImageToInquiry();
@@ -76,7 +56,7 @@ public class AttachMedia extends ApplicationUtility {
 		ImplicitWait(10);
 
 		// Attach media method
-		attachMedia("inquiryVideo1mb.mp4");
+		allAttachMedia("inquiryVideo1mb.mp4");
 		waitTime(1500);
 
 		// Click on Send to upload the image with drawing
@@ -89,7 +69,7 @@ public class AttachMedia extends ApplicationUtility {
 		ImplicitWait(10);
 
 		// Attach media method
-		attachMedia("inquiryDoc1MB.docx");
+		allAttachMedia("inquiryDoc1MB.docx");
 		waitTime(500);
 
 		// Click on Send to upload the image with drawing

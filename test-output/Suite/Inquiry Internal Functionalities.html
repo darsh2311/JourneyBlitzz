@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Inquiry Internal Functionalities</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 08 17:32:17 IST 2019</td>
+<td>Started on:</td><td>Fri Nov 15 17:49:55 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>198 seconds (198559 ms)</td>
+<tr><td>Total time:</td><td>132 seconds (132076 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,482 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_ArchiveInquiry()'><b>TC_ArchiveInquiry</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;openArchInq()&quot; class=&quot;chatmoremenuiconhovr dropdown-toggle btn btn-default border-none inq-righticon&quot; role=&quot;button&quot;&gt;...&lt;/a&gt; is not clickable at point (1513, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickArchiveInquiryIcon(ObjectInquiryFunctionalities.java:334)
+	at logicalView.InquiryInternalFunctionalityScripts.ArchiveUnarchiveInquiry.archiveInquiry(ArchiveUnarchiveInquiry.java:21)
+	at testScript.TC_InquiryInternalFunctionalities.TC_ArchiveInquiry(TC_InquiryInternalFunctionalities.java:127)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101086700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101086700'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;openArchInq()&quot; class=&quot;chatmoremenuiconhovr dropdown-toggle btn btn-default border-none inq-righticon&quot; role=&quot;button&quot;&gt;...&lt;/a&gt; is not clickable at point (1513, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickArchiveInquiryIcon(ObjectInquiryFunctionalities.java:334)
+	at logicalView.InquiryInternalFunctionalityScripts.ArchiveUnarchiveInquiry.archiveInquiry(ArchiveUnarchiveInquiry.java:21)
+	at testScript.TC_InquiryInternalFunctionalities.TC_ArchiveInquiry(TC_InquiryInternalFunctionalities.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_DeleteNotes()'><b>TC_DeleteNotes</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span style=&quot;cursor: pointer&quot; class=&quot;closebtn&quot; ng-click=&quot;closeInqInfo();&quot;&gt;...&lt;/span&gt; is not clickable at point (1568, 135). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickCloseNote(ObjectInquiryFunctionalities.java:199)
+	at logicalView.InquiryInternalFunctionalityScripts.AddNotes.deleteNote(AddNotes.java:95)
+	at testScript.TC_InquiryInternalFunctionalities.TC_DeleteNotes(TC_InquiryInternalFunctionalities.java:117)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1480805145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1480805145'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span style=&quot;cursor: pointer&quot; class=&quot;closebtn&quot; ng-click=&quot;closeInqInfo();&quot;&gt;...&lt;/span&gt; is not clickable at point (1568, 135). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickCloseNote(ObjectInquiryFunctionalities.java:199)
+	at logicalView.InquiryInternalFunctionalityScripts.AddNotes.deleteNote(AddNotes.java:95)
+	at testScript.TC_InquiryInternalFunctionalities.TC_DeleteNotes(TC_InquiryInternalFunctionalities.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_EditInquiryDetails()'><b>TC_EditInquiryDetails</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;closeNav();openSideNav(&apos;details&apos;);&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; ng-class=&quot;details?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot; style=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (1562, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryDetails(ObjectInquiryFunctionalities.java:283)
+	at logicalView.InquiryInternalFunctionalityScripts.InquiryDetails.editInquiryDetails(InquiryDetails.java:42)
+	at testScript.TC_InquiryInternalFunctionalities.TC_EditInquiryDetails(TC_InquiryInternalFunctionalities.java:143)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace256522893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace256522893'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;closeNav();openSideNav(&apos;details&apos;);&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; ng-class=&quot;details?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot; style=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (1562, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryDetails(ObjectInquiryFunctionalities.java:283)
+	at logicalView.InquiryInternalFunctionalityScripts.InquiryDetails.editInquiryDetails(InquiryDetails.java:42)
+	at testScript.TC_InquiryInternalFunctionalities.TC_EditInquiryDetails(TC_InquiryInternalFunctionalities.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_RemoveParticipant()'><b>TC_RemoveParticipant</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;closeNav();openSideNav(&apos;details&apos;);&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; ng-class=&quot;details?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot; style=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (1562, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryDetails(ObjectInquiryFunctionalities.java:283)
+	at logicalView.InquiryInternalFunctionalityScripts.RemoveParticipant.removeParticipant(RemoveParticipant.java:20)
+	at testScript.TC_InquiryInternalFunctionalities.TC_RemoveParticipant(TC_InquiryInternalFunctionalities.java:122)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace787156891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace787156891'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;closeNav();openSideNav(&apos;details&apos;);&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; role=&quot;button&quot; aria-expanded=&quot;false&quot; ng-class=&quot;details?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot; style=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (1562, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryDetails(ObjectInquiryFunctionalities.java:283)
+	at logicalView.InquiryInternalFunctionalityScripts.RemoveParticipant.removeParticipant(RemoveParticipant.java:20)
+	at testScript.TC_InquiryInternalFunctionalities.TC_RemoveParticipant(TC_InquiryInternalFunctionalities.java:122)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_UnArchiveInquiry()'><b>TC_UnArchiveInquiry</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (424, 81). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryListDropdown(ObjectInquiryFunctionalities.java:384)
+	at logicalView.InquiryInternalFunctionalityScripts.ArchiveUnarchiveInquiry.UnarchiveInquiry(ArchiveUnarchiveInquiry.java:43)
+	at testScript.TC_InquiryInternalFunctionalities.TC_UnArchiveInquiry(TC_InquiryInternalFunctionalities.java:132)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace594783641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594783641'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;...&lt;/button&gt; is not clickable at point (424, 81). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickInquiryListDropdown(ObjectInquiryFunctionalities.java:384)
+	at logicalView.InquiryInternalFunctionalityScripts.ArchiveUnarchiveInquiry.UnarchiveInquiry(ArchiveUnarchiveInquiry.java:43)
+	at testScript.TC_InquiryInternalFunctionalities.TC_UnArchiveInquiry(TC_InquiryInternalFunctionalities.java:132)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+<tr>
+<td title='testScript.TC_InquiryInternalFunctionalities.TC_VideoCall()'><b>TC_VideoCall</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;openSideNav(&apos;call&apos;); searchtext1.$=&apos;&apos;;&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; data-toggle=&quot;modal&quot; role=&quot;button&quot; ng-class=&quot;callparicipant?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot;&gt;...&lt;/a&gt; is not clickable at point (1318, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickVideoCall(ObjectInquiryFunctionalities.java:447)
+	at logicalView.InquiryInternalFunctionalityScripts.VideoCall.startEndVideoCall(VideoCall.java:16)
+	at testScript.TC_InquiryInternalFunctionalities.TC_VideoCall(TC_InquiryInternalFunctionalities.java:138)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1244211620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1244211620'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a ng-click=&quot;openSideNav(&apos;call&apos;); searchtext1.$=&apos;&apos;;&quot; class=&quot;dropdown-toggle btn btn-default border-none inq-righticon chatmoremenuiconhovr&quot; data-toggle=&quot;modal&quot; role=&quot;button&quot; ng-class=&quot;callparicipant?&apos;chatmoremenuicon&apos;:&apos;&apos;&quot;&gt;...&lt;/a&gt; is not clickable at point (1318, 91). Other element would receive the click: &lt;div popup-modal=&quot;removecreatednote.$index&quot; class=&quot;modal fade in&quot; id=&quot;removecreatednote0&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block; padding-right: 15px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=77.0.3865.120)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-70-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.xm6XLO}, goog:chromeOptions: {debuggerAddress: localhost:44993}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c99386547196d31c1d4a67536fa4a8e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at testObjects.ObjectInquiryFunctionalities.clickVideoCall(ObjectInquiryFunctionalities.java:447)
+	at logicalView.InquiryInternalFunctionalityScripts.VideoCall.startEndVideoCall(VideoCall.java:16)
+	at testScript.TC_InquiryInternalFunctionalities.TC_VideoCall(TC_InquiryInternalFunctionalities.java:138)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,87 +554,57 @@ function toggleAllBoxes() {
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_AddNotes()'><b>TC_AddNotes</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>5</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_AddParticipantInInquiry()'><b>TC_AddParticipantInInquiry</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>32</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_ArchiveInquiry()'><b>TC_ArchiveInquiry</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>8</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_AttachMediaDocument()'><b>TC_AttachMediaDocument</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>8</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_AttachMediaPhoto()'><b>TC_AttachMediaPhoto</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
-<td>11</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>10</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_AttachMediaVideo()'><b>TC_AttachMediaVideo</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>9</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_DeleteNotes()'><b>TC_DeleteNotes</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>6</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_EditInquiryDetails()'><b>TC_EditInquiryDetails</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>13</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_EditNotes()'><b>TC_EditNotes</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>7</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_InquiryList()'><b>TC_InquiryList</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>4</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_RemoveParticipant()'><b>TC_RemoveParticipant</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>11</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_SendMessageToChat()'><b>TC_SendMessageToChat</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
-<td>4</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>5</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_SignOut()'><b>TC_SignOut</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>2</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_UnArchiveInquiry()'><b>TC_UnArchiveInquiry</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>27</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_ValidDomainSubmission()'><b>TC_ValidDomainSubmission</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
-<td>12</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
-<tr>
-<td title='testScript.TC_InquiryInternalFunctionalities.TC_VideoCall()'><b>TC_VideoCall</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
-<td></td>
-<td>14</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>20</td>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 <tr>
 <td title='testScript.TC_InquiryInternalFunctionalities.TC_ViewImage()'><b>TC_ViewImage</b><br>Test class: testScript.TC_InquiryInternalFunctionalities</td>
 <td></td>
 <td>10</td>
-<td>testScript.TC_InquiryInternalFunctionalities@1139b2f3</td></tr>
+<td>testScript.TC_InquiryInternalFunctionalities@3d680b5a</td></tr>
 </table><p>
 </body>
 </html>

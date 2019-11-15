@@ -38,8 +38,7 @@ public class TC_ForgotPasswordwithINValidData extends ApplicationUtility {
 	public void TC_InValidForgotPasswordwithBlankEmail() {
 
 		mForgotPasswordwithBlankEmail.inValidForgotPasswordwithBlankEmail();
-		mForgotPasswordwithInvalidEmail.inValidForgotPasswordwithInvalidEmail();
-		mForgotPasswordwithNotRegisteredEmail.inValidForgotPasswordwithNotRegisteredEmail();
+
 	}
 
 	@Test(priority = 3, enabled = true, dependsOnMethods = "TC_InValidForgotPasswordwithBlankEmail")

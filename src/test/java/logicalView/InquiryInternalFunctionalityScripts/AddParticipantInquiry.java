@@ -50,7 +50,7 @@ public class AddParticipantInquiry extends ApplicationUtility {
 
 		if (count != 2) {
 			mObjectInquiryFunctionalities.addParticipantButton();
-			waitTime(5000);
+			waitTime(15000);
 		} else {
 			mObjectInquiryFunctionalities.closeAddParticipantSidebar();
 			waitTime(5000);

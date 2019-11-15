@@ -1,6 +1,5 @@
 package logicalView.InvalidSignUPScripts;
 
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -10,11 +9,12 @@ import testObjects.ObjectSignUpCopy;
 
 public class SignUpwithUserIdInvalidData extends ApplicationUtility {
 
-	ObjectSignUpCopy objSignUp = PageFactory.initElements(driver, ObjectSignUpCopy.class);
+	ObjectSignUpCopy objSignUp = new ObjectSignUpCopy(driver);
 
 	public void invalidUserIDSubmit() {
 
 		waitTime(300);
+		ImplicitWait(6);
 		// Click on Add user
 		objSignUp.clickAddButton();
 		ImplicitWait(100);

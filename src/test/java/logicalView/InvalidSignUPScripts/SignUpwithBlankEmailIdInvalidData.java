@@ -1,6 +1,5 @@
 package logicalView.InvalidSignUPScripts;
 
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -9,7 +8,7 @@ import testObjects.ObjectSignUpCopy;
 
 public class SignUpwithBlankEmailIdInvalidData extends ApplicationUtility {
 
-	ObjectSignUpCopy objSignUp = PageFactory.initElements(driver, ObjectSignUpCopy.class);
+	ObjectSignUpCopy objSignUp = new ObjectSignUpCopy(driver);
 
 	// Add User through Admin after LogIn
 	public void checkBlankEmailSubmit() {

@@ -1,14 +1,12 @@
 package logicalView.InvalidSignUpVerifyScripts;
 
-import org.openqa.selenium.support.PageFactory;
-
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.ObjectSignUpCopy;
 
 public class SignUpVerifywithBlankEmailUserId extends ApplicationUtility {
 
-	ObjectSignUpCopy objSignUp = PageFactory.initElements(driver, ObjectSignUpCopy.class);
+	ObjectSignUpCopy objSignUp = new ObjectSignUpCopy(driver);
 
 	// Verify Email/Userid Invite SignUp
 	public void blankVerifyEmailUserid() {

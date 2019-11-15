@@ -1,7 +1,5 @@
 package testScript;
 
-import java.awt.AWTException;
-
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -42,7 +40,7 @@ public class TC_NewInquiry extends ApplicationUtility {
 	}
 
 	@Test(priority = 3, enabled = true)
-	public void TC_CreateNewInquiry() throws InterruptedException, AWTException {
+	public void TC_CreateNewInquiry() {
 
 		mNewInquiry.createNewInquiry();
 	}

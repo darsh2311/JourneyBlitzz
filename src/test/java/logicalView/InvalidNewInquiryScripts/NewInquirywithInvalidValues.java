@@ -1,9 +1,5 @@
 package logicalView.InvalidNewInquiryScripts;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -51,27 +47,6 @@ public class NewInquirywithInvalidValues extends ApplicationUtility {
 
 		mobjectNewInquiry.clickCancelCreateInquiry();
 		waitTime(1000);
-	}
-
-	public void attachmedia(String strImage) {
-		// Using the Robot class to upload the file
-		try {
-			waitTime(1000);
-
-			setClipboardData(System.getProperty("user.dir") + "/src/test/resources/" + strImage);
-			Robot robot = new Robot();
-			robot = new Robot();
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_V);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
-
-		} catch (AWTException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 }

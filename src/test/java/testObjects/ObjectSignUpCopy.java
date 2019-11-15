@@ -1,7 +1,9 @@
 package testObjects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ObjectSignUpCopy {
 
@@ -288,13 +290,12 @@ public class ObjectSignUpCopy {
 		enterNotifyEmail.sendKeys(notifyEmail);
 	}
 
-	/*
-	 * // Pagefactory constructor public ObjectSignUpCopy(WebDriver driver) {
-	 * 
-	 * PageFactory.initElements(driver, this);
-	 * 
-	 * }
-	 */
+	// Pagefactory constructor
+	public ObjectSignUpCopy(WebDriver driver) {
+
+		PageFactory.initElements(driver, this);
+
+	}
 
 	/////////////////////////////////////
 	// Success messages/Error Messages////
