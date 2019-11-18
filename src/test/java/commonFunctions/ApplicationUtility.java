@@ -9,7 +9,9 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
@@ -141,5 +143,23 @@ public class ApplicationUtility {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public void popupWindowHandle() {
+
+		Set<String> handler = driver.getWindowHandles();
+		Iterator<String> it = handler.iterator();
+
+		String parent = it.next();
+
+		String child = it.next();
+		waitTime(1000);
+
+		driver.switchTo().window(child);
+		waitTime(1000);
+		driver.close();
+		driver.switchTo().window(parent);
+		waitTime(1000);
+
 	}
 }

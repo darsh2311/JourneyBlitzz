@@ -1058,3 +1058,63 @@ Driver info: driver.version: RemoteWebDriver
 2019-11-15 19:15:33 INFO  ApplicationUtility:78 - Inquiry has been unArchived.
 2019-11-15 19:15:59 INFO  ApplicationUtility:65 - Inquiry Title changed Successfully: Passed
 2019-11-15 19:16:03 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-18 17:14:24 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:14:30 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:14:51 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-11-18 17:16:17 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:16:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:16:33 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:22:50 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:22:56 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:23:08 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:24:58 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:25:04 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:25:16 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:27:27 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:27:34 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:27:42 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:34:32 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:34:38 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:34:47 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:48:24 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:48:30 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:48:44 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:50:23 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:50:30 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 17:50:41 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 17:52:32 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 17:52:38 ERROR ApplicationUtility:34 - Domain submission: Failedjava.lang.AssertionError: expected [Login | Blitzz] but found [Company | Blitzz]
+2019-11-18 17:52:54 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 18:02:05 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:02:12 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:02:25 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 18:06:25 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:06:32 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:06:42 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 18:10:51 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:10:57 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:11:09 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 18:20:47 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:20:54 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:21:08 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-18 18:22:33 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:22:39 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:22:54 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-18 18:24:10 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:24:16 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:24:31 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-18 18:28:50 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:28:57 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:29:12 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-18 18:36:07 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:36:14 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:36:24 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 18:39:57 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 18:40:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 18:40:17 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-18 19:27:05 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-11-18 19:27:12 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 19:27:22 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-18 20:06:41 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-18 20:06:47 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-18 20:06:58 INFO  ApplicationUtility:29 - SignIn is successful: Passed

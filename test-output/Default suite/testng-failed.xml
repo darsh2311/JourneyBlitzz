@@ -3,25 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_InquiryInternalFunctionalities">
+      <class name="testScript.TC_Showme">
         <methods>
-          <include name="TC_RemoveParticipant"/>
           <include name="beforeTest"/>
-          <include name="TC_ArchiveInquiry"/>
-          <include name="TC_AddParticipantInInquiry"/>
-          <include name="TC_DeleteNotes"/>
-          <include name="TC_EditInquiryDetails"/>
-          <include name="TC_AddNotes"/>
-          <include name="TC_VideoCall"/>
-          <include name="TC_UnArchiveInquiry"/>
-          <include name="TC_AttachMediaDocument"/>
-          <include name="TC_EditNotes"/>
-          <include name="afterTest"/>
-          <include name="TC_AttachMediaVideo"/>
-          <include name="TC_SignOut"/>
-          <include name="TC_AttachMediaPhoto"/>
+          <include name="TC_CreateSessionwithWhatsApp"/>
         </methods>
-      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
+      </class> <!-- testScript.TC_Showme -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

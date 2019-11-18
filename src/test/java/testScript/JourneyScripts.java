@@ -47,7 +47,7 @@ import logicalView.ValidSignUpScripts.SignUpwithUserId;
 import logicalView.ValidSignUpScripts.SignUpwithUserIdwithOutPassword;
 import logicalView.ValidSignUpScripts.ValidSignInwithSignUp;
 
-public class testExample {
+public class JourneyScripts {
 	public class TC_All extends ApplicationUtility {
 		NeedHelp mNeedHelp;
 		VerifyDomainwithInvalidData mVerifyDomainwithInvalidData;
