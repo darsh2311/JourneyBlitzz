@@ -1,5 +1,6 @@
 package testScript;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -44,8 +45,9 @@ public class TC_NewInquirywithBothContactsGroups extends ApplicationUtility {
 		mNewInquirywithBothContactsGroup.createNewInquiryboth();
 	}
 
-	/*
-	 * @AfterTest public void afterTest() { driver.quit(); }
-	 */
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
 
 }

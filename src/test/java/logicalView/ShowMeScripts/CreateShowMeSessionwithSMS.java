@@ -1,4 +1,4 @@
-package logicalView;
+package logicalView.ShowMeScripts;
 
 import java.util.List;
 
@@ -11,14 +11,9 @@ import testObjects.ObjectShowME;
 public class CreateShowMeSessionwithSMS extends ApplicationUtility {
 
 	ObjectShowME mObjectShowME = new ObjectShowME(driver);
-	public String ReferenceId = "Session Test" + (int) (Math.random() * 199999);
+	public String ReferenceId = "Test SMS Session " + (int) (Math.random() * 999);
 
 	public void createSessionwithSMS() {
-
-		ImplicitWait(15);
-		// Click on ShowMe Tab
-		mObjectShowME.clickShowmeTab();
-		waitTime(10000);
 
 		// Enter the New Reference Id to create session
 		mObjectShowME.enterReference(ReferenceId);
@@ -46,7 +41,7 @@ public class CreateShowMeSessionwithSMS extends ApplicationUtility {
 
 		// Close the Newly Opened Join Call window
 		popupWindowHandle();
-
+		waitTime(5000);
 		// Enter Reference Id to search Session from Session history list
 		// mObjectShowME.entersearchReferenceId(ReferenceId);
 

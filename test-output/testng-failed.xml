@@ -5,8 +5,9 @@
     <classes>
       <class name="testScript.TC_Showme">
         <methods>
+          <include name="TC_SignOut"/>
           <include name="beforeTest"/>
-          <include name="TC_CreateSessionwithWhatsApp"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- testScript.TC_Showme -->
     </classes>

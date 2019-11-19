@@ -1,4 +1,4 @@
-package logicalView;
+package logicalView.ShowMeScripts;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
@@ -7,12 +7,12 @@ import testObjects.ObjectShowME;
 public class CreateShowMeSessionwithWhatsApp extends ApplicationUtility {
 
 	ObjectShowME mObjectShowME = new ObjectShowME(driver);
-	public String ReferenceId = "Session Test" + (int) (Math.random() * 199999);
+	public String ReferenceId = "Test WA Session " + (int) (Math.random() * 999);
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS = new CreateShowMeSessionwithSMS();
 
 	public void createSessionwithWhatsApp() {
-		waitTime(3000);
-
+		refreshPage();
+		waitTime(10000);
 		ImplicitWait(10);
 
 		// Enter the New Reference Id to create session
@@ -38,9 +38,7 @@ public class CreateShowMeSessionwithWhatsApp extends ApplicationUtility {
 
 		// Close the Newly Opened Join Call window
 		popupWindowHandle();
-
-		// Enter Reference Id to search Session from Session history list
-		mObjectShowME.entersearchReferenceId(ReferenceId);
+		waitTime(1500);
 
 	}
 

@@ -156,10 +156,8 @@ public class ApplicationUtility {
 		waitTime(1000);
 
 		driver.switchTo().window(child);
-		waitTime(1000);
 		driver.close();
 		driver.switchTo().window(parent);
-		waitTime(1000);
 
 	}
 }
