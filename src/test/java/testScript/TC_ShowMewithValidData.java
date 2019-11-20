@@ -14,7 +14,7 @@ import logicalView.ShowMeScripts.CreateShowMeSessionwithSMS;
 import logicalView.ShowMeScripts.CreateShowMeSessionwithWhatsApp;
 import logicalView.ShowMeScripts.SessionHistoryInternalFunctionalities;
 
-public class TC_Showme extends ApplicationUtility {
+public class TC_ShowMewithValidData extends ApplicationUtility {
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS;
 	CreateShowMeSessionwithWhatsApp mCreateShowMeSessionwithWhatsApp;
 	CreateShowMeSessionwithEmail mCreateShowMeSessionwithEmail;

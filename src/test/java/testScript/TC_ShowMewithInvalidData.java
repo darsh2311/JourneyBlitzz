@@ -13,7 +13,7 @@ import logicalView.ShowMeScripts.InvalidShowMeScripts.InvalidCreateSessionRefere
 import logicalView.ShowMeScripts.InvalidShowMeScripts.InvalidInviteEmail;
 import logicalView.ShowMeScripts.InvalidShowMeScripts.InvalidInvitePhoneNumberOrMessage;
 
-public class TC_ShowMewithInvalid extends ApplicationUtility {
+public class TC_ShowMewithInvalidData extends ApplicationUtility {
 
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;

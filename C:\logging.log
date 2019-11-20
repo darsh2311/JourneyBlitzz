@@ -1385,3 +1385,72 @@ Driver info: driver.version: RemoteWebDriver
 2019-11-20 13:13:20 INFO  ApplicationUtility:140 - Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Message Value: Passed
 2019-11-20 13:13:26 INFO  ApplicationUtility:113 - Invite and Join button of Invite Guest Pop up should not be Clickable with Invalid Number and Message Value: Passed
 2019-11-20 13:13:31 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-20 15:38:32 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 15:38:38 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 15:38:51 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 15:39:17 INFO  ApplicationUtility:24 - Invite Participant button of Create Session should not be Clickable with Blank Reference Value: Passed
+2019-11-20 15:39:39 INFO  ApplicationUtility:41 - Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Email Value: Passed
+2019-11-20 15:39:45 INFO  ApplicationUtility:61 - Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Passed
+2019-11-20 15:39:51 INFO  ApplicationUtility:82 - Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailNum Value: Passed
+2019-11-20 15:39:56 INFO  ApplicationUtility:103 - Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlphaNum Value: Passed
+2019-11-20 15:40:02 INFO  ApplicationUtility:123 - Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailSC Value: Passed
+2019-11-20 15:40:13 INFO  ApplicationUtility:30 - Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Phone Number Value: Passed
+2019-11-20 15:40:18 INFO  ApplicationUtility:50 - Invite and Join button of Invite Guest Pop up should not be Clickable with Less digit Phone Number Value: Passed
+2019-11-20 15:40:22 INFO  ApplicationUtility:70 - Invite and Join button of Invite Guest Pop up should not be Clickable with More digit Phone Number Value: Passed
+2019-11-20 15:40:27 INFO  ApplicationUtility:70 - Invite and Join button of Invite Guest Pop up should not be Clickable with More digit Phone Number Value: Passed
+2019-11-20 15:40:33 INFO  ApplicationUtility:140 - Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Message Value: Passed
+2019-11-20 15:40:39 INFO  ApplicationUtility:113 - Invite and Join button of Invite Guest Pop up should not be Clickable with Invalid Number and Message Value: Passed
+2019-11-20 15:40:44 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-20 16:44:35 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 16:44:41 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 16:44:54 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 16:47:52 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 16:47:59 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 16:48:13 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-20 16:55:07 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 16:55:13 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 16:55:23 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 16:59:46 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 16:59:52 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:00:04 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:07:28 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:08:25 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:10:00 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:10:07 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:10:17 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:11:30 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:11:37 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:11:48 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:13:50 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:13:56 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:14:09 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:16:55 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:17:02 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:17:14 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:18:42 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:18:48 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:19:00 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 17:23:15 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 17:23:21 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 17:23:31 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 18:39:40 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 18:39:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 18:40:01 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-20 18:40:17 INFO  ApplicationUtility:26 - Create Group submit button should not be Clickable with Blank Values: Passed
+2019-11-20 18:40:34 INFO  ApplicationUtility:38 - Create Group submit button should not be Clickable with Invalid Values: Passed
+2019-11-20 18:43:07 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 18:43:13 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 18:43:27 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 18:43:41 INFO  ApplicationUtility:26 - Create Group submit button should not be Clickable with Blank Values: Passed
+2019-11-20 18:43:58 INFO  ApplicationUtility:38 - Create Group submit button should not be Clickable with Invalid Values: Passed
+2019-11-20 18:46:29 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 18:46:36 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 18:46:48 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 18:47:02 INFO  ApplicationUtility:26 - Create Group submit button should not be Clickable with Blank Values: Passed
+2019-11-20 18:48:40 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-20 18:48:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-20 18:48:57 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-20 18:49:18 INFO  ApplicationUtility:26 - Create Group submit button should not be Clickable with Blank Values: Passed
+2019-11-20 18:49:39 INFO  ApplicationUtility:42 - Create Group submit button should not be Clickable with Invalid Values: Passed
+2019-11-20 18:49:54 INFO  ApplicationUtility:42 - Create Group submit button should not be Clickable with No Participant added: Passed
+2019-11-20 18:49:57 INFO  ApplicationUtility:23 - SignOut submission: Passed
