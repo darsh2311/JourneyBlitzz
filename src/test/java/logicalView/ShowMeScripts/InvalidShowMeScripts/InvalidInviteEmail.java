@@ -12,8 +12,16 @@ public class InvalidInviteEmail extends ApplicationUtility {
 
 	ObjectShowME mObjectShowME = new ObjectShowME(driver);
 	CreateShowMeSessionwithEmail mCreateShowMeSessionwithEmail = new CreateShowMeSessionwithEmail();
+	public String ReferenceId = "Test Session " + (int) (Math.random() * 999);
 
-	public void createSessionwithInvalidEmail() {
+	public void createSessionwithInvalidBlankEmail() {
+		waitTime(1000);
+		// Enter the New Reference Id to create session
+		mObjectShowME.enterReference(ReferenceId);
+		waitTime(1000);
+
+		// Clicking Invite Participant to Create session
+		mObjectShowME.clickInviteParticipant();
 		waitTime(1000);
 
 		// Select Invite Option from Ellipsis menu
@@ -25,7 +33,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(12000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Email Value: Failed");
@@ -37,7 +45,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 
 	}
 
-	public void createSessionwithInvalidEmail1() {
+	public void createSessionwithInvalidEmailwithOnlyAlphabet() {
 		waitTime(1000);
 
 		// Enter Email to Invite
@@ -45,7 +53,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Failed");
@@ -57,28 +65,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 
 	}
 
-	public void createSessionwithInvalidEmail2() {
-		waitTime(1000);
-
-		// Enter Email to Invite
-		mObjectShowME.clearInviteEmail();
-		mObjectShowME.enterInviteEmail(BaseClass.getValueFromPropertyFile("Showme.properties", "invalidEmailAlpha"));
-		waitTime(1000);
-
-		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
-			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
-			logger.error(
-					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Failed");
-		} catch (Exception e) {
-			logger.info(
-					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Passed");
-		}
-		waitTime(200);
-
-	}
-
-	public void createSessionwithInvalidEmail3() {
+	public void createSessionwithInvalidEmailwithOnlyNumeric() {
 		waitTime(1000);
 
 		// Enter Email to Invite
@@ -87,7 +74,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailNum Value: Failed");
@@ -99,7 +86,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 
 	}
 
-	public void createSessionwithInvalidEmail4() {
+	public void createSessionwithInvalidEmailwithOnlyAlphaNumeric() {
 		waitTime(1000);
 
 		// Enter Email to Invite
@@ -108,7 +95,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlphaNum Value: Failed");
@@ -119,7 +106,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(200);
 	}
 
-	public void createSessionwithInvalidEmail5() {
+	public void createSessionwithInvalidEmail() {
 		waitTime(1000);
 
 		// Enter Email to Invite
@@ -128,7 +115,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailSC Value: Failed");

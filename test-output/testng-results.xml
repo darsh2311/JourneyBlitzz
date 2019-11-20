@@ -1,73 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="13" passed="13" failed="0" skipped="0">
+<testng-results total="28" passed="28" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-19T12:33:48Z" name="Default suite" finished-at="2019-11-19T12:37:41Z" duration-ms="232807">
+  <suite started-at="2019-11-20T07:37:21Z" name="Suite" finished-at="2019-11-20T07:43:31Z" duration-ms="370914">
     <groups>
     </groups>
-    <test started-at="2019-11-19T12:33:48Z" name="Default test" finished-at="2019-11-19T12:37:41Z" duration-ms="232807">
+    <test started-at="2019-11-20T07:37:21Z" name="ShowMeScriptswithValidData" finished-at="2019-11-20T07:41:13Z" duration-ms="232418">
       <class name="testScript.TC_Showme">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:03:48Z" name="beforeTest" finished-at="2019-11-19T18:03:53Z" duration-ms="4930" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:07:21Z" name="beforeTest" finished-at="2019-11-20T13:07:26Z" duration-ms="5903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:03:53Z" name="TC_ValidDomainSubmission" finished-at="2019-11-19T18:04:01Z" duration-ms="7270" status="PASS">
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:07:26Z" name="TC_ValidDomainSubmission" finished-at="2019-11-20T13:07:34Z" duration-ms="7292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:04:01Z" name="TC_SignIn" finished-at="2019-11-19T18:04:22Z" duration-ms="21163" status="PASS">
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:07:34Z" name="TC_SignIn" finished-at="2019-11-20T13:07:53Z" duration-ms="19661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_CreateSessionwithSMS()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:04:22Z" name="TC_CreateSessionwithSMS" finished-at="2019-11-19T18:04:52Z" duration-ms="30045" status="PASS">
+        <test-method signature="TC_CreateSessionwithSMS()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:07:53Z" name="TC_CreateSessionwithSMS" finished-at="2019-11-20T13:08:24Z" duration-ms="30537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateSessionwithSMS -->
-        <test-method signature="TC_CreateSessionwithWhatsApp()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:04:52Z" name="TC_CreateSessionwithWhatsApp" finished-at="2019-11-19T18:05:27Z" duration-ms="35350" status="PASS">
+        <test-method signature="TC_CreateSessionwithWhatsApp()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:08:24Z" name="TC_CreateSessionwithWhatsApp" finished-at="2019-11-20T13:08:59Z" duration-ms="35264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateSessionwithWhatsApp -->
-        <test-method signature="TC_CreateSessionwithEmail()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:05:27Z" name="TC_CreateSessionwithEmail" finished-at="2019-11-19T18:06:02Z" duration-ms="35270" status="PASS">
+        <test-method signature="TC_CreateSessionwithEmail()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:08:59Z" name="TC_CreateSessionwithEmail" finished-at="2019-11-20T13:09:32Z" duration-ms="32451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CreateSessionwithEmail -->
-        <test-method signature="TC_CopySessionCode()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:06:02Z" name="TC_CopySessionCode" finished-at="2019-11-19T18:06:18Z" duration-ms="15484" status="PASS">
+        <test-method signature="TC_CopySessionCode()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:09:32Z" name="TC_CopySessionCode" finished-at="2019-11-20T13:09:47Z" duration-ms="15515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CopySessionCode -->
-        <test-method signature="TC_CopyGuestURL()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:06:18Z" name="TC_CopyGuestURL" finished-at="2019-11-19T18:06:36Z" duration-ms="18402" status="PASS">
+        <test-method signature="TC_CopyGuestURL()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:09:47Z" name="TC_CopyGuestURL" finished-at="2019-11-20T13:10:06Z" duration-ms="18395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CopyGuestURL -->
-        <test-method signature="TC_JoinCall()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:06:36Z" name="TC_JoinCall" finished-at="2019-11-19T18:07:02Z" duration-ms="25482" status="PASS">
+        <test-method signature="TC_JoinCall()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:10:06Z" name="TC_JoinCall" finished-at="2019-11-20T13:10:34Z" duration-ms="28006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_JoinCall -->
-        <test-method signature="TC_InviteEllipsisOption()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:02Z" name="TC_InviteEllipsisOption" finished-at="2019-11-19T18:07:08Z" duration-ms="5793" status="PASS">
+        <test-method signature="TC_InviteEllipsisOption()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:10:34Z" name="TC_InviteEllipsisOption" finished-at="2019-11-20T13:10:39Z" duration-ms="5644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_InviteEllipsisOption -->
-        <test-method signature="TC_CopySessionUrlEllipsisOptio()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:08Z" name="TC_CopySessionUrlEllipsisOptio" finished-at="2019-11-19T18:07:15Z" duration-ms="7539" status="PASS">
+        <test-method signature="TC_CopySessionUrlEllipsisOptio()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:10:39Z" name="TC_CopySessionUrlEllipsisOptio" finished-at="2019-11-20T13:10:47Z" duration-ms="7538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_CopySessionUrlEllipsisOptio -->
-        <test-method signature="TC_EndSessionEllipsisOption()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:15Z" name="TC_EndSessionEllipsisOption" finished-at="2019-11-19T18:07:19Z" duration-ms="3354" status="PASS">
+        <test-method signature="TC_EndSessionEllipsisOption()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:10:47Z" name="TC_EndSessionEllipsisOption" finished-at="2019-11-20T13:10:50Z" duration-ms="3322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_EndSessionEllipsisOption -->
-        <test-method signature="TC_DeleteSessionEllipsisOptio()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:19Z" name="TC_DeleteSessionEllipsisOptio" finished-at="2019-11-19T18:07:39Z" duration-ms="20198" status="PASS">
+        <test-method signature="TC_DeleteSessionEllipsisOptio()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:10:50Z" name="TC_DeleteSessionEllipsisOptio" finished-at="2019-11-20T13:11:10Z" duration-ms="20144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_DeleteSessionEllipsisOptio -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:39Z" name="TC_SignOut" finished-at="2019-11-19T18:07:41Z" duration-ms="2314" status="PASS">
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:11:10Z" name="TC_SignOut" finished-at="2019-11-20T13:11:12Z" duration-ms="2195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_Showme@5e316c74]" started-at="2019-11-19T18:07:41Z" name="afterTest" finished-at="2019-11-19T18:07:41Z" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_Showme@6d2a209c]" started-at="2019-11-20T13:11:12Z" name="afterTest" finished-at="2019-11-20T13:11:13Z" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- testScript.TC_Showme -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ShowMeScriptswithValidData -->
+    <test started-at="2019-11-20T07:41:13Z" name="ShowMeScriptswithInValidData" finished-at="2019-11-20T07:43:31Z" duration-ms="138036">
+      <class name="testScript.TC_ShowMewithInvalid">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:11:13Z" name="beforeTest" finished-at="2019-11-20T13:11:26Z" duration-ms="12166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:11:26Z" name="TC_ValidDomainSubmission" finished-at="2019-11-20T13:11:33Z" duration-ms="7511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:11:33Z" name="TC_SignIn" finished-at="2019-11-20T13:11:54Z" duration-ms="20612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignIn -->
+        <test-method signature="TC_InvalidCreateSessionReference()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:11:54Z" name="TC_InvalidCreateSessionReference" finished-at="2019-11-20T13:12:08Z" duration-ms="14494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidCreateSessionReference -->
+        <test-method signature="TC_InvalidInvitewithBlankEmail()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:08Z" name="TC_InvalidInvitewithBlankEmail" finished-at="2019-11-20T13:12:28Z" duration-ms="20192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithBlankEmail -->
+        <test-method signature="TC_InvalidInvitewithEmailasOnlyAlphabet()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:28Z" name="TC_InvalidInvitewithEmailasOnlyAlphabet" finished-at="2019-11-20T13:12:34Z" duration-ms="5578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithEmailasOnlyAlphabet -->
+        <test-method signature="TC_InvalidInvitewithEmailasOnlyNumeric()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:34Z" name="TC_InvalidInvitewithEmailasOnlyNumeric" finished-at="2019-11-20T13:12:40Z" duration-ms="5646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithEmailasOnlyNumeric -->
+        <test-method signature="TC_InvalidInvitewithEmailasOnlyAlphaNumeric()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:40Z" name="TC_InvalidInvitewithEmailasOnlyAlphaNumeric" finished-at="2019-11-20T13:12:45Z" duration-ms="5640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithEmailasOnlyAlphaNumeric -->
+        <test-method signature="TC_InvalidInvitewithInvalidEmail()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:45Z" name="TC_InvalidInvitewithInvalidEmail" finished-at="2019-11-20T13:12:51Z" duration-ms="5672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithInvalidEmail -->
+        <test-method signature="TC_InvalidInvitewithBlankPhoneNumber()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:12:51Z" name="TC_InvalidInvitewithBlankPhoneNumber" finished-at="2019-11-20T13:13:01Z" duration-ms="10250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithBlankPhoneNumber -->
+        <test-method signature="TC_InvalidInvitewithLessDigitPhoneNumber()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:01Z" name="TC_InvalidInvitewithLessDigitPhoneNumber" finished-at="2019-11-20T13:13:06Z" duration-ms="4522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithLessDigitPhoneNumber -->
+        <test-method signature="TC_InvalidInvitewithMoreDigitPhoneNumber()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:06Z" name="TC_InvalidInvitewithMoreDigitPhoneNumber" finished-at="2019-11-20T13:13:10Z" duration-ms="4655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithMoreDigitPhoneNumber -->
+        <test-method signature="TC_InvalidInvitewithInvalidPhoneNumber()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:10Z" name="TC_InvalidInvitewithInvalidPhoneNumber" finished-at="2019-11-20T13:13:15Z" duration-ms="4630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithInvalidPhoneNumber -->
+        <test-method signature="TC_InvalidInvitewithBlankMessage()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:15Z" name="TC_InvalidInvitewithBlankMessage" finished-at="2019-11-20T13:13:21Z" duration-ms="5641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithBlankMessage -->
+        <test-method signature="TC_InvalidInvitewithInvalidMessageandNumber()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:21Z" name="TC_InvalidInvitewithInvalidMessageandNumber" finished-at="2019-11-20T13:13:29Z" duration-ms="8453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidInvitewithInvalidMessageandNumber -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:29Z" name="TC_SignOut" finished-at="2019-11-20T13:13:31Z" duration-ms="2214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ShowMewithInvalid@3ba9ad43]" started-at="2019-11-20T13:13:31Z" name="afterTest" finished-at="2019-11-20T13:13:31Z" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_ShowMewithInvalid -->
+    </test> <!-- ShowMeScriptswithInValidData -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_Showme">
+      <class name="testScript.TC_ShowMewithInvalid">
         <methods>
-          <include name="TC_SignOut"/>
+          <include name="TC_InvalidCreateSessionReference"/>
+          <include name="TC_InvalidInvitewithInvalidEmail"/>
+          <include name="TC_InvalidInvitewithLessDigitPhoneNumber"/>
+          <include name="TC_InvalidInvitewithInvalidPhoneNumber"/>
+          <include name="TC_ValidDomainSubmission"/>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyAlphabet"/>
+          <include name="TC_InvalidInvitewithBlankPhoneNumber"/>
+          <include name="TC_SignIn"/>
+          <include name="TC_InvalidInvitewithBlankMessage"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyAlphaNumeric"/>
+          <include name="TC_InvalidInvitewithMoreDigitPhoneNumber"/>
+          <include name="TC_InvalidInvitewithBlankEmail"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyNumeric"/>
+          <include name="TC_InvalidInvitewithInvalidMessageandNumber"/>
         </methods>
-      </class> <!-- testScript.TC_Showme -->
+      </class> <!-- testScript.TC_ShowMewithInvalid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

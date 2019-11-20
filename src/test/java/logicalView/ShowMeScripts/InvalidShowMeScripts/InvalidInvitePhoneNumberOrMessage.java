@@ -5,25 +5,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
+import logicalView.ShowMeScripts.CreateShowMeSessionwithSMS;
 import testObjects.ObjectShowME;
 
 public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 
 	ObjectShowME mObjectShowME = new ObjectShowME(driver);
 	public String ReferenceId = "Test Session " + (int) (Math.random() * 999);
+	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS = new CreateShowMeSessionwithSMS();
 
-	public void invalidInvitePhoneNumberOrMessage1() {
+	public void InvalidInviteBlankPhoneNumber() {
 
-		// Enter the New Reference Id to create session
-		mObjectShowME.enterReference(ReferenceId);
-		waitTime(1000);
-
-		// Clicking Invite Participant to Create session
-		mObjectShowME.clickInviteParticipant();
+		mCreateShowMeSessionwithSMS.selectInviteOptionandCountryCode(
+				BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionSMS"),
+				BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"));
 
 		// Save the User by clicking on AddUser button
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Phone Number Value: Failed");
@@ -34,14 +33,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 		waitTime(200);
 	}
 
-	public void invalidInvitePhoneNumberOrMessage2() {
-
-		// Enter the New Reference Id to create session
-		mObjectShowME.enterReference(ReferenceId);
-		waitTime(1000);
-
-		// Clicking Invite Participant to Create session
-		mObjectShowME.clickInviteParticipant();
+	public void invalidInvitewithLessDigitPhoneNumber() {
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -50,7 +42,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Less digit Phone Number Value: Failed");
@@ -62,14 +54,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 
 	}
 
-	public void invalidInvitePhoneNumberOrMessage3() {
-
-		// Enter the New Reference Id to create session
-		mObjectShowME.enterReference(ReferenceId);
-		waitTime(1000);
-
-		// Clicking Invite Participant to Create session
-		mObjectShowME.clickInviteParticipant();
+	public void invalidInvitewithMoreDigitPhoneNumber() {
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -77,7 +62,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 				BaseClass.getValueFromPropertyFile("Showme.properties", "invalidMoreThanAllowedDigitNumber"));
 		waitTime(1000);
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with More digit Phone Number Value: Failed");
@@ -89,21 +74,14 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 
 	}
 
-	public void invalidInvitePhoneNumberOrMessage4() {
-
-		// Enter the New Reference Id to create session
-		mObjectShowME.enterReference(ReferenceId);
-		waitTime(1000);
-
-		// Clicking Invite Participant to Create session
-		mObjectShowME.clickInviteParticipant();
+	public void invalidInvitewithInvalidPhoneNumber() {
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
 		mObjectShowME.enterPhoneNumber(BaseClass.getValueFromPropertyFile("Showme.properties", "invalidPhoneNumber"));
 		waitTime(1000);
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Invalid Phone Number Value: Failed");
@@ -115,14 +93,34 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 
 	}
 
-	public void invalidInviteMessage() {
+	public void invalidInvitewithInvalidNumberandMessage() {
 
-		// Enter the New Reference Id to create session
-		mObjectShowME.enterReference(ReferenceId);
+		// Enter Phone Number to Invite
+		mObjectShowME.clearPhoneNumber();
+		mObjectShowME.enterPhoneNumber(BaseClass.getValueFromPropertyFile("Showme.properties", "invalidPhoneNumber1"));
 		waitTime(1000);
 
-		// Clicking Invite Participant to Create session
-		mObjectShowME.clickInviteParticipant();
+		// Clear the Message field value
+		mObjectShowME.clearInviteMessage();
+		waitTime(1000);
+
+		try {
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
+			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
+			logger.error(
+					"Invite and Join button of Invite Guest Pop up should not be Clickable with Invalid Number and Message Value: Failed");
+		} catch (Exception e) {
+			logger.info(
+					"Invite and Join button of Invite Guest Pop up should not be Clickable with Invalid Number and Message Value: Passed");
+		}
+		waitTime(2000);
+
+		// Click on Close to close the Invite popup
+		mObjectShowME.clickCloseInvitePopup();
+		waitTime(1000);
+	}
+
+	public void invalidInvitewithBlankMessage() {
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -134,7 +132,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 		waitTime(1000);
 
 		try {
-			WebDriverWait wait1 = new WebDriverWait(driver, 6);
+			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
 			logger.error(
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Message Value: Failed");
@@ -143,6 +141,6 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 					"Invite and Join button of Invite Guest Pop up should not be Clickable with Blank Message Value: Passed");
 		}
 		waitTime(200);
-
 	}
+
 }
