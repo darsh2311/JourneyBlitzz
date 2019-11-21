@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+ 
+        <test name="ShowMeScriptswithValidData">
+     <classes>
+       <class name="testScript.TC_ShowMewithValidData"/>
+     </classes>
+   </test>
+           <test name="ShowMeScriptswithInValidData">
+     <classes>
+       <class name="testScript.TC_ShowMewithInvalidData"/>
+     </classes>
+   </test>
+     
+</suite> 

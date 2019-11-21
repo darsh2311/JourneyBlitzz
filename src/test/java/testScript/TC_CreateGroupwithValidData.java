@@ -5,11 +5,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.CreateNewGroup;
 import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.CreateGroupScripts.CreateNewGroup;
 
 public class TC_CreateGroupwithValidData extends ApplicationUtility {
 

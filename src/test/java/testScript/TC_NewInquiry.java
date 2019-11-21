@@ -41,7 +41,7 @@ public class TC_NewInquiry extends ApplicationUtility {
 
 	@Test(priority = 3, enabled = true)
 	public void TC_CreateNewInquiry() {
-
+		mNewInquiry.clickNewInquiryHeaderButton();
 		mNewInquiry.createNewInquiry();
 	}
 

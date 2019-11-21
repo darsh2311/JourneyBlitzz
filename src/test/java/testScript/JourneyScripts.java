@@ -361,6 +361,7 @@ public class JourneyScripts {
 		public void TC_CreateNewInquiry() {
 			mVerifyDomain.VerifyValidDomain();
 			mSignIn.validSignIn();
+			mNewInquiry.clickNewInquiryHeaderButton();
 			mNewInquiry.createNewInquiry();
 			mSignOut.SignOut();
 

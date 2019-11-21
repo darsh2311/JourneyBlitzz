@@ -1454,3 +1454,174 @@ Driver info: driver.version: RemoteWebDriver
 2019-11-20 18:49:39 INFO  ApplicationUtility:42 - Create Group submit button should not be Clickable with Invalid Values: Passed
 2019-11-20 18:49:54 INFO  ApplicationUtility:42 - Create Group submit button should not be Clickable with No Participant added: Passed
 2019-11-20 18:49:57 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-21 12:01:45 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:01:51 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:02:01 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 12:02:37 INFO  ApplicationUtility:118 - Successfully created Inquiry: Passed
+2019-11-21 12:02:42 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-21 12:26:29 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:26:35 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:26:45 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 12:38:42 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:38:48 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:39:00 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 12:41:35 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:41:42 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:41:53 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 12:45:48 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:45:54 ERROR ApplicationUtility:34 - Domain submission: Failedjava.lang.AssertionError: expected [Login | Blitzz] but found [Company | Blitzz]
+2019-11-21 12:47:30 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:47:37 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:47:50 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 12:49:00 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 12:49:07 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 12:49:19 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:03:33 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:03:39 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:03:50 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:04:35 INFO  ApplicationUtility:29 - Group has been set to Default
+2019-11-21 13:04:48 INFO  ApplicationUtility:52 - Group has been Removed as Default
+2019-11-21 13:26:32 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:26:39 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:26:53 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:27:40 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:27:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:27:57 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:29:27 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:29:33 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:29:43 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:31:12 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:31:19 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:31:28 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:33:39 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:33:45 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:33:55 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 13:36:08 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:36:14 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:36:29 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 13:37:58 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 13:38:04 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 13:38:17 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 15:21:28 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 15:21:35 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 15:21:46 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 15:24:28 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 15:24:34 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 15:24:46 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 15:27:51 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 15:27:58 ERROR ApplicationUtility:34 - Domain submission: Failedjava.lang.AssertionError: expected [Login | Blitzz] but found [Company | Blitzz]
+2019-11-21 15:28:14 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 15:33:04 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 15:33:10 ERROR ApplicationUtility:34 - Domain submission: Failedjava.lang.AssertionError: expected [Login | Blitzz] but found [Company | Blitzz]
+2019-11-21 15:33:26 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 15:34:18 INFO  ApplicationUtility:60 - Passed
+2019-11-21 15:35:15 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 15:35:21 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 15:35:31 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 15:36:19 ERROR ApplicationUtility:58 - Failed
+2019-11-21 16:37:21 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:37:28 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 16:37:38 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 16:39:40 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:41:12 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:41:49 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:41:56 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 16:42:10 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 16:43:03 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 16:44:12 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:44:18 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 16:44:33 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 16:45:33 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 16:48:45 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:48:52 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 16:49:03 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 16:52:38 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:52:45 ERROR ApplicationUtility:34 - Domain submission: Failedjava.lang.AssertionError: expected [Login | Blitzz] but found [Company | Blitzz]
+2019-11-21 16:53:03 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 16:58:03 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 16:58:10 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 16:58:19 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:03:08 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:03:15 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:03:26 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:25:20 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:25:26 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:25:40 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:28:43 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:28:49 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:29:01 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:32:57 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:33:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:33:13 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:33:32 ERROR ApplicationUtility:36 - No Participant to change Role
+2019-11-21 17:55:47 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:55:54 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:56:06 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 17:56:26 INFO  ApplicationUtility:30 - Group Member is removed.
+2019-11-21 17:57:56 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 17:58:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 17:58:13 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:06:20 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:06:26 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:06:38 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:06:53 ERROR ApplicationUtility:32 - No Participant to Add in the Group
+2019-11-21 18:08:11 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:08:18 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:08:30 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:08:46 ERROR ApplicationUtility:34 - No Participant to Add in the Group
+2019-11-21 18:09:21 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:09:28 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:09:41 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:09:57 ERROR ApplicationUtility:34 - No Participant to Add in the Group
+2019-11-21 18:24:31 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:24:37 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:24:46 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:25:52 INFO  ApplicationUtility:118 - Successfully created Inquiry: Passed
+2019-11-21 18:27:57 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:28:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:28:13 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:30:04 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-21 18:31:10 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:31:16 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:31:25 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:34:33 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:34:40 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:34:51 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:37:53 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 18:38:00 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 18:38:13 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 18:41:03 INFO  ApplicationUtility:23 - SignOut submission: Passed
+2019-11-21 19:10:44 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:10:50 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:11:05 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 19:11:48 INFO  ApplicationUtility:29 - Group has been set to Default
+2019-11-21 19:11:57 INFO  ApplicationUtility:52 - Group has been Removed as Default
+2019-11-21 19:12:21 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 19:12:37 INFO  ApplicationUtility:30 - Group Member is removed.
+2019-11-21 19:15:20 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:15:27 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:15:41 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 19:16:20 INFO  ApplicationUtility:29 - Group has been set to Default
+2019-11-21 19:16:29 INFO  ApplicationUtility:52 - Group has been Removed as Default
+2019-11-21 19:16:51 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 19:17:07 INFO  ApplicationUtility:30 - Group Member is removed.
+2019-11-21 19:20:47 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:20:53 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:21:08 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 19:21:47 INFO  ApplicationUtility:29 - Group has been set to Default
+2019-11-21 19:21:55 INFO  ApplicationUtility:52 - Group has been Removed as Default
+2019-11-21 19:22:18 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 19:22:33 INFO  ApplicationUtility:30 - Group Member is removed.
+2019-11-21 19:23:51 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:23:58 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:24:12 ERROR ApplicationUtility:31 - SignIn is not successful: Failed
+2019-11-21 19:24:51 INFO  ApplicationUtility:29 - Group has been set to Default
+2019-11-21 19:25:00 INFO  ApplicationUtility:52 - Group has been Removed as Default
+2019-11-21 19:25:23 INFO  ApplicationUtility:58 - Edit Group successfully updated: Passed
+2019-11-21 19:25:44 INFO  ApplicationUtility:30 - Group Member is removed.
+2019-11-21 19:27:20 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:27:26 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:27:39 INFO  ApplicationUtility:29 - SignIn is successful: Passed
+2019-11-21 19:33:52 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-11-21 19:33:58 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-11-21 19:34:13 ERROR ApplicationUtility:31 - SignIn is not successful: Failed

@@ -8,11 +8,14 @@ public class NewInquiry2 extends ApplicationUtility {
 	public String inquiryName = "Test Inquiry" + (int) (Math.random() * 9999);
 	objectNewInquiry mobjectNewInquiry = new objectNewInquiry(driver);
 
-	public void createNewInquiry() {
+	public void clickNewInquiryHeaderButton() {
 
 		// Click on New Inquiry button of Header
 		mobjectNewInquiry.clickNewInquiryButton();
 		waitTime(1000);
+	}
+
+	public void createNewInquiry() {
 
 		// Enter Title of New Inquiry
 		mobjectNewInquiry.enterNewInquiryName(inquiryName);

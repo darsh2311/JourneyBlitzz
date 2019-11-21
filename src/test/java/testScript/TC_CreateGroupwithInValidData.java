@@ -9,9 +9,9 @@ import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
-import logicalView.InvalidCreateGroupScripts.CreateNewGroupwithBlankValues;
-import logicalView.InvalidCreateGroupScripts.CreateNewGroupwithInvalidValues;
-import logicalView.InvalidCreateGroupScripts.CreateNewGroupwithoutAddingParticipant;
+import logicalView.CreateGroupScripts.InvalidGroupScripts.CreateNewGroupwithBlankValues;
+import logicalView.CreateGroupScripts.InvalidGroupScripts.CreateNewGroupwithInvalidValues;
+import logicalView.CreateGroupScripts.InvalidGroupScripts.CreateNewGroupwithoutAddingParticipant;
 
 public class TC_CreateGroupwithInValidData extends ApplicationUtility {
 

@@ -1,4 +1,4 @@
-package logicalView.InvalidCreateGroupScripts;
+package logicalView.CreateGroupScripts.InvalidGroupScripts;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
