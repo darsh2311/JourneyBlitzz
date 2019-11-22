@@ -16,7 +16,7 @@ public class Signout extends ApplicationUtility {
 		waitTime(1000);
 		// Click on Signout option
 		objSignOut.signOutOption();
-		waitTime(1000);
+		waitTime(5000);
 		String verifySignOut = driver.getTitle();
 		if (verifySignOut.equalsIgnoreCase(
 				BaseClass.getValueFromPropertyFile("Domain.properties", "verifySignOutSubmissionSuccess"))) {

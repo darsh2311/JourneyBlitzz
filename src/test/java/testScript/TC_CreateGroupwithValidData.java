@@ -9,6 +9,7 @@ import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.CreateGroupScripts.CreateInquiryThroughGroup;
 import logicalView.CreateGroupScripts.CreateNewGroup;
 
 public class TC_CreateGroupwithValidData extends ApplicationUtility {
@@ -18,6 +19,7 @@ public class TC_CreateGroupwithValidData extends ApplicationUtility {
 	Signout mSignOut;
 	CreateNewGroup mCreateNewGroup;
 	ModuleTabs mModuleTabs;
+	CreateInquiryThroughGroup mCreateInquiryThroughGroup;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -28,6 +30,8 @@ public class TC_CreateGroupwithValidData extends ApplicationUtility {
 		mSignOut = new Signout();
 		mCreateNewGroup = new CreateNewGroup();
 		mModuleTabs = new ModuleTabs();
+		mCreateInquiryThroughGroup = new CreateInquiryThroughGroup();
+
 	}
 
 	@Test(priority = 1)

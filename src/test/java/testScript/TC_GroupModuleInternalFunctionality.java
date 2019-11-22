@@ -58,14 +58,16 @@ public class TC_GroupModuleInternalFunctionality extends ApplicationUtility {
 
 	}
 
-	@Test(priority = 2)
-	public void TC_CreateInquiryFromGroupModule() {
-
-		mCreateInquiryThroughGroup.createInquiryFromGroup(mCreateNewGroup.groupSubject);
-	}
+	/*
+	 * @Test(priority = 2) public void TC_CreateInquiryFromGroupModule() {
+	 * 
+	 * mCreateInquiryThroughGroup.createInquiryFromGroup(mCreateNewGroup.
+	 * groupSubject); }
+	 */
 
 	@Test(priority = 3)
 	public void TC_SetOrRemoveGroupDefault() {
+		// mModuleTabs.clickGroupTab();
 		mSetorRemoveDefaultGroup.setDefaultGroup(mCreateNewGroup.groupSubject);
 		mSetorRemoveDefaultGroup.removeDefaultGroup(mCreateNewGroup.groupSubject);
 	}

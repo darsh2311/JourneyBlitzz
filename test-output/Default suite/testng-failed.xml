@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_GroupModuleInternalFunctionality">
+      <class name="testScript.TC_Contacts">
         <methods>
-          <include name="TC_AddGroupMembers"/>
-          <include name="TC_SetOrRemoveGroupDefault"/>
           <include name="beforeTest"/>
-          <include name="TC_EditGroupDetails"/>
           <include name="afterTest"/>
-          <include name="TC_DeleteGroupMember"/>
-          <include name="TC_CreateInquiryFromGroupModule"/>
-          <include name="TC_ViewGroupMembers"/>
           <include name="TC_SignOut"/>
         </methods>
-      </class> <!-- testScript.TC_GroupModuleInternalFunctionality -->
+      </class> <!-- testScript.TC_Contacts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

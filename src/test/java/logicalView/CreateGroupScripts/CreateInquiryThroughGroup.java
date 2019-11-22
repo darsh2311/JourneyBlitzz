@@ -25,11 +25,7 @@ public class CreateInquiryThroughGroup extends ApplicationUtility {
 		ellipsisList("ellipsisCreateInq");
 		waitTime(1000);
 		mNewInquiry2.createNewInquiry();
-		System.out.println(1);
-		waitTime(12000);
-		System.out.println(2);
-
-		mobjectGroups.clickGroupTab();
+		logger.info("Inquiry from Group module is created Successfully.");
 
 	}
 
