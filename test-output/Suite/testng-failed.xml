@@ -3,18 +3,6 @@
 <suite thread-count="10" name="Failed suite [Suite]">
   <test name="Inquiry Internal Functionalities(failed)">
     <classes>
-      <class name="testScript.TC_InquiryInternalFunctionalities">
-        <methods>
-          <include name="TC_VideoCall"/>
-          <include name="TC_UnArchiveInquiry"/>
-          <include name="TC_RemoveParticipant"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="TC_ArchiveInquiry"/>
-          <include name="TC_DeleteNotes"/>
-          <include name="TC_EditInquiryDetails"/>
-        </methods>
-      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
       <class name="testScript.TC_NewInquirywithInvalidData">
         <methods>
           <include name="afterTest"/>
@@ -27,6 +15,15 @@
           <include name="afterTest"/>
         </methods>
       </class> <!-- testScript.TC_NewInquiry -->
+      <class name="testScript.TC_InquiryInternalFunctionalities">
+        <methods>
+          <include name="TC_VideoCall"/>
+          <include name="TC_UnArchiveInquiry"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="TC_EditInquiryDetails"/>
+        </methods>
+      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
     </classes>
   </test> <!-- Inquiry Internal Functionalities(failed) -->
 </suite> <!-- Failed suite [Suite] -->

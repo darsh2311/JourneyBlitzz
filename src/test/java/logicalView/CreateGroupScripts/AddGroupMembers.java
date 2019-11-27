@@ -17,10 +17,10 @@ public class AddGroupMembers extends ApplicationUtility {
 
 		// Search the group
 		mobjectGroups.enterSearchGroup(strSearchGroup);
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisAddMembers");
 		waitTime(3000);
@@ -30,7 +30,7 @@ public class AddGroupMembers extends ApplicationUtility {
 		if (addMemberNoParticipantMessages
 				.equalsIgnoreCase(BaseClass.getValueFromPropertyFile("Groups.properties", "addMembersEmpty"))) {
 			mobjectGroups.clickCloseMemberPopup();
-			waitTime(1000);
+			waitTime(2000);
 			logger.error("No Participant to Add in the Group");
 		} else {
 			List<WebElement> listContacts = driver.findElements(By.xpath(
@@ -43,7 +43,7 @@ public class AddGroupMembers extends ApplicationUtility {
 			}
 
 			mobjectGroups.clickAddMemberPopup();
-			waitTime(1000);
+			waitTime(2000);
 		}
 
 	}

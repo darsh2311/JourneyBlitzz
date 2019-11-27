@@ -15,6 +15,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS = new CreateShowMeSessionwithSMS();
 
 	public void InvalidInviteBlankPhoneNumber() {
+		ImplicitWait(5);
 
 		mCreateShowMeSessionwithSMS.selectInviteOptionandCountryCode(
 				BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionSMS"),
@@ -34,6 +35,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	}
 
 	public void invalidInvitewithLessDigitPhoneNumber() {
+		ImplicitWait(5);
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -55,6 +57,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	}
 
 	public void invalidInvitewithMoreDigitPhoneNumber() {
+		ImplicitWait(5);
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -75,6 +78,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	}
 
 	public void invalidInvitewithInvalidPhoneNumber() {
+		ImplicitWait(5);
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -94,6 +98,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	}
 
 	public void invalidInvitewithInvalidNumberandMessage() {
+		ImplicitWait(5);
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();
@@ -121,6 +126,7 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	}
 
 	public void invalidInvitewithBlankMessage() {
+		ImplicitWait(5);
 
 		// Enter Phone Number to Invite
 		mObjectShowME.clearPhoneNumber();

@@ -10,7 +10,8 @@ public class InquiryDetails extends ApplicationUtility {
 
 	public void viewImage() {
 
-		waitTime(15000);
+		waitTime(20000);
+		ImplicitWait(5);
 
 		// Click on Inquiry Details Ellipsis menu
 		mObjectInquiryFunctionalities.clickInquiryDetails();
@@ -36,7 +37,9 @@ public class InquiryDetails extends ApplicationUtility {
 	}
 
 	public void editInquiryDetails() {
-		ImplicitWait(20);
+		waitTime(20000);
+
+		ImplicitWait(5);
 
 		// Click on Inquiry Details Ellipsis menu
 		mObjectInquiryFunctionalities.clickInquiryDetails();
@@ -56,7 +59,7 @@ public class InquiryDetails extends ApplicationUtility {
 
 		// Edit the Inquiry title
 		mObjectInquiryFunctionalities.enterEditInquiryTitle(editedInquiry);
-		waitTime(1000);
+		waitTime(4000);
 
 		try {
 			// Confirm the Edit Inquiry title change

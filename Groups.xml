@@ -2,14 +2,19 @@
 
 <suite name="Suite" parallel="false" thread-count="10">
  
-        <test name="ShowMeScriptswithValidData">
+        <test name="CreateGroupScriptswithValidData">
      <classes>
-       <class name="testScript.TC_ShowMewithValidData"/>
+       <class name="testScript.TC_CreateGroupwithValidData"/>
      </classes>
    </test>
-           <test name="ShowMeScriptswithInValidData">
+           <test name="CreateGroupScriptswithInValidData">
      <classes>
-       <class name="testScript.TC_ShowMewithInvalidData"/>
+       <class name="testScript.TC_CreateGroupwithInValidData"/>
+     </classes>
+   </test>
+              <test name="CreateGroupScriptswithitsInternalFunctionalities">
+     <classes>
+       <class name="testScript.TC_GroupModuleInternalFunctionality"/>
      </classes>
    </test>
      

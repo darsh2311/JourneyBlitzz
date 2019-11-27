@@ -11,11 +11,11 @@ public class AddUserSignUp extends ApplicationUtility {
 
 		// Click on Setting Button
 		objSignUp.clickSettings();
-		ImplicitWait(100);
+		waitTime(10000);
 
 		// Click on User Management
 		objSignUp.clickUserManagement();
-		ImplicitWait(100);
+		waitTime(5000);
 
 	}
 

@@ -12,12 +12,11 @@ public class SignUpVerifywithNotRegisteredUserId extends ApplicationUtility {
 
 	public void notRegisteredVerifyUserId() {
 
-		waitTime(300);
+		waitTime(3000);
 		// Enter Not registered or added UserId
 		objSignUp
 				.enterVerifyEmail(BaseClass.getValueFromPropertyFile("signUp.properties", "notRegisteredUserIdVerify"));
-		ImplicitWait(100);
-		waitTime(700);
+		ImplicitWait(10);
 
 		// Click on Verify UserID button
 		objSignUp.clickverifyEmail();
@@ -34,7 +33,7 @@ public class SignUpVerifywithNotRegisteredUserId extends ApplicationUtility {
 
 		// To Close the Error Message
 		objSignUp.errorMessageCloseButton();
-		waitTime(700);
+		waitTime(1900);
 
 		objSignUp.backToLoginIcon();
 	}

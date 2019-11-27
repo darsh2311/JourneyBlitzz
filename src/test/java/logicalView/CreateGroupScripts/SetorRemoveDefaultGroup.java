@@ -9,6 +9,7 @@ public class SetorRemoveDefaultGroup extends ApplicationUtility {
 
 	public void setDefaultGroup(String strSearchGroup) {
 
+		ImplicitWait(3);
 		// Search the group
 		mobjectGroups.enterSearchGroup(strSearchGroup);
 		waitTime(1000);

@@ -48,12 +48,12 @@ public class TC_ShowMewithValidData extends ApplicationUtility {
 	public void TC_SignIn() {
 
 		mSignIn.validSignIn();
-		mModuleTabs.clickShowMETab();
+
 	}
 
 	@Test(priority = 3)
 	public void TC_CreateSessionwithSMS() {
-
+		mModuleTabs.clickShowMETab();
 		mCreateShowMeSessionwithSMS.createSessionwithSMS();
 	}
 

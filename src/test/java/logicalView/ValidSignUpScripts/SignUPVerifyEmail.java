@@ -57,7 +57,7 @@ public class SignUPVerifyEmail extends ApplicationUtility {
 
 		// Check Terms and conditions
 		objSignUp.checkTermsConditions();
-		waitTime(2300);
+		waitTime(5000);
 
 		// Scroll to the SignUp button as it is not visible
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -65,7 +65,6 @@ public class SignUPVerifyEmail extends ApplicationUtility {
 
 		// Click on Signup button
 		objSignUp.clickSignUp();
-		waitFluent();
-		waitTime(10000);
+		waitTime(20000);
 	}
 }

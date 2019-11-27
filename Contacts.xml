@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+ 
+        <test name="ContactsScriptswithValidData">
+     <classes>
+       <class name="testScript.TC_Contacts"/>
+     </classes>
+   </test>
+
+     
+</suite> 

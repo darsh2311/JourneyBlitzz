@@ -10,6 +10,7 @@ public class AddNotes extends ApplicationUtility {
 	public String editedNote = "Note" + (int) (Math.random() * 9999);
 
 	public void addNote() {
+		waitTime(20000);
 
 		ImplicitWait(10);
 		// Click on Add Note Icon
@@ -18,7 +19,7 @@ public class AddNotes extends ApplicationUtility {
 
 		// Enter Note
 		mObjectInquiryFunctionalities.enterNote(inqiryNote);
-		waitTime(1000);
+		waitTime(3000);
 
 		// Submit Note
 		mObjectInquiryFunctionalities.submitNote();
@@ -26,6 +27,8 @@ public class AddNotes extends ApplicationUtility {
 	}
 
 	public void editNote() {
+		waitTime(10000);
+
 		ImplicitWait(10);
 
 		// Refresh the Note
@@ -61,6 +64,8 @@ public class AddNotes extends ApplicationUtility {
 	}
 
 	public void deleteNote() {
+		waitTime(10000);
+
 		ImplicitWait(10);
 
 		// Refresh the Note

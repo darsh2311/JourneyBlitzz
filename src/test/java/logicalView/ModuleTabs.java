@@ -1,5 +1,10 @@
 package logicalView;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import commonFunctions.ApplicationUtility;
 import testObjects.ObjectContacts;
 import testObjects.ObjectShowME;
@@ -9,28 +14,67 @@ public class ModuleTabs extends ApplicationUtility {
 	ObjectShowME mObjectShowME = new ObjectShowME(driver);
 	objectGroups mobjectGroups = new objectGroups(driver);
 	ObjectContacts mObjectContacts = new ObjectContacts(driver);
-	// List<WebElement> listTabs =
-	// driver.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
 
-	public void clickShowMETab() {
+	public void clickInquiriesTab() {
+		List<WebElement> listTabs = driver
+				.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
 
-		ImplicitWait(15);
-		// Click on ShowMe Tab
-		mObjectShowME.clickShowmeTab();
+		for (WebElement element : listTabs) {
+			if (element.getText().equalsIgnoreCase("Inquiries")) {
+				ImplicitWait(3);
+				element.click();
+				break;
+			}
+		}
+
 		waitTime(10000);
 	}
 
-	public void clickGroupTab() {
+	public void clickShowMETab() {
 
-		ImplicitWait(10);
-		// Click on ShowMe Tab
-		mobjectGroups.clickGroupTab();
-		waitTime(8000);
+		List<WebElement> listTabs = driver
+				.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
+
+		for (WebElement element : listTabs) {
+			if (element.getText().equalsIgnoreCase("ShowMe")) {
+				ImplicitWait(3);
+				element.click();
+				break;
+			}
+		}
+		waitTime(10000);
+
+	}
+
+	public void clickGroupTab() {
+		List<WebElement> listTabs = driver
+				.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
+
+		for (WebElement element : listTabs) {
+			if (element.getText().equalsIgnoreCase("Groups")) {
+				ImplicitWait(3);
+				element.click();
+				break;
+			}
+		}
+
+		waitTime(15000);
 	}
 
 	public void clickContactsTab() {
-		ImplicitWait(10);
-		mObjectContacts.clickContactsTab();
+
+		List<WebElement> listTabs = driver
+				.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
+
+		for (WebElement element : listTabs) {
+			if (element.getText().equalsIgnoreCase("Contacts")) {
+				ImplicitWait(3);
+				element.click();
+				break;
+			}
+		}
+
+		waitTime(15000);
 	}
 
 }

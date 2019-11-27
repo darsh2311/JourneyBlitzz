@@ -6,12 +6,12 @@ import org.openqa.selenium.WebElement;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
-import logicalView.NewInquiry2;
+import logicalView.NewInquiry;
 import testObjects.objectGroups;
 
 public class CreateInquiryThroughGroup extends ApplicationUtility {
 	objectGroups mobjectGroups = new objectGroups(driver);
-	NewInquiry2 mNewInquiry2 = new NewInquiry2();
+	NewInquiry mNewInquiry2 = new NewInquiry();
 
 	public void createInquiryFromGroup(String StrSearchString) {
 
@@ -24,8 +24,10 @@ public class CreateInquiryThroughGroup extends ApplicationUtility {
 		waitTime(500);
 		ellipsisList("ellipsisCreateInq");
 		waitTime(1000);
-		mNewInquiry2.createNewInquiry();
+		mNewInquiry2.simpleInquiryCreate();
+		waitTime(25000);
 		logger.info("Inquiry from Group module is created Successfully.");
+		mobjectGroups.clickGroupTab();
 
 	}
 

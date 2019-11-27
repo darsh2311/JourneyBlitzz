@@ -15,7 +15,7 @@ public class SignUpVerifywithNotRegisteredEmail extends ApplicationUtility {
 		waitTime(300);
 		// Enter Not registered or added Email Id
 		objSignUp.enterVerifyEmail(BaseClass.getValueFromPropertyFile("signUp.properties", "notRegisteredEmailVerify"));
-		ImplicitWait(100);
+		ImplicitWait(10);
 		waitTime(700);
 
 		// Click on Verify email button

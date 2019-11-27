@@ -23,13 +23,13 @@ public class TC_GroupModuleInternalFunctionality extends ApplicationUtility {
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
 	CreateNewGroup mCreateNewGroup;
-	ModuleTabs mModuleTabs;
 	CreateInquiryThroughGroup mCreateInquiryThroughGroup;
 	SetorRemoveDefaultGroup mSetorRemoveDefaultGroup;
 	EditGroupDetails mEditGroupDetails;
 	ViewGroupMembers mViewGroupMembers;
 	AddGroupMembers mAddGroupMembers;
 	DeleteGroupMember mDeleteGroupMember;
+	ModuleTabs mModuleTabs;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -39,13 +39,14 @@ public class TC_GroupModuleInternalFunctionality extends ApplicationUtility {
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
 		mCreateNewGroup = new CreateNewGroup();
-		mModuleTabs = new ModuleTabs();
 		mCreateInquiryThroughGroup = new CreateInquiryThroughGroup();
 		mSetorRemoveDefaultGroup = new SetorRemoveDefaultGroup();
 		mEditGroupDetails = new EditGroupDetails();
 		mViewGroupMembers = new ViewGroupMembers();
 		mAddGroupMembers = new AddGroupMembers();
 		mDeleteGroupMember = new DeleteGroupMember();
+		mModuleTabs = new ModuleTabs();
+
 	}
 
 	@Test(priority = 1)
@@ -53,21 +54,19 @@ public class TC_GroupModuleInternalFunctionality extends ApplicationUtility {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
+
+	}
+
+	@Test(priority = 2)
+	public void TC_CreateNewGroupwithValidData() {
+
 		mModuleTabs.clickGroupTab();
 		mCreateNewGroup.CreateNewGroupwithValidData();
 
 	}
 
-	/*
-	 * @Test(priority = 2) public void TC_CreateInquiryFromGroupModule() {
-	 * 
-	 * mCreateInquiryThroughGroup.createInquiryFromGroup(mCreateNewGroup.
-	 * groupSubject); }
-	 */
-
 	@Test(priority = 3)
 	public void TC_SetOrRemoveGroupDefault() {
-		// mModuleTabs.clickGroupTab();
 		mSetorRemoveDefaultGroup.setDefaultGroup(mCreateNewGroup.groupSubject);
 		mSetorRemoveDefaultGroup.removeDefaultGroup(mCreateNewGroup.groupSubject);
 	}

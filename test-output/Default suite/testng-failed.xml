@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_Contacts">
+      <class name="testScript.TC_NewInquiry">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
           <include name="TC_SignOut"/>
+          <include name="TC_CreateNewInquiry"/>
         </methods>
-      </class> <!-- testScript.TC_Contacts -->
+      </class> <!-- testScript.TC_NewInquiry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

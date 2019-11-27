@@ -14,6 +14,7 @@ public class CreateNewGroupwithInvalidValues extends ApplicationUtility {
 
 	public void CreateNewGroupwithInValidData() {
 
+		ImplicitWait(3);
 		// Click on Create New Group Button
 		mobjectGroups.clickCreateNewGroup();
 		waitTime(1500);

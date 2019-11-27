@@ -17,32 +17,31 @@ public class SignUpwithEmailIdInvalidData extends ApplicationUtility {
 		waitTime(150);
 		// Click on Add user
 		objSignUp.clickAddButton();
-		ImplicitWait(100);
-		waitTime(150);
+		ImplicitWait(10);
 
 		// Enter invalid Email
 		objSignUp.enterEmailID(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidEmailVerify"));
 
 		// Set Password Toggle ON
 		objSignUp.setPasswordToggle();
-		waitTime(150);
+		waitTime(1500);
 
 		// Set the Password
 		objSignUp.enterPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidPassword"));
-		waitTime(150);
+		waitTime(1500);
 
 		// Enter the Confirm Password
 		objSignUp.enterConfirmPassword(
 				BaseClass.getValueFromPropertyFile("signUp.properties", "invalidConfirmPassword"));
-		waitTime(150);
+		waitTime(1500);
 
 		// Enter Firstname for SignUp
 		objSignUp.enterFirstName(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidFirstname"));
-		waitTime(150);
+		waitTime(1500);
 
 		// Enter Lastname for SignUp
 		objSignUp.enterLastName(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidLastname"));
-		waitTime(150);
+		waitTime(1500);
 
 		// Save the User by clicking on AddUser button
 		try {
@@ -52,7 +51,7 @@ public class SignUpwithEmailIdInvalidData extends ApplicationUtility {
 		} catch (Exception e) {
 			logger.info("Add User(submit) button of Email should not be Clickable with Invalid Value: Passed");
 		}
-		waitTime(200);
+		waitTime(5000);
 
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();

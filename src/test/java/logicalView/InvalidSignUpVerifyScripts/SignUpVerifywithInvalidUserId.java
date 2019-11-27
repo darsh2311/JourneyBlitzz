@@ -15,8 +15,7 @@ public class SignUpVerifywithInvalidUserId extends ApplicationUtility {
 		waitTime(300);
 		// Enter invalid UserId
 		objSignUp.enterVerifyEmail(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidUserIdVerify"));
-		ImplicitWait(100);
-		waitTime(700);
+		ImplicitWait(10);
 
 		// Click on Verify email button
 		objSignUp.clickverifyEmail();

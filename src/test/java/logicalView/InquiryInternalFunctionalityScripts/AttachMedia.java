@@ -26,6 +26,8 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void imageUpload() {
+		waitTime(10000);
+
 		ImplicitWait(10);
 
 		// Attach media method
@@ -53,6 +55,8 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void videoUpload() {
+		waitTime(10000);
+
 		ImplicitWait(10);
 
 		// Attach media method
@@ -66,6 +70,8 @@ public class AttachMedia extends ApplicationUtility {
 	}
 
 	public void documentUpload() {
+		waitTime(10000);
+
 		ImplicitWait(10);
 
 		// Attach media method

@@ -17,8 +17,6 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void copySessionCode() {
 
-		waitTime(3000);
-
 		ImplicitWait(10);
 
 		// Enter the New Reference Id to create session
@@ -49,7 +47,7 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void copyGuestUrl() {
 
-		waitTime(3000);
+		ImplicitWait(5);
 
 		// Enter the New Reference Id to create session
 		mObjectShowME.enterReference(ReferenceId);
@@ -92,6 +90,8 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void verifyInviteEllipsisOption() {
 
+		ImplicitWait(5);
+
 		// Click on Ellipsis menu of Particular session
 		mObjectShowME.clickSessionEllipsisOption();
 		waitTime(1000);
@@ -120,7 +120,7 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void CopySessionUrlEllipsisOption() {
 
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Click on Ellipsis menu of Particular session
 		mObjectShowME.clickSessionEllipsisOption();
@@ -141,7 +141,7 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void EndSessionEllipsisOption() {
 
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Click on Ellipsis menu of Particular session
 		mObjectShowME.clickSessionEllipsisOption();
@@ -154,7 +154,7 @@ public class SessionHistoryInternalFunctionalities extends ApplicationUtility {
 
 	public void DeleteSessionEllipsisOption() {
 
-		waitTime(2500);
+		ImplicitWait(5);
 
 		// Click on Ellipsis menu of Particular session
 		mObjectShowME.clickSessionEllipsisOption();

@@ -14,8 +14,9 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void archiveInquiry() {
+		waitTime(20000);
 
-		ImplicitWait(20);
+		ImplicitWait(5);
 
 		// Click on the Archive Inquiry
 		mObjectInquiryFunctionalities.clickArchiveInquiryIcon();
@@ -36,8 +37,8 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 	}
 
 	public void UnarchiveInquiry() {
-
-		ImplicitWait(20);
+		waitTime(15000);
+		ImplicitWait(5);
 
 		// Click on the Inquiry List Dropdown
 		mObjectInquiryFunctionalities.clickInquiryListDropdown();
@@ -52,9 +53,10 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 			if (element.getText().equalsIgnoreCase("Archived")) {
 				ImplicitWait(5);
 				element.click();
+				break;
 			}
 		}
-		waitTime(3000);
+		waitTime(20000);
 
 		// Click on the Inquiry from the list
 		mObjectInquiryFunctionalities.clickInquiry();
@@ -70,7 +72,7 @@ public class ArchiveUnarchiveInquiry extends ApplicationUtility {
 
 		// Again click on Unarchive button
 		mObjectInquiryFunctionalities.clickUnArchiveInquiryIcon();
-		waitTime(1000);
+		waitTime(2000);
 
 		// Click on confirm Unarchive Button
 		mObjectInquiryFunctionalities.confirmUnArchiveButton();

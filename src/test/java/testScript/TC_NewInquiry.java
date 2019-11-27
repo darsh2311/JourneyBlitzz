@@ -5,7 +5,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
-import logicalView.NewInquiry2;
+import logicalView.ModuleTabs;
+import logicalView.NewInquiry;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
@@ -15,7 +16,8 @@ public class TC_NewInquiry extends ApplicationUtility {
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
-	NewInquiry2 mNewInquiry;
+	NewInquiry mNewInquiry;
+	ModuleTabs mModuleTabs;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -24,7 +26,8 @@ public class TC_NewInquiry extends ApplicationUtility {
 		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
-		mNewInquiry = new NewInquiry2();
+		mNewInquiry = new NewInquiry();
+		mModuleTabs = new ModuleTabs();
 	}
 
 	@Test(priority = 1, enabled = true)

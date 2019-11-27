@@ -14,22 +14,24 @@ public class ViewGroupMembers extends ApplicationUtility {
 	CreateInquiryThroughGroup mCreateInquiryThroughGroup = new CreateInquiryThroughGroup();
 
 	public void ViewGroupMember(String strSearchGroup) {
+		waitTime(2000);
 
 		// Search the group
 		mobjectGroups.enterSearchGroup(strSearchGroup);
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisViewMembers");
-		waitTime(3000);
+		waitTime(5000);
 
 		mobjectGroups.clickRemoveMember();
-		waitTime(5000);
+		waitTime(12000);
 		logger.info("Group Member is removed.");
 
 		String viewMemberNoParticipantMessages = mobjectGroups.noParticipantMessage.getText();
+		waitTime(2000);
 
 		if (viewMemberNoParticipantMessages
 				.equalsIgnoreCase(BaseClass.getValueFromPropertyFile("Groups.properties", "viewMembersEmpty"))) {
@@ -37,7 +39,7 @@ public class ViewGroupMembers extends ApplicationUtility {
 		} else {
 
 			mobjectGroups.clickGroupRole();
-			waitTime(1000);
+			waitTime(2000);
 
 			List<WebElement> listGroupRoles = mobjectGroups.listGroupRole;
 
@@ -46,7 +48,7 @@ public class ViewGroupMembers extends ApplicationUtility {
 						.equalsIgnoreCase(BaseClass.getValueFromPropertyFile("Groups.properties", "groupRole"))) {
 					ImplicitWait(3);
 					element.click();
-					waitTime(1000);
+					waitTime(2000);
 					mobjectGroups.clickUpdateRoles();
 					waitTime(1500);
 
@@ -56,6 +58,6 @@ public class ViewGroupMembers extends ApplicationUtility {
 		}
 
 		mobjectGroups.clickCloseGroupRole();
-		waitTime(1000);
+		waitTime(2000);
 	}
 }

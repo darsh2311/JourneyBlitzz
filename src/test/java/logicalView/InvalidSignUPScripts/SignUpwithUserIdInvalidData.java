@@ -13,35 +13,35 @@ public class SignUpwithUserIdInvalidData extends ApplicationUtility {
 
 	public void invalidUserIDSubmit() {
 
-		waitTime(300);
+		waitTime(3000);
 		ImplicitWait(6);
 		// Click on Add user
 		objSignUp.clickAddButton();
-		ImplicitWait(100);
+		ImplicitWait(10);
 
 		// Select SignUp type
 		objSignUp.clickByUserIdTab();
 
 		// Enter invalid UserID
-		waitTime(700);
+		waitTime(1200);
 		objSignUp.enterEmailID(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidUserId"));
 		waitTime(1700);
 
 		waitTime(2000);
-		ImplicitWait(100);
+		ImplicitWait(10);
 
 		// Set Password Toggle ON
 		objSignUp.setPasswordToggle();
-		waitTime(700);
+		waitTime(1500);
 
 		// Set the Password
 		objSignUp.enterPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidPassword"));
-		waitTime(150);
+		waitTime(1200);
 
 		// Enter the Confirm Password
 		objSignUp.enterConfirmPassword(
 				BaseClass.getValueFromPropertyFile("signUp.properties", "invalidConfirmPassword"));
-		waitTime(150);
+		waitTime(1000);
 
 		// Enter Firstname for SignUp
 		objSignUp.enterFirstName(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidFirstname"));
@@ -49,7 +49,7 @@ public class SignUpwithUserIdInvalidData extends ApplicationUtility {
 
 		// Enter Lastname for SignUp
 		objSignUp.enterLastName(BaseClass.getValueFromPropertyFile("signUp.properties", "invalidLastname"));
-		waitTime(150);
+		waitTime(1000);
 
 		// Save the User by clicking on AddUser button
 		try {
@@ -59,7 +59,7 @@ public class SignUpwithUserIdInvalidData extends ApplicationUtility {
 		} catch (Exception e) {
 			logger.info("Add User(submit) button of UserID should not be Clickable with Invalid Value: Passed");
 		}
-		waitTime(200);
+		waitTime(5000);
 		// Close the Add user Side bar
 		objSignUp.closeAddUserSidebar();
 	}

@@ -9,6 +9,7 @@ public class Signout extends ApplicationUtility {
 	ObjectSignOut objSignOut = new ObjectSignOut(driver);
 
 	public void SignOut() {
+		ImplicitWait(5);
 
 		// Click on Blitzz Dropdown
 		objSignOut.blitzzDropdown();

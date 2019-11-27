@@ -13,6 +13,7 @@ public class RemoveParticipant extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void removeParticipant() {
+		waitTime(10000);
 
 		ImplicitWait(10);
 

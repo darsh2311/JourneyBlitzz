@@ -12,56 +12,57 @@ public class SignUpwithEmailId extends ApplicationUtility {
 
 	public void signUpAdminwithEmail() {
 
+		ImplicitWait(10);
 		// Click on Setting Button
 		objSignUp.clickSettings();
-		ImplicitWait(100);
+		waitTime(10000);
 
 		// Click on User Management
 		objSignUp.clickUserManagement();
-		ImplicitWait(100);
+		waitTime(10000);
 
 		// Click on Add user
 		objSignUp.clickAddButton();
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Select SignUp type
 		objSignUp.clickByEmailTab();
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Enter the email id
 		objSignUp.enterEmailID(email);
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Select the User Type
 		objSignUp.clickUserType();
 		objSignUp.selectUserAdmin();
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Set Password Toggle ON
 		objSignUp.setPasswordToggle();
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Set the Password
 		objSignUp.enterPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "userPassword"));
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Enter the Confirm Password
 		objSignUp.enterConfirmPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "confirmPassword"));
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Enter Firstname for SignUp
 		objSignUp.enterFirstName(BaseClass.getValueFromPropertyFile("signUp.properties", "firstName"));
-		ImplicitWait(100);
+		waitTime(1000);
 
 		// Enter Lastname for SignUp
 		objSignUp.enterLastName(BaseClass.getValueFromPropertyFile("signUp.properties", "lastName") + name);
-		ImplicitWait(100);
+		waitTime(4500);
 
 		// Save the User by clicking on AddUser button
 		objSignUp.saveAddUser();
-		ImplicitWait(100);
-		waitTime(15000);
+		waitTime(40000);
 		refreshPage();
+		waitTime(10000);
 
 	}
 }

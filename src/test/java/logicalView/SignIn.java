@@ -23,7 +23,7 @@ public class SignIn extends ApplicationUtility {
 
 		// Submit the Sign In credentials to Sign In
 		objSignIn.clickSignIn();
-		waitTime(2000);
+		waitTime(10000);
 		List<WebElement> verifySignIn = objSignIn.signInVerification;
 		if (verifySignIn.size() != 0) {
 			logger.info("SignIn is successful: Passed");

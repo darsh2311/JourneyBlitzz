@@ -15,7 +15,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 	public String ReferenceId = "Test Session " + (int) (Math.random() * 999);
 
 	public void createSessionwithInvalidBlankEmail() {
-		waitTime(1000);
+		ImplicitWait(5);
 		// Enter the New Reference Id to create session
 		mObjectShowME.enterReference(ReferenceId);
 		waitTime(1000);
@@ -46,7 +46,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 	}
 
 	public void createSessionwithInvalidEmailwithOnlyAlphabet() {
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Enter Email to Invite
 		mObjectShowME.enterInviteEmail(BaseClass.getValueFromPropertyFile("Showme.properties", "invalidEmailAlpha"));
@@ -66,7 +66,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 	}
 
 	public void createSessionwithInvalidEmailwithOnlyNumeric() {
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Enter Email to Invite
 		mObjectShowME.clearInviteEmail();
@@ -87,7 +87,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 	}
 
 	public void createSessionwithInvalidEmailwithOnlyAlphaNumeric() {
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Enter Email to Invite
 		mObjectShowME.clearInviteEmail();
@@ -107,7 +107,7 @@ public class InvalidInviteEmail extends ApplicationUtility {
 	}
 
 	public void createSessionwithInvalidEmail() {
-		waitTime(1000);
+		ImplicitWait(5);
 
 		// Enter Email to Invite
 		mObjectShowME.clearInviteEmail();

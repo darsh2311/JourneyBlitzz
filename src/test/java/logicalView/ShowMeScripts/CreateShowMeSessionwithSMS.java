@@ -15,6 +15,7 @@ public class CreateShowMeSessionwithSMS extends ApplicationUtility {
 
 	public void createSessionwithSMS() {
 
+		ImplicitWait(5);
 		// Enter the New Reference Id to create session
 		mObjectShowME.enterReference(ReferenceId);
 		waitTime(1000);

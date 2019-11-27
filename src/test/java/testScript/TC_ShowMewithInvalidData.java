@@ -46,11 +46,11 @@ public class TC_ShowMewithInvalidData extends ApplicationUtility {
 	public void TC_SignIn() {
 
 		mSignIn.validSignIn();
-		mModuleTabs.clickShowMETab();
 	}
 
 	@Test(priority = 3, enabled = true)
 	public void TC_InvalidCreateSessionReference() {
+		mModuleTabs.clickShowMETab();
 		mInvalidCreateSessionReference.invalidSessionReference();
 	}
 

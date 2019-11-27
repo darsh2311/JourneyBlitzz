@@ -18,11 +18,11 @@ public class ValidSignInwithSignUp extends ApplicationUtility {
 
 		// Enter Password to Sign in
 		objSignIn.enterPassword(BaseClass.getValueFromPropertyFile("signUp.properties", "userPassword"));
-		waitTime(1000);
+		waitTime(5000);
 
 		// Submit the Sign In credentials to Sign In
 		objSignIn.clickSignIn();
-		waitTime(2000);
+		waitTime(10000);
 		List<WebElement> verifySignIn = objSignIn.signInVerification;
 		if (verifySignIn.size() != 0) {
 			logger.info("SignIn for SignUp is successful: Passed");

@@ -39,16 +39,15 @@ public class TC_CreateGroupwithValidData extends ApplicationUtility {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mModuleTabs.clickGroupTab();
 	}
 
 	@Test(priority = 2)
 	public void TC_CreateGroupwithValidValues() {
-
+		mModuleTabs.clickGroupTab();
 		mCreateNewGroup.CreateNewGroupwithValidData();
 	}
 
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 3)
 	public void TC_SignOut() {
 
 		mSignOut.SignOut();

@@ -13,32 +13,27 @@ public class SignUpwithUserIdwithOutPassword extends ApplicationUtility {
 		waitTime(150);
 		// Click on Add user
 		objSignUp.clickAddButton();
-		ImplicitWait(100);
+		waitTime(1300);
 
 		// Select SignUp type
 		objSignUp.clickByUserIdTab();
-		ImplicitWait(100);
 		waitTime(1300);
 
 		// Enter the email id
 		objSignUp.enterUserID(userId);
-		ImplicitWait(100);
 		waitTime(1300);
 
 		// Select the User Type
 		objSignUp.clickUserType();
 		objSignUp.selectUserInternal();
-		ImplicitWait(100);
-		waitTime(1300);
+		waitTime(3500);
 
 		// Save the User by clicking on AddUser button
 		objSignUp.saveAddUser();
-		ImplicitWait(100);
-		waitTime(1300);
+		waitTime(10000);
 
 		// Close the Add user sidebar
 		objSignUp.closeAddUserSidebar();
-		ImplicitWait(100);
 		waitTime(5000);
 		refreshPage();
 

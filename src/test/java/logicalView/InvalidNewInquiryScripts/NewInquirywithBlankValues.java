@@ -11,6 +11,7 @@ public class NewInquirywithBlankValues extends ApplicationUtility {
 	objectNewInquiry mobjectNewInquiry = new objectNewInquiry(driver);
 
 	public void createNewInquiry() {
+		ImplicitWait(5);
 
 		// Click on New Inquiry button of Header
 		mobjectNewInquiry.clickNewInquiryButton();

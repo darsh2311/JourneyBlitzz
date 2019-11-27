@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import commonFunctions.ApplicationUtility;
 import logicalView.ForgotPassword;
 import logicalView.NeedHelp;
-import logicalView.NewInquiry2;
+import logicalView.NewInquiry;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
@@ -80,7 +80,7 @@ public class JourneyScripts {
 		AddUserSignUp mAddUserSignUp;
 		SignUPVerifyEmail mSignUPVerifyEmail;
 		SignUpwithUserIdwithOutPassword mSignUpwithUserIdwithOutPassword;
-		NewInquiry2 mNewInquiry;
+		NewInquiry mNewInquiry;
 		NewInquirywithBlankValues mNewInquirywithBlankData;
 		NewInquirywithInvalidValues mNewInquirywithInvalidValues;
 		AttachMedia mAttachMediaPhoto;
@@ -127,7 +127,7 @@ public class JourneyScripts {
 			mAddUserSignUp = new AddUserSignUp();
 			mSignUPVerifyEmail = new SignUPVerifyEmail();
 			mSignUpwithUserIdwithOutPassword = new SignUpwithUserIdwithOutPassword();
-			mNewInquiry = new NewInquiry2();
+			mNewInquiry = new NewInquiry();
 			mNewInquirywithBlankData = new NewInquirywithBlankValues();
 			mNewInquirywithInvalidValues = new NewInquirywithInvalidValues();
 			mAttachMediaPhoto = new AttachMedia();

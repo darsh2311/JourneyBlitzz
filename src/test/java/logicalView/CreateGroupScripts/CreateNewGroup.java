@@ -15,6 +15,7 @@ public class CreateNewGroup extends ApplicationUtility {
 
 	public void CreateNewGroupwithValidData() {
 
+		ImplicitWait(5);
 		// Click on Create New Group Button
 		mobjectGroups.clickCreateNewGroup();
 		waitTime(1000);
@@ -54,6 +55,6 @@ public class CreateNewGroup extends ApplicationUtility {
 		waitTime(3000);
 
 		mobjectGroups.submitCreateGroup();
-		waitTime(3000);
+		waitTime(15000);
 	}
 }

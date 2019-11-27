@@ -8,8 +8,9 @@ public class SendChatMessage extends ApplicationUtility {
 	ObjectInquiryFunctionalities mObjectInquiryFunctionalities = new ObjectInquiryFunctionalities(driver);
 
 	public void sendChatMessageToInquiry() {
+		waitTime(10000);
+		ImplicitWait(5);
 
-		waitTime(1000);
 		// enter message to Send
 		mObjectInquiryFunctionalities
 				.enterChatMessage(BaseClass.getValueFromPropertyFile("NewInquiry.properties", "chatMessage"));

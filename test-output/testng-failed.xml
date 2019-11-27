@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="10" name="Failed suite [Suite]">
+  <test name="Inquiry Internal Functionalities(failed)">
     <classes>
-      <class name="testScript.TC_Contacts">
+      <class name="testScript.TC_NewInquirywithInvalidData">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_NewInquirywithInvalidData -->
+      <class name="testScript.TC_NewInquiry">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="TC_SignOut"/>
         </methods>
-      </class> <!-- testScript.TC_Contacts -->
+      </class> <!-- testScript.TC_NewInquiry -->
+      <class name="testScript.TC_InquiryInternalFunctionalities">
+        <methods>
+          <include name="TC_VideoCall"/>
+          <include name="TC_UnArchiveInquiry"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="TC_EditInquiryDetails"/>
+        </methods>
+      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Inquiry Internal Functionalities(failed) -->
+</suite> <!-- Failed suite [Suite] -->

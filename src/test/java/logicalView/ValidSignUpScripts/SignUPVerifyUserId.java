@@ -61,6 +61,6 @@ public class SignUPVerifyUserId extends ApplicationUtility {
 
 		// Click on Signup button
 		objSignUp.clickSignUp();
-		waitFluent();
+		waitTime(20000);
 	}
 }

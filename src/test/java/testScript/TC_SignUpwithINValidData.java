@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import commonFunctions.ApplicationUtility;
 import logicalView.SignInwithValidData;
+import logicalView.Signout;
 import logicalView.VerifyDomain;
 import logicalView.InvalidSignUPScripts.AddUserSignUp;
 import logicalView.InvalidSignUPScripts.SignUpwithBlankEmailIdInvalidData;
@@ -22,6 +23,7 @@ public class TC_SignUpwithINValidData extends ApplicationUtility {
 	SignUpwithUserIdInvalidData mSignUpwithUserIdInvalidData;
 	AddUserSignUp maddUserSignUp;
 	SignInwithValidData mSignIn;
+	Signout mSignOut;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -34,6 +36,7 @@ public class TC_SignUpwithINValidData extends ApplicationUtility {
 		mSignUpwithUserIdInvalidData = new SignUpwithUserIdInvalidData();
 		maddUserSignUp = new AddUserSignUp();
 		mSignIn = new SignInwithValidData();
+		mSignOut = new Signout();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -62,6 +65,12 @@ public class TC_SignUpwithINValidData extends ApplicationUtility {
 	@Test(priority = 5, enabled = true)
 	public void TC_SignUpwithUserIdInvalidData() {
 		mSignUpwithUserIdInvalidData.invalidUserIDSubmit();
+	}
+
+	@Test(priority = 6, enabled = true)
+	public void TC_SignOut() {
+
+		mSignOut.SignOut();
 	}
 
 	@AfterTest

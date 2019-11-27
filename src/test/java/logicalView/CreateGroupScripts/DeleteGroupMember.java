@@ -12,10 +12,10 @@ public class DeleteGroupMember extends ApplicationUtility {
 
 		// Search the group
 		mobjectGroups.enterSearchGroup(strSearchGroup);
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisDeleteGroup");
 		waitTime(2000);
@@ -24,7 +24,7 @@ public class DeleteGroupMember extends ApplicationUtility {
 		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisDeleteGroup");
 		waitTime(2000);

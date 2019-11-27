@@ -1,29 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-22T13:41:52Z" name="Default suite" finished-at="2019-11-22T13:42:42Z" duration-ms="49927">
+  <suite started-at="2019-11-27T11:59:20Z" name="Suite" finished-at="2019-11-27T12:03:13Z" duration-ms="233434">
     <groups>
     </groups>
-    <test started-at="2019-11-22T13:41:52Z" name="Default test" finished-at="2019-11-22T13:42:42Z" duration-ms="49927">
-      <class name="testScript.TC_Contacts">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_Contacts@6193932a]" started-at="2019-11-22T19:11:52Z" name="beforeTest" finished-at="2019-11-22T19:11:58Z" duration-ms="5900" status="PASS">
+    <test started-at="2019-11-27T11:59:20Z" name="Need Help" finished-at="2019-11-27T11:59:55Z" duration-ms="34784">
+      <class name="testScript.TC_NeedHelp">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_NeedHelp@6193932a]" started-at="2019-11-27T17:29:20Z" name="beforeTest" finished-at="2019-11-27T17:29:25Z" duration-ms="4960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_Contacts@6193932a]" started-at="2019-11-22T19:11:58Z" name="TC_ValidDomainSubmission" finished-at="2019-11-22T19:12:04Z" duration-ms="6106" status="PASS">
+        <test-method signature="TC_Need_Help()[pri:0, instance:testScript.TC_NeedHelp@6193932a]" started-at="2019-11-27T17:29:25Z" name="TC_Need_Help" finished-at="2019-11-27T17:29:54Z" duration-ms="29478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Need_Help -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_NeedHelp@6193932a]" started-at="2019-11-27T17:29:54Z" name="afterTest" finished-at="2019-11-27T17:29:55Z" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_NeedHelp -->
+    </test> <!-- Need Help -->
+    <test started-at="2019-11-27T11:59:55Z" name="DomainwithValidData" finished-at="2019-11-27T12:00:15Z" duration-ms="20525">
+      <class name="testScript.TC_VerifyDomainwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@ef9296d]" started-at="2019-11-27T17:29:55Z" name="beforeTest" finished-at="2019-11-27T17:30:00Z" duration-ms="5110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@ef9296d]" started-at="2019-11-27T17:30:00Z" name="TC_ValidDomainSubmission" finished-at="2019-11-27T17:30:15Z" duration-ms="15339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_Contacts@6193932a]" started-at="2019-11-22T19:12:04Z" name="TC_SignIn" finished-at="2019-11-22T19:12:16Z" duration-ms="11678" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_VerifyDomainwithValidData@ef9296d]" started-at="2019-11-27T17:30:15Z" name="afterTest" finished-at="2019-11-27T17:30:15Z" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_VerifyDomainwithValidData -->
+    </test> <!-- DomainwithValidData -->
+    <test started-at="2019-11-27T12:00:15Z" name="DomainwithINValidData" finished-at="2019-11-27T12:00:27Z" duration-ms="12081">
+      <class name="testScript.TC_VerifyDomainwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@5223e5ee]" started-at="2019-11-27T17:30:15Z" name="beforeTest" finished-at="2019-11-27T17:30:21Z" duration-ms="5478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_InvalidDomainSubmission()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@5223e5ee]" started-at="2019-11-27T17:30:21Z" name="TC_InvalidDomainSubmission" finished-at="2019-11-27T17:30:27Z" duration-ms="6526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidDomainSubmission -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_VerifyDomainwithINValidData@5223e5ee]" started-at="2019-11-27T17:30:27Z" name="afterTest" finished-at="2019-11-27T17:30:27Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_VerifyDomainwithINValidData -->
+    </test> <!-- DomainwithINValidData -->
+    <test started-at="2019-11-27T12:00:27Z" name="ForgotPasswordwithValidData" finished-at="2019-11-27T12:00:51Z" duration-ms="23579">
+      <class name="testScript.TC_ForgotPasswordwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@35047d03]" started-at="2019-11-27T17:30:27Z" name="beforeTest" finished-at="2019-11-27T17:30:32Z" duration-ms="4429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@35047d03]" started-at="2019-11-27T17:30:32Z" name="TC_ValidDomainSubmission" finished-at="2019-11-27T17:30:47Z" duration-ms="15326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_ForgotPassword()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@35047d03]" started-at="2019-11-27T17:30:47Z" name="TC_ForgotPassword" finished-at="2019-11-27T17:30:51Z" depends-on-methods="testScript.TC_ForgotPasswordwithValidData.TC_ValidDomainSubmission" duration-ms="3749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ForgotPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ForgotPasswordwithValidData@35047d03]" started-at="2019-11-27T17:30:51Z" name="afterTest" finished-at="2019-11-27T17:30:51Z" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_ForgotPasswordwithValidData -->
+    </test> <!-- ForgotPasswordwithValidData -->
+    <test started-at="2019-11-27T12:00:51Z" name="ForgotPasswordwithINValidData" finished-at="2019-11-27T12:01:23Z" duration-ms="32411">
+      <class name="testScript.TC_ForgotPasswordwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:30:51Z" name="beforeTest" finished-at="2019-11-27T17:30:56Z" duration-ms="4889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:30:56Z" name="TC_ValidDomainSubmission" finished-at="2019-11-27T17:31:11Z" duration-ms="15313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_InValidForgotPasswordwithBlankEmail()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:31:11Z" name="TC_InValidForgotPasswordwithBlankEmail" finished-at="2019-11-27T17:31:14Z" depends-on-methods="testScript.TC_ForgotPasswordwithINValidData.TC_ValidDomainSubmission" duration-ms="3321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithBlankEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithInvalidEmail()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:31:14Z" name="TC_InValidForgotPasswordwithInvalidEmail" finished-at="2019-11-27T17:31:18Z" depends-on-methods="testScript.TC_ForgotPasswordwithINValidData.TC_InValidForgotPasswordwithBlankEmail" duration-ms="4078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithInvalidEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithNotRegisteredEmail()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:31:18Z" name="TC_InValidForgotPasswordwithNotRegisteredEmail" finished-at="2019-11-27T17:31:23Z" depends-on-methods="testScript.TC_ForgotPasswordwithINValidData.TC_InValidForgotPasswordwithInvalidEmail" duration-ms="4728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithNotRegisteredEmail -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ForgotPasswordwithINValidData@418e7838]" started-at="2019-11-27T17:31:23Z" name="afterTest" finished-at="2019-11-27T17:31:23Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_ForgotPasswordwithINValidData -->
+    </test> <!-- ForgotPasswordwithINValidData -->
+    <test started-at="2019-11-27T12:01:23Z" name="LoginwithValidData" finished-at="2019-11-27T12:02:16Z" duration-ms="52831">
+      <class name="testScript.TC_LoginwithValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_LoginwithValidData@70e8f8e]" started-at="2019-11-27T17:31:23Z" name="beforeTest" finished-at="2019-11-27T17:31:28Z" duration-ms="4807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_LoginwithValidData@70e8f8e]" started-at="2019-11-27T17:31:28Z" name="TC_ValidDomainSubmission" finished-at="2019-11-27T17:31:43Z" duration-ms="15346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_LoginwithValidData@70e8f8e]" started-at="2019-11-27T17:31:43Z" name="TC_SignIn" finished-at="2019-11-27T17:32:09Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_ValidDomainSubmission" duration-ms="25744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_ContactsIN()[pri:0, instance:testScript.TC_Contacts@6193932a]" started-at="2019-11-22T19:12:16Z" name="TC_ContactsIN" finished-at="2019-11-22T19:12:42Z" duration-ms="26220" status="PASS">
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_LoginwithValidData@70e8f8e]" started-at="2019-11-27T17:32:09Z" name="TC_SignOut" finished-at="2019-11-27T17:32:16Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_SignIn" duration-ms="6805" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_ContactsIN -->
-      </class> <!-- testScript.TC_Contacts -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TC_SignOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_LoginwithValidData@70e8f8e]" started-at="2019-11-27T17:32:16Z" name="afterTest" finished-at="2019-11-27T17:32:16Z" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_LoginwithValidData -->
+    </test> <!-- LoginwithValidData -->
+    <test started-at="2019-11-27T12:02:16Z" name="LoginwithINValidData" finished-at="2019-11-27T12:03:13Z" duration-ms="57183">
+      <class name="testScript.TC_LoginwithINValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:16Z" name="beforeTest" finished-at="2019-11-27T17:32:21Z" duration-ms="4586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:21Z" name="TC_ValidDomainSubmission" finished-at="2019-11-27T17:32:36Z" duration-ms="15314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_InValidSignInwithBlankEmailPassword()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:36Z" name="TC_InValidSignInwithBlankEmailPassword" finished-at="2019-11-27T17:32:38Z" depends-on-methods="testScript.TC_LoginwithINValidData.TC_ValidDomainSubmission" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmailPassword -->
+        <test-method signature="TC_InValidSignInwithBlankEmail()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:38Z" name="TC_InValidSignInwithBlankEmail" finished-at="2019-11-27T17:32:42Z" depends-on-methods="testScript.TC_LoginwithINValidData.TC_InValidSignInwithBlankEmailPassword" duration-ms="4286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmail -->
+        <test-method signature="TC_InValidSignInwithBlankPassword()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:42Z" name="TC_InValidSignInwithBlankPassword" finished-at="2019-11-27T17:32:50Z" depends-on-methods="testScript.TC_LoginwithINValidData.TC_InValidSignInwithBlankEmail" duration-ms="8054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankPassword -->
+        <test-method signature="TC_InvalidsignInwithInvalidEmailPassword()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:32:50Z" name="TC_InvalidsignInwithInvalidEmailPassword" finished-at="2019-11-27T17:33:13Z" depends-on-methods="testScript.TC_LoginwithINValidData.TC_InValidSignInwithBlankPassword" duration-ms="23169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidsignInwithInvalidEmailPassword -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_LoginwithINValidData@57c758ac]" started-at="2019-11-27T17:33:13Z" name="afterTest" finished-at="2019-11-27T17:33:13Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_LoginwithINValidData -->
+    </test> <!-- LoginwithINValidData -->
+  </suite> <!-- Suite -->
 </testng-results>

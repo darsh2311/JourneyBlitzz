@@ -10,22 +10,23 @@ public class EditGroupDetails extends ApplicationUtility {
 	public String editedGroupSubject = "Edited Group" + (int) (Math.random() * 9999);
 
 	public void editGroupDetail(String strSearchGroup) {
+		waitTime(2000);
 
 		// Search the group
 		mobjectGroups.enterSearchGroup(strSearchGroup);
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisEditDetail");
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickCloseEditGroup();
-		waitTime(1000);
+		waitTime(2000);
 
 		mobjectGroups.clickGroupEllipsis();
-		waitTime(1000);
+		waitTime(2000);
 
 		mCreateInquiryThroughGroup.ellipsisList("ellipsisEditDetail");
 		waitTime(2000);
@@ -35,11 +36,11 @@ public class EditGroupDetails extends ApplicationUtility {
 		waitTime(4000);
 
 		mobjectGroups.enterEditedGroupSubject(editedGroupSubject);
-		waitTime(500);
+		waitTime(2000);
 
 		mobjectGroups.enterEditedGroupDescription(
 				BaseClass.getValueFromPropertyFile("Groups.properties", "enterEditedGroupDescription"));
-		waitTime(500);
+		waitTime(2000);
 
 		mobjectGroups.clickUpdateEditGroup();
 		waitTime(3000);

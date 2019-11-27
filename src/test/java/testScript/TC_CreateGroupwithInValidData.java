@@ -41,11 +41,11 @@ public class TC_CreateGroupwithInValidData extends ApplicationUtility {
 
 		mVerifyDomain.VerifyValidDomain();
 		mSignIn.validSignIn();
-		mModuleTabs.clickGroupTab();
 	}
 
 	@Test(priority = 2)
 	public void TC_CreateGroupwithBlankData() {
+		mModuleTabs.clickGroupTab();
 
 		mCreateNewGroupwithBlankValues.NewGroupwithBlankValues();
 

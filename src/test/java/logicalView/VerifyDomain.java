@@ -13,15 +13,15 @@ public class VerifyDomain extends ApplicationUtility {
 
 	public void VerifyValidDomain() {
 
-		// waitTime(1000);
+		waitTime(1500);
+
 		// Enter the Domain Name
-		// ImplicitWait(10);
 		objDomain.enterDomain(BaseClass.getValueFromPropertyFile("Domain.properties", "nameOfDomain"));
-		waitTime(1000);
+		waitTime(3500);
 
 		// Submit the Domain Name field with valid value
 		objDomain.verifyDomainButton();
-		// waitTime(000);
+		waitTime(10000);
 
 		// ImplicitWait(10);
 		String verifyLoginTitle = driver.getTitle();
@@ -35,7 +35,6 @@ public class VerifyDomain extends ApplicationUtility {
 			this.takeScreenShot(
 					System.getProperty("user.dir") + "/src/test/resources/ErrorScreenshots/DomainSubmissionError1.jpg");
 		}
-		waitTime(1000);
 	}
 
 }
