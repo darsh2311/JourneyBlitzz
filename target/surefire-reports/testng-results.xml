@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-28T07:26:28Z" name="Suite" finished-at="2019-11-28T07:30:19Z" duration-ms="231040">
+    <groups>
+    </groups>
+    <test started-at="2019-11-28T07:26:28Z" name="ContactsScriptswithValidData" finished-at="2019-11-28T07:30:19Z" duration-ms="231040">
+      <class name="testScript.TC_Contacts">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:56:28Z" name="beforeTest" finished-at="2019-11-28T12:56:33Z" duration-ms="5110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:56:33Z" name="TC_ValidDomainSubmission" finished-at="2019-11-28T12:56:49Z" duration-ms="15302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:56:49Z" name="TC_SignIn" finished-at="2019-11-28T12:57:14Z" duration-ms="24705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignIn -->
+        <test-method signature="TC_Contactswith1to1Inquiry()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:57:14Z" name="TC_Contactswith1to1Inquiry" finished-at="2019-11-28T12:58:07Z" duration-ms="53112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Contactswith1to1Inquiry -->
+        <test-method signature="TC_ContactswithCreateInquiry()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:58:07Z" name="TC_ContactswithCreateInquiry" finished-at="2019-11-28T12:59:12Z" duration-ms="65100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ContactswithCreateInquiry -->
+        <test-method signature="TC_ContactsINGroupswithCreateInquiry()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T12:59:12Z" name="TC_ContactsINGroupswithCreateInquiry" finished-at="2019-11-28T13:00:13Z" duration-ms="61336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ContactsINGroupswithCreateInquiry -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T13:00:13Z" name="TC_SignOut" finished-at="2019-11-28T13:00:19Z" duration-ms="6231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_Contacts@5d47c63f]" started-at="2019-11-28T13:00:19Z" name="afterTest" finished-at="2019-11-28T13:00:19Z" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_Contacts -->
+    </test> <!-- ContactsScriptswithValidData -->
+  </suite> <!-- Suite -->
+</testng-results>

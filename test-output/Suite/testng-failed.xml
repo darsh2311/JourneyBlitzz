@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="10" name="Failed suite [Suite]">
-  <test name="Inquiry Internal Functionalities(failed)">
+  <test name="ContactsScriptswithValidData(failed)">
     <classes>
-      <class name="testScript.TC_NewInquirywithInvalidData">
+      <class name="testScript.TC_Contacts">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_NewInquirywithInvalidData -->
-      <class name="testScript.TC_NewInquiry">
-        <methods>
+          <include name="TC_SignIn"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="TC_ContactsINGroupswithCreateInquiry"/>
+          <include name="TC_ContactswithCreateInquiry"/>
+          <include name="TC_Contactswith1to1Inquiry"/>
+          <include name="TC_SignOut"/>
         </methods>
-      </class> <!-- testScript.TC_NewInquiry -->
-      <class name="testScript.TC_InquiryInternalFunctionalities">
-        <methods>
-          <include name="TC_VideoCall"/>
-          <include name="TC_UnArchiveInquiry"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="TC_EditInquiryDetails"/>
-        </methods>
-      </class> <!-- testScript.TC_InquiryInternalFunctionalities -->
+      </class> <!-- testScript.TC_Contacts -->
     </classes>
-  </test> <!-- Inquiry Internal Functionalities(failed) -->
+  </test> <!-- ContactsScriptswithValidData(failed) -->
 </suite> <!-- Failed suite [Suite] -->
