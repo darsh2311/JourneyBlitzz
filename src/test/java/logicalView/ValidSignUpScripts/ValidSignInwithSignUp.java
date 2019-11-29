@@ -22,7 +22,7 @@ public class ValidSignInwithSignUp extends ApplicationUtility {
 
 		// Submit the Sign In credentials to Sign In
 		objSignIn.clickSignIn();
-		waitTime(10000);
+		waitTime(20000);
 		List<WebElement> verifySignIn = objSignIn.signInVerification;
 		if (verifySignIn.size() != 0) {
 			logger.info("SignIn for SignUp is successful: Passed");

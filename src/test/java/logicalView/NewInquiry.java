@@ -111,7 +111,8 @@ public class NewInquiry extends ApplicationUtility {
 
 		// Submit the detail by clicking on Create Inquiry
 		mobjectNewInquiry.clickCreateInquiry();
-		ImplicitWait(50); // Verify the Success message that inquiry is created or not
+		ImplicitWait(50);
+		// Verify the Success message that inquiry is created or not
 		String successInquiry = mobjectNewInquiry.successInquiryMessage.getText();
 		if (successInquiry
 				.startsWith(BaseClass.getValueFromPropertyFile("NewInquiry.properties", "successInquiryMessage"))) {

@@ -23,8 +23,9 @@ public class SignUPVerifyEmail extends ApplicationUtility {
 
 		// Click on Verify button
 		objSignUp.clickverifyEmail();
-		waitTime(3000);
+		waitTime(10000);
 
+		ImplicitWait(5);
 		// Upload the profile Photo
 		objSignUp.uploadPhoto();
 		waitTime(1000);
@@ -65,6 +66,6 @@ public class SignUPVerifyEmail extends ApplicationUtility {
 
 		// Click on Signup button
 		objSignUp.clickSignUp();
-		waitTime(20000);
+		waitTime(40000);
 	}
 }

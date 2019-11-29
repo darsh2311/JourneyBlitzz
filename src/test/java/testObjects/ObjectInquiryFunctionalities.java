@@ -292,7 +292,7 @@ public class ObjectInquiryFunctionalities {
 	}
 
 	// Click on Remove icon of the first Member
-	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/div[1]/div[3]/div[1]/div[1]/a[1]/div[1]/div[1]/div[1]/i[1]")
+	@FindBy(xpath = "//*[@id=\"mainTable1\"]/div[1]/div[3]/div/div/a/div/div/div/i")
 	public WebElement removeIcon;
 
 	public void clickRemoveIcon() {
@@ -470,6 +470,9 @@ public class ObjectInquiryFunctionalities {
 	public void clickDisconnectCallButton() {
 		disconnectCallButton.click();
 	}
+
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[2]/div[1]/div[1]/div[1]/div[6]/h5[1]")
+	public WebElement groupScroll;
 
 	// Page Factory constructor
 	public ObjectInquiryFunctionalities(WebDriver driver) {

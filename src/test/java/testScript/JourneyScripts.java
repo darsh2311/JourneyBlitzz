@@ -1,5 +1,6 @@
 package testScript;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -359,18 +360,17 @@ public class JourneyScripts {
 
 		@Test(priority = 33, enabled = true, dependsOnMethods = "TC_SignInafterRegisterUserIdwithOutPassword")
 		public void TC_CreateNewInquiry() {
+
 			mVerifyDomain.VerifyValidDomain();
 			mSignIn.validSignIn();
 			mNewInquiry.clickNewInquiryHeaderButton();
 			mNewInquiry.createNewInquiry();
-			mSignOut.SignOut();
 
 		}
 
 		@Test(priority = 34, enabled = true, dependsOnMethods = "TC_CreateNewInquiry")
 		public void TC_CreateNewInquirywithInvalidValues() {
-			mVerifyDomain.VerifyValidDomain();
-			mSignIn.validSignIn();
+
 			mNewInquirywithInvalidValues.createNewInquiry();
 
 		}
@@ -444,11 +444,11 @@ public class JourneyScripts {
 		}
 
 		@Test(priority = 46, enabled = true, dependsOnMethods = "TC_DeleteNotes")
-		public void TC_RemoveParticipant() {
-			mRemoveParticipant.removeParticipant();
+		public void TC_EditInquiryDetails() {
+			mInquiryDetails.editInquiryDetails();
 		}
 
-		@Test(priority = 47, enabled = true, dependsOnMethods = "TC_RemoveParticipant")
+		@Test(priority = 47, enabled = true, dependsOnMethods = "TC_EditInquiryDetails")
 		public void TC_ArchiveInquiry() {
 			mArchiveInquiry.archiveInquiry();
 		}
@@ -465,16 +465,16 @@ public class JourneyScripts {
 		}
 
 		@Test(priority = 50, enabled = true, dependsOnMethods = "TC_VideoCall")
-		public void TC_EditInquiryDetails() {
-			mInquiryDetails.editInquiryDetails();
+		public void TC_RemoveParticipant() {
+			mRemoveParticipant.removeParticipant();
 			mSignOut.SignOut();
 
 		}
 
-//		@AfterTest
-//		public void afterTest() {
-//			driver.quit();
-//		}
+		@AfterTest
+		public void afterTest() {
+			driver.quit();
+		}
 	}
 
 }

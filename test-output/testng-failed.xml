@@ -3,15 +3,60 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_LoginwithValidData">
+      <class name="testScript.JourneyScripts$TC_All">
         <methods>
-          <include name="TC_ValidDomainSubmission"/>
-          <include name="TC_SignOut"/>
+          <include name="TC_SignUpwithEmailwithoutPassword"/>
+          <include name="TC_SignUpwithBlankUserIdInvalidData"/>
+          <include name="TC_SignInafterRegisterUserIdwithOutPassword"/>
+          <include name="TC_InValidForgotPasswordwithInvalidEmail"/>
+          <include name="TC_VerifyNotRegisteredVerifyEmail"/>
+          <include name="TC_SignInafterRegisterEmailwithOutPassword"/>
+          <include name="TC_VerifyInvalidVerifyEmail"/>
+          <include name="TC_CreateNewInquiry"/>
+          <include name="TC_VerifyNotRegisteredVerifyUserId"/>
+          <include name="TC_InquiryList"/>
+          <include name="TC_VerifyInvalidVerifyUserId"/>
+          <include name="TC_VerifyBlankVerifyEmailUserid"/>
+          <include name="TC_SignUpwithUserIdwithoutPassword"/>
+          <include name="TC_SignInafterRegister"/>
+          <include name="TC_ValidForgotPassword"/>
+          <include name="TC_SignUpwithEmailandPassword"/>
+          <include name="TC_CreateNewInquirywithInvalidValues"/>
+          <include name="SignInforSignUpUserIdwithoutPassword"/>
+          <include name="TC_ViewImage"/>
+          <include name="TC_RemoveParticipant"/>
+          <include name="TC_InValidSignInwithBlankEmail"/>
+          <include name="TC_InValidForgotPasswordwithNotRegisteredEmail"/>
+          <include name="TC_AttachMediaPhoto"/>
+          <include name="TC_CreateNewInquirywithBlankValues"/>
+          <include name="TC_InValidSignInwithBlankPassword"/>
+          <include name="TC_UnArchiveInquiry"/>
+          <include name="TC_SignUpwithUserIdInvalidData"/>
+          <include name="TC_SignInafterRegisterUserId"/>
+          <include name="TC_InValidForgotPasswordwithBlankEmail"/>
+          <include name="TC_AddNotes"/>
+          <include name="TC_SignUpwithBlankEmailIdInvalidData"/>
+          <include name="TC_DeleteNotes"/>
+          <include name="TC_ArchiveInquiry"/>
+          <include name="TC_InValidSignInwithBlankEmailPassword"/>
+          <include name="SignInforSignUp"/>
+          <include name="SignInforSignUpUserId"/>
+          <include name="TC_EditNotes"/>
+          <include name="TC_AttachMediaVideo"/>
           <include name="afterTest"/>
+          <include name="TC_VideoCall"/>
+          <include name="SignInforSignUpwithOutPassword"/>
+          <include name="TC_AttachMediaDocument"/>
+          <include name="TC_SendMessageToChat"/>
+          <include name="TC_SignUpwithEmailandPasswordUserId"/>
           <include name="TC_SignIn"/>
+          <include name="TC_ValidDomainSubmission"/>
           <include name="beforeTest"/>
+          <include name="TC_AddParticipantInInquiry"/>
+          <include name="TC_EditInquiryDetails"/>
+          <include name="TC_InvalidsignInwithInvalidEmailPassword"/>
         </methods>
-      </class> <!-- testScript.TC_LoginwithValidData -->
+      </class> <!-- testScript.JourneyScripts$TC_All -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

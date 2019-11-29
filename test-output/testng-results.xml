@@ -1,45 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="1" failed="1" skipped="1">
+<testng-results total="50" passed="49" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-28T07:05:41Z" name="Default suite" finished-at="2019-11-28T07:06:06Z" duration-ms="24870">
+  <suite started-at="2019-11-29T10:52:10Z" name="Default suite" finished-at="2019-11-29T11:17:25Z" duration-ms="1515897">
     <groups>
     </groups>
-    <test started-at="2019-11-28T07:05:41Z" name="Default test" finished-at="2019-11-28T07:06:06Z" duration-ms="24870">
-      <class name="testScript.TC_LoginwithValidData">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_LoginwithValidData@1ffe63b9]" started-at="2019-11-28T12:35:41Z" name="beforeTest" finished-at="2019-11-28T12:35:46Z" duration-ms="4955" status="PASS">
+    <test started-at="2019-11-29T10:52:10Z" name="Default test" finished-at="2019-11-29T11:17:25Z" duration-ms="1515897">
+      <class name="testScript.JourneyScripts$TC_All">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:22:10Z" name="beforeTest" finished-at="2019-11-29T16:22:16Z" duration-ms="6669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_LoginwithValidData@1ffe63b9]" started-at="2019-11-28T12:35:46Z" name="TC_ValidDomainSubmission" finished-at="2019-11-28T12:36:01Z" duration-ms="15312" status="PASS">
+        <test-method signature="TC_Need_Help()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:22:16Z" name="TC_Need_Help" finished-at="2019-11-29T16:22:56Z" duration-ms="39258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Need_Help -->
+        <test-method signature="TC_InvalidDomainSubmission()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:22:56Z" name="TC_InvalidDomainSubmission" finished-at="2019-11-29T16:23:03Z" duration-ms="7409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidDomainSubmission -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:03Z" name="TC_ValidDomainSubmission" finished-at="2019-11-29T16:23:18Z" duration-ms="15251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_LoginwithValidData@1ffe63b9]" started-at="2019-11-28T12:36:01Z" name="TC_SignIn" finished-at="2019-11-28T12:36:06Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_ValidDomainSubmission" duration-ms="4461" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="TC_InValidForgotPasswordwithBlankEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:18Z" name="TC_InValidForgotPasswordwithBlankEmail" finished-at="2019-11-29T16:23:22Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_ValidDomainSubmission" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithBlankEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithInvalidEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:22Z" name="TC_InValidForgotPasswordwithInvalidEmail" finished-at="2019-11-29T16:23:26Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidForgotPasswordwithBlankEmail" duration-ms="4069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithInvalidEmail -->
+        <test-method signature="TC_InValidForgotPasswordwithNotRegisteredEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:26Z" name="TC_InValidForgotPasswordwithNotRegisteredEmail" finished-at="2019-11-29T16:23:30Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidForgotPasswordwithInvalidEmail" duration-ms="4698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidForgotPasswordwithNotRegisteredEmail -->
+        <test-method signature="TC_ValidForgotPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:30Z" name="TC_ValidForgotPassword" finished-at="2019-11-29T16:23:34Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidForgotPasswordwithNotRegisteredEmail" duration-ms="3653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidForgotPassword -->
+        <test-method signature="TC_InValidSignInwithBlankEmailPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:34Z" name="TC_InValidSignInwithBlankEmailPassword" finished-at="2019-11-29T16:23:36Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_ValidForgotPassword" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmailPassword -->
+        <test-method signature="TC_InValidSignInwithBlankEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:36Z" name="TC_InValidSignInwithBlankEmail" finished-at="2019-11-29T16:23:40Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidSignInwithBlankEmailPassword" duration-ms="4252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankEmail -->
+        <test-method signature="TC_InValidSignInwithBlankPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:40Z" name="TC_InValidSignInwithBlankPassword" finished-at="2019-11-29T16:23:49Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidSignInwithBlankEmail" duration-ms="8652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InValidSignInwithBlankPassword -->
+        <test-method signature="TC_InvalidsignInwithInvalidEmailPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:23:49Z" name="TC_InvalidsignInwithInvalidEmailPassword" finished-at="2019-11-29T16:24:03Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InValidSignInwithBlankPassword" duration-ms="14399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InvalidsignInwithInvalidEmailPassword -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:24:03Z" name="TC_SignIn" finished-at="2019-11-29T16:24:49Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InvalidsignInwithInvalidEmailPassword" duration-ms="45798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignIn -->
+        <test-method signature="TC_SignUpwithBlankEmailIdInvalidData()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:24:49Z" name="TC_SignUpwithBlankEmailIdInvalidData" finished-at="2019-11-29T16:24:56Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignIn" duration-ms="6914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankEmailIdInvalidData -->
+        <test-method signature="TC_SignUpwithBlankUserIdInvalidData()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:24:56Z" name="TC_SignUpwithBlankUserIdInvalidData" finished-at="2019-11-29T16:25:03Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithBlankEmailIdInvalidData" duration-ms="7819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithBlankUserIdInvalidData -->
+        <test-method signature="TC_SignUpwithUserIdInvalidData()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:25:03Z" name="TC_SignUpwithUserIdInvalidData" finished-at="2019-11-29T16:25:45Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithBlankUserIdInvalidData" duration-ms="41686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdInvalidData -->
+        <test-method signature="TC_VerifyBlankVerifyEmailUserid()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:25:45Z" name="TC_VerifyBlankVerifyEmailUserid" finished-at="2019-11-29T16:26:04Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithUserIdInvalidData" duration-ms="18498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyBlankVerifyEmailUserid -->
+        <test-method signature="TC_VerifyInvalidVerifyEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:04Z" name="TC_VerifyInvalidVerifyEmail" finished-at="2019-11-29T16:26:06Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VerifyBlankVerifyEmailUserid" duration-ms="2754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyEmail -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyEmail()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:06Z" name="TC_VerifyNotRegisteredVerifyEmail" finished-at="2019-11-29T16:26:09Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VerifyInvalidVerifyEmail" duration-ms="2646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyEmail -->
+        <test-method signature="TC_VerifyInvalidVerifyUserId()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:09Z" name="TC_VerifyInvalidVerifyUserId" finished-at="2019-11-29T16:26:11Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VerifyNotRegisteredVerifyEmail" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyInvalidVerifyUserId -->
+        <test-method signature="TC_VerifyNotRegisteredVerifyUserId()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:11Z" name="TC_VerifyNotRegisteredVerifyUserId" finished-at="2019-11-29T16:26:18Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VerifyInvalidVerifyUserId" duration-ms="6929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VerifyNotRegisteredVerifyUserId -->
+        <test-method signature="SignInforSignUp()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:18Z" name="SignInforSignUp" finished-at="2019-11-29T16:26:43Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VerifyNotRegisteredVerifyUserId" duration-ms="24795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUp -->
+        <test-method signature="TC_SignUpwithEmailandPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:26:43Z" name="TC_SignUpwithEmailandPassword" finished-at="2019-11-29T16:28:09Z" depends-on-methods="testScript.JourneyScripts$TC_All.SignInforSignUp" duration-ms="86336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPassword -->
+        <test-method signature="TC_SignInafterRegister()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:28:09Z" name="TC_SignInafterRegister" finished-at="2019-11-29T16:29:03Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithEmailandPassword" duration-ms="53935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegister -->
+        <test-method signature="SignInforSignUpUserId()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:29:03Z" name="SignInforSignUpUserId" finished-at="2019-11-29T16:29:43Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignInafterRegister" duration-ms="40022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpUserId -->
+        <test-method signature="TC_SignUpwithEmailandPasswordUserId()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:29:43Z" name="TC_SignUpwithEmailandPasswordUserId" finished-at="2019-11-29T16:30:45Z" depends-on-methods="testScript.JourneyScripts$TC_All.SignInforSignUpUserId" duration-ms="61969" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailandPasswordUserId -->
+        <test-method signature="TC_SignInafterRegisterUserId()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:30:45Z" name="TC_SignInafterRegisterUserId" finished-at="2019-11-29T16:31:47Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithEmailandPasswordUserId" duration-ms="61605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterUserId -->
+        <test-method signature="SignInforSignUpwithOutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:31:47Z" name="SignInforSignUpwithOutPassword" finished-at="2019-11-29T16:32:42Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignInafterRegisterUserId" duration-ms="55919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpwithOutPassword -->
+        <test-method signature="TC_SignUpwithEmailwithoutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:32:42Z" name="TC_SignUpwithEmailwithoutPassword" finished-at="2019-11-29T16:33:06Z" depends-on-methods="testScript.JourneyScripts$TC_All.SignInforSignUpwithOutPassword" duration-ms="23632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithEmailwithoutPassword -->
+        <test-method signature="TC_SignInafterRegisterEmailwithOutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:33:06Z" name="TC_SignInafterRegisterEmailwithOutPassword" finished-at="2019-11-29T16:34:43Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithEmailwithoutPassword" duration-ms="97077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterEmailwithOutPassword -->
+        <test-method signature="SignInforSignUpUserIdwithoutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:34:43Z" name="SignInforSignUpUserIdwithoutPassword" finished-at="2019-11-29T16:35:39Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignInafterRegisterEmailwithOutPassword" duration-ms="55906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInforSignUpUserIdwithoutPassword -->
+        <test-method signature="TC_SignUpwithUserIdwithoutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:35:39Z" name="TC_SignUpwithUserIdwithoutPassword" finished-at="2019-11-29T16:36:02Z" depends-on-methods="testScript.JourneyScripts$TC_All.SignInforSignUpUserIdwithoutPassword" duration-ms="23359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignUpwithUserIdwithoutPassword -->
+        <test-method signature="TC_SignInafterRegisterUserIdwithOutPassword()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:36:02Z" name="TC_SignInafterRegisterUserIdwithOutPassword" finished-at="2019-11-29T16:37:41Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignUpwithUserIdwithoutPassword" duration-ms="98344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignInafterRegisterUserIdwithOutPassword -->
+        <test-method signature="TC_CreateNewInquiry()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:37:41Z" name="TC_CreateNewInquiry" finished-at="2019-11-29T16:39:29Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SignInafterRegisterUserIdwithOutPassword" duration-ms="108377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CreateNewInquiry -->
+        <test-method signature="TC_CreateNewInquirywithInvalidValues()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:39:29Z" name="TC_CreateNewInquirywithInvalidValues" finished-at="2019-11-29T16:40:02Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_CreateNewInquiry" duration-ms="32421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CreateNewInquirywithInvalidValues -->
+        <test-method signature="TC_CreateNewInquirywithBlankValues()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:40:02Z" name="TC_CreateNewInquirywithBlankValues" finished-at="2019-11-29T16:40:17Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_CreateNewInquirywithInvalidValues" duration-ms="15085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CreateNewInquirywithBlankValues -->
+        <test-method signature="TC_InquiryList()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:40:17Z" name="TC_InquiryList" finished-at="2019-11-29T16:41:01Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_CreateNewInquirywithBlankValues" duration-ms="44544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InquiryList -->
+        <test-method signature="TC_ViewImage()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:41:01Z" name="TC_ViewImage" finished-at="2019-11-29T16:41:32Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_InquiryList" duration-ms="30459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ViewImage -->
+        <test-method signature="TC_SendMessageToChat()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:41:32Z" name="TC_SendMessageToChat" finished-at="2019-11-29T16:41:46Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_ViewImage" duration-ms="13818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SendMessageToChat -->
+        <test-method signature="TC_AttachMediaPhoto()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:41:46Z" name="TC_AttachMediaPhoto" finished-at="2019-11-29T16:42:08Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_SendMessageToChat" duration-ms="22533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AttachMediaPhoto -->
+        <test-method signature="TC_AttachMediaVideo()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:42:08Z" name="TC_AttachMediaVideo" finished-at="2019-11-29T16:42:27Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_AttachMediaPhoto" duration-ms="19038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AttachMediaVideo -->
+        <test-method signature="TC_AttachMediaDocument()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:42:27Z" name="TC_AttachMediaDocument" finished-at="2019-11-29T16:42:45Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_AttachMediaVideo" duration-ms="17908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AttachMediaDocument -->
+        <test-method signature="TC_AddParticipantInInquiry()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:42:45Z" name="TC_AddParticipantInInquiry" finished-at="2019-11-29T16:43:36Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_AttachMediaDocument" duration-ms="50815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AddParticipantInInquiry -->
+        <test-method signature="TC_AddNotes()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:43:36Z" name="TC_AddNotes" finished-at="2019-11-29T16:44:03Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_AddParticipantInInquiry" duration-ms="27548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_AddNotes -->
+        <test-method signature="TC_EditNotes()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:44:03Z" name="TC_EditNotes" finished-at="2019-11-29T16:44:21Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_AddNotes" duration-ms="17567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_EditNotes -->
+        <test-method signature="TC_DeleteNotes()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:44:21Z" name="TC_DeleteNotes" finished-at="2019-11-29T16:44:37Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_EditNotes" duration-ms="16166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DeleteNotes -->
+        <test-method signature="TC_EditInquiryDetails()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:44:37Z" name="TC_EditInquiryDetails" finished-at="2019-11-29T16:45:14Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_DeleteNotes" duration-ms="36733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_EditInquiryDetails -->
+        <test-method signature="TC_ArchiveInquiry()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:45:14Z" name="TC_ArchiveInquiry" finished-at="2019-11-29T16:45:42Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_EditInquiryDetails" duration-ms="28470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ArchiveInquiry -->
+        <test-method signature="TC_UnArchiveInquiry()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:45:42Z" name="TC_UnArchiveInquiry" finished-at="2019-11-29T16:46:29Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_ArchiveInquiry" duration-ms="47199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_UnArchiveInquiry -->
+        <test-method signature="TC_VideoCall()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:46:29Z" name="TC_VideoCall" finished-at="2019-11-29T16:46:53Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_UnArchiveInquiry" duration-ms="23049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_VideoCall -->
+        <test-method signature="TC_RemoveParticipant()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:46:53Z" name="TC_RemoveParticipant" finished-at="2019-11-29T16:47:25Z" depends-on-methods="testScript.JourneyScripts$TC_All.TC_VideoCall" duration-ms="32791" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
             <message>
-              <![CDATA[chrome not reachable
+              <![CDATA[element not visible
   (Session info: chrome=78.0.3904.108)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-70-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-70-generic', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32871}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
-Session ID: 0f4bd56f0993861b3814d263d04b374b
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/button[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32931}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: f85b6d6706a24428b81f89d9eaf04014]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
   (Session info: chrome=78.0.3904.108)
   (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.15.0-70-generic x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-70-generic', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32871}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
-Session ID: 0f4bd56f0993861b3814d263d04b374b
-*** Element info: {Using=xpath, value=/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/button[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578700 (2f1ed5f9343c13..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:32931}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: f85b6d6706a24428b81f89d9eaf04014
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -53,16 +243,10 @@ Session ID: 0f4bd56f0993861b3814d263d04b374b
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at testObjects.ObjectSignIn.clickSignIn(ObjectSignIn.java:42)
-	at logicalView.SignInwithValidData.validSignIn(SignInwithValidData.java:26)
-	at testScript.TC_LoginwithValidData.TC_SignIn(TC_LoginwithValidData.java:36)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at logicalView.InquiryInternalFunctionalityScripts.RemoveParticipant.removeParticipant(RemoveParticipant.java:39)
+	at testScript.JourneyScripts$TC_All.TC_RemoveParticipant(JourneyScripts.java:469)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,19 +273,15 @@ Session ID: 0f4bd56f0993861b3814d263d04b374b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_LoginwithValidData@1ffe63b9]" started-at="2019-11-28T12:36:06Z" name="TC_SignOut" finished-at="2019-11-28T12:36:06Z" depends-on-methods="testScript.TC_LoginwithValidData.TC_SignIn" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_LoginwithValidData@1ffe63b9]" started-at="2019-11-28T12:36:06Z" name="afterTest" finished-at="2019-11-28T12:36:06Z" duration-ms="126" status="PASS">
+        </test-method> <!-- TC_RemoveParticipant -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.JourneyScripts$TC_All@47d90b9e]" started-at="2019-11-29T16:47:25Z" name="afterTest" finished-at="2019-11-29T16:47:25Z" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_LoginwithValidData -->
+      </class> <!-- testScript.JourneyScripts$TC_All -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
