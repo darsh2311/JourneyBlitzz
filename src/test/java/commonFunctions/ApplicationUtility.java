@@ -55,7 +55,7 @@ public class ApplicationUtility {
 			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
 			driver = new ChromeDriver(options);
 			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "/src/test/resources/chromedriver");
+					System.getProperty("user.dir") + "/src/test/resources/chromedriver.exe");
 		}
 		return driver;
 	}

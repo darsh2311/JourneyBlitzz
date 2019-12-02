@@ -401,3 +401,5 @@
 2019-11-29 16:45:13 INFO  ApplicationUtility:68 - Inquiry Title changed Successfully: Passed
 2019-11-29 16:45:42 INFO  ApplicationUtility:36 - Inquiry has been archived.
 2019-11-29 16:46:29 INFO  ApplicationUtility:80 - Inquiry has been unArchived.
+2019-12-02 12:25:12 INFO  ApplicationUtility:45 - Browser Driver is now initilized.
+2019-12-02 12:35:26 INFO  ApplicationUtility:45 - Browser Driver is now initilized.

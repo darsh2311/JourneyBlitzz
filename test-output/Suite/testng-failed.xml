@@ -11,6 +11,7 @@
           <include name="TC_ContactsINGroupswithCreateInquiry"/>
           <include name="TC_ContactswithCreateInquiry"/>
           <include name="TC_Contactswith1to1Inquiry"/>
+          <include name="TC_ValidDomainSubmission"/>
           <include name="TC_SignOut"/>
         </methods>
       </class> <!-- testScript.TC_Contacts -->
