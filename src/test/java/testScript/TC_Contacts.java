@@ -21,7 +21,6 @@ public class TC_Contacts extends ApplicationUtility {
 
 	@BeforeTest
 	public void beforeTest() {
-
 		openBrowser();
 		mSignIn = new SignInwithValidData();
 		mVerifyDomain = new VerifyDomain();

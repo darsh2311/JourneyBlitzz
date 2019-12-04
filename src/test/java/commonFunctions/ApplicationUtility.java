@@ -1,5 +1,7 @@
 package commonFunctions;
 
+import static io.github.bonigarcia.wdm.DriverManagerType.CHROME;
+
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -27,6 +29,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
@@ -38,8 +41,6 @@ public class ApplicationUtility {
 	public void openBrowser() {
 
 		driver = initialliseBrowserDriver();
-
-		driver.manage().window().maximize();
 		driver.get(BaseClass.getValueFromPropertyFile("Property.properties", "Url"));
 		waitForPageLoaded();
 		logger.info("Browser Driver is now initilized.");
@@ -51,11 +52,13 @@ public class ApplicationUtility {
 
 		String browserName = BaseClass.getValueFromPropertyFile("Property.properties", "browserName");
 		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.getInstance(CHROME).setup();
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
 			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
 			driver = new ChromeDriver(options);
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "/src/test/resources/chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver",
+//					System.getProperty("user.dir") + "/src/test/resources/chromedriver.exe");
 		}
 		return driver;
 	}

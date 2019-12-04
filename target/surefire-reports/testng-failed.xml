@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Suite]" verbose="0">
+  <test name="ContactsScriptswithValidData(failed)">
+    <classes>
+      <class name="testScript.TC_Contacts">
+        <methods>
+          <include name="TC_SignIn"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="TC_ContactsINGroupswithCreateInquiry"/>
+          <include name="TC_ContactswithCreateInquiry"/>
+          <include name="TC_Contactswith1to1Inquiry"/>
+          <include name="TC_ValidDomainSubmission"/>
+          <include name="TC_SignOut"/>
+        </methods>
+      </class> <!-- testScript.TC_Contacts -->
+    </classes>
+  </test> <!-- ContactsScriptswithValidData(failed) -->
+</suite> <!-- Failed suite [Suite] -->

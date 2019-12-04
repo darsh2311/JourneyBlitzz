@@ -7,7 +7,6 @@
         <methods>
           <include name="TC_SignIn"/>
           <include name="beforeTest"/>
-          <include name="afterTest"/>
           <include name="TC_ContactsINGroupswithCreateInquiry"/>
           <include name="TC_ContactswithCreateInquiry"/>
           <include name="TC_Contactswith1to1Inquiry"/>
