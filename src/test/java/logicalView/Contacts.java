@@ -72,8 +72,7 @@ public class Contacts extends ApplicationUtility {
 
 			// Enter the details of the Inquiry to create Inquiry
 			mNewInquiry2.simpleInquiryCreate();
-			waitTime(20000);
-
+			ImplicitWait(50);
 			// Verify the Success message that inquiry is created or not
 			String successInquiry = mobjectNewInquiry.successInquiryMessage.getText();
 
@@ -115,8 +114,7 @@ public class Contacts extends ApplicationUtility {
 
 			// Enter the details of the Inquiry to create Inquiry
 			mNewInquiry2.simpleInquiryCreate();
-			waitTime(20000);
-
+			ImplicitWait(50);
 			// Verify the Success message that inquiry is created or not
 			String successInquiry2 = mobjectNewInquiry.successInquiryMessage.getText();
 			if (successInquiry2

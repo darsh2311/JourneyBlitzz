@@ -11,10 +11,10 @@ public class VerifyDomainwithInvalidData extends ApplicationUtility {
 
 	public void VerifyInValidDomain() {
 
-		waitTime(1000);
+		waitTime(2000);
 		// Submit the Domain Name field with Blank value
 		objDomain.verifyDomainButton();
-		waitTime(2000);
+		waitTime(3000);
 		String BlankDomainName = objDomain.BlankDomainName.getText();
 
 		if (BlankDomainName.equalsIgnoreCase(
@@ -23,8 +23,7 @@ public class VerifyDomainwithInvalidData extends ApplicationUtility {
 		} else {
 			logger.error("Blank Domain submission is not allowed: Failed");
 		}
-		ImplicitWait(100);
-		waitTime(1000);
+		waitTime(3000);
 
 		// Submit the Domain Name which is not registered
 		objDomain.enterDomain(BaseClass.getValueFromPropertyFile("Domain.properties", "notRegisteredDomain"));

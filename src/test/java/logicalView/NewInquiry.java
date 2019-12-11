@@ -2,18 +2,24 @@ package logicalView;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
+import testObjects.ObjectSignOut;
 import testObjects.objectNewInquiry;
 
 public class NewInquiry extends ApplicationUtility {
 	public String inquiryName = "Test Inquiry" + (int) (Math.random() * 9999);
 	objectNewInquiry mobjectNewInquiry = new objectNewInquiry(driver);
+	ObjectSignOut objSignOut = new ObjectSignOut(driver);
 
 	public void clickNewInquiryHeaderButton() {
 
 		ImplicitWait(5);
+
+		// objSignOut.ClickhideChromeRecommend();
+
 		// Click on New Inquiry button of Header
 		mobjectNewInquiry.clickNewInquiryButton();
 		waitTime(1000);
+
 	}
 
 	public void createNewInquiry() {
@@ -30,7 +36,7 @@ public class NewInquiry extends ApplicationUtility {
 
 		// Click on Add Participant
 		mobjectNewInquiry.clickAddParticipantButton();
-		waitTime(25000);
+		waitTime(12000);
 		int count = 0;
 		// Check whether Participants are there to add or not
 		String checkParticipantPresent = mobjectNewInquiry.errorNoContactParticipantToAdd.getText();
@@ -90,6 +96,7 @@ public class NewInquiry extends ApplicationUtility {
 
 	public void submitInquiry() {
 		ImplicitWait(5);
+
 		// Click on Upload Photo to upload image
 		mobjectNewInquiry.clickUploadImage();
 
@@ -97,8 +104,7 @@ public class NewInquiry extends ApplicationUtility {
 
 		// Using the Robot class to upload the file
 		attachmedia("inquiry.jpg");
-		waitTime(5000);
-		// Click on Save to Select the Image
+		waitTime(5000); // Click on Save to Select the Image
 		mobjectNewInquiry.clickSaveUploadImage();
 		waitTime(1000);
 

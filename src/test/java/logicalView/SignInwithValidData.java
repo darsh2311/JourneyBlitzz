@@ -28,10 +28,12 @@ public class SignInwithValidData extends ApplicationUtility {
 		List<WebElement> verifySignIn = objSignIn.signInVerification;
 		if (verifySignIn.size() != 0) {
 			logger.info("SignIn is successful: Passed");
+			logger.info(driver.getTitle());
+			logger.info(driver.getCurrentUrl());
 		} else {
 			logger.error("SignIn is not successful: Failed");
+			logger.info(driver.getTitle());
 		}
-		waitTime(10000);
 
 	}
 

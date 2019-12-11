@@ -424,3 +424,447 @@
 2019-12-04 11:33:59 ERROR ApplicationUtility:32 - SignIn is not successful: Failed
 2019-12-04 11:34:15 INFO  ApplicationUtility:24 - SignOut submission: Passed
 2019-12-04 11:36:35 INFO  ApplicationUtility:46 - Browser Driver is now initilized.
+2019-12-05 12:05:37 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:05:37 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:05:40 INFO  ApplicationUtility:24 - Need help valid popup opened: Passed
+2019-12-05 12:05:48 INFO  ApplicationUtility:46 - Need help valid Submit Ticket Page opened: Passed
+2019-12-05 12:05:57 INFO  ApplicationUtility:67 - Need help valid Network Test Page opened: Passed
+2019-12-05 12:06:05 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:06:05 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:06:21 INFO  ApplicationUtility:31 - Domain submission: Passed
+2019-12-05 12:06:26 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:06:26 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:06:29 INFO  ApplicationUtility:22 - Blank Domain submission is not allowed: Passed
+2019-12-05 12:06:31 INFO  ApplicationUtility:36 - Not registered user is not allowed: Passed
+2019-12-05 12:06:37 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:06:37 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:06:53 INFO  ApplicationUtility:31 - Domain submission: Passed
+2019-12-05 12:06:55 INFO  ApplicationUtility:28 - Forgot Password's reset link sent: Passed
+2019-12-05 12:07:03 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:07:03 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:07:18 INFO  ApplicationUtility:31 - Domain submission: Passed
+2019-12-05 12:07:20 ERROR ApplicationUtility:27 - Forgot Password blank Email Submission not allowed: Failed
+2019-12-05 12:07:24 INFO  ApplicationUtility:29 - Forgot Password Invalid Email Submission not allowed: Passed
+2019-12-05 12:07:29 INFO  ApplicationUtility:29 - Forgot Password blank Email Submission not allowed: Passed
+2019-12-05 12:07:35 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:07:35 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:07:50 INFO  ApplicationUtility:31 - Domain submission: Passed
+2019-12-05 12:08:05 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 12:08:22 INFO  ApplicationUtility:24 - SignOut submission: Passed
+2019-12-05 12:08:27 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 12:08:27 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 12:08:42 INFO  ApplicationUtility:31 - Domain submission: Passed
+2019-12-05 12:08:44 INFO  ApplicationUtility:25 - Blank Email and Password submission is not allowed: Passed
+2019-12-05 12:08:48 INFO  ApplicationUtility:27 - Blank Email submission is not allowed: Passed
+2019-12-05 12:08:56 INFO  ApplicationUtility:29 - Blank Password submission is not allowed: Passed
+2019-12-05 12:09:06 INFO  ApplicationUtility:31 - Invalid Email and Password submission is not allowed: Passed
+2019-12-05 13:39:48 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:39:48 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:39:54 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:39:54 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:40:05 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:40:05 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:40:12 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:40:12 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:40:23 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:40:23 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:40:33 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:40:33 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 13:40:43 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 13:40:43 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:17:18 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:17:18 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:18:50 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:18:50 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:19:05 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:19:20 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:21:10 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:21:10 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:21:25 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:21:40 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:25:07 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:25:07 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:25:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:25:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:27:33 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:27:33 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:27:48 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:28:03 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:37:13 INFO  ApplicationUtility:44 - Browser Driver is now initilized.
+2019-12-05 15:37:13 INFO  ApplicationUtility:45 - Company | Blitzz
+2019-12-05 15:37:29 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:37:43 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:38:56 INFO  ApplicationUtility:44 - Browser Driver is now initilized.
+2019-12-05 15:38:56 INFO  ApplicationUtility:45 - Company | Blitzz
+2019-12-05 15:39:12 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:39:26 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:44:27 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:44:27 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:44:43 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:44:57 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:46:49 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:46:49 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:47:04 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:47:19 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 15:53:20 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 15:53:20 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 15:53:35 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 15:53:50 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:05:23 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:05:23 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:05:38 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:05:56 ERROR ApplicationUtility:32 - SignIn is not successful: Failed
+2019-12-05 16:07:07 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:07:07 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:07:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:07:37 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:09:05 INFO  ApplicationUtility:42 - Browser Driver is now initilized.
+2019-12-05 16:09:05 INFO  ApplicationUtility:43 - Company | Blitzz
+2019-12-05 16:09:21 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:09:35 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:13:31 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:13:31 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:13:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:14:01 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:16:41 INFO  ApplicationUtility:42 - Browser Driver is now initilized.
+2019-12-05 16:16:41 INFO  ApplicationUtility:43 - Company | Blitzz
+2019-12-05 16:16:56 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:17:11 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:17:39 INFO  ApplicationUtility:42 - Browser Driver is now initilized.
+2019-12-05 16:17:39 INFO  ApplicationUtility:43 - Company | Blitzz
+2019-12-05 16:19:06 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:19:06 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:19:37 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:19:37 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:20:43 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:20:43 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:20:59 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:21:13 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:22:11 INFO  ApplicationUtility:43 - Browser Driver is now initilized.
+2019-12-05 16:22:11 INFO  ApplicationUtility:44 - Company | Blitzz
+2019-12-05 16:22:27 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:22:41 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:34:46 INFO  ApplicationUtility:46 - Browser Driver is now initilized.
+2019-12-05 16:34:46 INFO  ApplicationUtility:47 - Company | Blitzz
+2019-12-05 16:35:01 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:35:16 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:35:55 INFO  ApplicationUtility:48 - Browser Driver is now initilized.
+2019-12-05 16:35:55 INFO  ApplicationUtility:49 - Company | Blitzz
+2019-12-05 16:36:10 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:36:25 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:43:58 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 16:43:58 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 16:44:13 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:44:28 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:49:54 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 16:49:54 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 16:50:09 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:50:24 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 16:57:36 INFO  ApplicationUtility:48 - Browser Driver is now initilized.
+2019-12-05 16:57:36 INFO  ApplicationUtility:49 - Company | Blitzz
+2019-12-05 16:57:51 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 16:58:06 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 17:02:16 INFO  ApplicationUtility:48 - Browser Driver is now initilized.
+2019-12-05 17:02:16 INFO  ApplicationUtility:49 - Company | Blitzz
+2019-12-05 17:02:31 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 17:02:46 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 17:06:55 INFO  ApplicationUtility:48 - Browser Driver is now initilized.
+2019-12-05 17:06:55 INFO  ApplicationUtility:49 - Company | Blitzz
+2019-12-05 17:07:10 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 17:07:25 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 17:07:31 INFO  ApplicationUtility:27 - SignOut submission: Passed
+2019-12-05 17:10:31 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 17:10:31 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 17:10:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 17:11:01 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 17:11:08 INFO  ApplicationUtility:27 - SignOut submission: Passed
+2019-12-05 19:08:24 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:08:24 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:08:27 INFO  ApplicationUtility:24 - Need help valid popup opened: Passed
+2019-12-05 19:08:36 INFO  ApplicationUtility:46 - Need help valid Submit Ticket Page opened: Passed
+2019-12-05 19:08:45 INFO  ApplicationUtility:67 - Need help valid Network Test Page opened: Passed
+2019-12-05 19:08:53 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:08:53 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:09:08 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 19:09:13 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:09:13 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:09:16 ERROR ApplicationUtility:24 - Blank Domain submission is not allowed: Failed
+2019-12-05 19:09:18 INFO  ApplicationUtility:36 - Not registered user is not allowed: Passed
+2019-12-05 19:09:25 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:09:25 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:09:40 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 19:09:42 INFO  ApplicationUtility:28 - Forgot Password's reset link sent: Passed
+2019-12-05 19:09:49 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:09:49 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:10:23 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-05 19:10:23 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-05 19:10:38 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-05 19:10:53 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-05 19:13:30 INFO  ApplicationUtility:110 - Invite participant popup verification: Passed
+2019-12-06 11:11:47 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:11:47 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:12:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:12:17 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 11:12:33 INFO  ApplicationUtility:25 - Contacts are Available to Create 1:1 Inquiry: Passed
+2019-12-06 11:13:08 INFO  ApplicationUtility:40 - Successfully created 1:1 Inquiry: Passed
+2019-12-06 11:13:36 INFO  ApplicationUtility:63 - Contacts are Available to Create Inquiry: Passed
+2019-12-06 11:13:56 INFO  ApplicationUtility:82 - Successfully created New Inquiry: Passed
+2019-12-06 11:14:16 INFO  ApplicationUtility:101 - Groups are Available to Create Inquiry: Passed
+2019-12-06 11:45:12 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:45:12 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:45:28 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:45:42 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 11:45:49 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-06 11:50:22 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:50:22 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:50:37 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:50:52 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 11:52:14 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:52:14 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:52:30 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:55:46 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:55:46 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:56:02 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:56:16 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 11:58:20 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 11:58:20 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 11:58:35 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 11:58:50 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 12:07:54 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 12:07:54 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 12:07:57 ERROR ApplicationUtility:24 - Blank Domain submission is not allowed: Failed
+2019-12-06 12:07:59 INFO  ApplicationUtility:36 - Not registered user is not allowed: Passed
+2019-12-06 12:09:17 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 12:09:17 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 12:09:26 ERROR ApplicationUtility:24 - Blank Domain submission is not allowed: Failed
+2019-12-06 12:09:30 INFO  ApplicationUtility:35 - Not registered user is not allowed: Passed
+2019-12-06 12:10:36 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 12:10:36 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 12:10:43 INFO  ApplicationUtility:22 - Blank Domain submission is not allowed: Passed
+2019-12-06 12:10:47 INFO  ApplicationUtility:35 - Not registered user is not allowed: Passed
+2019-12-06 12:11:58 INFO  ApplicationUtility:51 - Browser Driver is now initilized.
+2019-12-06 12:11:58 INFO  ApplicationUtility:52 - Company | Blitzz
+2019-12-06 12:12:03 INFO  ApplicationUtility:22 - Blank Domain submission is not allowed: Passed
+2019-12-06 12:12:08 INFO  ApplicationUtility:35 - Not registered user is not allowed: Passed
+2019-12-06 13:38:29 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 13:38:29 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 13:38:45 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 13:38:59 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 13:39:15 INFO  ApplicationUtility:25 - Contacts are Available to Create 1:1 Inquiry: Passed
+2019-12-06 13:39:44 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 13:39:44 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 15:23:41 INFO  ApplicationUtility:53 - Browser Driver is now initilized.
+2019-12-06 15:23:41 INFO  ApplicationUtility:54 - Company | Blitzz
+2019-12-06 15:24:31 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 15:24:31 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 15:24:47 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 15:25:02 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 15:26:08 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 15:26:08 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 15:26:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 15:26:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 15:28:09 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 15:28:09 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 15:28:24 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 15:28:39 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-06 15:30:19 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-06 15:30:19 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-06 15:30:35 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-06 15:30:50 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 11:53:23 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 11:53:23 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 11:53:39 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 11:53:53 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 11:54:06 INFO  ApplicationUtility:83 - SMS invite Option not found.
+2019-12-09 11:54:07 INFO  ApplicationUtility:83 - SMS invite Option not found.
+2019-12-09 11:54:31 INFO  ApplicationUtility:83 - WhatsApp invite Option not found.
+2019-12-09 11:54:32 INFO  ApplicationUtility:83 - WhatsApp invite Option not found.
+2019-12-09 11:57:29 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 11:57:29 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 11:57:45 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 11:58:00 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 11:58:12 INFO  ApplicationUtility:84 - SMS invite Option not found.
+2019-12-09 11:58:13 INFO  ApplicationUtility:84 - SMS invite Option not found.
+2019-12-09 11:58:36 INFO  ApplicationUtility:84 - WhatsApp invite Option not found.
+2019-12-09 11:58:37 INFO  ApplicationUtility:84 - WhatsApp invite Option not found.
+2019-12-09 12:02:04 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:02:04 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:02:20 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:02:35 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:02:51 INFO  ApplicationUtility:84 - SMS invite Option not found.
+2019-12-09 12:04:51 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:04:51 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:05:06 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:05:21 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:05:38 INFO  ApplicationUtility:59 - [[ChromeDriver: chrome on LINUX (041bc7731de06890bae21347da4b0f9c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[2]/ul[1]/li/a[1]]
+2019-12-09 12:05:38 INFO  ApplicationUtility:85 - SMS invite Option not found.
+2019-12-09 12:06:27 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:06:27 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:06:43 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:06:58 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:07:14 INFO  ApplicationUtility:59 - Smartglass
+2019-12-09 12:07:14 INFO  ApplicationUtility:85 - SMS invite Option not found.
+2019-12-09 12:09:01 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:09:01 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:09:16 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:09:31 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:09:47 INFO  ApplicationUtility:84 - SMS invite Option not found.
+2019-12-09 12:09:49 INFO  ApplicationUtility:84 - SMS invite Option not found.
+2019-12-09 12:13:05 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:13:05 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:13:20 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:13:35 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:16:12 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:16:12 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:16:28 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:16:43 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:24:01 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:24:01 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:24:17 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:24:31 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:24:51 INFO  ApplicationUtility:83 - SMS select option not found.
+2019-12-09 12:26:06 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:26:06 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:26:21 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:26:36 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:31:47 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:31:47 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:32:02 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:32:17 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:34:02 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:34:02 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:34:18 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:34:33 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:35:29 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:35:29 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:35:44 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:35:59 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:36:22 INFO  ApplicationUtility:83 - WhatsApp select option not found.
+2019-12-09 12:36:22 INFO  ApplicationUtility:83 - WhatsApp select option not found.
+2019-12-09 12:41:55 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 12:41:55 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 12:42:11 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 12:42:25 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 12:42:42 INFO  ApplicationUtility:83 - SMS select option not found.
+2019-12-09 12:43:25 INFO  ApplicationUtility:83 - WhatsApp select option not found.
+2019-12-09 12:43:25 INFO  ApplicationUtility:83 - WhatsApp select option not found.
+2019-12-09 13:11:54 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 13:11:54 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 13:12:09 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 13:12:24 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 13:12:41 INFO  ApplicationUtility:85 - Matching again
+2019-12-09 13:13:24 INFO  ApplicationUtility:85 - Matching again
+2019-12-09 13:13:24 INFO  ApplicationUtility:85 - Matching again
+2019-12-09 13:15:19 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 13:15:19 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 13:15:34 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 13:15:49 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 13:16:06 INFO  ApplicationUtility:87 - Matching again
+2019-12-09 13:16:37 INFO  ApplicationUtility:49 - Created session with Email successfully.
+2019-12-09 13:16:49 INFO  ApplicationUtility:87 - Matching again
+2019-12-09 13:16:49 INFO  ApplicationUtility:87 - Matching again
+2019-12-09 18:31:24 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 18:31:24 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 18:31:39 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 18:31:54 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-09 18:34:24 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-09 18:34:24 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-09 18:34:40 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-09 18:34:54 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 12:07:07 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 12:07:07 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 12:07:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 12:07:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 12:08:42 ERROR ApplicationUtility:88 - WhatsApp not found.
+2019-12-10 12:10:57 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 12:10:57 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 12:11:12 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 12:11:27 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 12:13:52 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 12:13:52 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 12:14:07 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 12:14:22 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 12:15:26 ERROR ApplicationUtility:90 - WhatsApp not found.
+2019-12-10 12:21:08 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 12:21:08 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 12:21:24 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 12:21:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 12:22:43 ERROR ApplicationUtility:90 - WhatsApp not found.
+2019-12-10 16:39:47 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 16:39:47 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 16:40:03 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 16:40:18 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 16:47:19 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 16:47:19 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 16:47:34 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 16:47:49 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 16:49:21 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 16:49:21 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 16:49:37 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 16:49:52 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 16:53:30 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-10 16:53:30 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-10 16:53:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-10 16:54:01 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-10 16:54:49 INFO  ApplicationUtility:125 - Successfully created Inquiry: Passed
+2019-12-10 16:54:59 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-11 13:34:37 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 13:34:37 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 13:35:47 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 13:35:47 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 13:36:02 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 13:36:17 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 13:36:24 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-11 13:37:38 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 13:37:38 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 13:37:54 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 13:38:08 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 13:38:08 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 13:38:15 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-11 16:06:47 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 16:06:47 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 16:07:02 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 16:07:17 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 16:07:17 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 16:07:17 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 16:07:23 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-11 16:50:34 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 16:50:34 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:41:04 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 17:41:04 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:42:10 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 17:42:24 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 17:42:24 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 17:42:24 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 17:43:52 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 17:43:52 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:46:26 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 17:46:26 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:46:41 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 17:46:56 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 17:46:56 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 17:46:56 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 17:48:31 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 17:48:31 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:48:46 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 17:49:01 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 17:49:01 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 17:49:01 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 17:54:14 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 17:54:14 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 17:54:29 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 17:54:44 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 17:54:44 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 17:54:44 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 19:25:10 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 19:25:10 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 19:25:26 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 19:25:40 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 19:25:40 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 19:25:40 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-11 19:27:34 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-11 19:27:34 INFO  ApplicationUtility:51 - Company | Blitzz
+2019-12-11 19:27:49 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-11 19:28:04 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-11 19:28:04 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-11 19:28:04 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries

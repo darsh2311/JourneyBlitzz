@@ -22,29 +22,13 @@ public class CreateShowMeSessionwithSMS extends ApplicationUtility {
 
 		// Clicking Invite Participant to Create session
 		mObjectShowME.clickInviteParticipant();
+		waitTime(5000);
 
 		// Select the Invite option through which Invitation will be sent.
 		// and Also select Country Name
 		selectInviteOptionandCountryCode(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionSMS"),
 				BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"));
-
-		// Enter Phone Number to Invite
-		mObjectShowME.enterPhoneNumber(BaseClass.getValueFromPropertyFile("Showme.properties", "phoneNumber"));
-		waitTime(1000);
-
-		// Enter Message for Invitation
-		mObjectShowME.enterInviteMessage(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteMessage"));
-		waitTime(1000);
-
-		// Clicking Invite and join Button to join the call
-		mObjectShowME.clickInviteAndJoin();
-		waitTime(12000);
-
-		// Close the Newly Opened Join Call window
-		popupWindowHandle();
-		waitTime(5000);
-		// Enter Reference Id to search Session from Session history list
-		// mObjectShowME.entersearchReferenceId(ReferenceId);
+		waitTime(3000);
 
 	}
 
@@ -52,34 +36,58 @@ public class CreateShowMeSessionwithSMS extends ApplicationUtility {
 		ImplicitWait(10);
 		// List of the Invite Options like Whatsapp,SMS or Smartglass
 		List<WebElement> listInviteOptions = mObjectShowME.listInviteOptions;
-
+		int count = 0;
 		for (WebElement selectInviteOptions : listInviteOptions) {
 			// Match the list with the desired Invite Options
 			if (selectInviteOptions.getText().equalsIgnoreCase(InviteOption)) {
 				ImplicitWait(5);
 				// Click on the Invite Option after it is matched
 				selectInviteOptions.click();
+				count = count + 1;
+				break;
 			}
 		}
-
 		waitTime(3000);
 
-		// Click on drop down list of Country Codes
-		mObjectShowME.clickListCountries();
-		waitTime(1000);
+		if (count == 1) {
+			// Click on drop down list of Country Codes
+			mObjectShowME.clickListCountries();
+			waitTime(1000);
 
-		// List of the Country Codes
-		List<WebElement> listCountryCode = mObjectShowME.listCountryCodes;
+			// List of the Country Codes
+			List<WebElement> listCountryCode = mObjectShowME.listCountryCodes;
 
-		for (WebElement element : listCountryCode) {
-			// Match the list with the desired Country Code Option
-			if (element.getText().equalsIgnoreCase(CountryName)) {
-				ImplicitWait(5);
-				// Click on the Country Code after it is matched
-				element.click();
+			for (WebElement element : listCountryCode) {
+				// Match the list with the desired Country Code Option
+				if (element.getText().equalsIgnoreCase(CountryName)) {
+					ImplicitWait(5);
+					// Click on the Country Code after it is matched
+					element.click();
+				}
 			}
-		}
-		waitTime(1500);
-	}
+			waitTime(3000);
 
+			// Enter Phone Number to Invite
+			mObjectShowME.enterPhoneNumber(BaseClass.getValueFromPropertyFile("Showme.properties", "phoneNumber"));
+			waitTime(1000);
+
+			// Enter Message for Invitation
+			mObjectShowME.enterInviteMessage(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteMessage"));
+			waitTime(1000);
+
+			// Clicking Invite and join Button to join the call
+			mObjectShowME.clickInviteAndJoin();
+			waitTime(12000);
+
+			// Close the Newly Opened Join Call window
+			popupWindowHandle();
+			waitTime(5000);
+
+		} else {
+			logger.error(InviteOption + " option not found, So skipping this Testcase.");
+			// Click on Close to close the Invite popup
+			mObjectShowME.clickCloseInvitePopup();
+			waitTime(1000);
+		}
+	}
 }

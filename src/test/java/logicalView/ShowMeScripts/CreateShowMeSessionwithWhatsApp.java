@@ -28,18 +28,6 @@ public class CreateShowMeSessionwithWhatsApp extends ApplicationUtility {
 				BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionWA"),
 				BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"));
 
-		// Enter Phone Number to Invite
-		mObjectShowME.enterPhoneNumber(BaseClass.getValueFromPropertyFile("Showme.properties", "phoneNumber"));
-		waitTime(1000);
-
-		// Clicking Invite and join Button to join the call
-		mObjectShowME.clickInviteAndJoin();
-		waitTime(12000);
-
-		// Close the Newly Opened Join Call window
-		popupWindowHandle();
-		waitTime(1500);
-
 	}
 
 }

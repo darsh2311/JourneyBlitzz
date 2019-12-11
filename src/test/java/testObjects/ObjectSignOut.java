@@ -24,6 +24,14 @@ public class ObjectSignOut {
 		signoutOption.click();
 	}
 
+	// SignOut button locator
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[1]/div[2]/div[2]/a[1]")
+	public WebElement hideChromeRecommend;
+
+	public void ClickhideChromeRecommend() {
+		hideChromeRecommend.click();
+	}
+
 	// Page Factory constructor
 	public ObjectSignOut(WebDriver driver) {
 

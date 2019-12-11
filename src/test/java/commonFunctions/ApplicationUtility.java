@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,10 +42,14 @@ public class ApplicationUtility {
 	public void openBrowser() {
 
 		driver = initialliseBrowserDriver();
-		driver.get(BaseClass.getValueFromPropertyFile("Property.properties", "Url"));
+
+		// setWindowsize();
+
+		driver.navigate().to(BaseClass.getValueFromPropertyFile("Property.properties", "Url"));
 		waitForPageLoaded();
 		logger.info("Browser Driver is now initilized.");
-		ImplicitWait(50);
+		logger.info(driver.getTitle());
+		// ImplicitWait(50);
 
 	}
 
@@ -54,11 +59,13 @@ public class ApplicationUtility {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.getInstance(CHROME).setup();
 			ChromeOptions options = new ChromeOptions();
+			// options.addArguments("--headless");
+			// options.addArguments("--disable-gpu");
+			options.addArguments("disable-infobars");
 			options.addArguments("start-maximized");
 			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
 			driver = new ChromeDriver(options);
-//			System.setProperty("webdriver.chrome.driver",
-//					System.getProperty("user.dir") + "/src/test/resources/chromedriver.exe");
+
 		}
 		return driver;
 	}
@@ -78,7 +85,6 @@ public class ApplicationUtility {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
 	}
 
 	public void waitForPageLoaded() {
@@ -96,6 +102,10 @@ public class ApplicationUtility {
 		} catch (Throwable error) {
 			Assert.fail("Timeout waiting for Page Load Request to complete.");
 		}
+	}
+
+	public void setWindowsize() {
+		driver.manage().window().setSize(new Dimension(1920, 1080));
 	}
 
 	public Wait<WebDriver> waitFluent() {

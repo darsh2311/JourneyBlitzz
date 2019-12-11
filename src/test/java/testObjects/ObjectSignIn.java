@@ -39,7 +39,7 @@ public class ObjectSignIn {
 	public WebElement clickSignInButton;
 
 	public void clickSignIn() {
-		clickSignInButton.click();
+		clickSignInButton.submit();
 	}
 
 	// invalid Email text >> Enter valid email address or username.

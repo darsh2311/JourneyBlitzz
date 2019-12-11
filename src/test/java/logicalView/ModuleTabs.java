@@ -77,4 +77,19 @@ public class ModuleTabs extends ApplicationUtility {
 		waitTime(15000);
 	}
 
+	public void clickVideosTab() {
+		List<WebElement> listTabs = driver
+				.findElements(By.xpath("/html[1]/body[1]/div[3]/div[1]/div[5]/div[1]/a/div[1]"));
+
+		for (WebElement element : listTabs) {
+			if (element.getText().equalsIgnoreCase("Videos")) {
+				ImplicitWait(3);
+				element.click();
+				break;
+			}
+		}
+
+		waitTime(15000);
+	}
+
 }

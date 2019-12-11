@@ -9,7 +9,8 @@ public class Signout extends ApplicationUtility {
 	ObjectSignOut objSignOut = new ObjectSignOut(driver);
 
 	public void SignOut() {
-		ImplicitWait(5);
+		ImplicitWait(10);
+		objSignOut.ClickhideChromeRecommend();
 
 		// Click on Blitzz Dropdown
 		objSignOut.blitzzDropdown();
@@ -24,6 +25,7 @@ public class Signout extends ApplicationUtility {
 			logger.info("SignOut submission: Passed");
 		} else {
 			logger.error("SignOut submission: Failed");
+
 		}
 	}
 }
