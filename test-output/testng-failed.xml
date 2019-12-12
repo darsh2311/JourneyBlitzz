@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_LoginwithValidData">
+      <class name="testScript.TC_PublishVideo">
         <methods>
-          <include name="TC_ValidDomainSubmission"/>
-          <include name="TC_SignOut"/>
-          <include name="afterTest"/>
-          <include name="TC_SignIn"/>
           <include name="beforeTest"/>
+          <include name="TC_PublishNewVideo"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- testScript.TC_LoginwithValidData -->
+      </class> <!-- testScript.TC_PublishVideo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

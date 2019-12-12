@@ -868,3 +868,115 @@
 2019-12-11 19:28:04 INFO  ApplicationUtility:30 - SignIn is successful: Passed
 2019-12-11 19:28:04 INFO  ApplicationUtility:31 - Inquiries | Blitzz
 2019-12-11 19:28:04 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:12:35 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:12:35 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:12:50 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:13:05 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:13:05 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:13:05 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:19:18 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:19:18 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:19:33 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:19:48 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:19:48 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:19:48 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:31:08 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:31:08 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:31:23 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:31:38 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:31:38 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:31:38 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:39:16 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:39:16 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:39:32 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:39:46 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:39:46 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:39:46 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:41:51 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:41:51 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:42:06 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:42:21 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:42:21 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:42:21 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:50:52 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:50:52 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:51:07 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:51:22 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:51:22 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:51:22 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:52:23 INFO  ApplicationUtility:89 - Create inquiry(submit) button should not be Clickable with Invalid Values: Passed
+2019-12-12 15:54:40 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 15:54:40 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 15:54:55 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 15:55:10 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 15:55:10 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 15:55:10 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 15:55:57 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:06:35 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:06:35 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:06:50 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:07:05 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:07:05 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:07:05 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:07:40 ERROR ApplicationUtility:90 - Video is published: Failedjava.lang.AssertionError: expected [All Videos | Blitzz] but found [Upload Video | Blitzz]
+2019-12-12 16:07:46 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:11:10 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:11:10 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:11:25 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:11:40 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:11:40 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:11:40 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:12:15 ERROR ApplicationUtility:95 - Video is published with the details	: Failedjava.lang.AssertionError: expected [All Videos | Blitzz] but found [Upload Video | Blitzz]
+2019-12-12 16:12:22 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:13:12 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:13:12 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:13:27 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:13:42 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:13:42 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:13:42 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:14:50 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:16:42 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:16:42 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:16:58 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:17:12 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:17:12 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:17:12 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:17:53 ERROR ApplicationUtility:95 - Video is published with the details	: Failedjava.lang.AssertionError: expected [All Videos | Blitzz] but found [Upload Video | Blitzz]
+2019-12-12 16:17:59 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:18:54 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:18:54 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:19:09 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:19:24 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:19:24 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:19:24 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:20:14 INFO  ApplicationUtility:88 - Video is published with the details: Passed
+2019-12-12 16:20:21 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 16:48:01 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 16:48:01 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 16:48:16 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 16:48:31 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 16:48:31 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 16:48:31 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 16:49:26 INFO  ApplicationUtility:87 - Video is published with the details: Passed
+2019-12-12 16:49:32 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 18:37:14 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 18:37:14 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 18:37:30 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 18:37:44 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 18:37:44 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 18:37:44 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 18:38:15 INFO  ApplicationUtility:56 - Upload Video(submit) button should not be Clickable with Blank Values: Passed
+2019-12-12 18:39:13 INFO  ApplicationUtility:86 - Upload Video(submit) button should not be Clickable with Blank Values: Passed
+2019-12-12 18:39:20 INFO  ApplicationUtility:25 - SignOut submission: Passed
+2019-12-12 19:16:38 INFO  ApplicationUtility:50 - Browser Driver is now initilized.
+2019-12-12 19:16:38 INFO  ApplicationUtility:51 - https://web.blitzz.co/#/company
+2019-12-12 19:16:53 INFO  ApplicationUtility:32 - Domain submission: Passed
+2019-12-12 19:17:07 INFO  ApplicationUtility:30 - SignIn is successful: Passed
+2019-12-12 19:17:07 INFO  ApplicationUtility:31 - Inquiries | Blitzz
+2019-12-12 19:17:07 INFO  ApplicationUtility:32 - https://web.blitzz.co/#/inquiries
+2019-12-12 19:17:38 INFO  ApplicationUtility:57 - Upload Video(submit with Blank values) button should not be Clickable with Blank Values: Passed
+2019-12-12 19:18:20 INFO  ApplicationUtility:90 - Upload Video(submit with Invalid Format AVI) button should not be Clickable with Invalid Values: Passed
+2019-12-12 19:19:05 INFO  ApplicationUtility:90 - Upload Video(submit with Invalid Format WEBM) button should not be Clickable with Invalid Values: Passed
+2019-12-12 19:19:50 INFO  ApplicationUtility:90 - Upload Video(submit with Invalid Format WMV) button should not be Clickable with Invalid Values: Passed
+2019-12-12 19:20:33 INFO  ApplicationUtility:90 - Upload Video(submit with Invalid Format OGG) button should not be Clickable with Invalid Values: Passed
+2019-12-12 19:20:39 INFO  ApplicationUtility:25 - SignOut submission: Passed

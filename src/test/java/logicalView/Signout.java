@@ -10,7 +10,7 @@ public class Signout extends ApplicationUtility {
 
 	public void SignOut() {
 		ImplicitWait(10);
-		objSignOut.ClickhideChromeRecommend();
+		// objSignOut.ClickhideChromeRecommend();
 
 		// Click on Blitzz Dropdown
 		objSignOut.blitzzDropdown();

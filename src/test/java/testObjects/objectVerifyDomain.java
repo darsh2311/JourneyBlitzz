@@ -22,7 +22,7 @@ public class objectVerifyDomain {
 	public WebElement verifyDomainButton;
 
 	public void verifyDomainButton() {
-		verifyDomainButton.click();
+		verifyDomainButton.submit();
 	}
 
 	// Invalid Domain Name TC

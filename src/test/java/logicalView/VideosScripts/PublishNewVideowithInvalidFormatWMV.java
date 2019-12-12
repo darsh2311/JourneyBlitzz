@@ -3,18 +3,20 @@ package logicalView.VideosScripts;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.ObjectVideo;
 
-public class PublishNewVideo extends ApplicationUtility {
+public class PublishNewVideowithInvalidFormatWMV extends ApplicationUtility {
 
 	ObjectVideo mObjectVideo = new ObjectVideo(driver);
 
 	public void publishNewVideo() {
 
+		refreshPage();
 		ImplicitWait(5);
 		// Select the option Publish new Video option
 		List<WebElement> listVideoOptions = mObjectVideo.listVideoButtons;
@@ -47,8 +49,11 @@ public class PublishNewVideo extends ApplicationUtility {
 		waitTime(1000);
 
 		// Select the video tobe uploaded
-		attachmedia("inquiryVideo1mb.mp4");
+		attachmedia("file_example_WMV_480_1_2MB.wmv");
 		waitTime(8000);
+
+		// Enter video Title
+		mObjectVideo.enterVideoTitle(BaseClass.getValueFromPropertyFile("videos.properties", "videoTitle"));
 
 		// Enter the video Description
 		mObjectVideo.enterVideoDescription(BaseClass.getValueFromPropertyFile("videos.properties", "videoDescription"));
@@ -75,18 +80,15 @@ public class PublishNewVideo extends ApplicationUtility {
 		}
 		waitTime(4000);
 
-		// Click on submit Video
-		mObjectVideo.clickuploadVideoSubmit();
-		waitTime(20000);
-
-		String verifyLoginTitle = driver.getTitle();
-		String expectedLoginTitle = BaseClass.getValueFromPropertyFile("videos.properties", "expectedLoginTitle");
-
+		// Check the button is Clickable or not
 		try {
-			Assert.assertEquals(verifyLoginTitle, expectedLoginTitle);
-			logger.info(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + ": Passed");
-		} catch (Throwable e) {
-			logger.error(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + ": Failed" + e);
+			WebDriverWait wait = new WebDriverWait(driver, 6);
+			wait.until(ExpectedConditions.elementToBeClickable(mObjectVideo.uploadVideoSubmitButton));
+			logger.error(
+					"Upload Video(submit with Invalid Format WMV button should not be Clickable with Invalid Values: Failed");
+		} catch (Exception e) {
+			logger.info(
+					"Upload Video(submit with Invalid Format WMV button should not be Clickable with Invalid Values: Passed");
 		}
 
 	}

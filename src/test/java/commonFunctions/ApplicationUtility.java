@@ -43,12 +43,12 @@ public class ApplicationUtility {
 
 		driver = initialliseBrowserDriver();
 
-		// setWindowsize();
+		// resizeBrowser();
 
 		driver.navigate().to(BaseClass.getValueFromPropertyFile("Property.properties", "Url"));
 		waitForPageLoaded();
 		logger.info("Browser Driver is now initilized.");
-		logger.info(driver.getTitle());
+		logger.info(driver.getCurrentUrl());
 		// ImplicitWait(50);
 
 	}
@@ -57,17 +57,24 @@ public class ApplicationUtility {
 
 		String browserName = BaseClass.getValueFromPropertyFile("Property.properties", "browserName");
 		if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.getInstance(CHROME).setup();
+
+			WebDriverManager.getInstance(CHROME).setup(); // Comment it for DevOps build
 			ChromeOptions options = new ChromeOptions();
-			// options.addArguments("--headless");
-			// options.addArguments("--disable-gpu");
+			/*
+			 * options.addArguments("--headless"); options.addArguments("--disable-gpu");
+			 */
 			options.addArguments("disable-infobars");
 			options.addArguments("start-maximized");
 			options.addArguments(Arrays.asList("--disable-notifications", "--use-fake-ui-for-media-stream"));
 			driver = new ChromeDriver(options);
-
 		}
 		return driver;
+	}
+
+	public void resizeBrowser() {
+		Dimension d = new Dimension(1920, 1080);
+		// Resize current window to the set dimension
+		driver.manage().window().setSize(d);
 	}
 
 	public void ImplicitWait(Integer time) {
@@ -102,10 +109,6 @@ public class ApplicationUtility {
 		} catch (Throwable error) {
 			Assert.fail("Timeout waiting for Page Load Request to complete.");
 		}
-	}
-
-	public void setWindowsize() {
-		driver.manage().window().setSize(new Dimension(1920, 1080));
 	}
 
 	public Wait<WebDriver> waitFluent() {

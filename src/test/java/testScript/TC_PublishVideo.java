@@ -10,6 +10,7 @@ import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
+import logicalView.VideosScripts.PublishNewVideo;
 
 public class TC_PublishVideo extends ApplicationUtility {
 
@@ -18,6 +19,7 @@ public class TC_PublishVideo extends ApplicationUtility {
 	Signout mSignOut;
 	Contacts mContacts;
 	ModuleTabs mModuleTabs;
+	PublishNewVideo mPublishNewVideo;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -26,6 +28,8 @@ public class TC_PublishVideo extends ApplicationUtility {
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
 		mModuleTabs = new ModuleTabs();
+		mPublishNewVideo = new PublishNewVideo();
+
 	}
 
 	@Test(priority = 1)
@@ -46,6 +50,11 @@ public class TC_PublishVideo extends ApplicationUtility {
 	}
 
 	@Test(priority = 4)
+	public void TC_PublishNewVideo() {
+		mPublishNewVideo.publishNewVideo();
+	}
+
+	@Test(priority = 5)
 	public void TC_SignOut() {
 
 		mSignOut.SignOut();
