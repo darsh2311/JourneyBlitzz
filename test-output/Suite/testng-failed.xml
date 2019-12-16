@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="10" name="Failed suite [Suite]">
-  <test name="LoginwithValidData(failed)">
+  <test name="PublishVideowithValidFormats(failed)">
     <classes>
-      <class name="testScript.TC_LoginwithValidData">
+      <class name="testScript.TC_PublishVideowithValidFormats">
         <methods>
-          <include name="TC_ValidDomainSubmission"/>
-          <include name="TC_SignOut"/>
           <include name="afterTest"/>
-          <include name="TC_SignIn"/>
+          <include name="TC_PublishNewVideowithValidFormatM4V"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- testScript.TC_LoginwithValidData -->
+      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
+      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_PublishVideowithInvalidVideoFormats -->
     </classes>
-  </test> <!-- LoginwithValidData(failed) -->
+  </test> <!-- PublishVideowithValidFormats(failed) -->
+  <test name="PublishVideowithInvalidVideoFormats(failed)">
+    <classes>
+      <class name="testScript.TC_PublishVideowithValidFormats">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
+      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
+        <methods>
+          <include name="TC_ValidDomainSubmission"/>
+          <include name="TC_SignIn"/>
+          <include name="TC_PublishNewVideowithInvalidFormatAVI"/>
+          <include name="TC_PublishNewVideowithInvalidFormatOGG"/>
+          <include name="beforeTest"/>
+          <include name="TC_PublishNewVideowithInvalidFormatWMV"/>
+          <include name="TC_OpenVideoTab"/>
+          <include name="TC_SignOut"/>
+          <include name="TC_PublishNewVideowithBlankValues"/>
+          <include name="TC_PublishNewVideowithInvalidFormatWebm"/>
+        </methods>
+      </class> <!-- testScript.TC_PublishVideowithInvalidVideoFormats -->
+    </classes>
+  </test> <!-- PublishVideowithInvalidVideoFormats(failed) -->
 </suite> <!-- Failed suite [Suite] -->

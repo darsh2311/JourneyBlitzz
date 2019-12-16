@@ -10,11 +10,11 @@ import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.ObjectVideo;
 
-public class PublishNewVideowithInvalidFormatWMV extends ApplicationUtility {
+public class PublishNewVideowithInvalidFormat extends ApplicationUtility {
 
 	ObjectVideo mObjectVideo = new ObjectVideo(driver);
 
-	public void publishNewVideo() {
+	public void publishNewVideo(String strInvalidVideo) {
 
 		refreshPage();
 		ImplicitWait(5);
@@ -49,7 +49,7 @@ public class PublishNewVideowithInvalidFormatWMV extends ApplicationUtility {
 		waitTime(1000);
 
 		// Select the video tobe uploaded
-		attachmedia("file_example_WMV_480_1_2MB.wmv");
+		attachmedia(strInvalidVideo);
 		waitTime(8000);
 
 		// Enter video Title
@@ -84,11 +84,11 @@ public class PublishNewVideowithInvalidFormatWMV extends ApplicationUtility {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 6);
 			wait.until(ExpectedConditions.elementToBeClickable(mObjectVideo.uploadVideoSubmitButton));
-			logger.error(
-					"Upload Video(submit with Invalid Format WMV button should not be Clickable with Invalid Values: Failed");
+			logger.error("Upload Video(submit with Invalid Format " + strInvalidVideo
+					+ " button should not be Clickable with Invalid Values: Failed");
 		} catch (Exception e) {
-			logger.info(
-					"Upload Video(submit with Invalid Format WMV button should not be Clickable with Invalid Values: Passed");
+			logger.info("Upload Video(submit with Invalid Format " + strInvalidVideo
+					+ " button should not be Clickable with Invalid Values: Passed");
 		}
 
 	}

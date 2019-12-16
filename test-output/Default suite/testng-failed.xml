@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_PublishVideo">
+      <class name="testScript.TC_PublishVideowithValidFormats">
         <methods>
-          <include name="beforeTest"/>
-          <include name="TC_PublishNewVideo"/>
           <include name="afterTest"/>
+          <include name="TC_PublishNewVideowithValidFormatMOV"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- testScript.TC_PublishVideo -->
+      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

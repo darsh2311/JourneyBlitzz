@@ -1,57 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="9" passed="9" failed="0" skipped="0">
+<testng-results total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-12T13:46:20Z" name="Default suite" finished-at="2019-12-12T13:50:39Z" duration-ms="258580">
+  <suite started-at="2019-12-16T13:26:09Z" name="Suite" finished-at="2019-12-16T13:33:47Z" duration-ms="458132">
     <groups>
     </groups>
-    <test started-at="2019-12-12T13:46:20Z" name="Default test" finished-at="2019-12-12T13:50:39Z" duration-ms="258580">
-      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:16:20Z" name="beforeTest" finished-at="2019-12-12T19:16:38Z" duration-ms="17073" status="PASS">
+    <test started-at="2019-12-16T13:26:09Z" name="PublishVideowithValidFormats" finished-at="2019-12-16T13:29:38Z" duration-ms="208804">
+      <class name="testScript.TC_PublishVideowithValidFormats">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:56:09Z" name="beforeTest" finished-at="2019-12-16T18:56:26Z" duration-ms="17148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:16:38Z" name="TC_ValidDomainSubmission" finished-at="2019-12-12T19:16:53Z" duration-ms="15333" status="PASS">
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:56:26Z" name="TC_ValidDomainSubmission" finished-at="2019-12-16T18:56:41Z" duration-ms="15337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:16:53Z" name="TC_SignIn" finished-at="2019-12-12T19:17:07Z" duration-ms="14593" status="PASS">
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:56:41Z" name="TC_SignIn" finished-at="2019-12-16T18:56:56Z" duration-ms="14595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_OpenVideoTab()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:17:07Z" name="TC_OpenVideoTab" finished-at="2019-12-12T19:17:23Z" duration-ms="15210" status="PASS">
+        <test-method signature="TC_OpenVideoTab()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:56:56Z" name="TC_OpenVideoTab" finished-at="2019-12-16T18:57:11Z" duration-ms="15226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_OpenVideoTab -->
-        <test-method signature="TC_PublishNewVideowithBlankValues()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:17:23Z" name="TC_PublishNewVideowithBlankValues" finished-at="2019-12-12T19:17:38Z" duration-ms="14985" status="PASS">
+        <test-method signature="TC_PublishNewVideowithValidFormatMP4()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:57:11Z" name="TC_PublishNewVideowithValidFormatMP4" finished-at="2019-12-16T18:57:58Z" duration-ms="46733" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_PublishNewVideowithBlankValues -->
-        <test-method signature="TC_PublishNewVideowithInvalidFormatAVI()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:17:38Z" name="TC_PublishNewVideowithInvalidFormatAVI" finished-at="2019-12-12T19:18:20Z" duration-ms="42450" status="PASS">
+        </test-method> <!-- TC_PublishNewVideowithValidFormatMP4 -->
+        <test-method signature="TC_PublishNewVideowithValidFormatM4V()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:57:58Z" name="TC_PublishNewVideowithValidFormatM4V" finished-at="2019-12-16T18:58:45Z" duration-ms="46732" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_PublishNewVideowithInvalidFormatAVI -->
-        <test-method signature="TC_PublishNewVideowithInvalidFormatWebm()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:18:20Z" name="TC_PublishNewVideowithInvalidFormatWebm" finished-at="2019-12-12T19:19:05Z" duration-ms="45209" status="PASS">
+        </test-method> <!-- TC_PublishNewVideowithValidFormatM4V -->
+        <test-method signature="TC_PublishNewVideowithValidFormatMOV()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:58:45Z" name="TC_PublishNewVideowithValidFormatMOV" finished-at="2019-12-16T18:59:31Z" duration-ms="46650" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_PublishNewVideowithInvalidFormatWebm -->
-        <test-method signature="TC_PublishNewVideowithInvalidFormatWMV()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:19:05Z" name="TC_PublishNewVideowithInvalidFormatWMV" finished-at="2019-12-12T19:19:50Z" duration-ms="44745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_PublishNewVideowithInvalidFormatWMV -->
-        <test-method signature="TC_PublishNewVideowithInvalidFormatOGG()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:19:50Z" name="TC_PublishNewVideowithInvalidFormatOGG" finished-at="2019-12-12T19:20:33Z" duration-ms="42548" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_PublishNewVideowithInvalidFormatOGG -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:20:33Z" name="TC_SignOut" finished-at="2019-12-12T19:20:39Z" duration-ms="6278" status="PASS">
+        </test-method> <!-- TC_PublishNewVideowithValidFormatMOV -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:59:31Z" name="TC_SignOut" finished-at="2019-12-16T18:59:37Z" duration-ms="6230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@1ed1993a]" started-at="2019-12-12T19:20:39Z" name="afterTest" finished-at="2019-12-12T19:20:39Z" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_PublishVideowithValidFormats@56528192]" started-at="2019-12-16T18:59:37Z" name="afterTest" finished-at="2019-12-16T18:59:38Z" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
+    </test> <!-- PublishVideowithValidFormats -->
+    <test started-at="2019-12-16T13:29:38Z" name="PublishVideowithInvalidVideoFormats" finished-at="2019-12-16T13:33:47Z" duration-ms="249177">
+      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T18:59:38Z" name="beforeTest" finished-at="2019-12-16T18:59:53Z" duration-ms="15530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T18:59:53Z" name="TC_ValidDomainSubmission" finished-at="2019-12-16T19:00:09Z" duration-ms="15320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_ValidDomainSubmission -->
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:00:09Z" name="TC_SignIn" finished-at="2019-12-16T19:00:23Z" duration-ms="14640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignIn -->
+        <test-method signature="TC_OpenVideoTab()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:00:23Z" name="TC_OpenVideoTab" finished-at="2019-12-16T19:00:38Z" duration-ms="15216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OpenVideoTab -->
+        <test-method signature="TC_PublishNewVideowithBlankValues()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:00:38Z" name="TC_PublishNewVideowithBlankValues" finished-at="2019-12-16T19:00:53Z" duration-ms="14812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PublishNewVideowithBlankValues -->
+        <test-method signature="TC_PublishNewVideowithInvalidFormatAVI()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:00:53Z" name="TC_PublishNewVideowithInvalidFormatAVI" finished-at="2019-12-16T19:01:36Z" duration-ms="42496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PublishNewVideowithInvalidFormatAVI -->
+        <test-method signature="TC_PublishNewVideowithInvalidFormatWebm()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:01:36Z" name="TC_PublishNewVideowithInvalidFormatWebm" finished-at="2019-12-16T19:02:17Z" duration-ms="41478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PublishNewVideowithInvalidFormatWebm -->
+        <test-method signature="TC_PublishNewVideowithInvalidFormatWMV()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:02:17Z" name="TC_PublishNewVideowithInvalidFormatWMV" finished-at="2019-12-16T19:02:59Z" duration-ms="41335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PublishNewVideowithInvalidFormatWMV -->
+        <test-method signature="TC_PublishNewVideowithInvalidFormatOGG()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:02:59Z" name="TC_PublishNewVideowithInvalidFormatOGG" finished-at="2019-12-16T19:03:40Z" duration-ms="41912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_PublishNewVideowithInvalidFormatOGG -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:03:40Z" name="TC_SignOut" finished-at="2019-12-16T19:03:47Z" duration-ms="6247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_SignOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_PublishVideowithInvalidVideoFormats@3c419631]" started-at="2019-12-16T19:03:47Z" name="afterTest" finished-at="2019-12-16T19:03:47Z" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- testScript.TC_PublishVideowithInvalidVideoFormats -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- PublishVideowithInvalidVideoFormats -->
+  </suite> <!-- Suite -->
 </testng-results>

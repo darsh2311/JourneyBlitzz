@@ -10,16 +10,18 @@ import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
-import logicalView.VideosScripts.PublishNewVideo;
+import logicalView.VideosScripts.PublishNewVideowithValidFormat;
+import logicalView.VideosScripts.PublishNewVideowithValidFormatMP4;
 
-public class TC_PublishVideo extends ApplicationUtility {
+public class TC_PublishVideowithValidFormats extends ApplicationUtility {
 
 	SignInwithValidData mSignIn;
 	VerifyDomain mVerifyDomain;
 	Signout mSignOut;
 	Contacts mContacts;
 	ModuleTabs mModuleTabs;
-	PublishNewVideo mPublishNewVideo;
+	PublishNewVideowithValidFormatMP4 mPublishNewVideowithValidFormatMP4;
+	PublishNewVideowithValidFormat mPublishNewVideowithValidFormat;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -28,7 +30,8 @@ public class TC_PublishVideo extends ApplicationUtility {
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
 		mModuleTabs = new ModuleTabs();
-		mPublishNewVideo = new PublishNewVideo();
+		mPublishNewVideowithValidFormatMP4 = new PublishNewVideowithValidFormatMP4();
+		mPublishNewVideowithValidFormat = new PublishNewVideowithValidFormat();
 
 	}
 
@@ -50,11 +53,21 @@ public class TC_PublishVideo extends ApplicationUtility {
 	}
 
 	@Test(priority = 4)
-	public void TC_PublishNewVideo() {
-		mPublishNewVideo.publishNewVideo();
+	public void TC_PublishNewVideowithValidFormatMP4() {
+		mPublishNewVideowithValidFormatMP4.publishNewVideo();
 	}
 
 	@Test(priority = 5)
+	public void TC_PublishNewVideowithValidFormatM4V() {
+		mPublishNewVideowithValidFormat.publishNewVideo("SampleM4V.m4v");
+	}
+
+	@Test(priority = 6)
+	public void TC_PublishNewVideowithValidFormatMOV() {
+		mPublishNewVideowithValidFormat.publishNewVideo("SampleMOV.mov");
+	}
+
+	@Test(priority = 7)
 	public void TC_SignOut() {
 
 		mSignOut.SignOut();

@@ -3,21 +3,19 @@ package logicalView.VideosScripts;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.ObjectVideo;
 
-public class PublishNewVideowithInvalidFormatOGG extends ApplicationUtility {
+public class PublishNewVideowithValidFormat extends ApplicationUtility {
 
 	ObjectVideo mObjectVideo = new ObjectVideo(driver);
 
-	public void publishNewVideo() {
+	public void publishNewVideo(String strVideo) {
+		ImplicitWait(10);
 
-		refreshPage();
-		ImplicitWait(5);
 		// Select the option Publish new Video option
 		List<WebElement> listVideoOptions = mObjectVideo.listVideoButtons;
 
@@ -25,10 +23,14 @@ public class PublishNewVideowithInvalidFormatOGG extends ApplicationUtility {
 
 			if (element.getText()
 					.equalsIgnoreCase(BaseClass.getValueFromPropertyFile("videos.properties", "videoPublish"))) {
-				ImplicitWait(3);
+				ImplicitWait(10);
+				// Issue is there after uploading a video, Publish new video button doesn't work
+				// after 1 click, Need to click 2 times.
+				element.click();
 				element.click();
 			}
 		}
+
 		waitTime(1000);
 
 		// Upload from Computer
@@ -42,18 +44,15 @@ public class PublishNewVideowithInvalidFormatOGG extends ApplicationUtility {
 				element.click();
 			}
 		}
-		waitTime(3000);
+		waitTime(5000);
 
 		// Click on Upload Video button
 		mObjectVideo.clickUploadVideoButton();
 		waitTime(1000);
 
 		// Select the video tobe uploaded
-		attachmedia("file_example_OGG_480_1_7mg.ogg");
+		attachmedia(strVideo);
 		waitTime(8000);
-
-		// Enter video Title
-		mObjectVideo.enterVideoTitle(BaseClass.getValueFromPropertyFile("videos.properties", "videoTitle"));
 
 		// Enter the video Description
 		mObjectVideo.enterVideoDescription(BaseClass.getValueFromPropertyFile("videos.properties", "videoDescription"));
@@ -80,15 +79,20 @@ public class PublishNewVideowithInvalidFormatOGG extends ApplicationUtility {
 		}
 		waitTime(4000);
 
-		// Check the button is Clickable or not
+		// Click on submit Video
+		mObjectVideo.clickuploadVideoSubmit();
+		waitTime(20000);
+
+		String verifyLoginTitle = driver.getTitle();
+		String expectedLoginTitle = BaseClass.getValueFromPropertyFile("videos.properties", "expectedLoginTitle");
+
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, 6);
-			wait.until(ExpectedConditions.elementToBeClickable(mObjectVideo.uploadVideoSubmitButton));
-			logger.error(
-					"Upload Video(submit with Invalid Format OGG button should not be Clickable with Invalid Values: Failed");
-		} catch (Exception e) {
-			logger.info(
-					"Upload Video(submit with Invalid Format OGG button should not be Clickable with Invalid Values: Passed");
+			Assert.assertEquals(verifyLoginTitle, expectedLoginTitle);
+			logger.info(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + " with " + strVideo
+					+ " video format: Passed");
+		} catch (Throwable e) {
+			logger.error(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + " with " + strVideo
+					+ " video format: Failed" + e);
 		}
 
 	}

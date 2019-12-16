@@ -5,8 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.LoadableComponent;
 
-public class objectVerifyDomain {
+public class objectVerifyDomain extends LoadableComponent<objectVerifyDomain> {
 
 	// Enter Domain textbox locator
 	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]")
@@ -51,8 +52,19 @@ public class objectVerifyDomain {
 
 	// Page Factory constructor
 	public objectVerifyDomain(WebDriver driver) {
-
 		PageFactory.initElements(driver, this);
+
+	}
+
+	@Override
+	protected void load() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	protected void isLoaded() throws Error {
+		// TODO Auto-generated method stub
 
 	}
 

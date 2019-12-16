@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+ 
+        <test name="PublishVideowithValidFormats">
+     <classes>
+       <class name="testScript.TC_PublishVideowithValidFormats"/>
+     </classes>
+   </test>
+           <test name="PublishVideowithInvalidVideoFormats">
+     <classes>
+       <class name="testScript.TC_PublishVideowithInvalidVideoFormats"/>
+     </classes>
+   </test>
+     
+</suite> 

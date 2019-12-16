@@ -9,13 +9,13 @@ import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
 import testObjects.ObjectVideo;
 
-public class PublishNewVideo extends ApplicationUtility {
+public class PublishNewVideowithValidFormatMP4 extends ApplicationUtility {
 
 	ObjectVideo mObjectVideo = new ObjectVideo(driver);
 
 	public void publishNewVideo() {
+		ImplicitWait(10);
 
-		ImplicitWait(5);
 		// Select the option Publish new Video option
 		List<WebElement> listVideoOptions = mObjectVideo.listVideoButtons;
 
@@ -23,10 +23,12 @@ public class PublishNewVideo extends ApplicationUtility {
 
 			if (element.getText()
 					.equalsIgnoreCase(BaseClass.getValueFromPropertyFile("videos.properties", "videoPublish"))) {
-				ImplicitWait(3);
+				ImplicitWait(10);
 				element.click();
+
 			}
 		}
+
 		waitTime(1000);
 
 		// Upload from Computer
@@ -40,14 +42,14 @@ public class PublishNewVideo extends ApplicationUtility {
 				element.click();
 			}
 		}
-		waitTime(3000);
+		waitTime(5000);
 
 		// Click on Upload Video button
 		mObjectVideo.clickUploadVideoButton();
 		waitTime(1000);
 
 		// Select the video tobe uploaded
-		attachmedia("inquiryVideo1mb.mp4");
+		attachmedia("SampleMP4.mp4");
 		waitTime(8000);
 
 		// Enter the video Description
@@ -84,9 +86,11 @@ public class PublishNewVideo extends ApplicationUtility {
 
 		try {
 			Assert.assertEquals(verifyLoginTitle, expectedLoginTitle);
-			logger.info(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + ": Passed");
+			logger.info(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage")
+					+ " with MP4 video format: Passed");
 		} catch (Throwable e) {
-			logger.error(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage") + ": Failed" + e);
+			logger.error(BaseClass.getValueFromPropertyFile("videos.properties", "successMessage")
+					+ " with MP4 video format: Failed" + e);
 		}
 
 	}

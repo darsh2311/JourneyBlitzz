@@ -10,12 +10,8 @@ import logicalView.ModuleTabs;
 import logicalView.SignInwithValidData;
 import logicalView.Signout;
 import logicalView.VerifyDomain;
-import logicalView.VideosScripts.PublishNewVideo;
 import logicalView.VideosScripts.PublishNewVideowithBlankValues;
-import logicalView.VideosScripts.PublishNewVideowithInvalidFormatAVI;
-import logicalView.VideosScripts.PublishNewVideowithInvalidFormatOGG;
-import logicalView.VideosScripts.PublishNewVideowithInvalidFormatWMV;
-import logicalView.VideosScripts.PublishNewVideowithInvalidFormatWebm;
+import logicalView.VideosScripts.PublishNewVideowithInvalidFormat;
 
 public class TC_PublishVideowithInvalidVideoFormats extends ApplicationUtility {
 
@@ -24,12 +20,8 @@ public class TC_PublishVideowithInvalidVideoFormats extends ApplicationUtility {
 	Signout mSignOut;
 	Contacts mContacts;
 	ModuleTabs mModuleTabs;
-	PublishNewVideo mPublishNewVideo;
 	PublishNewVideowithBlankValues mPublishNewVideowithBlankValues;
-	PublishNewVideowithInvalidFormatAVI mPublishNewVideowithInvalidFormatAVI;
-	PublishNewVideowithInvalidFormatOGG mPublishNewVideowithInvalidFormatOGG;
-	PublishNewVideowithInvalidFormatWebm mPublishNewVideowithInvalidFormatWebm;
-	PublishNewVideowithInvalidFormatWMV mPublishNewVideowithInvalidFormatWMV;
+	PublishNewVideowithInvalidFormat mPublishNewVideowithInvalidFormat;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -38,12 +30,9 @@ public class TC_PublishVideowithInvalidVideoFormats extends ApplicationUtility {
 		mVerifyDomain = new VerifyDomain();
 		mSignOut = new Signout();
 		mModuleTabs = new ModuleTabs();
-		mPublishNewVideo = new PublishNewVideo();
 		mPublishNewVideowithBlankValues = new PublishNewVideowithBlankValues();
-		mPublishNewVideowithInvalidFormatAVI = new PublishNewVideowithInvalidFormatAVI();
-		mPublishNewVideowithInvalidFormatWebm = new PublishNewVideowithInvalidFormatWebm();
-		mPublishNewVideowithInvalidFormatWMV = new PublishNewVideowithInvalidFormatWMV();
-		mPublishNewVideowithInvalidFormatOGG = new PublishNewVideowithInvalidFormatOGG();
+		mPublishNewVideowithInvalidFormat = new PublishNewVideowithInvalidFormat();
+
 	}
 
 	@Test(priority = 1)
@@ -70,22 +59,22 @@ public class TC_PublishVideowithInvalidVideoFormats extends ApplicationUtility {
 
 	@Test(priority = 5)
 	public void TC_PublishNewVideowithInvalidFormatAVI() {
-		mPublishNewVideowithInvalidFormatAVI.publishNewVideo();
+		mPublishNewVideowithInvalidFormat.publishNewVideo("SampleAVI.avi");
 	}
 
 	@Test(priority = 6)
 	public void TC_PublishNewVideowithInvalidFormatWebm() {
-		mPublishNewVideowithInvalidFormatWebm.publishNewVideo();
+		mPublishNewVideowithInvalidFormat.publishNewVideo("SampleWEBM.webm");
 	}
 
 	@Test(priority = 7)
 	public void TC_PublishNewVideowithInvalidFormatWMV() {
-		mPublishNewVideowithInvalidFormatWMV.publishNewVideo();
+		mPublishNewVideowithInvalidFormat.publishNewVideo("SampleWMV.wmv");
 	}
 
 	@Test(priority = 8)
 	public void TC_PublishNewVideowithInvalidFormatOGG() {
-		mPublishNewVideowithInvalidFormatOGG.publishNewVideo();
+		mPublishNewVideowithInvalidFormat.publishNewVideo("SampleOGG.ogg");
 	}
 
 	@Test(priority = 9)
