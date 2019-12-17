@@ -29,6 +29,11 @@ public class objectNewInquiry {
 		newInquiryName.sendKeys(strInquiryName);
 	}
 
+	public void enterClearNewInquiryName(String strInquiryName) {
+		newInquiryName.sendKeys(strInquiryName);
+		newInquiryName.clear();
+	}
+
 	@FindBy(xpath = "//input[@id='title']")
 	public WebElement newInquiryName1;
 

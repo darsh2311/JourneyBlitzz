@@ -2,7 +2,7 @@
 
 <suite name="Suite" parallel="false" thread-count="10">
 
-  <test name="Need Help">
+  <!-- <test name="Need Help">
      <classes>
        <class name="testScript.TC_NeedHelp"/>
      </classes>
@@ -30,7 +30,7 @@
      <classes>
        <class name="testScript.TC_ForgotPasswordwithINValidData"/>
      </classes>
-   </test>
+   </test> -->
     
             <test name="LoginwithValidData">
      <classes>
@@ -38,11 +38,11 @@
      </classes>
    </test>
    
-        <test name="LoginwithINValidData">
+  <!--       <test name="LoginwithINValidData">
      <classes>
        <class name="testScript.TC_LoginwithINValidData"/>
      </classes>
-   </test>
+   </test> -->
 
    
      

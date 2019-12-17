@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false" thread-count="10">
+ 
+        <test name="UploadDocumentwithValidFormats">
+     <classes>
+       <class name="testScript.TC_UploadDocuments"/>
+     </classes>
+   </test>
+           <test name="UploadDocumentwithInvalidFormats">
+     <classes>
+       <class name="testScript.TC_UploadDocumentswithInvalidData"/>
+     </classes>
+   </test>
+     
+</suite> 
