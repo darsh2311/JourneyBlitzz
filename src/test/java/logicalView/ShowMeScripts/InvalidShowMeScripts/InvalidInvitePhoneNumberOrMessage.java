@@ -17,9 +17,8 @@ public class InvalidInvitePhoneNumberOrMessage extends ApplicationUtility {
 	public void InvalidInviteBlankPhoneNumber() {
 		ImplicitWait(5);
 
-		mCreateShowMeSessionwithSMS.selectInviteOptionandCountryCode(
-				BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionSMS"),
-				BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"));
+		mCreateShowMeSessionwithSMS
+				.selectInviteOption(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionSMS"));
 
 		// Save the User by clicking on AddUser button
 		try {

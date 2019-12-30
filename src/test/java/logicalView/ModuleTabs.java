@@ -42,7 +42,7 @@ public class ModuleTabs extends ApplicationUtility {
 				break;
 			}
 		}
-		waitTime(10000);
+		waitTime(6000);
 
 	}
 

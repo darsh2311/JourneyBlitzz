@@ -21,7 +21,7 @@ public class VerifyDomain extends ApplicationUtility {
 
 		// Submit the Domain Name field with valid value
 		objDomain.verifyDomainButton();
-		waitTime(10000);
+		waitTime(6000);
 
 		// ImplicitWait(10);
 		String verifyLoginTitle = driver.getTitle();

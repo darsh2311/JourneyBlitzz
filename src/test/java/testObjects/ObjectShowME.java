@@ -83,7 +83,7 @@ public class ObjectShowME {
 	}
 
 	// Search button for Reference Id locator
-	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]")
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div[3]/div[1]/div[1]/input[1]")
 	WebElement searchReferenceId;
 
 	public void entersearchReferenceId(String strReferenceID) {
@@ -160,11 +160,23 @@ public class ObjectShowME {
 
 	// Join Call button
 	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/div[1]/button[1]")
-	WebElement joinCallButton;
+	public WebElement joinCallButton;
 
 	public void clickJoinCallButton() {
 		joinCallButton.click();
 	}
+
+	// Session Status filter locator
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]")
+	WebElement statusFilter;
+
+	public void clickStatusFilter() {
+		statusFilter.click();
+	}
+
+	// List Of Session Status filter
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li/a[1]")
+	public List<WebElement> listSessionStatusFilter;
 
 	// Page Factory method
 	public ObjectShowME(WebDriver driver) {

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>UploadNewDocument.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,61 +90,90 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CreateSessionwithEmail">TC_CreateSessionwithEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CreateSessionwithSMS">TC_CreateSessionwithSMS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CreateSessionwithWhatsApp">TC_CreateSessionwithWhatsApp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_InviteEllipsisOption">TC_InviteEllipsisOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocuments" class="method navigator-link" hash-for-method="TC_SignIn">TC_SignIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CopyGuestURL">TC_CopyGuestURL</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocumentswithInvalidData" class="method navigator-link" hash-for-method="TC_SignIn">TC_SignIn</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CopySessionCode">TC_CopySessionCode</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocuments" class="method navigator-link" hash-for-method="TC_SignOut">TC_SignOut</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_CopySessionUrlEllipsisOptio">TC_CopySessionUrlEllipsisOptio</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocumentswithInvalidData" class="method navigator-link" hash-for-method="TC_SignOut">TC_SignOut</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_DeleteSessionEllipsisOptio">TC_DeleteSessionEllipsisOptio</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocuments" class="method navigator-link" hash-for-method="TC_UploadDocument">TC_UploadDocument</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_EndSessionEllipsisOption">TC_EndSessionEllipsisOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocumentswithInvalidData" class="method navigator-link" hash-for-method="TC_UploadDocumentwithBlankValue">TC_UploadDocumentwithBlankValue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_JoinCall">TC_JoinCall</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocumentswithInvalidData" class="method navigator-link" hash-for-method="TC_UploadDocumentwithInvalidValue">TC_UploadDocumentwithInvalidValue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_SignIn">TC_SignIn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocuments" class="method navigator-link" hash-for-method="TC_ValidDomainSubmission">TC_ValidDomainSubmission</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_SignOut">TC_SignOut</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testScript.TC_UploadDocumentswithInvalidData" class="method navigator-link" hash-for-method="TC_ValidDomainSubmission">TC_ValidDomainSubmission</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScript.TC_ShowMewithCallExperienceValidData" class="method navigator-link" hash-for-method="TC_ValidDomainSubmission">TC_ValidDomainSubmission</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -155,13 +184,239 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScript.TC_UploadDocuments</span>
+              <img src="failed.png"/>
+              <span class="class-name">testScript.TC_ShowMewithCallExperienceValidData</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CreateSessionwithEmail">
+                  </a> <!-- TC_CreateSessionwithEmail -->
+                  <span class="method-name">TC_CreateSessionwithEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -&gt; xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-72-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.invtieEllipsisOption(CreateShowMeSessionwithEmail.java:62)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.createSessionwithEmail(CreateShowMeSessionwithEmail.java:34)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithEmail(TC_ShowMewithCallExperienceValidData.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CreateSessionwithSMS">
+                  </a> <!-- TC_CreateSessionwithSMS -->
+                  <span class="method-name">TC_CreateSessionwithSMS</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -&gt; xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-72-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.selectCountryCode(CreateShowMeSessionwithSMS.java:88)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.createSessionwithSMS(CreateShowMeSessionwithSMS.java:35)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithSMS(TC_ShowMewithCallExperienceValidData.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CreateSessionwithWhatsApp">
+                  </a> <!-- TC_CreateSessionwithWhatsApp -->
+                  <span class="method-name">TC_CreateSessionwithWhatsApp</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -&gt; xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-72-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.selectCountryCode(CreateShowMeSessionwithSMS.java:88)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithWhatsApp.createSessionwithWhatsApp(CreateShowMeSessionwithWhatsApp.java:32)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithWhatsApp(TC_ShowMewithCallExperienceValidData.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_InviteEllipsisOption">
+                  </a> <!-- TC_InviteEllipsisOption -->
+                  <span class="method-name">TC_InviteEllipsisOption</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -&gt; xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;darshan&apos;, ip: &apos;192.168.1.69&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-72-generic&apos;, java.version: &apos;13.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.invtieEllipsisOption(CreateShowMeSessionwithEmail.java:62)
+	at logicalView.ShowMeScripts.SessionHistoryInternalFunctionalities.verifyInviteEllipsisOption(SessionHistoryInternalFunctionalities.java:97)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_InviteEllipsisOption(TC_ShowMewithCallExperienceValidData.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testScript.TC_ShowMewithCallExperienceValidData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CopyGuestURL">
+                  </a> <!-- TC_CopyGuestURL -->
+                  <span class="method-name">TC_CopyGuestURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CopySessionCode">
+                  </a> <!-- TC_CopySessionCode -->
+                  <span class="method-name">TC_CopySessionCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_CopySessionUrlEllipsisOptio">
+                  </a> <!-- TC_CopySessionUrlEllipsisOptio -->
+                  <span class="method-name">TC_CopySessionUrlEllipsisOptio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_DeleteSessionEllipsisOptio">
+                  </a> <!-- TC_DeleteSessionEllipsisOptio -->
+                  <span class="method-name">TC_DeleteSessionEllipsisOptio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_EndSessionEllipsisOption">
+                  </a> <!-- TC_EndSessionEllipsisOption -->
+                  <span class="method-name">TC_EndSessionEllipsisOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_JoinCall">
+                  </a> <!-- TC_JoinCall -->
+                  <span class="method-name">TC_JoinCall</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC_SignIn">
@@ -178,245 +433,216 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_UploadDocument">
-                  </a> <!-- TC_UploadDocument -->
-                  <span class="method-name">TC_UploadDocument</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="TC_ValidDomainSubmission">
                   </a> <!-- TC_ValidDomainSubmission -->
                   <span class="method-name">TC_ValidDomainSubmission</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testScript.TC_UploadDocumentswithInvalidData</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_SignIn">
-                  </a> <!-- TC_SignIn -->
-                  <span class="method-name">TC_SignIn</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_SignOut">
-                  </a> <!-- TC_SignOut -->
-                  <span class="method-name">TC_SignOut</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_UploadDocumentwithBlankValue">
-                  </a> <!-- TC_UploadDocumentwithBlankValue -->
-                  <span class="method-name">TC_UploadDocumentwithBlankValue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_UploadDocumentwithInvalidValue">
-                  </a> <!-- TC_UploadDocumentwithInvalidValue -->
-                  <span class="method-name">TC_UploadDocumentwithInvalidValue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_ValidDomainSubmission">
-                  </a> <!-- TC_ValidDomainSubmission -->
-                  <span class="method-name">TC_ValidDomainSubmission</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/darshan/Journey2/UploadNewDocument.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-1207538903/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;10&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;UploadDocumentwithValidFormats&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScript.TC_UploadDocuments&quot;/&gt;
+      &lt;class name=&quot;testScript.TC_ShowMewithCallExperienceValidData&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- UploadDocumentwithValidFormats --&gt;
-  &lt;test name=&quot;UploadDocumentwithInvalidFormats&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testScript.TC_UploadDocumentswithInvalidData&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- UploadDocumentwithInvalidFormats --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">UploadDocumentwithValidFormats (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">UploadDocumentwithInvalidFormats (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(13);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_UploadDocument')
-data.setCell(0, 2, 'testScript.TC_UploadDocuments')
-data.setCell(0, 3, 65348);
+data.setCell(0, 1, 'TC_CreateSessionwithSMS')
+data.setCell(0, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(0, 3, 26615);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_UploadDocumentwithBlankValue')
-data.setCell(1, 2, 'testScript.TC_UploadDocumentswithInvalidData')
-data.setCell(1, 3, 30787);
+data.setCell(1, 1, 'TC_JoinCall')
+data.setCell(1, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(1, 3, 24924);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_UploadDocumentwithInvalidValue')
-data.setCell(2, 2, 'testScript.TC_UploadDocumentswithInvalidData')
-data.setCell(2, 3, 17788);
+data.setCell(2, 1, 'TC_CreateSessionwithWhatsApp')
+data.setCell(2, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(2, 3, 22913);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_ValidDomainSubmission')
-data.setCell(3, 2, 'testScript.TC_UploadDocuments')
-data.setCell(3, 3, 15333);
+data.setCell(3, 1, 'TC_CreateSessionwithEmail')
+data.setCell(3, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(3, 3, 18116);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_ValidDomainSubmission')
-data.setCell(4, 2, 'testScript.TC_UploadDocumentswithInvalidData')
-data.setCell(4, 3, 15318);
+data.setCell(4, 1, 'TC_DeleteSessionEllipsisOptio')
+data.setCell(4, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(4, 3, 17189);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC_SignIn')
-data.setCell(5, 2, 'testScript.TC_UploadDocumentswithInvalidData')
-data.setCell(5, 3, 14654);
+data.setCell(5, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(5, 3, 14808);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_SignIn')
-data.setCell(6, 2, 'testScript.TC_UploadDocuments')
-data.setCell(6, 3, 14645);
+data.setCell(6, 1, 'TC_InviteEllipsisOption')
+data.setCell(6, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(6, 3, 14681);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_SignOut')
-data.setCell(7, 2, 'testScript.TC_UploadDocuments')
-data.setCell(7, 3, 6202);
+data.setCell(7, 1, 'TC_CopySessionCode')
+data.setCell(7, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(7, 3, 12442);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_SignOut')
-data.setCell(8, 2, 'testScript.TC_UploadDocumentswithInvalidData')
-data.setCell(8, 3, 6194);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(8, 1, 'TC_CopyGuestURL')
+data.setCell(8, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(8, 3, 12385);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_ValidDomainSubmission')
+data.setCell(9, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(9, 3, 11267);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC_CopySessionUrlEllipsisOptio')
+data.setCell(10, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(10, 3, 6525);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_SignOut')
+data.setCell(11, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(11, 3, 6403);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC_EndSessionEllipsisOption')
+data.setCell(12, 2, 'testScript.TC_ShowMewithCallExperienceValidData')
+data.setCell(12, 3, 2367);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 3 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScript.TC_UploadDocuments</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScript.TC_ShowMewithCallExperienceValidData</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TC_ValidDomainSubmission</span>
-                <span class="method-start">15940 ms</span>
+                <span class="method-start">6245 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_SignIn</span>
-                <span class="method-start">31276 ms</span>
+                <span class="method-start">17514 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC_UploadDocument</span>
-                <span class="method-start">45922 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_CreateSessionwithSMS</span>
+                <span class="method-start">32325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_CreateSessionwithWhatsApp</span>
+                <span class="method-start">58943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_CreateSessionwithEmail</span>
+                <span class="method-start">81859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_CopySessionCode</span>
+                <span class="method-start">99978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_CopyGuestURL</span>
+                <span class="method-start">112422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_JoinCall</span>
+                <span class="method-start">124808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_InviteEllipsisOption</span>
+                <span class="method-start">149734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_CopySessionUrlEllipsisOptio</span>
+                <span class="method-start">164417 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_EndSessionEllipsisOption</span>
+                <span class="method-start">170944 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_DeleteSessionEllipsisOptio</span>
+                <span class="method-start">173312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_SignOut</span>
-                <span class="method-start">111272 ms</span>
+                <span class="method-start">190502 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">117477 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testScript.TC_UploadDocumentswithInvalidData</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">117669 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">TC_ValidDomainSubmission</span>
-                <span class="method-start">132848 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_SignIn</span>
-                <span class="method-start">148168 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_UploadDocumentwithBlankValue</span>
-                <span class="method-start">162824 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_UploadDocumentwithInvalidValue</span>
-                <span class="method-start">193613 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_SignOut</span>
-                <span class="method-start">211402 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">217598 ms</span>
+                <span class="method-start">196906 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

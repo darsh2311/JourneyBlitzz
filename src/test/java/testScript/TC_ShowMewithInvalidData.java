@@ -48,66 +48,60 @@ public class TC_ShowMewithInvalidData extends ApplicationUtility {
 		mSignIn.validSignIn();
 	}
 
-	@Test(priority = 3, enabled = true)
-	public void TC_InvalidCreateSessionReference() {
-		mModuleTabs.clickShowMETab();
-		mInvalidCreateSessionReference.invalidSessionReference();
-	}
-
-	@Test(priority = 4, enabled = true)
-	public void TC_InvalidInvitewithBlankEmail() {
-		mInvalidInviteEmail.createSessionwithInvalidBlankEmail();
-	}
+	/*
+	 * @Test(priority = 3, enabled = true) public void
+	 * TC_InvalidCreateSessionReference() { mModuleTabs.clickShowMETab();
+	 * mInvalidCreateSessionReference.invalidSessionReference(); }
+	 * 
+	 * @Test(priority = 4, enabled = true) public void
+	 * TC_InvalidInvitewithBlankEmail() {
+	 * mInvalidInviteEmail.createSessionwithInvalidBlankEmail(); }
+	 */
 
 	@Test(priority = 5, enabled = true)
 	public void TC_InvalidInvitewithEmailasOnlyAlphabet() {
+		mModuleTabs.clickShowMETab();
 		mInvalidInviteEmail.createSessionwithInvalidEmailwithOnlyAlphabet();
 	}
 
-	@Test(priority = 6, enabled = true)
-	public void TC_InvalidInvitewithEmailasOnlyNumeric() {
-		mInvalidInviteEmail.createSessionwithInvalidEmailwithOnlyNumeric();
-	}
-
-	@Test(priority = 7, enabled = true)
-	public void TC_InvalidInvitewithEmailasOnlyAlphaNumeric() {
-		mInvalidInviteEmail.createSessionwithInvalidEmailwithOnlyAlphaNumeric();
-	}
-
-	@Test(priority = 8, enabled = true)
-	public void TC_InvalidInvitewithInvalidEmail() {
-		mInvalidInviteEmail.createSessionwithInvalidEmail();
-	}
-
-	@Test(priority = 9, enabled = true)
-	public void TC_InvalidInvitewithBlankPhoneNumber() {
-		mInvalidInvitePhoneNumberOrMessage.InvalidInviteBlankPhoneNumber();
-	}
-
-	@Test(priority = 10, enabled = true)
-	public void TC_InvalidInvitewithLessDigitPhoneNumber() {
-		mInvalidInvitePhoneNumberOrMessage.invalidInvitewithLessDigitPhoneNumber();
-	}
-
-	@Test(priority = 11, enabled = true)
-	public void TC_InvalidInvitewithMoreDigitPhoneNumber() {
-		mInvalidInvitePhoneNumberOrMessage.invalidInvitewithMoreDigitPhoneNumber();
-	}
-
-	@Test(priority = 12, enabled = true)
-	public void TC_InvalidInvitewithInvalidPhoneNumber() {
-		mInvalidInvitePhoneNumberOrMessage.invalidInvitewithMoreDigitPhoneNumber();
-	}
-
-	@Test(priority = 13, enabled = true)
-	public void TC_InvalidInvitewithBlankMessage() {
-		mInvalidInvitePhoneNumberOrMessage.invalidInvitewithBlankMessage();
-	}
-
-	@Test(priority = 14, enabled = true)
-	public void TC_InvalidInvitewithInvalidMessageandNumber() {
-		mInvalidInvitePhoneNumberOrMessage.invalidInvitewithInvalidNumberandMessage();
-	}
+	/*
+	 * @Test(priority = 6, enabled = true) public void
+	 * TC_InvalidInvitewithEmailasOnlyNumeric() {
+	 * mInvalidInviteEmail.createSessionwithInvalidEmailwithOnlyNumeric(); }
+	 * 
+	 * @Test(priority = 7, enabled = true) public void
+	 * TC_InvalidInvitewithEmailasOnlyAlphaNumeric() {
+	 * mInvalidInviteEmail.createSessionwithInvalidEmailwithOnlyAlphaNumeric(); }
+	 * 
+	 * @Test(priority = 8, enabled = true) public void
+	 * TC_InvalidInvitewithInvalidEmail() {
+	 * mInvalidInviteEmail.createSessionwithInvalidEmail(); }
+	 * 
+	 * @Test(priority = 9, enabled = true) public void
+	 * TC_InvalidInvitewithBlankPhoneNumber() {
+	 * mInvalidInvitePhoneNumberOrMessage.InvalidInviteBlankPhoneNumber(); }
+	 * 
+	 * @Test(priority = 10, enabled = true) public void
+	 * TC_InvalidInvitewithLessDigitPhoneNumber() {
+	 * mInvalidInvitePhoneNumberOrMessage.invalidInvitewithLessDigitPhoneNumber(); }
+	 * 
+	 * @Test(priority = 11, enabled = true) public void
+	 * TC_InvalidInvitewithMoreDigitPhoneNumber() {
+	 * mInvalidInvitePhoneNumberOrMessage.invalidInvitewithMoreDigitPhoneNumber(); }
+	 * 
+	 * @Test(priority = 12, enabled = true) public void
+	 * TC_InvalidInvitewithInvalidPhoneNumber() {
+	 * mInvalidInvitePhoneNumberOrMessage.invalidInvitewithMoreDigitPhoneNumber(); }
+	 * 
+	 * @Test(priority = 13, enabled = true) public void
+	 * TC_InvalidInvitewithBlankMessage() {
+	 * mInvalidInvitePhoneNumberOrMessage.invalidInvitewithBlankMessage(); }
+	 * 
+	 * @Test(priority = 14, enabled = true) public void
+	 * TC_InvalidInvitewithInvalidMessageandNumber() {
+	 * mInvalidInvitePhoneNumberOrMessage.invalidInvitewithInvalidNumberandMessage()
+	 * ; }
+	 */
 
 	@Test(priority = 15)
 	public void TC_SignOut() {

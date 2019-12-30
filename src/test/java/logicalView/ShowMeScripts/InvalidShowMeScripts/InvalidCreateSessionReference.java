@@ -12,7 +12,7 @@ public class InvalidCreateSessionReference extends ApplicationUtility {
 
 	public void invalidSessionReference() {
 
-		ImplicitWait(7);
+		ImplicitWait(3);
 
 		// Save the User by clicking on AddUser button
 		try {

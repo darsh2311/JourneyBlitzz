@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testScript.TC_UploadDocuments">
+      <class name="testScript.TC_ShowMewithCallExperienceValidData">
         <methods>
-          <include name="TC_SignOut"/>
+          <include name="TC_CreateSessionwithEmail"/>
           <include name="afterTest"/>
+          <include name="TC_CreateSessionwithWhatsApp"/>
           <include name="beforeTest"/>
+          <include name="TC_InviteEllipsisOption"/>
+          <include name="TC_CreateSessionwithSMS"/>
         </methods>
-      </class> <!-- testScript.TC_UploadDocuments -->
+      </class> <!-- testScript.TC_ShowMewithCallExperienceValidData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

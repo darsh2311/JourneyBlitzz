@@ -1,69 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="9" passed="9" failed="0" skipped="0">
+<testng-results total="13" passed="9" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-12-17T12:46:14Z" name="Suite" finished-at="2019-12-17T12:49:51Z" duration-ms="217752">
+  <suite started-at="2019-12-30T07:52:59Z" name="Default suite" finished-at="2019-12-30T07:56:16Z" duration-ms="196988">
     <groups>
     </groups>
-    <test started-at="2019-12-17T12:46:14Z" name="UploadDocumentwithValidFormats" finished-at="2019-12-17T12:48:11Z" duration-ms="117609">
-      <class name="testScript.TC_UploadDocuments">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:16:14Z" name="beforeTest" finished-at="2019-12-17T18:16:30Z" duration-ms="15935" status="PASS">
+    <test started-at="2019-12-30T07:52:59Z" name="Default test" finished-at="2019-12-30T07:56:16Z" duration-ms="196988">
+      <class name="testScript.TC_ShowMewithCallExperienceValidData">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:22:59Z" name="beforeTest" finished-at="2019-12-30T13:23:05Z" duration-ms="6227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:16:30Z" name="TC_ValidDomainSubmission" finished-at="2019-12-17T18:16:45Z" duration-ms="15333" status="PASS">
+        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:23:05Z" name="TC_ValidDomainSubmission" finished-at="2019-12-30T13:23:16Z" duration-ms="11267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:16:45Z" name="TC_SignIn" finished-at="2019-12-17T18:17:00Z" duration-ms="14645" status="PASS">
+        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:23:16Z" name="TC_SignIn" finished-at="2019-12-30T13:23:31Z" duration-ms="14808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_UploadDocument()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:17:00Z" name="TC_UploadDocument" finished-at="2019-12-17T18:18:05Z" duration-ms="65348" status="PASS">
+        <test-method signature="TC_CreateSessionwithSMS()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:23:31Z" name="TC_CreateSessionwithSMS" finished-at="2019-12-30T13:23:58Z" duration-ms="26615" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.selectCountryCode(CreateShowMeSessionwithSMS.java:88)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.createSessionwithSMS(CreateShowMeSessionwithSMS.java:35)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithSMS(TC_ShowMewithCallExperienceValidData.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_UploadDocument -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:18:05Z" name="TC_SignOut" finished-at="2019-12-17T18:18:11Z" duration-ms="6202" status="PASS">
+        </test-method> <!-- TC_CreateSessionwithSMS -->
+        <test-method signature="TC_CreateSessionwithWhatsApp()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:23:58Z" name="TC_CreateSessionwithWhatsApp" finished-at="2019-12-30T13:24:21Z" duration-ms="22913" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithSMS.selectCountryCode(CreateShowMeSessionwithSMS.java:88)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithWhatsApp.createSessionwithWhatsApp(CreateShowMeSessionwithWhatsApp.java:32)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithWhatsApp(TC_ShowMewithCallExperienceValidData.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CreateSessionwithWhatsApp -->
+        <test-method signature="TC_CreateSessionwithEmail()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:24:21Z" name="TC_CreateSessionwithEmail" finished-at="2019-12-30T13:24:39Z" duration-ms="18116" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.invtieEllipsisOption(CreateShowMeSessionwithEmail.java:62)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.createSessionwithEmail(CreateShowMeSessionwithEmail.java:34)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_CreateSessionwithEmail(TC_ShowMewithCallExperienceValidData.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CreateSessionwithEmail -->
+        <test-method signature="TC_CopySessionCode()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:24:39Z" name="TC_CopySessionCode" finished-at="2019-12-30T13:24:51Z" duration-ms="12442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CopySessionCode -->
+        <test-method signature="TC_CopyGuestURL()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:24:51Z" name="TC_CopyGuestURL" finished-at="2019-12-30T13:25:04Z" duration-ms="12385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CopyGuestURL -->
+        <test-method signature="TC_JoinCall()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:25:04Z" name="TC_JoinCall" finished-at="2019-12-30T13:25:28Z" duration-ms="24924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_JoinCall -->
+        <test-method signature="TC_InviteEllipsisOption()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:25:28Z" name="TC_InviteEllipsisOption" finished-at="2019-12-30T13:25:43Z" duration-ms="14681" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on LINUX (877e3a41eb9fa8438bd1227a8b7a2b2c)] -> xpath: /html[1]/body[1]/div[3]/div[2]/div[2]/div[4]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/button[2]] (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'darshan', ip: '192.168.1.69', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-72-generic', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.79, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.wAvIz8}, goog:chromeOptions: {debuggerAddress: localhost:41435}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 877e3a41eb9fa8438bd1227a8b7a2b2c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at logicalView.ShowMeScripts.CreateShowMeSessionwithEmail.invtieEllipsisOption(CreateShowMeSessionwithEmail.java:62)
+	at logicalView.ShowMeScripts.SessionHistoryInternalFunctionalities.verifyInviteEllipsisOption(SessionHistoryInternalFunctionalities.java:97)
+	at testScript.TC_ShowMewithCallExperienceValidData.TC_InviteEllipsisOption(TC_ShowMewithCallExperienceValidData.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_InviteEllipsisOption -->
+        <test-method signature="TC_CopySessionUrlEllipsisOptio()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:25:43Z" name="TC_CopySessionUrlEllipsisOptio" finished-at="2019-12-30T13:25:50Z" duration-ms="6525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_CopySessionUrlEllipsisOptio -->
+        <test-method signature="TC_EndSessionEllipsisOption()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:25:50Z" name="TC_EndSessionEllipsisOption" finished-at="2019-12-30T13:25:52Z" duration-ms="2367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_EndSessionEllipsisOption -->
+        <test-method signature="TC_DeleteSessionEllipsisOptio()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:25:52Z" name="TC_DeleteSessionEllipsisOptio" finished-at="2019-12-30T13:26:09Z" duration-ms="17189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DeleteSessionEllipsisOptio -->
+        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:26:09Z" name="TC_SignOut" finished-at="2019-12-30T13:26:16Z" duration-ms="6403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_UploadDocuments@778d1062]" started-at="2019-12-17T18:18:11Z" name="afterTest" finished-at="2019-12-17T18:18:11Z" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_ShowMewithCallExperienceValidData@59d016c9]" started-at="2019-12-30T13:26:16Z" name="afterTest" finished-at="2019-12-30T13:26:16Z" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_UploadDocuments -->
-    </test> <!-- UploadDocumentwithValidFormats -->
-    <test started-at="2019-12-17T12:48:11Z" name="UploadDocumentwithInvalidFormats" finished-at="2019-12-17T12:49:51Z" duration-ms="100081">
-      <class name="testScript.TC_UploadDocumentswithInvalidData">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:18:11Z" name="beforeTest" finished-at="2019-12-17T18:18:27Z" duration-ms="15179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="TC_ValidDomainSubmission()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:18:27Z" name="TC_ValidDomainSubmission" finished-at="2019-12-17T18:18:42Z" duration-ms="15318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_ValidDomainSubmission -->
-        <test-method signature="TC_SignIn()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:18:42Z" name="TC_SignIn" finished-at="2019-12-17T18:18:56Z" duration-ms="14654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignIn -->
-        <test-method signature="TC_UploadDocumentwithBlankValue()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:18:56Z" name="TC_UploadDocumentwithBlankValue" finished-at="2019-12-17T18:19:27Z" duration-ms="30787" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_UploadDocumentwithBlankValue -->
-        <test-method signature="TC_UploadDocumentwithInvalidValue()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:19:27Z" name="TC_UploadDocumentwithInvalidValue" finished-at="2019-12-17T18:19:45Z" duration-ms="17788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_UploadDocumentwithInvalidValue -->
-        <test-method signature="TC_SignOut()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:19:45Z" name="TC_SignOut" finished-at="2019-12-17T18:19:51Z" duration-ms="6194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_SignOut -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testScript.TC_UploadDocumentswithInvalidData@be64738]" started-at="2019-12-17T18:19:51Z" name="afterTest" finished-at="2019-12-17T18:19:51Z" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testScript.TC_UploadDocumentswithInvalidData -->
-    </test> <!-- UploadDocumentwithInvalidFormats -->
-  </suite> <!-- Suite -->
+      </class> <!-- testScript.TC_ShowMewithCallExperienceValidData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

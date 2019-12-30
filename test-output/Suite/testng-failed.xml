@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="10" name="Failed suite [Suite]">
-  <test name="PublishVideowithValidFormats(failed)">
+  <test name="ShowMeScriptswithValidData(failed)">
     <classes>
-      <class name="testScript.TC_PublishVideowithValidFormats">
-        <methods>
-          <include name="afterTest"/>
-          <include name="TC_PublishNewVideowithValidFormatM4V"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
-      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
+      <class name="testScript.TC_ShowMewithInvalidData">
         <methods>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- testScript.TC_PublishVideowithInvalidVideoFormats -->
-    </classes>
-  </test> <!-- PublishVideowithValidFormats(failed) -->
-  <test name="PublishVideowithInvalidVideoFormats(failed)">
-    <classes>
-      <class name="testScript.TC_PublishVideowithValidFormats">
+      </class> <!-- testScript.TC_ShowMewithInvalidData -->
+      <class name="testScript.TC_ShowMewithValidData">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- testScript.TC_PublishVideowithValidFormats -->
-      <class name="testScript.TC_PublishVideowithInvalidVideoFormats">
-        <methods>
-          <include name="TC_ValidDomainSubmission"/>
-          <include name="TC_SignIn"/>
-          <include name="TC_PublishNewVideowithInvalidFormatAVI"/>
-          <include name="TC_PublishNewVideowithInvalidFormatOGG"/>
-          <include name="beforeTest"/>
-          <include name="TC_PublishNewVideowithInvalidFormatWMV"/>
-          <include name="TC_OpenVideoTab"/>
           <include name="TC_SignOut"/>
-          <include name="TC_PublishNewVideowithBlankValues"/>
-          <include name="TC_PublishNewVideowithInvalidFormatWebm"/>
+          <include name="TC_CopyGuestURL"/>
+          <include name="TC_DeleteSessionEllipsisOptio"/>
+          <include name="TC_CopySessionUrlEllipsisOptio"/>
+          <include name="TC_JoinCall"/>
+          <include name="TC_InviteEllipsisOption"/>
+          <include name="beforeTest"/>
+          <include name="TC_EndSessionEllipsisOption"/>
+          <include name="TC_CopySessionCode"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- testScript.TC_PublishVideowithInvalidVideoFormats -->
+      </class> <!-- testScript.TC_ShowMewithValidData -->
     </classes>
-  </test> <!-- PublishVideowithInvalidVideoFormats(failed) -->
+  </test> <!-- ShowMeScriptswithValidData(failed) -->
+  <test name="ShowMeScriptswithInValidData(failed)">
+    <classes>
+      <class name="testScript.TC_ShowMewithInvalidData">
+        <methods>
+          <include name="TC_InvalidInvitewithMoreDigitPhoneNumber"/>
+          <include name="TC_InvalidInvitewithBlankEmail"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyAlphaNumeric"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyNumeric"/>
+          <include name="TC_InvalidCreateSessionReference"/>
+          <include name="TC_InvalidInvitewithBlankMessage"/>
+          <include name="TC_InvalidInvitewithInvalidMessageandNumber"/>
+          <include name="TC_SignOut"/>
+          <include name="TC_InvalidInvitewithBlankPhoneNumber"/>
+          <include name="beforeTest"/>
+          <include name="TC_SignIn"/>
+          <include name="TC_InvalidInvitewithEmailasOnlyAlphabet"/>
+          <include name="TC_ValidDomainSubmission"/>
+          <include name="TC_InvalidInvitewithInvalidPhoneNumber"/>
+          <include name="TC_InvalidInvitewithInvalidEmail"/>
+          <include name="TC_InvalidInvitewithLessDigitPhoneNumber"/>
+        </methods>
+      </class> <!-- testScript.TC_ShowMewithInvalidData -->
+      <class name="testScript.TC_ShowMewithValidData">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testScript.TC_ShowMewithValidData -->
+    </classes>
+  </test> <!-- ShowMeScriptswithInValidData(failed) -->
 </suite> <!-- Failed suite [Suite] -->

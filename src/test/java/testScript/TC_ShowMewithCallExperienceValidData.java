@@ -13,8 +13,9 @@ import logicalView.ShowMeScripts.CreateShowMeSessionwithEmail;
 import logicalView.ShowMeScripts.CreateShowMeSessionwithSMS;
 import logicalView.ShowMeScripts.CreateShowMeSessionwithWhatsApp;
 import logicalView.ShowMeScripts.SessionHistoryInternalFunctionalities;
+import logicalView.ShowMeScripts.SessionStatusFilter;
 
-public class TC_ShowMewithValidData extends ApplicationUtility {
+public class TC_ShowMewithCallExperienceValidData extends ApplicationUtility {
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS;
 	CreateShowMeSessionwithWhatsApp mCreateShowMeSessionwithWhatsApp;
 	CreateShowMeSessionwithEmail mCreateShowMeSessionwithEmail;
@@ -23,6 +24,7 @@ public class TC_ShowMewithValidData extends ApplicationUtility {
 	VerifyDomain mVerifyDomain;
 	ModuleTabs mModuleTabs;
 	Signout mSignOut;
+	SessionStatusFilter mSessionStatusFilter;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -35,7 +37,7 @@ public class TC_ShowMewithValidData extends ApplicationUtility {
 		mVerifyDomain = new VerifyDomain();
 		mModuleTabs = new ModuleTabs();
 		mSignOut = new Signout();
-
+		mSessionStatusFilter = new SessionStatusFilter();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -59,7 +61,6 @@ public class TC_ShowMewithValidData extends ApplicationUtility {
 
 	@Test(priority = 4)
 	public void TC_CreateSessionwithWhatsApp() {
-
 		mCreateShowMeSessionwithWhatsApp.createSessionwithWhatsApp();
 	}
 
@@ -106,7 +107,7 @@ public class TC_ShowMewithValidData extends ApplicationUtility {
 
 	@Test(priority = 12)
 	public void TC_DeleteSessionEllipsisOptio() {
-
+		mSessionStatusFilter.sessionFilter();
 		mSessionHistoryInternalFunctionalities.DeleteSessionEllipsisOption();
 	}
 

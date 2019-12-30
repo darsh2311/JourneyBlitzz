@@ -2,7 +2,10 @@ package logicalView.ShowMeScripts;
 
 import java.util.List;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonFunctions.ApplicationUtility;
 import commonFunctions.BaseClass;
@@ -16,7 +19,7 @@ public class CreateShowMeSessionwithEmail extends ApplicationUtility {
 
 	public void createSessionwithEmail() {
 		refreshPage();
-		waitTime(10000);
+		waitTime(5000);
 		ImplicitWait(10);
 
 		// Enter the New Reference Id to create session
@@ -30,17 +33,6 @@ public class CreateShowMeSessionwithEmail extends ApplicationUtility {
 		// Select Invite Option from Ellipsis menu
 		invtieEllipsisOption(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionEmail"));
 
-		// Enter Email to Invite
-		mObjectShowME.enterInviteEmail(BaseClass.getValueFromPropertyFile("Showme.properties", "Email"));
-		waitTime(1000);
-
-		// Clicking Invite and join Button to join the call
-		mObjectShowME.clickInviteAndJoin();
-		waitTime(12000);
-
-		// Close the Newly Opened Join Call window
-		popupWindowHandle();
-
 	}
 
 	public void invtieEllipsisOption(String strInviteOption) {
@@ -50,13 +42,43 @@ public class CreateShowMeSessionwithEmail extends ApplicationUtility {
 
 		// Select the Invite option through which Invitation will be sent.
 		// and Also select Country Name
-		List<WebElement> listEllipsisOptions = mObjectShowME.listEllipsisOptions;
-		for (WebElement element : listEllipsisOptions) {
+		try {
+			List<WebElement> listEllipsisOptions = mObjectShowME.listEllipsisOptions;
+			for (WebElement element : listEllipsisOptions) {
 
-			if (element.getText().equalsIgnoreCase(strInviteOption)) {
-				ImplicitWait(5);
-				element.click();
+				if (element.getText().equalsIgnoreCase(strInviteOption)) {
+					ImplicitWait(5);
+					element.click();
+				}
 			}
+
+			// Enter Email to Invite
+			mObjectShowME.enterInviteEmail(BaseClass.getValueFromPropertyFile("Showme.properties", "Email"));
+			waitTime(1000);
+
+			// Clicking Invite and join Button to join the call
+			try {
+				WebDriverWait wait1 = new WebDriverWait(driver, 3);
+				wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
+				mObjectShowME.clickInviteAndJoin();
+				waitTime(12000);
+
+				// Close the Newly Opened Join Call window
+				popupWindowHandle();
+				waitTime(5000);
+				logger.info("Email" + " Invitation test-case Passed.");
+			} catch (Exception e) {
+				logger.error("Email" + " Invitation test-case failed.");
+				mObjectShowME.clickCloseInvitePopup();
+				waitTime(1000);
+				throw (e);
+			}
+
+		} catch (NoSuchElementException e) {
+			logger.error(strInviteOption + " Invitation test-case failed.");
+			mObjectShowME.clickCloseInvitePopup();
+			// TODO Auto-generated catch block
+			throw (e);
 		}
 	}
 

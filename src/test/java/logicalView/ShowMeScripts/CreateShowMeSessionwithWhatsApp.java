@@ -11,8 +11,9 @@ public class CreateShowMeSessionwithWhatsApp extends ApplicationUtility {
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS = new CreateShowMeSessionwithSMS();
 
 	public void createSessionwithWhatsApp() {
+
 		refreshPage();
-		waitTime(10000);
+		waitTime(4000);
 		ImplicitWait(10);
 
 		// Enter the New Reference Id to create session
@@ -24,9 +25,11 @@ public class CreateShowMeSessionwithWhatsApp extends ApplicationUtility {
 
 		// Select the Invite option through which Invitation will be sent.
 		// and Also select Country Name
-		mCreateShowMeSessionwithSMS.selectInviteOptionandCountryCode(
-				BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionWA"),
-				BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"));
+		mCreateShowMeSessionwithSMS
+				.selectInviteOption(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionWA"));
+
+		mCreateShowMeSessionwithSMS
+				.selectCountryCode(BaseClass.getValueFromPropertyFile("Showme.properties", "countryName"), "WhatsApp");
 
 	}
 

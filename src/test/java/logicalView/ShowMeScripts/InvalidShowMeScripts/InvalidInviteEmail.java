@@ -28,9 +28,10 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		mCreateShowMeSessionwithEmail
 				.invtieEllipsisOption(BaseClass.getValueFromPropertyFile("Showme.properties", "inviteOptionEmail"));
 
-		// Clicking Invite and join Button to join the call
-		mObjectShowME.clickInviteAndJoin();
-		waitTime(12000);
+		/*
+		 * // Clicking Invite and join Button to join the call
+		 * mObjectShowME.clickInviteAndJoin(); waitTime(12000);
+		 */
 
 		try {
 			WebDriverWait wait1 = new WebDriverWait(driver, 3);
@@ -55,11 +56,11 @@ public class InvalidInviteEmail extends ApplicationUtility {
 		try {
 			WebDriverWait wait1 = new WebDriverWait(driver, 3);
 			wait1.until(ExpectedConditions.elementToBeClickable(mObjectShowME.inviteAndJoin));
-			logger.error(
-					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Failed");
+			logger.error("Invite and Join button of Invite Guest Pop up is Clickable with invalidEmailAlpha Value");
+
 		} catch (Exception e) {
-			logger.info(
-					"Invite and Join button of Invite Guest Pop up should not be Clickable with invalidEmailAlpha Value: Passed");
+			logger.info("Invite and Join button of Invite Guest Pop up is not Clickable with invalidEmailAlpha Value");
+			throw (e);
 		}
 		waitTime(200);
 
