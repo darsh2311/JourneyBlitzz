@@ -34,7 +34,5 @@ public class SignInwithValidData extends ApplicationUtility {
 			logger.error("SignIn is not successful: Failed");
 			logger.info(driver.getTitle());
 		}
-
 	}
-
 }

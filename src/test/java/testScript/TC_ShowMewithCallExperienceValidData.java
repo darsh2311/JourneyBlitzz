@@ -14,6 +14,7 @@ import logicalView.ShowMeScripts.CreateShowMeSessionwithSMS;
 import logicalView.ShowMeScripts.CreateShowMeSessionwithWhatsApp;
 import logicalView.ShowMeScripts.SessionHistoryInternalFunctionalities;
 import logicalView.ShowMeScripts.SessionStatusFilter;
+import logicalView.ShowMeScripts.TeamExperienceFilter;
 
 public class TC_ShowMewithCallExperienceValidData extends ApplicationUtility {
 	CreateShowMeSessionwithSMS mCreateShowMeSessionwithSMS;
@@ -25,6 +26,7 @@ public class TC_ShowMewithCallExperienceValidData extends ApplicationUtility {
 	ModuleTabs mModuleTabs;
 	Signout mSignOut;
 	SessionStatusFilter mSessionStatusFilter;
+	TeamExperienceFilter mTeamExperienceFilter;
 
 	@BeforeTest
 	public void beforeTest() {
@@ -38,6 +40,7 @@ public class TC_ShowMewithCallExperienceValidData extends ApplicationUtility {
 		mModuleTabs = new ModuleTabs();
 		mSignOut = new Signout();
 		mSessionStatusFilter = new SessionStatusFilter();
+		mTeamExperienceFilter = new TeamExperienceFilter();
 	}
 
 	@Test(priority = 1, enabled = true)
@@ -56,6 +59,7 @@ public class TC_ShowMewithCallExperienceValidData extends ApplicationUtility {
 	@Test(priority = 3)
 	public void TC_CreateSessionwithSMS() {
 		mModuleTabs.clickShowMETab();
+		mTeamExperienceFilter.selectTeamExperience();
 		mCreateShowMeSessionwithSMS.createSessionwithSMS();
 	}
 

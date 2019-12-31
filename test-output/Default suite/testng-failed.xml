@@ -5,12 +5,10 @@
     <classes>
       <class name="testScript.TC_ShowMewithCallExperienceValidData">
         <methods>
-          <include name="TC_CreateSessionwithEmail"/>
           <include name="afterTest"/>
-          <include name="TC_CreateSessionwithWhatsApp"/>
           <include name="beforeTest"/>
-          <include name="TC_InviteEllipsisOption"/>
           <include name="TC_CreateSessionwithSMS"/>
+          <include name="TC_SignOut"/>
         </methods>
       </class> <!-- testScript.TC_ShowMewithCallExperienceValidData -->
     </classes>

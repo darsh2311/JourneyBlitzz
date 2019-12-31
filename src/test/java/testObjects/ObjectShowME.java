@@ -178,6 +178,18 @@ public class ObjectShowME {
 	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li/a[1]")
 	public List<WebElement> listSessionStatusFilter;
 
+	// TeamExperience locator
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]")
+	public WebElement teamExp;
+
+	public void clickTeamExperience() {
+		teamExp.click();
+	}
+
+	// List Of Session Status filter
+	@FindBy(xpath = "/html[1]/body[1]/div[3]/div[2]/div[2]/div[1]/form[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li/a[1]")
+	public List<WebElement> listTeamExperience;
+
 	// Page Factory method
 	public ObjectShowME(WebDriver driver) {
 
